@@ -1,14 +1,15 @@
 ﻿ビルド
-・cudd.2.5.0内で make objlib
 
-・main内で ./compile
+cudd.3.0.0内で 
 
-メモ
+./comfigure
+make
+make check
+./configure CC=clang CXX=clang++ --enable-silent-rules --enable-shared --enable-dddmp --enable-obj
+make -j4 check
+sudo make install
 
-・cuddのコンパイルオプションをデフォルト -> -m32バージョンに変更してあります
+main内で ./compile
 
-注意
 
-・cuddのコンパイルは，make objlib でコンパイル
 
-必要なもの
