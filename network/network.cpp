@@ -3009,7 +3009,7 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
     const vector<pair<Node*, int> >  input = no->getWeight();
     for (const auto& fin : input)
       cut_nodeTh(no, fin.first);
-    const vector<pair<Node*, int> >  output = no->getOutput();
+    const vector<Node*>  output = no->getOutput();
     for(const auto& fout : output){
       for (const auto& fin : fout->getWeight()){
 	if(fin.first == no && fin.second >= 0){
@@ -3026,7 +3026,7 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
     const vector<pair<Node*, int> >  input = no->getWeight();
     for (const auto& fin : input)
       cut_nodeTh(no, fin.first);
-    const vector<pair<Node*, int> >  output = no->getOutput();
+    const vector<Node*>  output = no->getOutput();
     for(const auto& fout : output){
       for (const auto& fin : fout->getWeight()){
 	if(fin.first == no && fin.second < 0){
@@ -3052,22 +3052,22 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
 void Network::serch_fanout(Node* no, std::unordered_set<Node*>& all_fanouts){
   if(all_fanouts.count(no))
     return;
-  all_fanout.insert(no);
+  all_fanouts.insert(no);
   if(no->getType() == OUTPUT)
     return;
   for(const auto& fout : no->getOutput()){
-    serch_fanout(fout, all_fanout);
+    serch_fanout(fout, all_fanouts);
   }
 }
 
 void Network::candi_clear(){
   for (auto no = ++primaryI.begin(); no != primaryI.end(); no++)
-    no-> candi_checked = false;
+    (*no)-> candi_checked = false;
   for (auto no = ++intNode.begin(); no != intNode.end(); no++)
-    no-> candi_checked = false;
+    (*no)-> candi_checked = false;
 }
 
-void Network::check_reducenode(Node* no, Node* fin, const std::vector<Node*>& all_fanouts){
+void Network::check_reducenode(Node* no, Node* fin, const std::unordered_set<Node*>& all_fanouts){
   //first trade
   if((*node2cspfcudd[no].f1) == (*node2cspfcudd[no].f1) * (*outfuncs_cudd[fin]))
     no->plus_spare.push_back(fin);
@@ -3078,7 +3078,7 @@ void Network::check_reducenode(Node* no, Node* fin, const std::vector<Node*>& al
 
   for(const auto& fout : fin->getOutput()){
     if(fout->candi_checked == false)
-      check_reducenode(no, fout);
+      check_reducenode(no, fout, all_fanouts);
   }
 }
 

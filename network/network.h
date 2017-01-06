@@ -407,13 +407,13 @@ private:
     // しきい値回路の回路変形
     void  transcircNodeTh(Node* no, std::unordered_set<Node*> all_fanouts = {});
     void  reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts);
-    void  check_reducenode(Node* no, Node* fin);
+    void  check_reducenode(Node* no, Node* fin, const std::unordered_set<Node*>& all_fanouts);
     void  cut_nodeTh(Node* no, Node* fin);
     void  delete_outputTh(Node* no, Node* fout);
     void  delete_nodeTh(Node* no);
     void  serch_fanout(Node* no, std::unordered_set<Node*>& all_fanouts);
     void  candi_clear();
-    void  serch_spare(Node* no, const std::unordered_set<Node*>& all_fanouts);
+    void  serch_spare(Node* no);
 
 };
 
