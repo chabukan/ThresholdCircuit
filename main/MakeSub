@@ -1,0 +1,40 @@
+#! /bin/sh 
+
+# 引数  
+#  1  -> package ぐんめい#  2  -> package への パス 
+#  3 -> make command 名
+#  4以降 -> make への引数 
+
+
+for pack in $1 ; do
+    echo "***********************"
+    echo "*** Now making the programs in $pack package - Make command is as follows"
+    if [ $# = 4 ] ; then
+	echo " --> $3 $4"  
+	if cd $2/$pack; $3 "$4"  ; then
+	    echo " --*** Making $pack is done successfully "
+  	else 
+ 	    echo " --***** Error in Making $pack"
+	    exit 1
+	fi    
+    fi
+    if [ $# = 5 ] ; then
+	echo " --> $3 $4 $5"  
+	if 	cd $2/$pack; $3 "$4" "$5"; then
+	    echo " --*** Making $pack is done successfully "
+  	else 
+ 	    echo " --***** Error in Making $pack"
+	    exit 1
+	fi    
+    fi
+    if [ $# = 6 ] ; then
+	echo " --> $3 $4 $5 $6"  
+	if 	cd $2/$pack; $3 "$4" "$5" "$6"; then
+	    echo " --*** Making $pack is done successfully "
+  	else 
+ 	    echo " --***** Error in Making $pack"
+	    exit 1
+	fi    
+
+    fi
+done

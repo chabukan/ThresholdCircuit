@@ -1,0 +1,234 @@
+//#include "cube.h"
+
+////// ここから下の cube_set 関係は古い実現（動くけどおそいとか問題ある）
+
+
+
+//polarity は Cube->out[0]に設定されていること のつもりだったけど
+// 現状は、pol で与えられたの
+//Cube は 1出力で、Bdd::var(1)からBdd_var(n_in)までの関数で、
+//出力は、  '0-10 1' という感じで、左から Bdd::var(1)に対応 
+//Dlist ha Pointer de Watasana
+extern void print_cube(FILE * sout, Dlist<Cube> * cube, int n_in, int pol);
+
+
+
+//Bdd を blif の形式で表示
+//lf と not(lf)で積項数の少ないほうを採用する。
+//★lf は、Bdd::var(1)からBdd::var(n_in)までにしか依存しない関数であること。
+//出力は、  '0-10 1' という感じで、左から Bdd::var(1)に対応 
+extern void print_bdd_blif(FILE * sout, Bdd lf, int n_in);
+
+
+//上のと同じだが違う点は、cubeの i(iは１から) 番目の入力を
+// index[i] = j (jは0から) なら、 左からｊ番目と読み替えて出力する。
+extern void print_cube_with_index(FILE * sout, Dlist<Cube> * cube, int n_in, int pol, 
+		       Arrayint index);
+
+
+//当然polarity = 1
+// Bdd::zero, oneがあたえられてはならない。
+// このCube は in[0]がBdd::var(1)相当
+//Bdd を表現するcube の リストをつくる
+// f の support を (Bdd::var(1)  から(Bdd::var(n_in) までと仮定しており、
+// 101-   などというCubeは、 x1 ~x2 x3 に 対応する。
+// (Dlistを新しく確保して返す)
+extern Dlist<Cube> * makeCubeList(Bdd lf, int n_in);
+
+
+////////////////////////
+
+
+
+//Bdd を blif の形式で表示
+//lf と not(lf)で積項数の少ないほうを採用する。
+//★lf は、Bdd::var(1)からBdd::var(n_in)までに依存した関数であること。
+void print_bdd_blif(FILE * sout, Bdd lf, int n_in)
+{
+  if(lf == Bdd::null){ 
+    cerr << "print_bdd_blif Error !? Bdd::null cannot display \n";
+    exit (1);
+  }
+
+  if(lf == Bdd::zero){ //何も表示しない
+    return;
+  }
+  else if(lf == Bdd::one){ //1 だけ表示
+    fprintf(stderr, "1\n");
+    return;
+  }
+  Dlist<Cube> * tempCube  = makeCubeList(lf,  n_in);
+  Dlist<Cube>  * tempCube2 = makeCubeList( ~lf,  n_in);
+//For debug
+//  print_cube(sout, *tempCube, n_in, 1);
+//  cerr << " **************** \n";
+//  print_cube(sout, *tempCube2, n_in, 0);
+//  cerr << " **************** \n";
+//For debug
+  if(tempCube->size() > tempCube2->size()){
+    print_cube(sout, tempCube2, n_in, 0);
+  }
+  else{
+    print_cube(sout, tempCube, n_in, 1);
+  }
+  delete tempCube;  
+  delete tempCube2;
+}
+
+
+
+//polarity は Cube->out[0]に設定されていること のつもりだったけど
+// 現状は、pol で与えられたの
+//Cube は 1出力で、Bdd::var(1)からBdd_var(n_in)までの関数で、
+//出力は、  '0-10 1' という感じで、左から Bdd::var(1)に対応 
+// 
+void print_cube(FILE * sout, Dlist<Cube> * cube, int n_in, int pol)
+{
+  int i;
+  for ( Cube* p = cube->first(); p != 0; p = cube->fnext(p) ) {
+    for ( i=0; i<n_in; i++ ) { 
+      fprintf(sout, "%c", p->in[i]);
+    }
+//    fprintf(sout, " %c\n", p->out[0]);
+    fprintf(sout, " %d\n", pol);
+  }
+}
+
+
+void print_cube_with_index(FILE * sout, Dlist<Cube> * cube, int n_in, int pol,
+			   Arrayint index)
+{
+  int i;
+  char * line = new char[n_in+1]; //最後には \0をいれる。
+  line[n_in] = '\0';  
+  for ( Cube* p = cube->first(); p != 0; p = cube->fnext(p) ) {
+    for ( i=1; i<=n_in; i++ ) { 
+      line[index[i]] = p->in[i-1];
+    }
+    fprintf(sout, "%s", line);
+//    fprintf(sout, " %c\n", p->out[0]);
+    fprintf(sout, " %d\n", pol);
+  }
+  delete [] line;
+}
+
+
+
+//当然polarity = 1
+// Bdd::zero, oneがあたえられてはならない。
+// このCube は in[0]がBdd::var(1)相当
+Dlist<Cube> * makeCubeList(Bdd lf, int n_in)
+{
+  ISF isf(lf,lf);
+
+  ISOP* isoptemp = isf.makeISOP(); //非冗長積和形
+
+/// for check 
+//  cerr << " \n Now N_IN = " << n_in << "\n";
+//  cerr << " *********** ISOP PRINT  START *****************\n";
+//  isoptemp->print_for_debug();
+//  cerr << " *********** ISOP PRINT END *****************\n \n";
+/// for check 
+
+  Dlist<Cube> * returnList = new Dlist<Cube>();
+  char * NowCube = new char[n_in];
+  // f  = BDDF, BDDTなどでは、いけないー＞かならず、一つ目のcubeは加えられる
+  makeCube (n_in,  isoptemp, returnList, NowCube, 0);
+  delete isoptemp;
+  delete [] NowCube;
+  return returnList;
+}
+
+
+
+
+//isop は前ほど、変数番号が大きいことを前提としている。
+//1出力にのみ対応
+// NowCube は呼び出し側でちゃんと消すこと
+// NowCube は 上からnowno個設定されている。
+static void makeCube(int n_in, ISOP * isop, Dlist<Cube> * returnList, char * NowCube,
+		     int nowno)
+{
+  int No = isop->Number();
+  int i;
+  int check = n_in -nowno;  // この番号の配列まで、ちゃんとはいってる。
+  if(No == -1){ // == BDDT この時のみ付け加える   NowCube に今までで設定されてるはず。
+    Cube* cube = new Cube(n_in-1, 0, (*returnList));  //1つ少な目に確保    
+    cube->out[0] = '1';                               // ここで初めてリストに登録
+    for(i = n_in-1; i >= check ; i--){   //これよりしたは、NowCubeが設定されてない。
+      cube->in[i] = NowCube[i];
+    }
+    for(i = 0; i < check  ; i++){   //これよりしたは、NowCubeが設定されてない。
+      cube->in[i] = '-';
+    }
+    return;
+  }
+  if(No == -2){ // == BDDF この時は付け加えずにreturn
+    return;
+  }
+//  if(isop->F0() != 0){  いらん。
+    char * NewCube0 = new char[n_in];
+
+    for(i = n_in-1; i >= check ; i--){ 
+      NewCube0[i] = NowCube[i]; 
+//      cerr << NowCube[i]; 
+    }
+//  cerr << " ***** copy \n ";
+  for(i = No+1; i < check  ; i++){    //ISOP の変数番号が飛んでることもあるので
+
+      NewCube0[i] = '-';
+      nowno++;
+    }
+
+/*
+    for(i = n_in -1; i > No ; i--){
+      NewCube0[i] = NowCube[i]; 
+      cerr << NowCube[i]; 
+    }
+    */
+    NewCube0[No] = '0';
+    makeCube (n_in, isop->F0(), returnList, NewCube0, nowno+1);
+    delete [] NewCube0;
+//  }
+//  if(isop->F1() != 0){
+    char * NewCube1 = new char[n_in];
+
+
+    for(i = n_in-1; i >= check ; i--){ 
+      NewCube1[i] = NowCube[i]; 
+    }
+    for(i = No+1; i < check  ; i++){   
+      NewCube1[i] = '-';
+    }
+
+/*
+    for(i = n_in -1; i > No ; i--){ 
+      NewCube1[i] = NowCube[i]; 
+    }
+*/
+    NewCube1[No] = '1';
+    makeCube (n_in, isop->F1(), returnList, NewCube1, nowno+1);
+    delete [] NewCube1;
+//  }
+//  if(isop->FR() != 0){
+    char * NewCubeR = new char[n_in];
+
+
+    for(i = n_in-1; i >= check ; i--){ 
+      NewCubeR[i] = NowCube[i]; 
+    }
+    for(i = No+1; i < check  ; i++){   
+      NewCubeR[i] = '-'; 
+    }
+/*
+    for(i = n_in -1; i > No ; i--){
+
+    }
+ */
+
+    NewCubeR[No] = '-';
+
+    makeCube (n_in, isop->FR(), returnList, NewCubeR, nowno+1);
+    delete [] NewCubeR;
+//  }
+}

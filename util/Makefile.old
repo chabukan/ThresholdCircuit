@@ -1,0 +1,69 @@
+CFLAGS = -g
+###  以下ので、　assert は　全て nop となる。
+#CFLAGS = -O4 -DNDEBUG
+
+#CFLAGS = -O2
+#CFLAGS = -O2 -pg
+
+TOP = ..
+
+INC-NET  = -I${TOP}/network
+INC-BDD  = -I${TOP}/bdd
+INC-GER  = -I${TOP}/ger-util
+INC-UTIL = -I${TOP}/util
+INC-TEMP = -I${TOP}/template
+
+INCGCC = -I/opt/gnu/lib/g++-include
+#INCGCC = -I/usr/gnu/lib/g++-include -I/opt/gnu/include/g++ 
+CXX = g++ $(CFLAGS) -Wall -DGCC
+
+
+INCS-ALL = ${INC-NET} ${INC-BDD} ${INC-GER} ${INC-UTIL} ${INC-TEMP} ${INCGCC}
+
+
+SRCS = ger-base.C
+
+ARCS = libger-base.a
+
+OBJS = ${SRCS:.C=.o}
+
+.SUFFIXES: .C .o
+
+.C.o:
+	$(CXX) -c $< ${INCS-ALL}
+
+${ARCS}: ${SRCS} ${OBJS}
+	ar cr $@ ${OBJS}
+	ranlib $@
+
+depend:
+	makedepend ${SRCS} -DGCC ${INCS-ALL}
+
+clean:
+	rm -f *.bak *.o ${ARCS}
+
+# DO NOT DELETE THIS LINE -- make depend depends on it.
+
+ger-base.o: ger-base.h /opt/gnu/lib/g++-include/string
+ger-base.o: /opt/gnu/lib/g++-include/std/string.h
+ger-base.o: /opt/gnu/lib/g++-include/std/bastring.h
+ger-base.o: /opt/gnu/lib/g++-include/std/stddef.h
+ger-base.o: /opt/gnu/lib/g++-include/_G_config.h
+ger-base.o: /opt/gnu/lib/g++-include/std/cstddef.h
+ger-base.o: /opt/gnu/lib/g++-include/std/stddef.h
+ger-base.o: /opt/gnu/lib/g++-include/std/straits.h
+ger-base.o: /opt/gnu/lib/g++-include/std/cctype.h /usr/include/ctype.h
+ger-base.o: /usr/include/sys/feature_tests.h
+ger-base.o: /opt/gnu/lib/g++-include/std/cstring.h
+ger-base.o: /opt/gnu/lib/g++-include/std/string.h
+ger-base.o: /opt/gnu/lib/g++-include/cassert
+ger-base.o: /opt/gnu/lib/g++-include/std/cassert.h /usr/include/assert.h
+ger-base.o: /usr/include/stdio.h /usr/include/sys/va_list.h
+ger-base.o: /usr/include/stdlib.h /opt/gnu/lib/g++-include/fstream.h
+ger-base.o: /opt/gnu/lib/g++-include/iostream.h
+ger-base.o: /opt/gnu/lib/g++-include/streambuf.h
+ger-base.o: /opt/gnu/lib/g++-include/libio.h ../bdd/bddop.h
+ger-base.o: ../util/arrayint.h ../bdd/twobdd.h ../util/Array.H
+ger-base.o: ../util/Array.C ../bdd/sop.h ../util/Cmap.H ../util/Cmap.C
+ger-base.o: ../bdd/cube.h ../util/IsvList.H ger-base-old.h SupVars.h ISF.h
+ger-base.o: OldISOP.h PList.h ../bdd/isf.h ../bdd/isf-ger.h

@@ -1,0 +1,112 @@
+#include <iostream>
+#include <cstdlib>
+#include <unistd.h>
+
+#include "network.h"
+
+#define DBG
+#ifdef DBG
+#define DEBUG(statement) statement
+#else
+#define DEBUG(statement)
+#endif
+
+using namespace std;
+
+Network* readFileName(char * filename);
+
+//第一引数と第２引数のファイル名のファイルが同じ仕様のBLIFかをチェックする。
+//  (どちらもBLIF であること)
+// 入力の順のまま関数を計算するので、入力順が違うだけでも違った仕様になる
+// 出力順は変わっていても対応する出力を見つけれれば、同じ仕様とする。ただし、
+// ＊BUG*  file1(2) の 出力にまったく同じ出力が複数ある時、にはうまく対応を見つけれず
+//  違っていても 同じと答えることがあるかもしれない。
+
+int main(int argc, char **argv)
+{
+    if (argc != 3) {
+        std::cerr << "Usage diffnet <file1> <file2> \n";
+        exit(1);
+    }
+
+    int maxbdd_power = 20;
+    Bdd::alloc(16, maxbdd_power);
+    Network* circ1 = readFileName(argv[1]);
+    Network* circ2 = readFileName(argv[2]);
+    std::cerr << " ********* Diffnet Starts ********** \n";
+    std::cerr << " Find the differences between "  << circ1->name() << " and " << circ2->name() << "\n";
+    if (circ1->nPI() != circ2->nPI() ) {
+        std::cerr << "Input Number is different \n";
+        exit(1);
+    }
+    else if (circ1->nPO() != circ2->nPO()) {
+        std::cerr << "Output Number is different \n";
+        exit(1);
+    }
+    //    int in_format = ( MyString(argv[1]).contains(".pla") ) ? 0 : 1;
+    bool is_pla = std::string(argv[1]).find("pla") != std::string::npos;
+    bool in_format = ( is_pla ) ? false : true;
+    if ( in_format == false ) {
+        circ1->calAllSpecPla('0');
+    }
+    else{
+        circ1->calAllSpecBlif('0');
+    }
+    //    in_format = ( MyString(argv[2]).contains(".pla") ) ? 0 : 1;
+    is_pla = std::string(argv[2]).find("pla") != std::string::npos;
+    in_format = ( is_pla ) ? 0 : 1;
+    if ( in_format == 0 ) {
+        circ2->calAllSpecPla('0');
+    }
+    else{
+        circ2->calAllSpecBlif('0');
+    }
+
+    bool flag;
+    int i,j;
+    Bdd lf1, lf2;
+
+    i=1;
+    for (auto g1 = ++circ1->getPOlist().begin(); g1 != circ1->getPOlist().end(); g1++) {
+        lf1 = circ1->getSpecPO(i).rstrtop1();
+        std::cerr << "No. " << (*g1)->getId() << " of " << circ1->name() << " ("
+        << (*g1)->name() << ")";
+
+        j=1; flag = false;
+        for (auto g2 = ++circ2->getPOlist().begin(); g2 != circ2->getPOlist().end(); g2++) {
+            lf2 = circ2->getSpecPO(j).rstrtop1(); // marimo: BDDが満たすべき関数specを取る．rstrtop1はBDDクラスのメソッド
+            if(lf1 == lf2){
+                std::cerr << " == No. " << (*g2)->getId() << " of " << circ2->name()
+                << " (" << (*g2)->name() << ")\n";
+                flag = true;
+            }
+
+            if (flag) break;
+            j++;
+        }
+        if(flag == false){
+            std::cerr << " has no coresponding output \n";
+            std::cerr << " The two files are ** NOT ** the same functionally.\n";
+            exit(1);
+        }
+
+        i++;
+    }
+
+    // circ1->printInfoForDebug();
+    // circ1->printAllNode();
+    // circ1->printCost((char*)"aaa");
+
+    std::cerr << "Check is finished. -- The two files are the same functionally. \n";
+}
+
+// ファイルname (openする)を渡して、そのファイルから読み込んで network をつくる。
+// file が openできなければ exit(1)。
+// Bdd が初期化されてないといけない。
+
+Network * readFileName(char * filename)
+{
+    Network* net = new Network();
+    net->readFileName(filename);
+    return net;
+}

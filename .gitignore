@@ -1,0 +1,11 @@
+*.[a|o]
+*~
+\#*\#
+*.bak
+.svn/
+gitflow/
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+!.gitkeep

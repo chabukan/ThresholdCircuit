@@ -1,0 +1,424 @@
+//  以下では、BDD, 関数, Bdd(Bdd class のオブジェクト）　という言葉の
+// 使い方が適切でないかもしれません。（混同した表記になってるかもしれ
+// ません。）
+// 正確には、BDD は　関数を表現するグラフであり、　Bdd （classのオブジェ
+// クト）は、 ある関数を表現するBDDをプログラム上で表現する（している）
+// ものです。なんとなく、文脈からよみとってください。
+
+class Bdd 
+
+★public 関数
+
+●コンストラクタ、デストラクタ
+    Bdd();
+    Bdd(const Bdd& oprand);
+    ~Bdd();
+
+//●定数など
+    static int	objnum;
+    const int       BDDNULL = 0;
+    const int       BDDF = 1;
+    const int       BDDT = ~BDDF;
+    const int       FIRSTNODE = 2;
+//ZBDD関係
+    const int       ZBDDE = BDDF; // empty  { }
+    const int       ZBDDB = BDDT; // base {0..0}
+
+//★プログラミング時に使うのは，
+    Bdd::zero
+    Bdd::one
+    Bdd::empty
+    Bdd::base
+
+//      0       1       2       3       ...
+//   BDDNULL   BDDF   NODE1   NODE2     ...
+// node[0] = { edge0=0; edge1=0; lev=0; mark=0; share=0; next=1; }
+// node[1] = { edge0=1; edge1=1; lev=0; mark=0; share=0; next=2; }
+// Neither node[0].inc() nor node[0].dec() are allowed.
+// Neither node[1].inc() nor node[1].dec() are allowed.
+
+    enum { MAXLEVLOG = 14 };
+    enum { MAXLEV = (1<<MAXLEVLOG)-1 };	//// 0011..1 == 16384-1
+
+
+//●friend 関数　
+
+    inline friend Bdd	operator & (const Bdd& lhs, const Bdd& rhs);
+ //　lhs (and) rhs の　Bdd をつくり、返す。
+
+    inline friend Bdd	operator | (const Bdd& lhs, const Bdd& rhs);
+ //　lhs (or) rhs の　Bdd をつくり、返す。
+
+    inline friend Bdd	operator ^ (const Bdd& lhs, const Bdd& rhs);
+ //　lhs (xor) rhs の　Bdd をつくり、返す。
+
+    inline friend int	operator == (const Bdd& lhs, const Bdd& rhs);
+//　lhs とrhs が同じBDD（関数）を表しているなら1 そうでないなら、0を返す。
+
+    inline friend int	operator != (const Bdd& lhs, const Bdd& rhs)
+//　lhs とrhs が違うBDD（関数）を表しているなら1 そうでないなら、0を返す。
+
+    inline friend int	operator <= (const Bdd& lhs, const Bdd& rhs);
+// rhs の　ON-set が　lhs のON-set を含む（coverする)なら1, そうでないなら0を返す。
+// 具体的には(lhs &  ~(rhs)) が、BDDF である場合は1, そうでないなら0を返す。
+
+    inline friend int	bddInter(const Bdd& lhs, const Bdd& rhs);
+//lとrの(AND演算)がBDDFであるかどうかを高速に判定し、
+//BDDFなら0そうでないなら1を返す。 ( & を使うより早く判定できる）
+
+
+
+//●public メンバ関数
+　  static Bdd		var(int lev);   // 1 <= lev <= MAXLEV
+ //レベルがlevの単項関数 (x_lev)をつくり、そのBDDオブジェクトを返す。*/
+
+    Bdd		operator = (const Bdd& oprand);
+// A=B で、右辺のコピーを左辺に代入する。左辺の(元の)bdd はfreeされる。
+
+    Bdd		operator ~ () const;
+// ~A で、　Aの否定を表すBdd　を作って返す。
+
+    Bdd		rstr0(int lev) const;
+// level=lev の変数に0を入れた関数を表すBdd をつくって返す。
+
+    Bdd		rstr1(int lev) const;
+// level=lev の変数に1を入れた関数を表すBdd をつくって返す。
+
+
+    Bdd		rstr(int lev) const; 
+// 与えられたlevの正負に応じて。
+// (levが負の時は) level=~lev(1の補数)の変数に1を入れた関数を表すBdd をつくって返す。
+// (levが正の時は) level=lev の変数に0を入れた関数を表すBdd をつくって返す。
+// （注意）levの正負と、代入される1,0の正負が逆なので注意。
+//  （例) x3に1を代入した関数を作りたい ->  lev = ~3 でよぶ
+//  （例) x3に0を代入した関数を作りたい ->  lev = 3 でよぶ
+
+    Bdd		rstrtop0() const;
+// 最上位レベルの変数に0を入れた関数を表すBdd をつくって返す。
+
+    Bdd		rstrtop1() const;
+// 最上位レベルの変数に1を入れた関数を表すBdd をつくって返す。
+
+    Bdd		rstrtop(int val) const;
+// ★ 以前までとval の与え方は逆になった)　 val: BDDF(1) or BDDT を期待  
+// 与えられたvalの値に応じて。
+// (val = BDDTの時) 最上位レベルの変数に1を入れた関数を表すBdd をつくって返す。
+// (val = BDDFの時) 最上位レベルの変数に0を入れた関数を表すBdd をつくって返す。
+
+
+    Bdd		support() const;  
+//★OBSOLETE -- support()はvarSet()に変更したい
+// Bdd のサポート変数（依存する変数）の正リテラルの積を表すBddを作って返す。
+// BddがBDDF, BDDTなら、BDDTをかえす。
+
+    inline friend Bdd	bddSupand(const Bdd& lhs, const Bdd& rhs);
+//  sup = bddSupand(sup1, sup2) -> sup = sup1 + sup2; 
+//  どちらかに含まれるサポート変数集合を表すBddを返す。
+
+    inline friend Bdd	bddSupxor(const Bdd& lhs, const Bdd& rhs);
+//      sup = bddSupxor(sup1, sup2) -> sup = (sup1 + sup2) - Bdd::intersec(sup1, sup2) 
+//  一方にしか含まれないサポート変数集合を表すBddを返す。
+//(使い方）
+//　　　　  Bdd sup = f.support(); while ( sup != Bdd::one )
+//      	{ lev = sup.top(); sup = sup.rstr1(lev); }
+
+    Bdd		varSet() const;   // varSet()はZBDD表現．
+// ★ suport 変数集合をもとめて、それをZBDDで表現して返す。
+//   {(x1), (x3), (x5))} みたいなのが返ってくる．
+//(使い方）
+//       Bdd sup = f.varSet(); while ( sup != Bdd::empty )
+//      	{ lev = sup.top(); sup = sup.subset0(lev); }     
+
+
+
+
+    friend Bdd		ite(const Bdd& if_bdd, const Bdd& then_bdd,
+	    const Bdd& else_bdd); 
+//   (if_bdd & then_bdd) | (~if_bdd & else_bdd) を　返す。
+//  ★　if_bdd が１つの変数のみを表す関数なら、以下の varIte の方が高速
+
+    static Bdd		varIte(int lev, const Bdd& f1, const Bdd& f0);
+//   (X_lev & f1) | (~X_lev & f0) を　返す。iteを使うより高速
+//  ●f1, f0 は、x_lev に依存するような関数だとassertで落ちると思う?????
+
+    int		top() const;
+//最上位の変数番号(level)を返す。
+
+    int		size() const;
+//Bddのノード数を返す。
+
+    int		size(int lev) const;
+//Bddのレベルがlevであるノード数を返す。
+
+    int		size(int i, int j) const;
+// ●i, jの渡し方によってかわる。
+// (i <= j の時） -->  (i <= level <= j であるノード数)
+//　　Bddのレベルがiとjの間にある(i,j含む）ノード数を返す。
+// (i > j の時)　-->  (i <= level または、 level <= j であるノード数)
+//　　Bddのレベルがi以上とj以下である(i,j含む）ノード数を返す。
+
+    Bdd		compose(int level, const Bdd& g);
+// level=levの変数を　g で置き換えた新しい関数を表す　Bdd を返す。
+
+    Bdd         smooth(int lev) const;
+// level=levの変数に関する　smooth　演算の結果のBddを返す。
+// もとの関数をFとすると、 (Fx_lev + F~x_lev) のこと
+
+    Bdd         consensus(int lev) const;
+// level=levの変数に関する　consensus　演算の結果のBddを返す。
+// もとの関数をFとすると、 (Fx_lev & F~x_lev) のこと
+
+
+    Bdd         cofact(const Bdd& oprand) const;
+
+    Bdd		minDc(int zvar_lev) const;
+
+    Bdd		compress(const Bdd& bsup, int asuplev) const;
+
+    Bdd		compress() const;
+
+    Bdd		levshift(int lev, int degree) const;
+// int bddlevshift(int edge, int lev, int degree) の動作をする（ファイルの最後）
+
+    Bdd		jumpud(int i, int j) const;
+// int bddjumpud(int edge, int i, int j) の動作をする（ファイルの最後）
+
+    Bdd         jumpup(int i, int j) const;
+// (i<=j)しかこれは、許さない。 jumpud の jumpup のみをする関数かな
+// ( i を level j に移動して、それにともない もとの、レベル(i+1 から
+//   j)までのノードのレベルは１つ下に下げられる。)
+
+    Bdd         changeOrder(const Arrayint& permutation) const; 
+/* 与えられたpermutationに従って変数順を変更する．
+   permutationをlev2idxと見て，これに合わせるように変数順を変更するの
+ではない．
+   変数順をlev2idxにするためには，permutationにlev2idxの逆写像を与える．
+   逆に，変数順がlev2idxであるものをnormalizeするには，
+   permutationにlev2idxそのものを与えればよい．*/
+//  （例) permutation [0] [1] [2] [3] [4] [5] 
+//                     -   1   4   2   5   3  となっていたら、
+//       もとの　Bdd の x1, x2, x3, x4, x5 の　各レベルは、 
+//
+//             (変化後のBddのレベル)     1   2   3   4   5          
+//変化後のBdd のレベル1からならべると、 x1, x3, x5, x2, x4 となる。
+//
+
+
+
+    Arrayint    getPermuForCompress() const;
+// compressをchangeOrderで行うためのpermutationを得る
+//   帰ってくる Arrayintを changeOrder に渡せば、使ってない変数に相当
+//  するレベルの部分を抜いて（そのため、その上位のレベルは下にずれる）
+// support変数のレベルが1から順につまっているようなBddを得ることができる。
+//  （例) ある Bdd が、toplev=5, x1, x3 に依存してないとすると、
+//    getPermuForCompress() の　返す result は、
+//        result      [0] [1] [2] [3] [4] [5] 
+//                     -   4   1   5   2   3  となり(result[0]は必ず0)
+//　これで、changeOrderをよべば、依存してない。x1, x3 はレベル4, 5に追
+//  いやられ、新しい関数のtoplev = 3 になる。
+
+
+    void	print(FILE *sout, int depth, char* pre, char* post)const;
+// sout にBddの表す関数を積和形 で出力.
+// 出力の前後に、pre, postで与えた文字列を出力してくれる。
+// depthで指定された数だけ、Bddの上から展開して表示する。
+// 全ての変数について表示させたいなら、depthにBddのサポート変数の数以
+//上の数か、-1などの負の数を指定したらいいのかな？？？
+// ●ger-base.h に、余分なかっこを表示しないようにした関数があります。
+
+    void	printTable(FILE *sout) const;
+// sout にBddの表す関数を 真理値表の形で出力 
+// ●ger-base.h に、gray-code で出力するものや、複数Bddを並べて出力す
+// るものなどがある。debug時によかったら使ってください。
+
+    void	printBdl(FILE* bdlout) const;
+// Bdd をBDL(Bdd Description Language)フォーマットで　bdloutに出力する。
+
+    void	printX() const;
+//Bddのグラフを をX上に描画する。内部的に　xbddfigを呼ぶので、
+// ~sawada/bin/xbddfig　に　パスが通っていること。
+
+    int		value() const;
+//  edge の値（内部的に扱う bdd のノードに与えられたidみたいなもの）を返す。
+
+    int		dense() const;
+// const u_int FULLDENSE = 1<<31 で定義されたFULLDENSEに対して
+//   FULLDENSE*(真理値表密度）を返す。
+
+    int		dense_rstr0(int lev) const;
+// const u_int FULLDENSE = 1<<31 で定義されたFULLDENSEに対して
+// x_lev = 0 とした関数の  FULLDENSE*(真理値表密度）を返す。
+
+    int		dense_rstr1(int lev) const;
+// const u_int FULLDENSE = 1<<31 で定義されたFULLDENSEに対して
+// x_lev = 1 とした関数の  FULLDENSE*(真理値表密度）を返す。
+
+
+    static void		status();
+//BDDの演算結果テーブル関係のグローバル変数の表示
+
+    static int		used();
+//bddのノード数（ncount)を返す 
+
+    static void	alloc(int initsize_power=16, int maxsize_power=20);
+//初期値pow(2,initsize), 最大値pow(2,maxsize)でbddinitする 
+//initsize, maxsizeは３０以下でないとエラーとなる 
+
+    static void		gc();
+//bdd のガベージコレクションを行なう。
+
+    static Bdd	readCache(int op, const Bdd& f, const Bdd& g);
+//rtableのなかで、(op, f, g)をキーとするエントリがあるか調べ、あるなら
+//そのエントリに登録されているBddを返す。なければ、Bdd::nullを返す。
+// ＊(op, f, g)の解となるBddを返すということである。
+
+    static void	writeCache(int op, const Bdd& f, const Bdd& g, const Bdd& h);
+//rtableのなかに、(op, f, g)をキーとするエントリの値にhを書き込む。
+
+//////////////////// 以下はまだ不完全です。そのうち更新するつもりです。
+////////////////////////////////    1997/08/07 ゲル
+
+    Bdd		decomp(int level, int n_nd, int n_cut, Bdd *g) const;
+    int		decomp_check(int level, int n_nd, int ubound) const;
+    void	symAnaly(short* pairVar, VarSymm* symRel) const;
+    VarSymm	sym_ij(int i, int j) const;
+    void	andExt(VarSymm* symRel) const;
+    void	symm1_ext(int to) const;
+    Arrayint	xorFactor();
+    Arrayint	andFactor();
+
+// ●ZBDDと思って組み合わせの集合を扱うときに使うメソッドと考えたらいい
+// ZBDD は1-edgeが 0-terminalにいくノードをeliminateする、BDDである.
+//  これは、「組み合わせの集合」を表現するのにgoodである。そのため、以
+// 下では、組み合わせの集合を表しているものとして、methodも集合の操作
+//ととらえて記述する。
+//    組み合わせの集合 -> { (x1,x2), (x3, x4), (x1, x2, x3), ε} 
+//   　 -どの変数も現れないという組み合わせというものが、ε　である。
+// ZBDDの1つの1-path上において、1-edgeがそのpathに現れているノードがそ
+// の組み合わせに含まれる変数である。
+// ●ZBDDでは、否定の演算といものもの（意味がない）がない。
+//      ~P は  (U(全体集合) - P )で計算すべきである。
+// ●ZBDDでは、否定edgeの考え方が違う。0-element edgeと呼ばれ、
+//    0-element edge の意味は、それが指しているサブグラフが 0-edgeのみ
+//    からなる1-pathを持つといことを表している。要は、sub-graphがnull
+//    combinationであるεを含んでいるということを意味している。（これ
+//     を利用して、演算が速くできる。
+
+    /*------ ZBDD ------*/
+    static const class Bdd	empty;  (=ZBDDE = BDDF)
+    static const class Bdd	base;   (=ZBDDB = BDDT)
+ //●baseを宣言してから、以下のメソッドで集合をつくっていけばいいよう
+ //   empty -> 空集合のこと 
+ //   base  -> ε のみを要素としてもつ集合　(1-terminalを指しているZBDDに相当
+//             これは、cube setを表現するときの "1" に相当
+
+    Bdd		change(int lev) const;
+//●今の集合の全ての組み合わせのなかで、
+// 　x_levが含まれていないかった組み合わせには、x_levが含まれるようにし、
+// 　x_levが含まれていた組み合わせには、x_levが含まれないようにする。
+//  例えば、Bdd::base.chage(1) で　｛x1｝という集合ができる。
+//     {(x1,x2), (x3, x4)}.change(1) =  {(x2), (x1, x3, x4)}
+
+    Bdd		subset0(int lev) const;
+//全ての組み合わせのなかで変数x_levが含まれていない組み合わせを選び、
+//その組み合わせの集合を返す。
+//  lev > top  なら、自分自身(ZBDD) を返す。(当然)
+//  例えば、
+//     {(x1,x2), (x3, x4)}.subset0(1) =  {(x3,x4)}
+
+
+    Bdd		subset1(int lev) const;	// リテラルlevは残らない
+//全ての組み合わせのなかで変数x_levが含まれている組み合わせを選び、
+//その組み合わせを変数x_levを含まないようにした組み合わせの集合を返す。
+//  lev > top  なら、empty を返す。(当然)
+//  例えば、
+//     {(x1,x2), (x3, x4)}.subset1(1) =  {(x2)}
+
+
+    Bdd		subset(int lev) const; // 0: lev, 1: ~lev
+// 与えられたlevの正負に応じて。
+// (levが負の時は) level=~lev(1の補数)に対して、subset1(level)　
+// (levが正の時は) level=lev に対して、subset0(level)　
+
+    int		card() const;
+//1-pathの数＝組み合わせの数 を返す。　 εも１つと数えられる。
+
+    int		lit() const;
+//全ての要素に現れる変数の数の合計.  εの変数は0と数えられる。
+//     {(x1,x2), (x3, x4)}.lit() =  4
+
+    Bdd		zjumpup(int i, int j) const;
+
+    inline friend Bdd	operator + (const Bdd& lhs, const Bdd& rhs);
+// lhs と rhsで表現する集合の和集合　を返す。
+
+    inline friend Bdd	operator - (const Bdd& lhs, const Bdd& rhs);
+// lhs と rhsで表現する集合の差の集合　(lhs - rhs)を返す。
+// lhs から、rhsに含まれる要素を引いた集合を返す。 
+//  ★rhs にlhsには含まれない要素があっても、それは無視されるだけ
+//    -> lhs から、　intersec(lhs,rhs)を差し引いた集合ということ
+
+    inline friend Bdd	operator * (const Bdd& lhs, const Bdd& rhs);
+// lhs, rhsにそれぞれ含まれる要素対全てについて　ANDをとったものを要素
+// とする集合を返す。
+//    ようは、lhs, rhsをSopと見たとき、２つの積を表すSopを返すのと同じ
+//例えば、 {  (x2x1) (x4) } * {  (ε) (x2) (x4x3) } 
+//     =  {  (x2x1) (x4) (x4x2) (x4x3) (x4x3x2x1) }
+
+
+    static Bdd		intersec(const Bdd& lhs, const Bdd& rhs);
+// lhs と rhsで表現する集合のintersection=共通要素の集合　を返す。
+
+    Bdd		sop2func() const;
+/* Sop表現が f である関数を返す．Sop表現は sop.h に従う．
+   すなわち，変数varに対し，posLit: 2*var，negLit: 2*var-1．*/
+
+
+private:
+    Bdd(int eg);
+    int		edge;
+};
+
+
+
+
+/// 参考
+int bddlevshift(int f, int lev, int degree)
+/////(degree が正の時)
+//// f の中で　lev以上のレベルの変数のレベルをdegreeだけ増やす。
+//// (例) lev=3, degree=2) で x4x3x2x1 -> x6x5x2x1 となる
+////　(degreeが負の時)
+//// f の中でlev以上のレベルの変数のレベルを|degree|だけ減らす。
+//// ただし、fの変数のレベルは、lev（を含めて）から|degree| 分のレベル
+//// の変数が空いている（fが依存していない）と必要になる。
+//// (例) lev=3, degree=-2) で  x6x5x2x1 -> x4x3x2x1 となる
+////       この例で、lev=4, degree=-2 ならエラーになる。なんでやろ？？？？？
+
+int bddshcompo(int f, int g, int var)
+///// f, g のレベルvar以上の変数に対して、1つずつレベルアップのシフト
+/////をした、f' g' に対して、
+////  ~x_var * f'  +  x_var * g'  　を返すことに相当？？？
+
+
+
+
+int bddjumpud(int f, int i, int j)
+//// move nodes of level i to level j
+//// i<j: jumpup, decrease levels of nodes of level from i+1 to j by 1
+////            use static bddrstrsft
+//// ( i を level j に移動して、それにともない もとの、レベル(i+1 から
+////   j)までのノードのレベルは１つ下に下げられる。)
+//// i>j: jumpdown, increase levels of nodes of level from j to i+1 by 1
+////            use static bddshcompo
+//// ( i を level j に移動して、それにともない もとの、レベル(j から
+////   i-1 ? )までのノードのレベルは１つ上にに上げられる。)
+//// （特殊ケース) f の　toplev を　flevとすると
+//// ●  i, j > toplev の場合は　fのコピーを返す。
+//// ●  j < toplev  < i の場合は (レベル i のノードがないので）レベルj
+////　　　以上のノードのレベルを１つずつ上にずらしのを　返す。
+
+
+int rstrtop(int f, int val) // val: BDDF or BDDT を期待
+// (注意）
+// val < 0 なら、 fの 1-edge
+// val >= 0 なら、 fの 0-edge を返すという関数になっている。

@@ -1,0 +1,99 @@
+2015/12/05, marimo
+cuddライブラリを追加
+
+2015/11/06, marimo
+- CSPF関連メソッドの追加
+
+2015/9/17, marimo
+- network.h内の関数をinline~~constに変更
+    inline int nPI() const { return primaryI.size()-1; } // 回路の入力数
+    inline int nPO() const { return primaryO.size()-1; } // 回路の出力数
+    inline int nNode() const { return num_node; }         // 回路の内部ノード数
+    inline int nConnect() const { return num_connect; }   // 回路の結線数
+    inline int nLevel() const { return num_level; }       // 回路のレベル
+
+2015/9/14, marimo
+- node.cppの以下の関数のバグ（if (after->...のafterがbeforeになっていたので修正))
+void Node::changeInput(Node* before, Node* after)
+{
+    replace(input.begin(), input.end(), before, after);
+    addLink(after); // add
+//  if ( before->outContain(this) == true) before->delOutput(this);
+    if ( after->outContain(before) == true) after->delOutput(before);
+}
+
+2015/8/27, marimo
+- lev2idxが計算されていなかったバグを修正
+-- reserve -> resize
+
+2015/8/24, marimo
+- calcIdepth周りのバグを修正
+
+2015/8/18, marimo
+- 警告を削除
+
+2015/8/16, marimo
+- network.hからfirstN()等を削除
+-- 第1案を採用
+- node.hからfirstIN等を削除
+-- こちらは添字0からなのでrange based forで回した
+- 細かなtodoの消化
+
+2015/8/16, marimo
+- node.h, network.hからvallistを削除
+- todo firstN()等をどうにかする
+-- 案1: for (auto no = ++x.begin(); no != x.end() no++) (*no)->hoge
+--- ループ条件を書く量が増える
+-- 案2: 添字を0スタートにして for (auto&& or const auto& no : x) no->hoge
+--- できればこれにしたいが一番むずかしそう
+-- 案3: for (int i=1; i<x.size(); i++) x[i]->hoge
+--- ループ条件かく量は少ない．アクセス時が面倒．カウンタ変数の名前被りがある部分があるのでカウンタ変数名に気をつけなければならない．
+
+2015/8/10, marimo
+- node.h, network.hからarray.h, arrayw.h, arrayint.hをそれぞれ削除
+- cmapも削除
+-- コンストラクタなどでの初期化部分（todo）について検討
+
+2015/8/6, marimo
+- arrayintを削除途中．
+- utility.h, utility.cppを追加
+
+2015/8/5, marimo
+- node.h, network.hからArrayw, Array型を削除
+-- network.cppのtodo: 超重用項目のchangeOrder部分についてはコメントアウトしてあるため，さっさとArrayintをどうにかしないと
+
+2015/8/3、center
+- Array.h,Arrayint.h,Cmap.hへのコメント
+
+2015/8/02、marimo
+- Makefile に -std=c+11 オプション追加
+
+2015/8/02、marimo
+- general.h に記入していた nodetrav.cpp の関数を network.h に移動
+- node.h の関数を private にごっそり移動
+- include header の整理
+- バックアップ作成
+
+2015/7/29、center
+- Array.h,Array.cpp,Cmap.h,Cmap.cppの確認
+- util.h,util.cppへのコメント
+- IsvList.h,IsvList.cppへのコメント
+
+2015/7/27、marimo
+- node.hの変数，関数を決定
+
+2015/7/24、marimo
+- network内のファイルをnetwork, general, nodeに統合
+-- blif.c, dfsorder.c, network-ger.c, nodeset.c, nodetrav.c, pla.c, partition.cを削除
+
+2015/7/23、marimo
+- network.hの変数，関数を決定
+- network.h
+-- regNode, regPI, regPO, unregNode, plaPIorder, blifPIorder関数をprivateに移動
+-- 全てのファイルをcppファイルに変更
+-- pla.c, blif.c, network-ger.cなどをできる限りnetwork.cppに統合し，不要なファイルを削除（戻せるようにしてある）
+
+2015/7/22、marimo
+- 開幕
+- network.h、network.cを作成
+

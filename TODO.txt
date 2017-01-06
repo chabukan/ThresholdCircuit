@@ -1,0 +1,17 @@
+﻿CUDD関連に関するTODO
+現在，network.hおよびnetwork.cppをcuddで検索すればすべて出てきます
+
+main.cpp
+
+・Cudd mgrをmainで宣言する
+
+network.cpp
+・unordered_map<void*, BDD*> outfuncs_cudd
+ - 上記で出力論理を管理するかどうか
+
+・calcOutfuncAll_Cudd()
+・calcOutfunc_Cudd()の実装
+ - 現在，コメントアウトしてあります
+
+・setOutfuncs_Cudd()の設計
+ - 現在，コメントアウトしてあります

@@ -1,0 +1,110 @@
+9/1 
+・関数追加
+  network.cpp/.h 
+    readFileTh(FILE *fp, const char* fn)
+      しきい値用にファイルを読み込むプログラムにしたい
+
+・関数変更
+  network.cpp 
+    readFileName(const char * filename)
+      .thの拡張子はしきい値のベンチマークと判断するようにした
+
+  network/node.h
+    class Nodeに以下の変数追加
+      vector<Node*>  weight;
+      int T;
+
+・検討
+　 readFileTh(FILE *fp, const char* fn)
+     ・しきい値ベンチマークとり込む用のreadline関数を作るべきか
+     　　この場合、面倒だけど綺麗になりそう？
+     ・getlineで一行ずつ直接読み込むべきか
+	 汚いけど、rubyと実装が変わらないので楽か
+          
+
+9/7
+・mainディレクトリ内にしきい値のベンチマークが入ったbenchmarkを追加
+・関数追加
+  network.cpp/.h 
+    split関数追加
+      文字列内のスペースで区切る
+
+・関数変更
+  network.cpp
+    readFileTh
+	読み込めるようになったど
+
+  node.h
+    weightをnodeポインタとintのハッシュにした
+
+
+9/8
+・関数追加
+  calAllSpecTh(char swBddOrder)
+    しきい値回路の出力を計算するための関数
+
+9/26
+・関数追加
+  calcOutfuncAllTh()
+    しきい値回路のノードごとに出力を計算させる指示を出す関数
+  calcOutfuncTh(Node* no)
+    ノード単位でしきい値論理を計算して出力(BDD)を計算
+　　setCSPF_AllTh()
+    しきい値回路のCSPF計算
+
+9/27
+・関数追加
+  setCSPFTh(Node* node)
+    ノード単位のCSPFの処理(出力を見てマージしたりとか)
+  propagateCSPFTh(Node* node)
+    中間発表で提案したアルゴリズムでドントケア条件計算　
+      # 一番考えなきゃいけない部分だね！
+・やるべきコト
+　- "test_cspf_red"をBDDにしたものを作って、CSPFをテストできるようにするコト
+　- propagateCSPFTh(Node* node)を作るコト
+
+
+10/27
+・CEVをクラス化したぞ！
+
+・やるべきこと
+　-　CEVクラスは、まだ端末から入力する感じなので、ノードから入れれるようにする。
+　- CSPFCSPFCSPFCSPFCSPFCSPFCSPFCSPFCSPFCSPFCSPFうわあああああああああああああ
+
+11/2
+・やるべきこと
+ -　CEVクラスをリンクさせるようにしたいんだけど
+　-　weightのmapからCEVくらすで計算できるようにする
+　- CSPFCSPFCSPFCSPFCSPFCSPFCSPFCSPFCSPFCSPFCSPFうわあああああああああああああ
+
+11/9
+・CEVクラスがNGCネットワークに繋げられるようになったぞ！
+・CEVクラスにノードの情報を渡せるようにしたぞ！
+
+・やるべきコト
+ - CEVクラスで計算すた論理式をBDDにしたいなぁ。
+　- CSPF><
+
+11/12
+・やっと出力関数を計算できるようになりました。。。。。。
+
+やるべきコト
+ - C S P F を や ら な い か
+
+11/14
+・重みを軽い順にソートできた
+・weight が　vector<pair<Node*, int> > に
+
+やるべきコト
+ - C S P F を や ら な い か
+
+11/15
+・CSPFできたかも
+
+11/16
+・関数追加
+  public
+    void  transcircTh(Node*);     回路変形を行う
+  private
+    void  transcircNodeTh(Node*);　回路変形の対象となるノード
+    void  reductionTh(Node*);　　　　　対象となるノードに対して置換対象があるかどうか
