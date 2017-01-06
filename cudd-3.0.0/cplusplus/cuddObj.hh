@@ -286,6 +286,7 @@ public:
     ZDD PortToZdd() const;
     void PrintFactoredForm(char const * const * inames = 0, FILE * fp = stdout) const;
     std::string FactoredFormString(char const * const * inames = 0) const;
+    void bddReduceHeap();
 
 }; // BDD
 

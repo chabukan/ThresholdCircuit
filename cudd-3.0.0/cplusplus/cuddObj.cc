@@ -690,6 +690,12 @@ BDD::IsZero() const
 
 } // BDD::IsZero
 
+void
+BDD::bddReduceHeap()
+{
+  Cudd_ReduceHeap(p->manager, CUDD_REORDER_SIFT, 100000);
+}
+
 
 bool
 BDD::IsVar() const

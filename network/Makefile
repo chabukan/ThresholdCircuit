@@ -1,7 +1,8 @@
 ## object files ##
 
 ## CUDD
-CUDD-TOP = ../cudd-2.5.0
+CUDD-TOP = ../cudd-3.0.0
+#CUDD-TOP = ../cudd-2.5.0
 
 ## -m32 or -m64
 BTYPE = -m64

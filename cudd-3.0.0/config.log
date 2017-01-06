@@ -580,7 +580,7 @@ configure:16433: gcc -o conftest -Wall -Wextra -g -O3   conftest.c  >&5
 conftest.c:30:6: warning: conflicting types for built-in function 'pow' [enabled by default]
  char pow ();
       ^
-/tmp/ccuV079K.o: In function `main':
+/tmp/ccBGvbf2.o: In function `main':
 /home/chabukan/Desktop/NGCnetwork/cudd-3.0.0/conftest.c:34: undefined reference to `pow'
 collect2: error: ld returned 1 exit status
 configure:16433: $? = 1
@@ -634,7 +634,7 @@ configure:16483: $? = 0
 configure:16492: result: yes
 configure:16509: checking for library containing WSAStartup
 configure:16540: gcc -o conftest -Wall -Wextra -g -O3   conftest.c -lm  >&5
-/tmp/ccbnYWLZ.o: In function `main':
+/tmp/ccmF6Z8e.o: In function `main':
 /home/chabukan/Desktop/NGCnetwork/cudd-3.0.0/conftest.c:34: undefined reference to `WSAStartup'
 collect2: error: ld returned 1 exit status
 configure:16540: $? = 1
@@ -721,7 +721,7 @@ configure: failed program was:
 configure:16557: result: no
 configure:16565: checking for library containing GetProcessMemoryInfo
 configure:16596: gcc -o conftest -Wall -Wextra -g -O3   conftest.c -lm  >&5
-/tmp/ccBdPyT2.o: In function `main':
+/tmp/ccp1dn6i.o: In function `main':
 /home/chabukan/Desktop/NGCnetwork/cudd-3.0.0/conftest.c:34: undefined reference to `GetProcessMemoryInfo'
 collect2: error: ld returned 1 exit status
 configure:16596: $? = 1
@@ -1348,7 +1348,6 @@ config.status:1202: creating dddmp/exp/test5.sh
 config.status:1202: creating dddmp/exp/test6.sh
 config.status:1202: creating dddmp/exp/test7.sh
 config.status:1202: creating config.h
-config.status:1383: config.h is unchanged
 config.status:1431: executing depfiles commands
 config.status:1431: executing libtool commands
 

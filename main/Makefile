@@ -1,5 +1,6 @@
 TOP = ..
-CUDD-TOP = ${TOP}/cudd-2.5.0
+#CUDD-TOP = ${TOP}/cudd-2.5.0
+CUDD-TOP = ${TOP}/cudd-3.0.0
 
 INC-BDD  = -I${TOP}/bdd
 INC-UTIL = -I${TOP}/util
@@ -31,12 +32,15 @@ MYLIBS = \
 ${TOP}/network/libnetwork.a \
 ${TOP}/bdd/libbdd.a \
 ${TOP}/util/libutil.a \
-${CUDD-TOP}/obj/libobj.a \
-${CUDD-TOP}/cudd/libcudd.a \
-${CUDD-TOP}/mtr/libmtr.a \
-${CUDD-TOP}/st/libst.a \
-${CUDD-TOP}/epd/libepd.a \
-${CUDD-TOP}/util/libutil.a
+${CUDD-TOP}/cplusplus/.libs/libobj.a \
+${CUDD-TOP}/cudd/.libs/libcudd.a \
+${CUDD-TOP}/dddmp/.libs/libdddmp.a
+#${CUDD-TOP}/obj/libobj.a \
+#${CUDD-TOP}/cudd/libcudd.a \
+#${CUDD-TOP}/mtr/libmtr.a \
+#${CUDD-TOP}/st/libst.a \
+#${CUDD-TOP}/epd/libepd.a \
+#${CUDD-TOP}/util/libutil.a
 
 ###########################
 
