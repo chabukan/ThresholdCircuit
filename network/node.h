@@ -74,6 +74,8 @@ public:
     inline int getTh() { return T; }
     //inline vector<Node*>& getPiNet() { return pi_net; } 
     inline std::unordered_set<Node*>& getPiNet() { return pi_net; } 
+    inline std::vector<Node*>& getPlusSp() { return plus_spare; }
+    inline std::vector<Node*>& getMinusSp() { return minus_spare; }
 
     int             start_var;
     BDD             func_cudd;

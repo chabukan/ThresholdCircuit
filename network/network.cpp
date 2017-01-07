@@ -1379,8 +1379,7 @@ void Network::calcIlevAll()
   for (auto no = ++primaryO.begin(); no != primaryO.end(); no++) {
     nowOlev = calcIdepth(*no);
     if(nowOlev > maxOlev) maxOlev = nowOlev;
-  }
-  num_level = maxOlev;
+  }  num_level = maxOlev;
   // return num_level;
 }
 
@@ -2571,7 +2570,7 @@ void Network::calcNodefuncCudd(Node* no){
     BDD* a = new BDD;
     *a =  mgr.bddVar(pi_count);
     node_var.push_back(a);    
-    no->pi_net.insert(no);
+    //no->pi_net.insert(no);
     pi_count++;
   }
 
@@ -2820,8 +2819,8 @@ void Network::setCSPFThCudd(Node* node) {
       (*node2cspfcudd[node].f0).bddReduceHeap();
     if((*node2cspfcudd[node].f1).nodeCount() > 100000)
       (*node2cspfcudd[node].f1).bddReduceHeap();
-    //propagateCSPFThCudd(node);
-    propagateCSPFThCuddAdd(node);
+    propagateCSPFThCudd(node);
+    //propagateCSPFThCuddAdd(node);
   }else {
     for (const auto& fout : node->getOutput()) {
       // 出力側の結線のCSPFがセットされていなければ
@@ -2837,8 +2836,8 @@ void Network::setCSPFThCudd(Node* node) {
       (*node2cspfcudd[node].f1).bddReduceHeap();
     // clock_t start = clock();
     if (node->getType() != INPUT){
-      //propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
-      propagateCSPFThCuddAdd(node);
+      propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
+      //propagateCSPFThCuddAdd(node);
     }
     // clock_t end = clock();
     //  std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
@@ -2991,6 +2990,7 @@ void Network::transcircTh(){
 void Network::transcircNodeTh(Node* no, std::unordered_set<Node*> all_fanouts){
   if(no->trans_checked == true)
     return;
+  //cout << no -> getName() << idepths[no] <<endl;
   //std::unordered_set<Node*> all_fanouts;
   if(no->getType() != OUTPUT){
     reductionTh(no, all_fanouts);
@@ -3042,11 +3042,68 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
   } else {  
     serch_fanout(no, all_fanouts);
     candi_clear();
-    for(const auto& fin : no->getPiNet()){
-      check_reducenode(no, fin, all_fanouts);
+    bool one_flag = false;
+    std::vector<Node*> one_spare;
+    if(no->getType() != INPUT){
+      for(const auto& fin : no->getPiNet()){
+	//cout << no -> getName() << fin-> getName()<< endl;
+	check_reducenode(no, fin, all_fanouts, one_flag, one_spare);
+      }
+      if(one_flag == true){
+	Node* spare = one_best_spare(one_spare);
+	//cout << best_spare -> getName()<< endl;
+	one_cut_first_node(no, spare);
+	return;
+      }
+      
+      std::vector<pair<Node*, Node*>> two_spare_allfanouts;
+      for(const auto& fout : no->getOutput()){
+	std::pair<Node*, Node*> two_spare;
+	bool two_flag = false;
+	two_serch_spare(no, two_flag, two_spare, fout);
+	if(two_flag == true)
+	  two_spare_allfanouts.push_back(two_spare);
+      }
+      if(two_spare_allfanouts.size() == no->getOutput().size()){
+	//cout << two_spare_allfanouts.size() << endl;
+	int total = 0;
+	total += no->T;
+	for (const auto& fin : no->getWeight()){
+	  total += abs(fin.second);
+	}
+	//cout << "total"<< total << endl;
+
+	two_cut_first_wire(no, two_spare_allfanouts);
+      }
     }
-    serch_spare(no);
   }
+}
+
+void Network::two_cut_first_wire(Node* no, std::vector<pair<Node*, Node*>> two_spare_allfanouts){
+  
+}
+
+void Network::one_cut_first_node(Node* no, Node* spare){
+  
+  
+}
+
+Node* Network::one_best_spare(const std::vector<Node*>& one_spare){
+  if(one_spare.size() == 1){
+    return one_spare[0];
+  }
+  Node* best_spare;
+  bool count = false;
+  for(const auto& spare : one_spare){
+    if(count == false){
+      best_spare = spare;
+      count = true;
+    } else{
+      if(idepths[best_spare] > idepths[spare])
+	best_spare = spare;
+    }
+  }
+  return best_spare;
 }
 
 void Network::serch_fanout(Node* no, std::unordered_set<Node*>& all_fanouts){
@@ -3067,25 +3124,86 @@ void Network::candi_clear(){
     (*no)-> candi_checked = false;
 }
 
-void Network::check_reducenode(Node* no, Node* fin, const std::unordered_set<Node*>& all_fanouts){
+void Network::check_reducenode(Node* no, Node* fin, const std::unordered_set<Node*>& all_fanouts, bool& one_flag, std::vector<Node*>& one_spare){
+
+  //cout << no -> getName() <<endl;
   //first trade
-  if((*node2cspfcudd[no].f1) == (*node2cspfcudd[no].f1) * (*outfuncs_cudd[fin]))
-    no->plus_spare.push_back(fin);
+  if((*node2cspfcudd[no].f1) == (*node2cspfcudd[no].f1) * (*outfuncs_cudd[fin])){
+     if((*node2cspfcudd[no].f0) == (*node2cspfcudd[no].f0) * ~(*outfuncs_cudd[fin])){
+       //1 to 1
+       one_spare.push_back(fin);
+       one_flag = true;
+       //cout <<"fin_one" <<fin -> getName()<< endl;
+       fin-> candi_checked = true;
+       return;
+     }
+     //no->plus_spare.push_back(fin);
+    //cout <<"fin_plus" <<fin -> getName()<< endl;
+  }
+
+
   //second trade
-  if((*node2cspfcudd[no].f1) == (*node2cspfcudd[no].f1) * ~(*outfuncs_cudd[fin]))
-    no->minus_spare.push_back(fin);
+  if(one_flag == false){
+    //if((*node2cspfcudd[no].f1) == (*node2cspfcudd[no].f1) * ~(*outfuncs_cudd[fin]))
+    //  no->minus_spare.push_back(fin);
+    //cout <<"fin_minus" <<fin -> getName()<< endl;
+    for(const auto& fout : no->getOutput()){
+      if((*con2cspfcudd[make_pair(no, fout)].f1) == (*con2cspfcudd[make_pair(no, fout)].f1) * (*outfuncs_cudd[fin]))
+	no->plus_spare.push_back(fin);
+      if((*con2cspfcudd[make_pair(no, fout)].f0) == (*con2cspfcudd[make_pair(no, fout)].f0) * ~(*outfuncs_cudd[fin]))
+	no->minus_spare.push_back(fin);
+    }
+  }
   fin-> candi_checked = true;
 
   for(const auto& fout : fin->getOutput()){
-    if(fout->candi_checked == false)
-      check_reducenode(no, fout, all_fanouts);
+    if(fout->candi_checked == true || all_fanouts.count(fout))
+      return;
+    check_reducenode(no, fout, all_fanouts, one_flag, one_spare);
   }
 }
 
-void Network::serch_spare(Node* no){
+void Network::two_serch_spare(Node* no, bool& two_flag, std::pair<Node*, Node*>& two_spare, Node* fout){
+  //cout << "aaa" ;
+  //BDD dontc = ~(*node2cspfcudd[no].f0) * ~(*node2cspfcudd[no].f1);
+  std::vector<pair<Node*, Node*>> two_spare_candi;
+  /*
+   for(const auto& plusp : no->getPlusSp()){
+     for(const auto& minusp : no->getMinusSp()){
+       if((((*node2cspfcudd[no].f0) == (*outfuncs_cudd[minusp])*(*node2cspfcudd[no].f0)) || ((*node2cspfcudd[no].f0) == ~(*outfuncs_cudd[plusp])*(*node2cspfcudd[no].f0)))
+	  && ((dontc == ~(*outfuncs_cudd[minusp])*dontc) || (dontc == (*outfuncs_cudd[plusp])*dontc))){
+	   two_spare_candi.push_back(pair<Node*, Node*>(plusp,minusp));
+	   two_flag = true;
+	   cout << "aaa" ;
+	 }
+     }
+     }*/
+  for(const auto& fout : no->getOutput()){
+    BDD dontc = ~(*con2cspfcudd[make_pair(no, fout)].f0) * ~(*con2cspfcudd[make_pair(no, fout)].f1);
+    for(const auto& plusp : no->getPlusSp()){
+      for(const auto& minusp : no->getMinusSp()){
+	if((((*con2cspfcudd[make_pair(no, fout)].f0) == (*outfuncs_cudd[minusp])*(*con2cspfcudd[make_pair(no, fout)].f0)) || ((*con2cspfcudd[make_pair(no, fout)].f0) == ~(*outfuncs_cudd[plusp])*(*con2cspfcudd[make_pair(no, fout)].f0)))
+	   && ((dontc == ~(*outfuncs_cudd[minusp])*dontc) || (dontc == (*outfuncs_cudd[plusp])*dontc))){
+	  two_spare_candi.push_back(pair<Node*, Node*>(plusp,minusp));
+	  two_flag = true;
+	  //cout << "aaa" ;
+	}
+      }
+    }
+  }
   
-  
+  bool count = false;
+  for(const auto& two_candi : two_spare_candi){
+    if(count == false){
+      two_spare = two_candi;
+      count = true;
+    } else{
+      if(idepths[two_spare.first] + idepths[two_spare.second] > idepths[two_candi.first] + idepths[two_candi.second])
+	two_spare = two_candi;
+    }
+  }
 }
+
 
 void Network::cut_nodeTh(Node* no, Node* fin){
 
