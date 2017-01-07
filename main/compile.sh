@@ -18,9 +18,9 @@ cd ..
 #run gtags --gtagslabel=exuberant-ctags
 cd ./main/
 #./ger-program benchmark/test_cspf_red.log
-./ger-program benchmark/usb_phy_maxfanin.log #GerTemp.blif
+#./ger-program benchmark/usb_phy_maxfanin.log #GerTemp.blif
 #./ger-program benchmark/simple_spi_maxfanin.log
-#./ger-program benchmark/alu4_maxfanin.log 
+./ger-program benchmark/alu4_maxfanin.log 
 #./ger-program benchmark/apex6_maxfanin.log 
 #./ger-program benchmark/k2_maxfanin.log 
 #./ger-program benchmark/dalu_maxfanin.log 

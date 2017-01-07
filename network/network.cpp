@@ -3065,13 +3065,13 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
 	  two_spare_allfanouts.push_back(two_spare);
       }
       if(two_spare_allfanouts.size() == no->getOutput().size()){
-	//cout << two_spare_allfanouts.size() << endl;
+	cout << two_spare_allfanouts.size() << endl;
 	int total = 0;
 	total += no->T;
 	for (const auto& fin : no->getWeight()){
 	  total += abs(fin.second);
 	}
-	//cout << "total"<< total << endl;
+	cout << "total"<< total << endl;
 
 	two_cut_first_wire(no, two_spare_allfanouts);
       }
@@ -3178,19 +3178,18 @@ void Network::two_serch_spare(Node* no, bool& two_flag, std::pair<Node*, Node*>&
 	 }
      }
      }*/
-  for(const auto& fout : no->getOutput()){
-    BDD dontc = ~(*con2cspfcudd[make_pair(no, fout)].f0) * ~(*con2cspfcudd[make_pair(no, fout)].f1);
-    for(const auto& plusp : no->getPlusSp()){
-      for(const auto& minusp : no->getMinusSp()){
-	if((((*con2cspfcudd[make_pair(no, fout)].f0) == (*outfuncs_cudd[minusp])*(*con2cspfcudd[make_pair(no, fout)].f0)) || ((*con2cspfcudd[make_pair(no, fout)].f0) == ~(*outfuncs_cudd[plusp])*(*con2cspfcudd[make_pair(no, fout)].f0)))
-	   && ((dontc == ~(*outfuncs_cudd[minusp])*dontc) || (dontc == (*outfuncs_cudd[plusp])*dontc))){
-	  two_spare_candi.push_back(pair<Node*, Node*>(plusp,minusp));
-	  two_flag = true;
-	  //cout << "aaa" ;
-	}
+  BDD dontc = ~(*con2cspfcudd[make_pair(no, fout)].f0) * ~(*con2cspfcudd[make_pair(no, fout)].f1);
+  for(const auto& plusp : no->getPlusSp()){
+    for(const auto& minusp : no->getMinusSp()){
+      if((((*con2cspfcudd[make_pair(no, fout)].f0) == (*outfuncs_cudd[minusp])*(*con2cspfcudd[make_pair(no, fout)].f0)) || ((*con2cspfcudd[make_pair(no, fout)].f0) == ~(*outfuncs_cudd[plusp])*(*con2cspfcudd[make_pair(no, fout)].f0)))
+	 && ((dontc == ~(*outfuncs_cudd[minusp])*dontc) || (dontc == (*outfuncs_cudd[plusp])*dontc))){
+	two_spare_candi.push_back(pair<Node*, Node*>(plusp,minusp));
+	two_flag = true;
+	//cout << "aaa" ;
       }
     }
   }
+  
   
   bool count = false;
   for(const auto& two_candi : two_spare_candi){
