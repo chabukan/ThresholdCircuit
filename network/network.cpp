@@ -2983,10 +2983,12 @@ BDD Network::RevTargetInputCudd(Node* node, Node* fin, const vector<BDD>& upifun
 void Network::transcircTh(){
   clearIlevAll();
   calcIlevAll();  //段数計算
+  two_wire_count = 0;
   cout << "Transcirc" << endl;
   for (auto no = ++primaryO.begin(); no != primaryO.end(); no++){
     transcircNodeTh(*no);
   }
+  cout << "two_wire" << two_wire_count << endl; 
   cout << "delete_node" <<delete_node.size() << endl; 
 }
 
@@ -3071,9 +3073,9 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
     if(one_flag == true){
       Node* spare = one_gate_best_spare(one_spare);
       //cout << spare -> getName()<< endl;
-      one_gate_cut_first_node(no, spare);
+      //one_gate_cut_first_node(no, spare);
       //cout << spare -> getName()<< endl;
-      return;
+      //return;
     }
     //cout << no -> getName()  <<endl;
     // 1-2 to 1 wire
@@ -3113,7 +3115,7 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
 	two_serch_spare(no, two_flag, two_spare, nout, plus_spare, minus_spare);
 	//cout << no -> getName() << endl;
 	if(two_flag == true){
-	  
+	  two_wire_count ++;
 	  //two_spare_allfanouts[nout] = two_spare;
 	  spare_allfanouts[nout].push_back(two_spare.first);
 	  spare_allfanouts[nout].push_back(two_spare.second);
@@ -3170,7 +3172,7 @@ void Network::one_wire_check_reducenode(Node* no, Node* nout, Node* fin, const s
   for(const auto& fout : fin->getOutput()){
     if(fout->candi_checked == true || all_fanouts.count(fout))
       return;
-   one_wire_check_reducenode(no, nout, fout, all_fanouts, one_flag, one_spare);
+    one_wire_check_reducenode(no, nout, fout, all_fanouts, one_flag, one_spare);
   }  
 }
 

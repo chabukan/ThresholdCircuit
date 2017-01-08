@@ -429,6 +429,7 @@ private:
     std::unordered_set<Node*> delete_node;
     std::unordered_map<Node*,vector<Node*>> spare_node;
     void  cost_calc_node(Node* no, int& cost);
+    int two_wire_count;
 
 };
 
