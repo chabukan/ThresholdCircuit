@@ -2992,7 +2992,7 @@ void Network::transcircNodeTh(Node* no, std::unordered_set<Node*> all_fanouts){
     return;
   //cout << no -> getName() << idepths[no] <<endl;
   //std::unordered_set<Node*> all_fanouts;
-  if(no->getType() != OUTPUT){
+  if(no->getType() != OUTPUT && no->getType() != INPUT){
     reductionTh(no, all_fanouts);
   }
   no->trans_checked = true;
@@ -3041,54 +3041,125 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
   // ノードの代替を見つける
   } else {  
     serch_fanout(no, all_fanouts);
-    candi_clear();
+
+    // 1 to 1 gate
     bool one_flag = false;
     std::vector<Node*> one_spare;
-    if(no->getType() != INPUT){
-      for(const auto& fin : no->getPiNet()){
-	//cout << no -> getName() << fin-> getName()<< endl;
-	check_reducenode(no, fin, all_fanouts, one_flag, one_spare);
-      }
-      if(one_flag == true){
-	Node* spare = one_best_spare(one_spare);
-	//cout << best_spare -> getName()<< endl;
-	one_cut_first_node(no, spare);
-	return;
-      }
-      
-      std::vector<pair<Node*, Node*>> two_spare_allfanouts;
-      for(const auto& fout : no->getOutput()){
-	std::pair<Node*, Node*> two_spare;
-	bool two_flag = false;
-	two_serch_spare(no, two_flag, two_spare, fout);
-	if(two_flag == true)
-	  two_spare_allfanouts.push_back(two_spare);
-      }
-      if(two_spare_allfanouts.size() == no->getOutput().size()){
-	cout << two_spare_allfanouts.size() << endl;
-	int total = 0;
-	total += no->T;
-	for (const auto& fin : no->getWeight()){
-	  total += abs(fin.second);
-	}
-	cout << "total"<< total << endl;
+    candi_clear();
+    for(const auto& fin : no->getPiNet()){
+      //cout << no -> getName() << fin-> getName()<< endl;
+      one_gate_check_reducenode(no, fin, all_fanouts, one_flag, one_spare);
+    }
+    if(one_flag == true){
+      Node* spare = one_gate_best_spare(one_spare);
+      //cout << spare -> getName()<< endl;
+      one_gate_cut_first_node(no, spare);
+      return;
+    }
+    
+    // 1-2 to 1 wire
+    bool is_trans = true; 
+    //std::unordered_map<Node*, Node*> one_spare_allfanouts;
+    //std::unordered_map<Node*, pair<Node*, Node*>> two_spare_allfanouts;
+    std::unordered_map<Node*, vector<Node*>> spare_allfanouts;
+    for(const auto& nout : no->getOutput()){
 
-	two_cut_first_wire(no, two_spare_allfanouts);
+      //1 to 1
+      bool one_wire_flag = false;
+      std::vector<Node*> one_wire_spare;
+      candi_clear();
+      for(const auto& fin : no->getPiNet()){
+	//cout << no -> getName()c << fin-> getName()<< endl;
+	one_wire_check_reducenode(no, nout, fin, all_fanouts, one_wire_flag, one_wire_spare);
       }
+      if(one_wire_flag == true){
+	Node* spare = one_gate_best_spare(one_wire_spare);
+	//one_spare_allfanouts[nout] = spare;
+	spare_allfanouts[nout].push_back(spare);
+
+      //2 to 1
+      }else{
+	bool two_flag = false;
+	candi_clear();
+	std::vector<Node*> plus_spare;
+	std::vector<Node*> minus_spare;
+	for(const auto& fin : no->getPiNet()){
+	  //cout << no -> getName() << fin-> getName()<< endl;
+	  two_wire_check_reducenode(no, nout, fin, all_fanouts, plus_spare, minus_spare);
+	} 
+	//cout << minus_spare.size() << endl;
+	std::pair<Node*, Node*> two_spare;
+	two_serch_spare(no, two_flag, two_spare, nout, plus_spare, minus_spare);
+	if(two_flag == true){
+	  
+	  //two_spare_allfanouts[nout] = two_spare;
+	  spare_allfanouts[nout].push_back(two_spare.first);
+	  spare_allfanouts[nout].push_back(two_spare.second);
+	} else
+	  is_trans = false;
+      }
+    }
+    if(is_trans == true){
+      cout << no->getOutput().size() << endl;
+      int total = 0;
+      total += no->T;
+      for (const auto& fin : no->getWeight()){
+	total += abs(fin.second);
+      }
+      cout << "total"<< total << endl;
+      
+      wire_cut_first(no, spare_allfanouts);
+      
     }
   }
 }
 
-void Network::two_cut_first_wire(Node* no, std::vector<pair<Node*, Node*>> two_spare_allfanouts){
+
+void Network::one_wire_check_reducenode(Node* no, Node* nout, Node* fin, const std::unordered_set<Node*>& all_fanouts, bool& one_flag, std::vector<Node*>& one_spare){
+  
+  if((*con2cspfcudd[make_pair(no, nout)].f1) == (*con2cspfcudd[make_pair(no, nout)].f1) * (*outfuncs_cudd[fin]))
+    if((*con2cspfcudd[make_pair(no, nout)].f0) == (*con2cspfcudd[make_pair(no, nout)].f0) * ~(*outfuncs_cudd[fin])){
+       one_spare.push_back(fin);
+       one_flag = true;
+       fin-> candi_checked = true;
+       return;
+    }
+      
+  fin-> candi_checked = true;
+  
+  for(const auto& fout : fin->getOutput()){
+    if(fout->candi_checked == true || all_fanouts.count(fout))
+      return;
+   one_wire_check_reducenode(no, nout, fout, all_fanouts, one_flag, one_spare);
+  }  
+}
+
+void Network::two_wire_check_reducenode(Node* no, Node* nout, Node* fin, const std::unordered_set<Node*>& all_fanouts, std::vector<Node*>& plus_spare, std::vector<Node*> minus_spare){
+  
+  if((*con2cspfcudd[make_pair(no, nout)].f1) == (*con2cspfcudd[make_pair(no, nout)].f1) * (*outfuncs_cudd[fin]))
+    plus_spare.push_back(fin);
+  if((*con2cspfcudd[make_pair(no, nout)].f1) == (*con2cspfcudd[make_pair(no, nout)].f1) * ~(*outfuncs_cudd[fin]))
+    minus_spare.push_back(fin);
+
+  fin-> candi_checked = true;
+  
+  for(const auto& fout : fin->getOutput()){
+    if(fout->candi_checked == true || all_fanouts.count(fout))
+      return;
+    two_wire_check_reducenode(no, nout, fout, all_fanouts, plus_spare, minus_spare);
+  }  
+}
+
+void Network::wire_cut_first(Node* no, const std::unordered_map<Node*, vector<Node*>>& spare_allfanouts){
   
 }
 
-void Network::one_cut_first_node(Node* no, Node* spare){
+void Network::one_gate_cut_first_node(Node* no, Node* spare){
   
   
 }
 
-Node* Network::one_best_spare(const std::vector<Node*>& one_spare){
+Node* Network::one_gate_best_spare(const std::vector<Node*>& one_spare){
   if(one_spare.size() == 1){
     return one_spare[0];
   }
@@ -3124,7 +3195,7 @@ void Network::candi_clear(){
     (*no)-> candi_checked = false;
 }
 
-void Network::check_reducenode(Node* no, Node* fin, const std::unordered_set<Node*>& all_fanouts, bool& one_flag, std::vector<Node*>& one_spare){
+void Network::one_gate_check_reducenode(Node* no, Node* fin, const std::unordered_set<Node*>& all_fanouts, bool& one_flag, std::vector<Node*>& one_spare){
 
   //cout << no -> getName() <<endl;
   //first trade
@@ -3143,27 +3214,28 @@ void Network::check_reducenode(Node* no, Node* fin, const std::unordered_set<Nod
 
 
   //second trade
-  if(one_flag == false){
+  //if(one_flag == false){
     //if((*node2cspfcudd[no].f1) == (*node2cspfcudd[no].f1) * ~(*outfuncs_cudd[fin]))
     //  no->minus_spare.push_back(fin);
     //cout <<"fin_minus" <<fin -> getName()<< endl;
+  /*
     for(const auto& fout : no->getOutput()){
       if((*con2cspfcudd[make_pair(no, fout)].f1) == (*con2cspfcudd[make_pair(no, fout)].f1) * (*outfuncs_cudd[fin]))
 	no->plus_spare.push_back(fin);
       if((*con2cspfcudd[make_pair(no, fout)].f0) == (*con2cspfcudd[make_pair(no, fout)].f0) * ~(*outfuncs_cudd[fin]))
 	no->minus_spare.push_back(fin);
-    }
-  }
+	}*/
+  //}
   fin-> candi_checked = true;
 
   for(const auto& fout : fin->getOutput()){
     if(fout->candi_checked == true || all_fanouts.count(fout))
       return;
-    check_reducenode(no, fout, all_fanouts, one_flag, one_spare);
+    one_gate_check_reducenode(no, fout, all_fanouts, one_flag, one_spare);
   }
 }
 
-void Network::two_serch_spare(Node* no, bool& two_flag, std::pair<Node*, Node*>& two_spare, Node* fout){
+void Network::two_serch_spare(Node* no, bool& two_flag, std::pair<Node*, Node*>& two_spare, Node* fout, std::vector<Node*>& plus_spare, std::vector<Node*> minus_spare){
   //cout << "aaa" ;
   //BDD dontc = ~(*node2cspfcudd[no].f0) * ~(*node2cspfcudd[no].f1);
   std::vector<pair<Node*, Node*>> two_spare_candi;
@@ -3179,17 +3251,37 @@ void Network::two_serch_spare(Node* no, bool& two_flag, std::pair<Node*, Node*>&
      }
      }*/
   BDD dontc = ~(*con2cspfcudd[make_pair(no, fout)].f0) * ~(*con2cspfcudd[make_pair(no, fout)].f1);
-  for(const auto& plusp : no->getPlusSp()){
-    for(const auto& minusp : no->getMinusSp()){
-      if((((*con2cspfcudd[make_pair(no, fout)].f0) == (*outfuncs_cudd[minusp])*(*con2cspfcudd[make_pair(no, fout)].f0)) || ((*con2cspfcudd[make_pair(no, fout)].f0) == ~(*outfuncs_cudd[plusp])*(*con2cspfcudd[make_pair(no, fout)].f0)))
-	 && ((dontc == ~(*outfuncs_cudd[minusp])*dontc) || (dontc == (*outfuncs_cudd[plusp])*dontc))){
+  
+
+  for(const auto& plusp : plus_spare){
+    for(const auto& minusp : minus_spare){
+      BDD plus_func = (*outfuncs_cudd[plusp]);
+      BDD minus_func = (*outfuncs_cudd[minusp]);
+      BDD cspf_f0_minus =  ((~plus_func * ~minus_func)+ minus_func)*(*con2cspfcudd[make_pair(no, fout)].f0);
+      BDD cspf_f0_plus =  ((plus_func * minus_func)+(~plus_func))*(*con2cspfcudd[make_pair(no, fout)].f0);
+      BDD cspf_dontc_minus = ((plus_func * minus_func)+(~minus_func))*dontc;
+      BDD cspf_dontc_plus = ((~plus_func * ~minus_func)+ plus_func)*dontc;
+
+      if(((*con2cspfcudd[make_pair(no, fout)].f0) == cspf_f0_minus || ((*con2cspfcudd[make_pair(no, fout)].f0) == cspf_f0_plus))
+	 && ((dontc ==  cspf_dontc_minus) || (dontc ==  cspf_dontc_plus))){
 	two_spare_candi.push_back(pair<Node*, Node*>(plusp,minusp));
 	two_flag = true;
 	//cout << "aaa" ;
       }
     }
   }
-  
+    /*
+  for(const auto& plusp : no->getPlusSp()){
+    for(const auto& minusp : no->getMinusSp()){
+      if((((*con2cspfcudd[make_pair(no, fout)].f0) == ((~(*outfuncs_cudd[plusp])*~(*outfuncs_cudd[minusp]))+(*outfuncs_cudd[minusp]))*(*con2cspfcudd[make_pair(no, fout)].f0)) || ((*con2cspfcudd[make_pair(no, fout)].f0) == (((*outfuncs_cudd[plusp])*(*outfuncs_cudd[minusp]))+(~(*outfuncs_cudd[plusp])))*(*con2cspfcudd[make_pair(no, fout)].f0)))
+	 && ((dontc == (((*outfuncs_cudd[plusp])*(*outfuncs_cudd[minusp]))+(~(*outfuncs_cudd[minusp]))*dontc)) || (dontc == ((~(*outfuncs_cudd[plusp])*(~(*outfuncs_cudd[minusp])))+(*outfuncs_cudd[plusp])*dontc)))){
+	two_spare_candi.push_back(pair<Node*, Node*>(plusp,minusp));
+	two_flag = true;
+	//cout << "aaa" ;
+      }
+    }
+  }
+    */
   
   bool count = false;
   for(const auto& two_candi : two_spare_candi){
