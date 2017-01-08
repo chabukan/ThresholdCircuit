@@ -109,6 +109,7 @@ class Network
     //しきい値回路のやつ
     void    setCSPF_AllTh();
     void    transcircTh(); 
+    void    cost_calc();
 
     inline unordered_map<void*,int>& getIdepths(){ return idepths;}
     inline unordered_map<void*,int>& getOdepths(){ return odepths;}
@@ -425,7 +426,9 @@ private:
     void  cut_nodeTh(Node* no, Node* fin);
     void  delete_outputTh(Node* no, Node* fout);
     void  delete_nodeTh(Node* no);
-    unordered_set<Node*> delete_node;
+    std::unordered_set<Node*> delete_node;
+    std::unordered_map<Node*,vector<Node*>> spare_node;
+    void  cost_calc_node(Node* no, int& cost);
 
 };
 
