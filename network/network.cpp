@@ -2983,32 +2983,43 @@ BDD Network::RevTargetInputCudd(Node* node, Node* fin, const vector<BDD>& upifun
 void Network::transcircTh(){
   clearIlevAll();
   calcIlevAll();  //段数計算
-  for (auto no = ++primaryO.begin(); no != primaryO.end(); no++)
+  for (auto no = ++primaryO.begin(); no != primaryO.end(); no++){
     transcircNodeTh(*no);
+  }
 }
 
 void Network::transcircNodeTh(Node* no, std::unordered_set<Node*> all_fanouts){
-  if(no->trans_checked == true)
+  //cout << no -> getName() << idepths[no] << no->getType()<<endl;
+  if(no->trans_checked == true || delete_node.count(no))
     return;
-  //cout << no -> getName() << idepths[no] <<endl;
+  //cout << no -> getName() << idepths[no] << no->getType()<<endl;
+  //cout << "aaa" << endl;;
   //std::unordered_set<Node*> all_fanouts;
   if(no->getType() != OUTPUT && no->getType() != INPUT){
+    //cout << "aaa" << endl;
     reductionTh(no, all_fanouts);
   }
+  //cout << "aaa";
   no->trans_checked = true;
-  if(no->getType() == INPUT)
+  if(no->getType() == INPUT || delete_node.count(no))
     return;
+ 
   const vector<pair<Node*, int> >  input = no->getWeight();
   for (const auto& fin : input)
     transcircNodeTh(fin.first, all_fanouts);
 }
 
 void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
+  //if(delete_node.count(no))
+  //  return;
+  //cout << no -> getName() << endl;
   // outfunc[**11]の場合
   if(mgr.bddZero() == (*node2cspfcudd[no].f0)){
+    //cout << no -> getName()<< endl;
     const vector<pair<Node*, int> >  input = no->getWeight();
     for (const auto& fin : input)
       cut_nodeTh(no, fin.first);
+    //cout << no -> getName()<< endl;
     const vector<Node*>  output = no->getOutput();
     for(const auto& fout : output){
       for (const auto& fin : fout->getWeight()){
@@ -3017,12 +3028,15 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
 	  break;
 	}
       }
+      //cout << no -> getName()<< endl;
       delete_outputTh(no,fout);
     }
+    //cout << no -> getName()<< endl;
     delete_nodeTh(no);
 
   // outfunc[**00]の場合
   } else if(mgr.bddZero() == (*node2cspfcudd[no].f1)){
+    //cout << no -> getName()<< endl;
     const vector<pair<Node*, int> >  input = no->getWeight();
     for (const auto& fin : input)
       cut_nodeTh(no, fin.first);
@@ -3040,8 +3054,9 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
 
   // ノードの代替を見つける
   } else {  
+    //cout << no -> getName() <<endl;
     serch_fanout(no, all_fanouts);
-
+    //cout << no -> getName() <<endl;
     // 1 to 1 gate
     bool one_flag = false;
     std::vector<Node*> one_spare;
@@ -3050,13 +3065,15 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
       //cout << no -> getName() << fin-> getName()<< endl;
       one_gate_check_reducenode(no, fin, all_fanouts, one_flag, one_spare);
     }
+    //cout << no -> getName() <<endl;
     if(one_flag == true){
       Node* spare = one_gate_best_spare(one_spare);
       //cout << spare -> getName()<< endl;
       one_gate_cut_first_node(no, spare);
+      //cout << spare -> getName()<< endl;
       return;
     }
-    
+    //cout << no -> getName()  <<endl;
     // 1-2 to 1 wire
     bool is_trans = true; 
     //std::unordered_map<Node*, Node*> one_spare_allfanouts;
@@ -3069,8 +3086,9 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
       std::vector<Node*> one_wire_spare;
       candi_clear();
       for(const auto& fin : no->getPiNet()){
-	//cout << no -> getName()c << fin-> getName()<< endl;
+	//cout << no -> getName() << fin-> getName()<< endl;
 	one_wire_check_reducenode(no, nout, fin, all_fanouts, one_wire_flag, one_wire_spare);
+	//cout << no -> getName() << fin-> getName()<< endl;
       }
       if(one_wire_flag == true){
 	Node* spare = one_gate_best_spare(one_wire_spare);
@@ -3109,22 +3127,26 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
       cout << "total"<< total << endl;
       
       wire_cut_first(no, spare_allfanouts);
-      
     }
   }
 }
 
 
 void Network::one_wire_check_reducenode(Node* no, Node* nout, Node* fin, const std::unordered_set<Node*>& all_fanouts, bool& one_flag, std::vector<Node*>& one_spare){
+  //cout << nout -> getName() << fin-> getName()<< endl;
+  //if(delete_node.count(fin))
+  //  return;
   
   if((*con2cspfcudd[make_pair(no, nout)].f1) == (*con2cspfcudd[make_pair(no, nout)].f1) * (*outfuncs_cudd[fin]))
-    if((*con2cspfcudd[make_pair(no, nout)].f0) == (*con2cspfcudd[make_pair(no, nout)].f0) * ~(*outfuncs_cudd[fin])){
-       one_spare.push_back(fin);
-       one_flag = true;
-       fin-> candi_checked = true;
-       return;
-    }
-      
+     if((*con2cspfcudd[make_pair(no, nout)].f0) == (*con2cspfcudd[make_pair(no, nout)].f0) * ~(*outfuncs_cudd[fin])){
+      //cout << no -> getName() << fin-> getName()<< endl;
+      one_spare.push_back(fin);
+      one_flag = true;
+      fin-> candi_checked = true;
+      return;
+      }
+  
+  //cout << no -> getName() << fin-> getName()<< endl;
   fin-> candi_checked = true;
   
   for(const auto& fout : fin->getOutput()){
@@ -3155,8 +3177,30 @@ void Network::wire_cut_first(Node* no, const std::unordered_map<Node*, vector<No
 }
 
 void Network::one_gate_cut_first_node(Node* no, Node* spare){
-  
-  
+  //cout << spare -> getName()<< endl;
+  for(const auto& fout : no->getOutput()){
+    fout -> input.push_back(spare);
+    spare -> output.push_back(fout);
+    int tmp_weight;
+    for (const auto& weight : fout->getWeight()){
+      if(weight.first == no){
+	tmp_weight = weight.second;
+	break;
+      }
+    }
+    fout -> weight.push_back(pair<Node*, int>(spare, tmp_weight));
+  }
+  //cout << spare -> getName()<< endl;
+  const std::vector<Node*> input =  no->getInput();
+  for (const auto& fin : input){
+    cut_nodeTh(no, fin);
+  }
+  //cout << spare -> getName()<< endl;
+  const std::vector<Node*> output =  no->getOutput();
+  for (const auto& fout : output){
+    delete_outputTh(no, fout);
+  }
+  delete_nodeTh(no);
 }
 
 Node* Network::one_gate_best_spare(const std::vector<Node*>& one_spare){
@@ -3297,18 +3341,58 @@ void Network::two_serch_spare(Node* no, bool& two_flag, std::pair<Node*, Node*>&
 
 
 void Network::cut_nodeTh(Node* no, Node* fin){
+  //cout << no -> getName()<< endl;
+  if(fin->getType() == INPUT)
+    if(fin->getOutput().size() == 1){
+      delete_outputTh(fin, no);
+      delete_nodeTh(fin);
+    } else{
+      delete_outputTh(fin,no);
+    }
 
-  
+  else{
+    if(fin->getOutput().size() == 1){
+      const std::vector<Node*> input =  fin->getInput();
+       for(const auto& nfin : input)
+	 cut_nodeTh(fin, nfin);
+       delete_outputTh(fin, no);
+       delete_nodeTh(fin);
+    } else
+      delete_outputTh(fin,no);
+  }
 }
 
 void Network::delete_outputTh(Node* no, Node* fout){
+  const std::vector<Node*> input =  fout->getInput();
+  int count = 0;
+  for(const auto& nfin : input){
+    if(nfin == no)
+      break;
+    count++;
+  }
+  fout->input.erase(fout->input.begin() + count);
+    
+  const std::vector<pair<Node*, int>> weight = fout->getWeight();
+  count = 0;
+  for(const auto& nfin : weight){
+    if(nfin.first == no)
+      break;
+    count++;
+  }
+  fout->weight.erase(fout->weight.begin() + count);
 
-  
+  const std::vector<Node*> output = no->getOutput();
+  count = 0;
+  for(const auto& nfout : output){
+    if(nfout == fout)
+      break;
+    count++;
+  }
+  no->output.erase(no->output.begin() + count);
 }
 
 void Network::delete_nodeTh(Node* no){
-
-  
+  delete_node.insert(no);
 }
 
 

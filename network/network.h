@@ -425,6 +425,7 @@ private:
     void  cut_nodeTh(Node* no, Node* fin);
     void  delete_outputTh(Node* no, Node* fout);
     void  delete_nodeTh(Node* no);
+    unordered_set<Node*> delete_node;
 
 };
 
