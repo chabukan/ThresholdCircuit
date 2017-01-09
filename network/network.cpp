@@ -3073,9 +3073,9 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
     if(one_flag == true){
       Node* spare = one_gate_best_spare(one_spare);
       //cout << spare -> getName()<< endl;
-      //one_gate_cut_first_node(no, spare);
+      one_gate_cut_first_node(no, spare);
       //cout << spare -> getName()<< endl;
-      //return;
+      return;
     }
     //cout << no -> getName()  <<endl;
     // 1-2 to 1 wire
@@ -3176,7 +3176,8 @@ void Network::one_wire_check_reducenode(Node* no, Node* nout, Node* fin, const s
   }  
 }
 
-void Network::two_wire_check_reducenode(Node* no, Node* nout, Node* fin, const std::unordered_set<Node*>& all_fanouts, std::vector<Node*>& plus_spare, std::vector<Node*> minus_spare){
+void Network::two_wire_check_reducenode(Node* no, Node* nout, Node* fin, const std::unordered_set<Node*>& all_fanouts, std::vector<Node*>& plus_spare, std::vector<Node*>& minus_spare){
+
 
   bool is_comp = true;
   if(spare_node.count(no) != 0)
@@ -3187,11 +3188,15 @@ void Network::two_wire_check_reducenode(Node* no, Node* nout, Node* fin, const s
       }
     }
 
-  if(is_comp == true){  
-    if((*con2cspfcudd[make_pair(no, nout)].f1) == (*con2cspfcudd[make_pair(no, nout)].f1) * (*outfuncs_cudd[fin]))
+  if(is_comp == true){ 
+    if((*con2cspfcudd[make_pair(no, nout)].f1) == (*con2cspfcudd[make_pair(no, nout)].f1) * (*outfuncs_cudd[fin])){
       plus_spare.push_back(fin);
-    if((*con2cspfcudd[make_pair(no, nout)].f1) == (*con2cspfcudd[make_pair(no, nout)].f1) * ~(*outfuncs_cudd[fin]))
+      //cout<<"aaa";
+    }
+    if((*con2cspfcudd[make_pair(no, nout)].f1) == (*con2cspfcudd[make_pair(no, nout)].f1) * ~(*outfuncs_cudd[fin])){
       minus_spare.push_back(fin);
+      //cout<<"bbbb";
+    }
   }
   fin-> candi_checked = true;
   
@@ -3336,7 +3341,7 @@ void Network::one_gate_check_reducenode(Node* no, Node* fin, const std::unordere
   }
 }
 
-void Network::two_serch_spare(Node* no, bool& two_flag, std::pair<Node*, Node*>& two_spare, Node* fout, std::vector<Node*>& plus_spare, std::vector<Node*> minus_spare){
+void Network::two_serch_spare(Node* no, bool& two_flag, std::pair<Node*, Node*>& two_spare, Node* fout, std::vector<Node*>& plus_spare, std::vector<Node*>& minus_spare){
   //cout << "aaa" ;
   //BDD dontc = ~(*node2cspfcudd[no].f0) * ~(*node2cspfcudd[no].f1);
 
