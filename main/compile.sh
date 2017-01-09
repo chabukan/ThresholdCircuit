@@ -17,6 +17,28 @@ cd ..
 #run gtags
 #run gtags --gtagslabel=exuberant-ctags
 cd ./main/
+
+INPUTDIR="./benchmark"
+INPUT=(`ls ${INPUTDIR}`)
+OUTPUTDIR=./result
+PROGRAM="./ger-program"
+
+TIME=10000
+SIGNAL="KILL"
+
+for file in ${INPUT[@]}
+do
+    echo "INPUTFILE : " ${file}
+    OUTPUT=${OUTPUTDIR}/${file}
+    echo "timeout ${TIME} ${PROGRAM} ${INPUTDIR}/${file} > ${OUTPUT}"
+    timeout -s ${SIGNAL} ${TIME} ${PROGRAM} ${INPUTDIR}/${file} > ${OUTPUT}
+    if [ $? -eq 124 ];
+    then
+    echo "${file} running Timeover. MAXTIME:${TIME}s"
+    fi
+done
+
+
 #./ger-program benchmark/test_cspf_red.log
 #./ger-program benchmark/usb_phy_maxfanin.log #GerTemp.blif
 #./ger-program benchmark/simple_spi_maxfanin.log
@@ -27,7 +49,7 @@ cd ./main/
 #./ger-program benchmark/C1908_maxfanin.log #> resul2.txt
 #./ger-program benchmark/i2c_maxfanin.log
 #./ger-program benchmark/pci_spoci_ctrl_maxfanin.log
-./ger-program benchmark/rot_maxfanin.log #> result.txt
+#./ger-program benchmark/rot_maxfanin.log #> result.txt
 
 #./ger-program benchmark/des_maxfanin.log
 #./ger-program benchmark/pair_maxfanin.log
