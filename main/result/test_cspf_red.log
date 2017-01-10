@@ -1,10 +1,10 @@
 
 outfunc
-duration = 0.000185sec.
+duration = 0.000243sec.
 
 cost:18
 CSPF
-duration = 0.000125sec.
+duration = 7.1e-05sec.
 
 Transcirc
 cut[G2]

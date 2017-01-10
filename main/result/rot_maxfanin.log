@@ -1,12 +1,15 @@
 
 outfunc
-duration = 0.551295sec.
+duration = 0.529332sec.
 
 cost:1960
 CSPF
-duration = 1.74637sec.
+duration = 1.4886sec.
 
 Transcirc
+cut[308]
+cut[309]
+cut[1878]
 
 [456]
 minus{{h8}}1
@@ -17,7 +20,6 @@ p17
 cut[378]
 cut[379]
 cut[381]
-cut[382]
 cut[380]
 
 
@@ -31,15 +33,12 @@ minus{{o5}}1
 minusy161
 
 
-cut[308]
-cut[309]
 
 [1937]
 minus{{q6}}2
 
 
-cut[1878]
 wire5
 two_wire4
 delete_node19
-cost:1799
+cost:1855

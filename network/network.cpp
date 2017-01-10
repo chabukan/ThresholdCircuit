@@ -2979,8 +2979,9 @@ void Network::transcircTh(){
   for (auto no = ++primaryO.begin(); no != primaryO.end(); no++){
     transcircNodeTh(*no);
   }
+  trans_clear();
   for (auto no = ++primaryO.begin(); no != primaryO.end(); no++){
-    //transcircWireTh(*no);
+    transcircWireTh(*no);
   }
   cout << "wire" << wire_count << endl; 
   cout << "two_wire" << two_wire_count << endl; 
@@ -3046,7 +3047,7 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
     for(const auto& fout : output){
       for (const auto& fin : fout->getWeight()){
 	if(fin.first == no && fin.second >= 0){
-	  fout->T = fout->T - fin.second;
+	  //fout->T = fout->T - fin.second;
 	  break;
 	}
       }
@@ -3097,7 +3098,7 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
     }
     //cout << no -> getName()  <<endl;
 
-    
+    /*
     // 1-2 to 1 wire
     bool is_trans = true; 
     //std::unordered_map<Node*, Node*> one_spare_allfanouts;
@@ -3144,7 +3145,7 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
     }
     if(is_trans == true){
       //cout << no->getOutput().size() << endl;
-      int total = 0;
+      unsigned int total = 0;
       total += no->T;
       for (const auto& fin : no->getWeight()){
 	total += abs(fin.second);
@@ -3152,68 +3153,72 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
       //cout << "total"<< total << endl;
        if(total > no->getOutput().size())
 	wire_cut_first(no, spare_allfanouts);
-	}
+	}*/
   }
 }
 
 void Network::reductionWireTh(Node* no, std::unordered_set<Node*>& all_fanouts){
  
- serch_fanout(no, all_fanouts);
-  // 1-2 to 1 wire
-  bool is_trans = true; 
-  //std::unordered_map<Node*, Node*> one_spare_allfanouts;
-  //std::unordered_map<Node*, pair<Node*, Node*>> two_spare_allfanouts;
-  std::unordered_map<Node*, vector<Node*>> spare_allfanouts;
-  for(const auto& nout : no->getOutput()){
+ if(mgr.bddZero() == (*node2cspfcudd[no].f0)){
+ } else if(mgr.bddZero() == (*node2cspfcudd[no].f1)){
+ } else{
+   serch_fanout(no, all_fanouts);
+   // 1-2 to 1 wire
+   bool is_trans = true; 
+   //std::unordered_map<Node*, Node*> one_spare_allfanouts;
+   //std::unordered_map<Node*, pair<Node*, Node*>> two_spare_allfanouts;
+   std::unordered_map<Node*, vector<Node*>> spare_allfanouts;
+   for(const auto& nout : no->getOutput()){
 
-    //1 to 1
-    bool one_wire_flag = false;
-    std::vector<Node*> one_wire_spare;
-    candi_clear();
-    for(const auto& fin : no->getPiNet()){
-	//cout << no -> getName() << fin-> getName()<< endl;
-      one_wire_check_reducenode(no, nout, fin, all_fanouts, one_wire_flag, one_wire_spare);
-      //cout << no -> getName() << fin-> getName()<< endl;
-    }
-    if(one_wire_flag == true){
-	Node* spare = one_gate_best_spare(one_wire_spare);
-	//one_spare_allfanouts[nout] = spare;
-	spare_allfanouts[nout].push_back(spare);
+     //1 to 1
+     bool one_wire_flag = false;
+     std::vector<Node*> one_wire_spare;
+     candi_clear();
+     for(const auto& fin : no->getPiNet()){
+       //cout << no -> getName() << fin-> getName()<< endl;
+       one_wire_check_reducenode(no, nout, fin, all_fanouts, one_wire_flag, one_wire_spare);
+       //cout << no -> getName() << fin-> getName()<< endl;
+     }
+     if(one_wire_flag == true){
+       Node* spare = one_gate_best_spare(one_wire_spare);
+       //one_spare_allfanouts[nout] = spare;
+       spare_allfanouts[nout].push_back(spare);
 	
-	//2 to 1
-    }else{
-      bool two_flag = false;
-      candi_clear();
-      std::vector<Node*> plus_spare;
-      std::vector<Node*> minus_spare;
-      for(const auto& fin : no->getPiNet()){
-	//cout << no -> getName() << fin-> getName()<< endl;
-	two_wire_check_reducenode(no, nout, fin, all_fanouts, plus_spare, minus_spare);
-      } 
-      //cout << minus_spare.size() << endl;
-      //cout << no -> getName() << endl;
-      std::pair<Node*, Node*> two_spare;
-      two_serch_spare(no, two_flag, two_spare, nout, plus_spare, minus_spare);
-      //cout << no -> getName() << endl;
-      if(two_flag == true){
-	//two_spare_allfanouts[nout] = two_spare;
-	spare_allfanouts[nout].push_back(two_spare.first);
-	spare_allfanouts[nout].push_back(two_spare.second);
-      } else
-	is_trans = false;
-    }
-  }
-  if(is_trans == true){
-    //cout << no->getOutput().size() << endl;
-    int total = 0;
-    total += no->T;
-    for (const auto& fin : no->getWeight()){
-      total += abs(fin.second);
-    }
-      //cout << "total"<< total << endl;
-    if(total > no->getOutput().size())
-      wire_cut_first(no, spare_allfanouts);
-  }
+       //2 to 1
+     }else{
+       bool two_flag = false;
+       candi_clear();
+       std::vector<Node*> plus_spare;
+       std::vector<Node*> minus_spare;
+       for(const auto& fin : no->getPiNet()){
+	 //cout << no -> getName() << fin-> getName()<< endl;
+	 two_wire_check_reducenode(no, nout, fin, all_fanouts, plus_spare, minus_spare);
+       } 
+       //cout << minus_spare.size() << endl;
+       //cout << no -> getName() << endl;
+       std::pair<Node*, Node*> two_spare;
+       two_serch_spare(no, two_flag, two_spare, nout, plus_spare, minus_spare);
+       //cout << no -> getName() << endl;
+       if(two_flag == true){
+	 //two_spare_allfanouts[nout] = two_spare;
+	 spare_allfanouts[nout].push_back(two_spare.first);
+	 spare_allfanouts[nout].push_back(two_spare.second);
+       } else
+	 is_trans = false;
+     }
+   }
+   if(is_trans == true){
+     //cout << no->getOutput().size() << endl;
+     unsigned int total = 0;
+     total += no->T;
+     for (const auto& fin : no->getWeight()){
+       total += abs(fin.second);
+     }
+     //cout << "total"<< total << endl;
+     if(total > no->getOutput().size())
+       wire_cut_first(no, spare_allfanouts);
+   }
+ }
 }
 
 
@@ -3397,6 +3402,16 @@ void Network::candi_clear(){
   for (auto no = ++intNode.begin(); no != intNode.end(); no++)
     (*no)-> candi_checked = false;
 }
+
+void Network::trans_clear(){
+  for (auto no = ++primaryO.begin(); no != primaryO.end(); no++)
+    (*no)-> trans_checked = false;
+  for (auto no = ++primaryI.begin(); no != primaryI.end(); no++)
+    (*no)-> trans_checked = false;
+  for (auto no = ++intNode.begin(); no != intNode.end(); no++)
+    (*no)-> trans_checked = false;
+}
+
 
 void Network::one_gate_check_reducenode(Node* no, Node* fin, const std::unordered_set<Node*>& all_fanouts, bool& one_flag, std::vector<Node*>& one_spare){
 

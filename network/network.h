@@ -413,6 +413,7 @@ private:
  
     void  serch_fanout(Node* no, std::unordered_set<Node*>& all_fanouts);
     void  candi_clear();
+    void  trans_clear();
 
     // 1 to 1 gate
     void  one_gate_check_reducenode(Node* no, Node* fin, const std::unordered_set<Node*>& all_fanouts, bool& one_flag, std::vector<Node*>& one_spare);
