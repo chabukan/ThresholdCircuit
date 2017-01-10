@@ -3313,8 +3313,10 @@ void Network::wire_cut_first(Node* no, const std::unordered_map<Node*, vector<No
     fout -> weight.push_back(pair<Node*, int>(spare_allfanouts.at(fout)[0], tmp_weight));
     spare_allfanouts.at(fout)[0] -> output.push_back(fout);
     spare_node[spare_allfanouts.at(fout)[0]].push_back(fout);
+    //cout <<spare_allfanouts.at(fout)[0]->getName() << endl;
 
     if(spare_allfanouts.at(fout).size() == 2){
+      //cout <<spare_allfanouts.at(fout)[1]->getName() << endl;
       cout << "minus" <<fout->getName() << tmp_weight<< endl;
       two_wire_count++;
       fout -> input.push_back(spare_allfanouts.at(fout)[1]);
