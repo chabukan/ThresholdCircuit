@@ -2979,6 +2979,9 @@ void Network::transcircTh(){
   for (auto no = ++primaryO.begin(); no != primaryO.end(); no++){
     transcircNodeTh(*no);
   }
+  cout << "delete_node_ex" <<delete_node.size() << endl; 
+  cost_calc();
+
   trans_clear();
   for (auto no = ++primaryO.begin(); no != primaryO.end(); no++){
     transcircWireTh(*no);
