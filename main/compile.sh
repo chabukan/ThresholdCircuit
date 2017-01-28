@@ -18,12 +18,12 @@ cd ..
 #run gtags --gtagslabel=exuberant-ctags
 cd ./main/
 
-INPUTDIR="./benchmark"
+INPUTDIR="./benchmark/long"
 INPUT=(`ls ${INPUTDIR}`)
 OUTPUTDIR=./result
 PROGRAM="./ger-program"
 
-TIME=10000
+TIME=1000
 SIGNAL="KILL"
 
 for file in ${INPUT[@]}
