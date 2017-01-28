@@ -18,10 +18,10 @@ cd ..
 #run gtags --gtagslabel=exuberant-ctags
 cd ./main/
 
-./ger-program benchmark/test_cspf_red.log
+#./ger-program benchmark/test_cspf_red.log
 #./ger-program benchmark/usb_phy_maxfanin.log #GerTemp.blif
 #./ger-program benchmark/simple_spi_maxfanin.log
-#./ger-program benchmark/alu4_maxfanin.log #> memo.txt
+./ger-program benchmark/alu4_maxfanin.log > memo.txt
 #./ger-program benchmark/apex6_maxfanin.log 
 #./ger-program benchmark/k2_maxfanin.log 
 #./ger-program benchmark/dalu_maxfanin.log 
@@ -31,7 +31,7 @@ cd ./main/
 #./ger-program benchmark/rot_maxfanin.log #> result.txt
 
 #./ger-program benchmark/des_maxfanin.log
-#./ger-program benchmark/frg2_maxfanin.log
+#./ger-program benchmark/C5315_maxfanin.log
 #./ger-program benchmark/i10_maxfanin.log > result.txt
 #./ger-program benchmark/systemcdes_maxfanin.log
 )

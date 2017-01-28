@@ -2836,7 +2836,7 @@ void Network::setCSPFThCudd(Node* node) {
     if((*node2cspfcudd[node].f1).nodeCount() > 100000)
       (*node2cspfcudd[node].f1).bddReduceHeap();
     if (node->getType() != INPUT){
-      // propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
+      //propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
       //clock_t end = clock();
       //if((double)(end - start) / CLOCKS_PER_SEC >0.5){
       //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
@@ -2849,9 +2849,10 @@ void Network::setCSPFThCudd(Node* node) {
     //if((double)(end - start) / CLOCKS_PER_SEC >10)
     //cout << node->getName() << endl;
     //clock_t end = clock();
-     // if((double)(end - start) / CLOCKS_PER_SEC >10)
-     //  cout << node->getName() << endl;
-     //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
+    //if((double)(end - start) / CLOCKS_PER_SEC >10){
+    //  cout << node->getName() << endl;
+    //  std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
+    //}
   }
   //std::cout << (*node2cspfcudd[node].f0).nodeCount() <<endl;
   //cout << node->getName() << endl;
@@ -2887,8 +2888,8 @@ void Network::propagateCSPFThCudd(Node* node) {
     cout <<"nfin:" << nfin.size() << endl;
   for (const auto& fin : nfin) { 
     infunc = *outfuncs_cudd[fin.first]; 
-    if(fin.second < 0)
-      infunc = !infunc;
+    //if(fin.second < 0)
+    //  infunc = !infunc;
     //  *infunc = ~(*outfuncs_cudd[fin.first]);
     //else
     //  infunc = outfuncs_cudd[fin.first];
@@ -2921,16 +2922,22 @@ void Network::propagateCSPFThCudd(Node* node) {
     *con2cspfcudd[make_pair(fin.first, node)].f1 = infunc & (~cspf);
     *con2cspfcudd[make_pair(fin.first, node)].f0 = (~infunc) & (~cspf);
     //clock_t start = clock();
+    //(*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
+    //cout <<fin.first->getName()<<node->getName()<< (*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() << endl;
+
     if((*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() > 100000)
       (*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
     if((*con2cspfcudd[make_pair(fin.first, node)].f0).nodeCount() > 100000)
-    (*con2cspfcudd[make_pair(fin.first, node)].f0).bddReduceHeap();
+      (*con2cspfcudd[make_pair(fin.first, node)].f0).bddReduceHeap();
     //cout << (*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() << endl;
     //clock_t end = clock();
     //if((double)(end - start) / CLOCKS_PER_SEC > 1)
     // std::cout << "-duration = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
     //入力値の更新
-    upifunc[i] = ((cspf & (~*outfuncs_cudd[node])) | infunc) & (~(cspf & *outfuncs_cudd[node]));
+    if(fin.second >= 0)
+      upifunc[i] = ((cspf & (~*outfuncs_cudd[node])) | infunc) & (~(cspf & *outfuncs_cudd[node]));
+    else
+      upifunc[i] = ((cspf & *outfuncs_cudd[node]) | infunc) & (~(cspf & (~*outfuncs_cudd[node])));
     //clock_t end = clock();
     //if((double)(end - start) / CLOCKS_PER_SEC > 1)
     //  std::cout << "-duration = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
@@ -3115,63 +3122,6 @@ void Network::reductionTh(Node* no, std::unordered_set<Node*>& all_fanouts){
       return;
     }
     //cout << no -> getName()  <<endl;
-
-    /*
-    // 1-2 to 1 wire
-    bool is_trans = true; 
-    //std::unordered_map<Node*, Node*> one_spare_allfanouts;
-    //std::unordered_map<Node*, pair<Node*, Node*>> two_spare_allfanouts;
-    std::unordered_map<Node*, vector<Node*>> spare_allfanouts;
-    for(const auto& nout : no->getOutput()){
-
-      //1 to 1
-      bool one_wire_flag = false;
-      std::vector<Node*> one_wire_spare;
-      candi_clear();
-      for(const auto& fin : no->getPiNet()){
-	//cout << no -> getName() << fin-> getName()<< endl;
-	one_wire_check_reducenode(no, nout, fin, all_fanouts, one_wire_flag, one_wire_spare);
-	//cout << no -> getName() << fin-> getName()<< endl;
-      }
-      if(one_wire_flag == true){
-	Node* spare = one_gate_best_spare(one_wire_spare);
-	//one_spare_allfanouts[nout] = spare;
-	spare_allfanouts[nout].push_back(spare);
-
-      //2 to 1
-      }else{
-	bool two_flag = false;
-	candi_clear();
-	std::vector<Node*> plus_spare;
-	std::vector<Node*> minus_spare;
-	for(const auto& fin : no->getPiNet()){
-	  //cout << no -> getName() << fin-> getName()<< endl;
-	  two_wire_check_reducenode(no, nout, fin, all_fanouts, plus_spare, minus_spare);
-	} 
-	//cout << minus_spare.size() << endl;
-	//cout << no -> getName() << endl;
-	std::pair<Node*, Node*> two_spare;
-	two_serch_spare(no, two_flag, two_spare, nout, plus_spare, minus_spare);
-	//cout << no -> getName() << endl;
-	if(two_flag == true){
-	  //two_spare_allfanouts[nout] = two_spare;
-	  spare_allfanouts[nout].push_back(two_spare.first);
-	  spare_allfanouts[nout].push_back(two_spare.second);
-	} else
-	  is_trans = false;
-      }
-    }
-    if(is_trans == true){
-      //cout << no->getOutput().size() << endl;
-      unsigned int total = 0;
-      total += no->T;
-      for (const auto& fin : no->getWeight()){
-	total += abs(fin.second);
-      }
-      //cout << "total"<< total << endl;
-       if(total > no->getOutput().size())
-	wire_cut_first(no, spare_allfanouts);
-	}*/
   }
 }
 
@@ -3578,7 +3528,9 @@ void Network::delete_nodeTh(Node* no){
 
 void Network::propagateCSPFThCuddAdd(Node* node){
   vector<pair<Node*, int> > nfin = node->getWeight();
-  
+
+  //clock_t start = clock();  
+  //  cout << node->getName() << endl; 
   BDD temp_dc = ~(*node2cspfcudd[node].f0 | *node2cspfcudd[node].f1);
 
   for (const auto& fin : nfin) { 
@@ -3651,17 +3603,25 @@ void Network::propagateCSPFThCuddAdd(Node* node){
     *con2cspfcudd[make_pair(fin.first, node)].f0 *= ~ndc_bdd;
     count++;
 
-   
+    (*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
+    cout <<fin.first->getName()<<node->getName()<< (*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() << endl;
+
+    /*
     if((*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() > 100000)
       (*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
     if((*con2cspfcudd[make_pair(fin.first, node)].f0).nodeCount() > 100000)
       (*con2cspfcudd[make_pair(fin.first, node)].f0).bddReduceHeap();
+    */
     //cout << (*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() << endl;
     //clock_t end = clock();
     //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
   }
   //clock_t end = clock();
-  //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
+  //  cout << node->getName() << endl; 
+  //if((double)(end - start) / CLOCKS_PER_SEC >10){
+  //  cout << node->getName() << endl; 
+  //  std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
+  // }
 }
 
 void Network::calcNodefuncCuddAdd(Node* no){  
@@ -3718,4 +3678,23 @@ void Network::cost_calc_node(Node* no, int& cost){
     cost_calc_node(fin, cost);
   } 
 
+}
+
+void Network::serch_fanins(Node* node, int& cost, vector<Node*>& pass_in){
+  if(node->getType() != INPUT){
+    flag = true;
+    for(const auto& fout : node->getOutput())
+      if(pass_in.count(fout))
+	flag = false;
+    if(flag = true){
+      cost += node -> T;  
+      for(const auto& fin : node->getWeight()){
+	cost += abs(fin.second);
+	if(fin.second < 0)
+	  cost += abs(fin.second);
+	serch_fanins(fin.first, cost, pass_in)
+      }
+    }
+    pass_fanin.push_back(node);
+  }
 }

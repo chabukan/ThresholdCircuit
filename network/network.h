@@ -435,6 +435,7 @@ private:
     int two_wire_count;
     int wire_count;
 
+    void  serch_fanins(Node* node, int& cost);
 };
 
 #endif // #ifndef __NETWORK_H__
