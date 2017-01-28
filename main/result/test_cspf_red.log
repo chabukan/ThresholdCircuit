@@ -1,21 +1,8 @@
 
 outfunc
-duration = 0.000214sec.
+duration = 0.000172sec.
 
 cost:18
 CSPF
-duration = 0.000104sec.
+duration = 0.0001sec.
 
-Transcirc
-cut[G2]
-delete_node_ex2
-cost:11
-
-[G3]
-minus[G5_f2]1
-
-
-wire1
-two_wire1
-delete_node3
-cost:9

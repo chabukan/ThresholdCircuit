@@ -2819,8 +2819,8 @@ void Network::setCSPFThCudd(Node* node) {
       (*node2cspfcudd[node].f0).bddReduceHeap();
     if((*node2cspfcudd[node].f1).nodeCount() > 100000)
       (*node2cspfcudd[node].f1).bddReduceHeap();
-    propagateCSPFThCudd(node);
-    //propagateCSPFThCuddAdd(node);
+    //propagateCSPFThCudd(node);
+    propagateCSPFThCuddAdd(node);
   }else {
     for (const auto& fout : node->getOutput()) {
       // 出力側の結線のCSPFがセットされていなければ
@@ -2830,17 +2830,28 @@ void Network::setCSPFThCudd(Node* node) {
     }
     mergeCSPFCudd(node); // CSPFを設定
 
+    //clock_t start = clock();
     if((*node2cspfcudd[node].f0).nodeCount() > 100000)
       (*node2cspfcudd[node].f0).bddReduceHeap();
     if((*node2cspfcudd[node].f1).nodeCount() > 100000)
       (*node2cspfcudd[node].f1).bddReduceHeap();
-    // clock_t start = clock();
     if (node->getType() != INPUT){
-      propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
-      //propagateCSPFThCuddAdd(node);
+      // propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
+      //clock_t end = clock();
+      //if((double)(end - start) / CLOCKS_PER_SEC >0.5){
+      //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
+      //	cout << node->getName() << endl;
+      //cout << node->th_func.size() <<endl;
+      propagateCSPFThCuddAdd(node);
     }
-    // clock_t end = clock();
-    //  std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
+    //clock_t end = clock();
+    //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
+    //if((double)(end - start) / CLOCKS_PER_SEC >10)
+    //cout << node->getName() << endl;
+    //clock_t end = clock();
+     // if((double)(end - start) / CLOCKS_PER_SEC >10)
+     //  cout << node->getName() << endl;
+     //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
   }
   //std::cout << (*node2cspfcudd[node].f0).nodeCount() <<endl;
   //cout << node->getName() << endl;
@@ -2884,6 +2895,7 @@ void Network::propagateCSPFThCudd(Node* node) {
     //cout << node->getName() << endl; 
     upifunc.push_back(infunc);
     //clock_t start = clock();
+    //std::cout << "www" <<endl;
     revfunc = RevTargetInputCudd(node, fin.first, upifunc, i);  // 対象となる入力が反転する出力を計算
     //static int aaa = 0;
     //if(aaa++ == 1){
@@ -2912,13 +2924,16 @@ void Network::propagateCSPFThCudd(Node* node) {
     if((*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() > 100000)
       (*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
     if((*con2cspfcudd[make_pair(fin.first, node)].f0).nodeCount() > 100000)
-      (*con2cspfcudd[make_pair(fin.first, node)].f0).bddReduceHeap();
+    (*con2cspfcudd[make_pair(fin.first, node)].f0).bddReduceHeap();
     //cout << (*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() << endl;
     //clock_t end = clock();
-    //std::cout << "-duration = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
+    //if((double)(end - start) / CLOCKS_PER_SEC > 1)
+    // std::cout << "-duration = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
     //入力値の更新
     upifunc[i] = ((cspf & (~*outfuncs_cudd[node])) | infunc) & (~(cspf & *outfuncs_cudd[node]));
-    
+    //clock_t end = clock();
+    //if((double)(end - start) / CLOCKS_PER_SEC > 1)
+    //  std::cout << "-duration = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
     //clock_t end = clock();
     //std::cout << "-duration = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
     //printISOP(upifunc[i]);
@@ -3613,16 +3628,16 @@ void Network::propagateCSPFThCuddAdd(Node* node){
 
     //clock_t start = clock();
     ADD second_skip = ((~(*con2cspfcudd[make_pair(fin.first, node)].f1))*(~(*con2cspfcudd[make_pair(fin.first, node)].f0))).Add();
-    ptmp_value += fin.second;
+    ptmp_value += abs(fin.second);
 
     //clock_t end = clock();
     //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
     BDD pdc_bdd = ptmp.BddThreshold(ptmp_value);
 
-    ntmp_value -= fin.second;
+    ntmp_value -= abs(fin.second);
     BDD ndc_bdd = ntmp.BddThreshold(ntmp_value);
 
-    ADD tmp_var = mgr.constant(node->weight[count].second);
+    ADD tmp_var = mgr.constant(abs(node->weight[count].second));
     ADD tmp2 = second_skip * tmp_var;
     ptmp += tmp2;
     ntmp -= tmp2;
@@ -3632,8 +3647,8 @@ void Network::propagateCSPFThCuddAdd(Node* node){
     *con2cspfcudd[make_pair(fin.first, node)].f0 *= ~pdc_bdd;
 
     ndc_bdd = (~ndc_bdd) *(*node2cspfcudd[node].f0);
-    *con2cspfcudd[make_pair(fin.first, node)].f1 *= ~pdc_bdd;
-    *con2cspfcudd[make_pair(fin.first, node)].f0 *= ~pdc_bdd;
+    *con2cspfcudd[make_pair(fin.first, node)].f1 *= ~ndc_bdd;
+    *con2cspfcudd[make_pair(fin.first, node)].f0 *= ~ndc_bdd;
     count++;
 
    
