@@ -2537,8 +2537,8 @@ void Network::calcOutfuncThCudd(Node* no)
     
     //clock_t start = clock();
     //cout << no->getName() << endl;
-    //calcNodefuncCudd(no);
-    calcNodefuncCuddAdd(no);
+    calcNodefuncCudd(no);
+    //calcNodefuncCuddAdd(no);
     //clock_t end = clock();
     //std::cout << "duration(node_func) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
   }
@@ -2819,8 +2819,8 @@ void Network::setCSPFThCudd(Node* node) {
       (*node2cspfcudd[node].f0).bddReduceHeap();
     if((*node2cspfcudd[node].f1).nodeCount() > 100000)
       (*node2cspfcudd[node].f1).bddReduceHeap();
-    //propagateCSPFThCudd(node);
-    propagateCSPFThCuddAdd(node);
+    propagateCSPFThCudd(node);
+    //propagateCSPFThCuddAdd(node);
   }else {
     for (const auto& fout : node->getOutput()) {
       // 出力側の結線のCSPFがセットされていなければ
@@ -2836,8 +2836,8 @@ void Network::setCSPFThCudd(Node* node) {
       (*node2cspfcudd[node].f1).bddReduceHeap();
     // clock_t start = clock();
     if (node->getType() != INPUT){
-      //propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
-      propagateCSPFThCuddAdd(node);
+      propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
+      //propagateCSPFThCuddAdd(node);
     }
     // clock_t end = clock();
     //  std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
@@ -3216,6 +3216,8 @@ void Network::reductionWireTh(Node* no, std::unordered_set<Node*>& all_fanouts){
      total += no->T;
      for (const auto& fin : no->getWeight()){
        total += abs(fin.second);
+       if(fin.second < 0)
+	 total += abs(fin.second);
      }
      //cout << "total"<< total << endl;
      if(total > no->getOutput().size())

@@ -18,7 +18,7 @@ cd ..
 #run gtags --gtagslabel=exuberant-ctags
 cd ./main/
 
-INPUTDIR="./benchmark/long"
+INPUTDIR="./benchmark"
 INPUT=(`ls ${INPUTDIR}`)
 OUTPUTDIR=./result
 PROGRAM="./ger-program"
