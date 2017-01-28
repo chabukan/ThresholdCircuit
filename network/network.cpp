@@ -2819,8 +2819,8 @@ void Network::setCSPFThCudd(Node* node) {
       (*node2cspfcudd[node].f0).bddReduceHeap();
     if((*node2cspfcudd[node].f1).nodeCount() > 100000)
       (*node2cspfcudd[node].f1).bddReduceHeap();
-    //propagateCSPFThCudd(node);
-    propagateCSPFThCuddAdd(node);
+    propagateCSPFThCudd(node);
+    //propagateCSPFThCuddAdd(node);
   }else {
     for (const auto& fout : node->getOutput()) {
       // 出力側の結線のCSPFがセットされていなければ
@@ -2836,13 +2836,13 @@ void Network::setCSPFThCudd(Node* node) {
     if((*node2cspfcudd[node].f1).nodeCount() > 100000)
       (*node2cspfcudd[node].f1).bddReduceHeap();
     if (node->getType() != INPUT){
-      //propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
+      propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
       //clock_t end = clock();
       //if((double)(end - start) / CLOCKS_PER_SEC >0.5){
       //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
       //	cout << node->getName() << endl;
       //cout << node->th_func.size() <<endl;
-      propagateCSPFThCuddAdd(node);
+      //propagateCSPFThCuddAdd(node);
     }
     //clock_t end = clock();
     //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
@@ -2923,7 +2923,8 @@ void Network::propagateCSPFThCudd(Node* node) {
     *con2cspfcudd[make_pair(fin.first, node)].f0 = (~infunc) & (~cspf);
     //clock_t start = clock();
     //(*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
-    //cout <<fin.first->getName()<<node->getName()<< (*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() << endl;
+    cout <<fin.first->getName()<<node->getName()<< (*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() << endl;
+    cout <<fin.first->getName()<<node->getName()<< (*con2cspfcudd[make_pair(fin.first, node)].f0).nodeCount() << endl;
 
     if((*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() > 100000)
       (*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
@@ -3018,7 +3019,7 @@ void Network::transcircNodeTh(Node* no, std::unordered_set<Node*> all_fanouts){
   if(no->trans_checked == true || delete_node.count(no))
     return;
   //cout << no -> getName() << idepths[no] << no->getType()<<endl;
-  //cout << "aaa" << endl;;
+  //cout << "aaa" << endl;
   //std::unordered_set<Node*> all_fanouts;
   if(no->getType() != OUTPUT && no->getType() != INPUT){
     //cout << "aaa" << endl;
@@ -3603,15 +3604,16 @@ void Network::propagateCSPFThCuddAdd(Node* node){
     *con2cspfcudd[make_pair(fin.first, node)].f0 *= ~ndc_bdd;
     count++;
 
-    (*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
+    //(*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
     cout <<fin.first->getName()<<node->getName()<< (*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() << endl;
+    cout <<fin.first->getName()<<node->getName()<< (*con2cspfcudd[make_pair(fin.first, node)].f0).nodeCount() << endl;
 
-    /*
+    
     if((*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() > 100000)
       (*con2cspfcudd[make_pair(fin.first, node)].f1).bddReduceHeap();
     if((*con2cspfcudd[make_pair(fin.first, node)].f0).nodeCount() > 100000)
       (*con2cspfcudd[make_pair(fin.first, node)].f0).bddReduceHeap();
-    */
+    
     //cout << (*con2cspfcudd[make_pair(fin.first, node)].f1).nodeCount() << endl;
     //clock_t end = clock();
     //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
@@ -3682,19 +3684,19 @@ void Network::cost_calc_node(Node* no, int& cost){
 
 void Network::serch_fanins(Node* node, int& cost, vector<Node*>& pass_in){
   if(node->getType() != INPUT){
-    flag = true;
+    bool flag = true;
     for(const auto& fout : node->getOutput())
-      if(pass_in.count(fout))
+      if(find(pass_in.cbegin(), pass_in.cend(), fout) != pass_in.cend())
 	flag = false;
-    if(flag = true){
+    if(flag == true){
       cost += node -> T;  
       for(const auto& fin : node->getWeight()){
 	cost += abs(fin.second);
 	if(fin.second < 0)
 	  cost += abs(fin.second);
-	serch_fanins(fin.first, cost, pass_in)
+	serch_fanins(fin.first, cost, pass_in);
       }
     }
-    pass_fanin.push_back(node);
+    pass_in.push_back(node);
   }
 }

@@ -435,7 +435,7 @@ private:
     int two_wire_count;
     int wire_count;
 
-    void  serch_fanins(Node* node, int& cost);
+    void  serch_fanins(Node* node, int& cost, vector<Node*>& pass_in);
 };
 
 #endif // #ifndef __NETWORK_H__
