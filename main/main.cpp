@@ -37,8 +37,8 @@ int main(int argc, char **argv)
     circ1->calAllSpecTh('0');
     circ1->cost_calc();
     circ1->setCSPF_AllTh();
-    circ1->transcircTh();
-    circ1->cost_calc();
+    //circ1->transcircTh();
+    //circ1->cost_calc();
   }
   else{
     exit(1);

@@ -2819,8 +2819,8 @@ void Network::setCSPFThCudd(Node* node) {
       (*node2cspfcudd[node].f0).bddReduceHeap();
     if((*node2cspfcudd[node].f1).nodeCount() > 100000)
       (*node2cspfcudd[node].f1).bddReduceHeap();
-    propagateCSPFThCudd(node);
-    //propagateCSPFThCuddAdd(node);
+    //propagateCSPFThCudd(node);
+    propagateCSPFThCuddAdd(node);
   }else {
     for (const auto& fout : node->getOutput()) {
       // 出力側の結線のCSPFがセットされていなければ
@@ -2836,13 +2836,13 @@ void Network::setCSPFThCudd(Node* node) {
     if((*node2cspfcudd[node].f1).nodeCount() > 100000)
       (*node2cspfcudd[node].f1).bddReduceHeap();
     if (node->getType() != INPUT){
-      propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
+      //propagateCSPFThCudd(node); // 入力側結線のCSPFを設定
       //clock_t end = clock();
       //if((double)(end - start) / CLOCKS_PER_SEC >0.5){
       //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
       //	cout << node->getName() << endl;
       //cout << node->th_func.size() <<endl;
-      //propagateCSPFThCuddAdd(node);
+      propagateCSPFThCuddAdd(node);
     }
     //clock_t end = clock();
     //std::cout << "duration(proCSPF) = " << (double)(end - start) / CLOCKS_PER_SEC << "sec.\n";
