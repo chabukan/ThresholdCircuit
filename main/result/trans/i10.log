@@ -1,6 +1,6 @@
 
 outfunc
-duration = 17.9376sec.
+duration = 20.2986sec.
 
 cost:7571
 CSPF
@@ -7234,7 +7234,7 @@ V149(2)[479]4587
 V149(2)[479]2
 V257(7){{V657}}2
 V257(7){{V657}}2
-duration = 40.9909sec.
+duration = 41.1499sec.
 
 Transcirc
 cut[1445]
@@ -7324,3 +7324,29 @@ cut[9986]
 cut[1375]
 
 
+
+[538]
+minus{{V1901(0)}}2
+minus{{V1758(0)}}1
+minus{{V1759(0)}}1
+
+
+
+[10241]
+minus{{V1512(3)}}1
+
+
+
+[10242]
+minus{{V1512(3)}}1
+
+
+
+[1107]
+minus{{V508(0)}}1
+
+
+wire18
+two_wire23
+delete_node60
+cost:7317
