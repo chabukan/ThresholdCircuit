@@ -23,7 +23,7 @@ INPUT=(`ls ${INPUTDIR}`)
 OUTPUTDIR=./result
 PROGRAM="./ger-program"
 
-TIME=1000
+TIME=3000
 SIGNAL="KILL"
 
 for file in ${INPUT[@]}
