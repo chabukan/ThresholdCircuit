@@ -436,6 +436,7 @@ private:
     int wire_count;
 
     void  serch_fanins(Node* node, int& cost, vector<Node*>& pass_in);
+    double cspf_time;
 };
 
 #endif // #ifndef __NETWORK_H__
