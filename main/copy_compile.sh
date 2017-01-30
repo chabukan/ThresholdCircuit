@@ -24,7 +24,7 @@ cd ./main/
 #./ger-program benchmark/alu4_maxfanin.log > memo.txt
 #./ger-program benchmark/apex6_maxfanin.log > apex6.txt
 #./ger-program benchmark/long/k2_maxfanin.log >k2.log
-./ger-program benchmark/long/dalu_maxfanin.log >dalu_teian.log
+#./ger-program benchmark/long/dalu_maxfanin.log >dalu_teian.log
 #./ger-program benchmark/C1908_maxfanin.log #> resul2.txt
 #./ger-program benchmark/i2c_maxfanin.log
 #./ger-program benchmark/pci_spoci_ctrl_maxfanin.log
@@ -33,7 +33,7 @@ cd ./main/
 #./ger-program benchmark/frg2_maxfanin.log #> frg.log
 #./ger-program benchmark/x3_maxfanin.log
 #./ger-program benchmark/pair_maxfanin.log
-#./ger-program benchmark/C5315_maxfanin.log
+./ger-program benchmark/long/C5315_maxfanin.log > c5315.log
 #./ger-program benchmark/i10_maxfanin.log > i10.log
 #./ger-program benchmark/systemcdes_maxfanin.log
 )
