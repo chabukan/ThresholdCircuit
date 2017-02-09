@@ -1,0 +1,111 @@
+
+outfunc
+duration = 0.549257sec.
+
+cost:4661
+CSPF
+duration(proCSPF) = 1.06911sec.
+5312(1145)
+duration(proCSPF) = 1.22555sec.
+2942(1137)
+duration(proCSPF) = 0.601192sec.
+[961]
+248(99)
+duration(merCSPF) = 3.11385sec.
+534(149)
+duration(merCSPF) = 0.639173sec.
+351(127)
+duration(merCSPF) = 0.776363sec.
+duration(proCSPF) = 0.733804sec.
+2933(933)
+duration(proCSPF) = 0.977695sec.
+[975]
+242(97)
+duration(merCSPF) = 0.52809sec.
+210(89)
+duration(merCSPF) = 0.639686sec.
+273(106)
+duration(merCSPF) = 0.645819sec.
+389(136)
+duration(merCSPF) = 0.94565sec.
+411(138)
+duration(merCSPF) = 1.2473sec.
+254(101)
+duration(merCSPF) = 0.667343sec.
+400(137)
+duration(merCSPF) = 1.34177sec.
+265(104)
+duration(merCSPF) = 0.848893sec.
+duration = 4135.15sec.
+duration = 12.8226sec.
+
+Transcirc
+delete_node_ex8
+cost:4627
+
+[879]
+minus1152(1452)1
+
+
+
+[880]
+minus1152(1452)1
+
+
+
+[891]
+minus1344(1449)1
+
+
+
+[892]
+minus1344(1449)1
+
+
+
+[131]
+minus[166]1
+minus[172]1
+
+
+
+[757]
+minus[182]1
+
+
+
+[4816]
+minus1448(1698)2
+
+
+
+[806]
+minus1185(1721)1
+
+
+
+[871]
+minus1758(1420)1
+
+
+
+[872]
+minus1758(1420)1
+
+
+
+[793]
+minus2135(1673)1
+
+
+
+[130]
+minus[163]1
+minus[169]1
+
+
+
+[669]
+minus1268(2050)1
+
+

@@ -1,0 +1,7689 @@
+
+outfunc
+duration = 0.553427sec.
+
+cost:4661
+CSPF
+BDD:[226]{{715(1278)}}4
+BDDrev:[226]{{715(1278)}}7
+-duration = 1.8e-05sec.
+BDD:[980]{{715(1278)}}4
+BDDrev:[980]{{715(1278)}}4
+-duration = 5e-06sec.
+BDD:[981]{{715(1278)}}4
+BDDrev:[981]{{715(1278)}}4
+-duration = 6e-06sec.
+BDD:80(28)[981]2
+BDDrev:80(28)[981]4
+-duration = 3e-06sec.
+BDD:[225][981]3
+BDDrev:[225][981]3
+-duration = 4e-06sec.
+BDD:245(98){{854(2268)}}2
+BDDrev:245(98){{854(2268)}}263
+-duration = 0.000233sec.
+BDD:559(154){{854(2268)}}2
+BDDrev:559(154){{854(2268)}}262
+-duration = 0.000136sec.
+BDD:{{601(220)}}{{854(2268)}}3
+BDDrev:{{601(220)}}{{854(2268)}}262
+-duration = 0.000203sec.
+BDD:{{847(465)}}{{854(2268)}}3
+BDDrev:{{847(465)}}{{854(2268)}}259
+-duration = 0.000134sec.
+BDD:{{1002(1920)}}{{854(2268)}}10
+BDDrev:{{1002(1920)}}{{854(2268)}}244
+-duration = 0.000125sec.
+BDD:{{1004(1977)}}{{854(2268)}}11
+BDDrev:{{1004(1977)}}{{854(2268)}}252
+-duration = 0.000187sec.
+BDD:{{998(2163)}}{{854(2268)}}21
+BDDrev:{{998(2163)}}{{854(2268)}}139
+-duration = 0.000248sec.
+BDD:{{1000(2168)}}{{854(2268)}}22
+BDDrev:{{1000(2168)}}{{854(2268)}}22
+-duration = 0.000214sec.
+BDD:[672]{{1000(2168)}}32
+BDDrev:[672]{{1000(2168)}}32
+-duration = 2e-05sec.
+BDD:[673]{{1000(2168)}}32
+BDDrev:[673]{{1000(2168)}}32
+-duration = 9.4e-05sec.
+BDD:5255(1860)[672]10
+BDDrev:5255(1860)[672]32
+-duration = 1.6e-05sec.
+BDD:5252(1976)[672]14
+BDDrev:5252(1976)[672]14
+-duration = 7.8e-05sec.
+BDD:5255(1860)[673]10
+BDDrev:5255(1860)[673]32
+-duration = 1.7e-05sec.
+BDD:5252(1976)[673]14
+BDDrev:5252(1976)[673]14
+-duration = 9.6e-05sec.
+BDD:[674]5252(1976)34
+BDDrev:[674]5252(1976)34
+-duration = 2.3e-05sec.
+BDD:[675]5252(1976)34
+BDDrev:[675]5252(1976)34
+-duration = 0.000177sec.
+BDD:3468(1469)[674]6
+BDDrev:3468(1469)[674]34
+-duration = 2.4e-05sec.
+BDD:[201][674]10
+BDDrev:[201][674]10
+-duration = 0.000165sec.
+BDD:3468(1469)[675]6
+BDDrev:3468(1469)[675]34
+-duration = 1.8e-05sec.
+BDD:[201][675]10
+BDDrev:[201][675]10
+-duration = 0.000158sec.
+BDD:[684]3468(1469)6
+BDDrev:[684]3468(1469)6
+-duration = 1.3e-05sec.
+BDD:[685]3468(1469)6
+BDDrev:[685]3468(1469)6
+-duration = 0.000147sec.
+BDD:2784(944)[685]4
+BDDrev:2784(944)[685]6
+-duration = 9e-06sec.
+BDD:2788(945)[685]4
+BDDrev:2788(945)[685]4
+-duration = 9.6e-05sec.
+BDD:[5266]{{882(2456)}}4
+BDDrev:[5266]{{882(2456)}}4
+-duration = 8e-06sec.
+BDD:[5267]{{882(2456)}}245
+BDDrev:[5267]{{882(2456)}}245
+-duration = 2e-06sec.
+BDD:4092(176)[5267]2
+BDDrev:4092(176)[5267]245
+-duration = 3e-06sec.
+BDD:3657(2459)[5267]244
+BDDrev:3657(2459)[5267]244
+-duration = 8.3e-05sec.
+BDD:[243]{{690(2484)}}249
+BDDrev:[243]{{690(2484)}}249
+-duration = 0.000345sec.
+BDD:[244]{{690(2484)}}294
+BDDrev:[244]{{690(2484)}}294
+-duration = 0.000312sec.
+BDD:[245]{{690(2484)}}5
+BDDrev:[245]{{690(2484)}}5
+-duration = 0.000142sec.
+BDD:[246]{{690(2484)}}5
+BDDrev:[246]{{690(2484)}}5
+-duration = 0.000146sec.
+BDD:3653(2466)[243]246
+BDDrev:3653(2466)[243]249
+-duration = 0.000196sec.
+BDD:[169][243]4
+BDDrev:[169][243]4
+-duration = 1.5e-05sec.
+BDD:[247]{{658(2483)}}249
+BDDrev:[247]{{658(2483)}}249
+-duration = 0.000299sec.
+BDD:[248]{{658(2483)}}294
+BDDrev:[248]{{658(2483)}}294
+-duration = 0.00021sec.
+BDD:[249]{{658(2483)}}5
+BDDrev:[249]{{658(2483)}}5
+-duration = 0.00012sec.
+BDD:[250]{{658(2483)}}5
+BDDrev:[250]{{658(2483)}}5
+-duration = 0.000177sec.
+BDD:3653(2466)[247]246
+BDDrev:3653(2466)[247]249
+-duration = 0.000205sec.
+BDD:[172][247]4
+BDDrev:[172][247]4
+-duration = 1.5e-05sec.
+BDD:[255]{{767(2479)}}248
+BDDrev:[255]{{767(2479)}}248
+-duration = 0.000325sec.
+BDD:[256]{{767(2479)}}4
+BDDrev:[256]{{767(2479)}}4
+-duration = 5.8e-05sec.
+BDD:[257]{{767(2479)}}293
+BDDrev:[257]{{767(2479)}}293
+-duration = 0.00021sec.
+BDD:[258]{{767(2479)}}4
+BDDrev:[258]{{767(2479)}}4
+-duration = 0.000139sec.
+BDD:3653(2466)[255]246
+BDDrev:3653(2466)[255]248
+-duration = 0.000194sec.
+BDD:[167][255]3
+BDDrev:[167][255]3
+-duration = 1.6e-05sec.
+BDD:[251]{{807(2480)}}4
+BDDrev:[251]{{807(2480)}}4
+-duration = 1.1e-05sec.
+BDD:[252]{{807(2480)}}248
+BDDrev:[252]{{807(2480)}}248
+-duration = 0.000301sec.
+BDD:[253]{{807(2480)}}4
+BDDrev:[253]{{807(2480)}}4
+-duration = 5.6e-05sec.
+BDD:[254]{{807(2480)}}293
+BDDrev:[254]{{807(2480)}}293
+-duration = 6.3e-05sec.
+BDD:3653(2466)[252]246
+BDDrev:3653(2466)[252]248
+-duration = 0.000312sec.
+BDD:[168][252]3
+BDDrev:[168][252]3
+-duration = 2.1e-05sec.
+BDD:[261]3653(2466)245
+BDDrev:[261]3653(2466)245
+-duration = 0.000229sec.
+BDD:[262]3653(2466)3
+BDDrev:[262]3653(2466)3
+-duration = 8.8e-05sec.
+BDD:4092(176)[261]2
+BDDrev:4092(176)[261]245
+-duration = 1.1e-05sec.
+BDD:3657(2459)[261]244
+BDDrev:3657(2459)[261]244
+-duration = 0.000394sec.
+BDD:[266]3657(2459)251
+BDDrev:[266]3657(2459)251
+-duration = 0.000148sec.
+BDD:[267]3657(2459)251
+BDDrev:[267]3657(2459)251
+-duration = 0.000418sec.
+BDD:[268]3657(2459)242
+BDDrev:[268]3657(2459)242
+-duration = 0.000314sec.
+BDD:[269]3657(2459)242
+BDDrev:[269]3657(2459)242
+-duration = 0.000337sec.
+BDD:4091(175)[267]2
+BDDrev:4091(175)[267]251
+-duration = 9.4e-05sec.
+BDD:4620(2415)[267]84
+BDDrev:4620(2415)[267]250
+-duration = 0.002554sec.
+BDD:4623(2442)[267]50
+BDDrev:4623(2442)[267]50
+-duration = 0.001537sec.
+BDD:4091(175)[266]2
+BDDrev:4091(175)[266]251
+-duration = 0.000112sec.
+BDD:4620(2415)[266]84
+BDDrev:4620(2415)[266]250
+-duration = 0.002661sec.
+BDD:4623(2442)[266]50
+BDDrev:4623(2442)[266]50
+-duration = 0.001397sec.
+BDD:[310]4620(2415)84
+BDDrev:[310]4620(2415)84
+-duration = 0.000141sec.
+BDD:[311]4620(2415)84
+BDDrev:[311]4620(2415)84
+-duration = 0.020513sec.
+BDD:[312]4620(2415)68
+BDDrev:[312]4620(2415)68
+-duration = 0.006397sec.
+BDD:[313]4620(2415)78
+BDDrev:[313]4620(2415)78
+-duration = 0.00677sec.
+BDD:1034(1429)[312]6
+BDDrev:1034(1429)[312]78
+-duration = 0.000202sec.
+BDD:4398(2362)[312]28
+BDDrev:4398(2362)[312]90
+-duration = 0.003199sec.
+BDD:[125][312]40
+BDDrev:[125][312]40
+-duration = 0.003299sec.
+BDD:1034(1429)[313]6
+BDDrev:1034(1429)[313]68
+-duration = 0.0001sec.
+BDD:4398(2362)[313]28
+BDDrev:4398(2362)[313]90
+-duration = 0.002916sec.
+BDD:[125][313]40
+BDDrev:[125][313]40
+-duration = 0.004153sec.
+BDD:[319]4398(2362)30
+BDDrev:[319]4398(2362)30
+-duration = 8e-05sec.
+BDD:[320]4398(2362)30
+BDDrev:[320]4398(2362)30
+-duration = 0.00391sec.
+BDD:1278(1433)[320]5
+BDDrev:1278(1433)[320]30
+-duration = 0.000101sec.
+BDD:4388(2330)[320]24
+BDDrev:4388(2330)[320]24
+-duration = 0.005467sec.
+BDD:1278(1433)[319]5
+BDDrev:1278(1433)[319]30
+-duration = 0.000175sec.
+BDD:4388(2330)[319]24
+BDDrev:4388(2330)[319]24
+-duration = 0.004975sec.
+BDD:[321]4388(2330)30
+BDDrev:[321]4388(2330)30
+-duration = 0.000107sec.
+BDD:[322]4388(2330)30
+BDDrev:[322]4388(2330)30
+-duration = 0.004538sec.
+BDD:4368(2156)[322]18
+BDDrev:4368(2156)[322]30
+-duration = 0.000106sec.
+BDD:[205][322]10
+BDDrev:[205][322]10
+-duration = 0.005014sec.
+BDD:4446(2331)[310]24
+BDDrev:4446(2331)[310]84
+-duration = 0.000199sec.
+BDD:[125][310]40
+BDDrev:[125][310]54
+-duration = 0.003955sec.
+BDD:[175][310]10
+BDDrev:[175][310]10
+-duration = 0.004934sec.
+BDD:4446(2331)[311]24
+BDDrev:4446(2331)[311]84
+-duration = 0.000194sec.
+BDD:[125][311]40
+BDDrev:[125][311]54
+-duration = 0.002925sec.
+BDD:[175][311]10
+BDDrev:[175][311]10
+-duration = 0.00518sec.
+BDD:[329]4446(2331)30
+BDDrev:[329]4446(2331)30
+-duration = 0.00016sec.
+BDD:[330]4446(2331)30
+BDDrev:[330]4446(2331)30
+-duration = 0.005798sec.
+BDD:4426(2155)[330]18
+BDDrev:4426(2155)[330]30
+-duration = 0.000152sec.
+BDD:[205][330]10
+BDDrev:[205][330]10
+-duration = 0.005717sec.
+BDD:[333][205]12
+BDDrev:[333][205]12
+-duration = 9.4e-05sec.
+BDD:[334][205]12
+BDDrev:[334][205]12
+-duration = 0.008306sec.
+BDD:1307(1427)[334]6
+BDDrev:1307(1427)[334]12
+-duration = 0.000128sec.
+BDD:1422(1439)[334]6
+BDDrev:1422(1439)[334]6
+-duration = 0.006195sec.
+BDD:1238(1953){{575(2240)}}38
+BDDrev:1238(1953){{575(2240)}}122
+-duration = 0.000509sec.
+BDD:1253(1960){{575(2240)}}14
+BDDrev:1253(1960){{575(2240)}}158
+-duration = 0.000384sec.
+BDD:1243(1961){{575(2240)}}28
+BDDrev:1243(1961){{575(2240)}}154
+-duration = 0.000395sec.
+BDD:1268(2050){{575(2240)}}54
+BDDrev:1268(2050){{575(2240)}}168
+-duration = 0.000351sec.
+BDD:1263(2111){{575(2240)}}66
+BDDrev:1263(2111){{575(2240)}}160
+-duration = 0.000217sec.
+BDD:1258(2112){{575(2240)}}74
+BDDrev:1258(2112){{575(2240)}}164
+-duration = 0.000179sec.
+BDD:[123]{{575(2240)}}8
+BDDrev:[123]{{575(2240)}}108
+-duration = 0.000107sec.
+BDD:[126]{{575(2240)}}20
+BDDrev:[126]{{575(2240)}}96
+-duration = 0.000103sec.
+BDD:[150]{{575(2240)}}44
+BDDrev:[150]{{575(2240)}}44
+-duration = 8.1e-05sec.
+BDD:[490]{{682(2296)}}68
+BDDrev:[490]{{682(2296)}}68
+-duration = 0.000109sec.
+BDD:[491]{{682(2296)}}59
+BDDrev:[491]{{682(2296)}}59
+-duration = 8.3e-05sec.
+BDD:[492]{{682(2296)}}5
+BDDrev:[492]{{682(2296)}}5
+-duration = 3.6e-05sec.
+BDD:[493]{{682(2296)}}5
+BDDrev:[493]{{682(2296)}}5
+-duration = 3.6e-05sec.
+BDD:4026(2185)[490]65
+BDDrev:4026(2185)[490]68
+-duration = 7.2e-05sec.
+BDD:[169][490]4
+BDDrev:[169][490]4
+-duration = 8e-06sec.
+BDD:[530]{{737(2279)}}67
+BDDrev:[530]{{737(2279)}}67
+-duration = 0.000102sec.
+BDD:[531]{{737(2279)}}4
+BDDrev:[531]{{737(2279)}}4
+-duration = 1.9e-05sec.
+BDD:[532]{{737(2279)}}58
+BDDrev:[532]{{737(2279)}}58
+-duration = 5.3e-05sec.
+BDD:[533]{{737(2279)}}4
+BDDrev:[533]{{737(2279)}}4
+-duration = 3.3e-05sec.
+BDD:4026(2185)[530]65
+BDDrev:4026(2185)[530]67
+-duration = 5.3e-05sec.
+BDD:[167][530]3
+BDDrev:[167][530]3
+-duration = 9e-06sec.
+BDD:[518]{{777(2278)}}4
+BDDrev:[518]{{777(2278)}}4
+-duration = 6e-06sec.
+BDD:[519]{{777(2278)}}67
+BDDrev:[519]{{777(2278)}}67
+-duration = 0.000103sec.
+BDD:[520]{{777(2278)}}4
+BDDrev:[520]{{777(2278)}}4
+-duration = 1.9e-05sec.
+BDD:[521]{{777(2278)}}58
+BDDrev:[521]{{777(2278)}}58
+-duration = 2e-05sec.
+BDD:4026(2185)[519]65
+BDDrev:4026(2185)[519]67
+-duration = 6.5e-05sec.
+BDD:[168][519]3
+BDDrev:[168][519]3
+-duration = 8e-06sec.
+BDD:4026(2185){{867(2237)}}65
+BDDrev:4026(2185){{867(2237)}}65
+-duration = 2e-06sec.
+BDD:[506]{{648(2295)}}68
+BDDrev:[506]{{648(2295)}}68
+-duration = 0.000103sec.
+BDD:[507]{{648(2295)}}59
+BDDrev:[507]{{648(2295)}}59
+-duration = 7.4e-05sec.
+BDD:[508]{{648(2295)}}5
+BDDrev:[508]{{648(2295)}}5
+-duration = 3.3e-05sec.
+BDD:[509]{{648(2295)}}5
+BDDrev:[509]{{648(2295)}}5
+-duration = 3.6e-05sec.
+BDD:4026(2185)[506]65
+BDDrev:4026(2185)[506]68
+-duration = 5.4e-05sec.
+BDD:[172][506]4
+BDDrev:[172][506]4
+-duration = 9e-06sec.
+BDD:1268(2050)4026(2185)54
+BDDrev:1268(2050)4026(2185)65
+-duration = 3.8e-05sec.
+BDD:[129]4026(2185)3
+BDDrev:[129]4026(2185)3
+-duration = 9e-06sec.
+BDD:[5079]4026(2185)12
+BDDrev:[5079]4026(2185)12
+-duration = 1.2e-05sec.
+BDD:[666]1268(2050)52
+BDDrev:[666]1268(2050)52
+-duration = 2.9e-05sec.
+BDD:[667]1268(2050)10
+BDDrev:[667]1268(2050)10
+-duration = 5.8e-05sec.
+BDD:[668]1268(2050)10
+BDDrev:[668]1268(2050)10
+-duration = 5.1e-05sec.
+BDD:[669]1268(2050)52
+BDDrev:[669]1268(2050)52
+-duration = 5.4e-05sec.
+BDD:1307(1427)[666]6
+BDDrev:1307(1427)[666]52
+-duration = 1.5e-05sec.
+BDD:1422(1439)[666]6
+BDDrev:1422(1439)[666]46
+-duration = 5.7e-05sec.
+BDD:1225(1819)[666]40
+BDDrev:1225(1819)[666]40
+-duration = 4.9e-05sec.
+BDD:[514]{{782(2239)}}4
+BDDrev:[514]{{782(2239)}}4
+-duration = 7e-06sec.
+BDD:[515]{{782(2239)}}57
+BDDrev:[515]{{782(2239)}}57
+-duration = 6.4e-05sec.
+BDD:[516]{{782(2239)}}4
+BDDrev:[516]{{782(2239)}}4
+-duration = 1.6e-05sec.
+BDD:[517]{{782(2239)}}44
+BDDrev:[517]{{782(2239)}}44
+-duration = 1.6e-05sec.
+BDD:4025(2129)[515]55
+BDDrev:4025(2129)[515]57
+-duration = 4.6e-05sec.
+BDD:[168][515]3
+BDDrev:[168][515]3
+-duration = 1.3e-05sec.
+BDD:[510]{{645(2271)}}58
+BDDrev:[510]{{645(2271)}}58
+-duration = 8.7e-05sec.
+BDD:[511]{{645(2271)}}45
+BDDrev:[511]{{645(2271)}}45
+-duration = 5.9e-05sec.
+BDD:[512]{{645(2271)}}5
+BDDrev:[512]{{645(2271)}}5
+-duration = 2.9e-05sec.
+BDD:[513]{{645(2271)}}5
+BDDrev:[513]{{645(2271)}}5
+-duration = 2.7e-05sec.
+BDD:4025(2129)[510]55
+BDDrev:4025(2129)[510]58
+-duration = 4.5e-05sec.
+BDD:[172][510]4
+BDDrev:[172][510]4
+-duration = 5e-06sec.
+BDD:[526]{{742(2238)}}57
+BDDrev:[526]{{742(2238)}}57
+-duration = 8.8e-05sec.
+BDD:[527]{{742(2238)}}4
+BDDrev:[527]{{742(2238)}}4
+-duration = 1.7e-05sec.
+BDD:[528]{{742(2238)}}44
+BDDrev:[528]{{742(2238)}}44
+-duration = 5.4e-05sec.
+BDD:[529]{{742(2238)}}4
+BDDrev:[529]{{742(2238)}}4
+-duration = 2.6e-05sec.
+BDD:4025(2129)[526]55
+BDDrev:4025(2129)[526]57
+-duration = 4.3e-05sec.
+BDD:[167][526]3
+BDDrev:[167][526]3
+-duration = 7e-06sec.
+BDD:4025(2129){{869(2181)}}55
+BDDrev:4025(2129){{869(2181)}}55
+-duration = 2e-06sec.
+BDD:[494]{{679(2272)}}58
+BDDrev:[494]{{679(2272)}}58
+-duration = 8.5e-05sec.
+BDD:[495]{{679(2272)}}45
+BDDrev:[495]{{679(2272)}}45
+-duration = 5.1e-05sec.
+BDD:[496]{{679(2272)}}5
+BDDrev:[496]{{679(2272)}}5
+-duration = 2.9e-05sec.
+BDD:[497]{{679(2272)}}5
+BDDrev:[497]{{679(2272)}}5
+-duration = 2.5e-05sec.
+BDD:4025(2129)[494]55
+BDDrev:4025(2129)[494]58
+-duration = 0.000101sec.
+BDD:[169][494]4
+BDDrev:[169][494]4
+-duration = 7e-06sec.
+BDD:2619(1171)4025(2129)8
+BDDrev:2619(1171)4025(2129)55
+-duration = 1e-05sec.
+BDD:[134]4025(2129)3
+BDDrev:[134]4025(2129)3
+-duration = 5.4e-05sec.
+BDD:[5081]4025(2129)48
+BDDrev:[5081]4025(2129)48
+-duration = 1.3e-05sec.
+BDD:113(43)[5081]2
+BDDrev:113(43)[5081]48
+-duration = 4e-06sec.
+BDD:[145][5081]3
+BDDrev:[145][5081]3
+-duration = 4.9e-05sec.
+BDD:[5082][5081]46
+BDDrev:[5082][5081]46
+-duration = 1.3e-05sec.
+BDD:[129][5082]3
+BDDrev:[129][5082]46
+-duration = 3e-06sec.
+BDD:[150][5082]44
+BDDrev:[150][5082]44
+-duration = 0.000128sec.
+BDD:[658][150]46
+BDDrev:[658][150]46
+-duration = 2.3e-05sec.
+BDD:[659][150]46
+BDDrev:[659][150]46
+-duration = 0.000132sec.
+BDD:1422(1439)[658]6
+BDDrev:1422(1439)[658]46
+-duration = 7e-06sec.
+BDD:1225(1819)[658]40
+BDDrev:1225(1819)[658]40
+-duration = 0.000138sec.
+BDD:4426(2155)[329]18
+BDDrev:4426(2155)[329]30
+-duration = 2.4e-05sec.
+BDD:[210][329]10
+BDDrev:[210][329]10
+-duration = 0.006369sec.
+BDD:4368(2156)[321]18
+BDDrev:4368(2156)[321]30
+-duration = 0.000316sec.
+BDD:[210][321]10
+BDDrev:[210][321]10
+-duration = 0.00442sec.
+BDD:1307(1427)[210]6
+BDDrev:1307(1427)[210]6
+-duration = 0.000109sec.
+BDD:1422(1439)[210]6
+BDDrev:1422(1439)[210]6
+-duration = 0.011113sec.
+BDD:[148][210]12
+BDDrev:[148][210]12
+-duration = 0.008121sec.
+BDD:1307(1427)[333]6
+BDDrev:1307(1427)[333]12
+-duration = 0.000127sec.
+BDD:1422(1439)[333]6
+BDDrev:1422(1439)[333]6
+-duration = 0.005642sec.
+BDD:2788(945)[667]4
+BDDrev:2788(945)[667]10
+-duration = 0.000118sec.
+BDD:1307(1427)[667]6
+BDDrev:1307(1427)[667]12
+-duration = 5e-05sec.
+BDD:1422(1439)[667]6
+BDDrev:1422(1439)[667]6
+-duration = 3.1e-05sec.
+BDD:1422(1439)[659]6
+BDDrev:1422(1439)[659]46
+-duration = 8e-06sec.
+BDD:1225(1819)[659]40
+BDDrev:1225(1819)[659]40
+-duration = 0.000179sec.
+BDD:[498]{{654(2315)}}103
+BDDrev:[498]{{654(2315)}}103
+-duration = 0.000214sec.
+BDD:[499]{{654(2315)}}73
+BDDrev:[499]{{654(2315)}}73
+-duration = 9.4e-05sec.
+BDD:[500]{{654(2315)}}5
+BDDrev:[500]{{654(2315)}}5
+-duration = 4.7e-05sec.
+BDD:[501]{{654(2315)}}5
+BDDrev:[501]{{654(2315)}}5
+-duration = 4.9e-05sec.
+BDD:4028(2234)[498]100
+BDDrev:4028(2234)[498]103
+-duration = 9.3e-05sec.
+BDD:[172][498]4
+BDDrev:[172][498]4
+-duration = 1.1e-05sec.
+BDD:[482]{{688(2317)}}103
+BDDrev:[482]{{688(2317)}}103
+-duration = 0.000204sec.
+BDD:[483]{{688(2317)}}73
+BDDrev:[483]{{688(2317)}}73
+-duration = 0.000164sec.
+BDD:[484]{{688(2317)}}5
+BDDrev:[484]{{688(2317)}}5
+-duration = 4.7e-05sec.
+BDD:[485]{{688(2317)}}5
+BDDrev:[485]{{688(2317)}}5
+-duration = 4.7e-05sec.
+BDD:4028(2234)[482]100
+BDDrev:4028(2234)[482]103
+-duration = 9e-05sec.
+BDD:[169][482]4
+BDDrev:[169][482]4
+-duration = 1e-05sec.
+BDD:[542]{{712(2297)}}4
+BDDrev:[542]{{712(2297)}}4
+-duration = 7e-06sec.
+BDD:[543]{{712(2297)}}102
+BDDrev:[543]{{712(2297)}}102
+-duration = 0.000137sec.
+BDD:[544]{{712(2297)}}4
+BDDrev:[544]{{712(2297)}}4
+-duration = 2.6e-05sec.
+BDD:[545]{{712(2297)}}72
+BDDrev:[545]{{712(2297)}}72
+-duration = 2.7e-05sec.
+BDD:4028(2234)[543]100
+BDDrev:4028(2234)[543]102
+-duration = 8.7e-05sec.
+BDD:[168][543]3
+BDDrev:[168][543]3
+-duration = 1e-05sec.
+BDD:[538]{{727(2298)}}102
+BDDrev:[538]{{727(2298)}}102
+-duration = 0.000277sec.
+BDD:[539]{{727(2298)}}4
+BDDrev:[539]{{727(2298)}}4
+-duration = 2.8e-05sec.
+BDD:[540]{{727(2298)}}72
+BDDrev:[540]{{727(2298)}}72
+-duration = 6.9e-05sec.
+BDD:[541]{{727(2298)}}4
+BDDrev:[541]{{727(2298)}}4
+-duration = 4.8e-05sec.
+BDD:4028(2234)[538]100
+BDDrev:4028(2234)[538]102
+-duration = 0.000104sec.
+BDD:[167][538]3
+BDDrev:[167][538]3
+-duration = 1.1e-05sec.
+BDD:4028(2234){{863(2276)}}100
+BDDrev:4028(2234){{863(2276)}}100
+-duration = 1e-06sec.
+BDD:1258(2112)4028(2234)74
+BDDrev:1258(2112)4028(2234)100
+-duration = 4e-06sec.
+BDD:[129]4028(2234)3
+BDDrev:[129]4028(2234)3
+-duration = 5e-06sec.
+BDD:[5075]4028(2234)27
+BDDrev:[5075]4028(2234)27
+-duration = 3e-06sec.
+BDD:[4940]1258(2112)76
+BDDrev:[4940]1258(2112)76
+-duration = 4e-06sec.
+BDD:[4941]1258(2112)76
+BDDrev:[4941]1258(2112)76
+-duration = 4e-06sec.
+BDD:1278(1433)[4940]5
+BDDrev:1278(1433)[4940]76
+-duration = 1.3e-05sec.
+BDD:4204(1706)[4940]18
+BDDrev:4204(1706)[4940]60
+-duration = 6.2e-05sec.
+BDD:[224][4940]56
+BDDrev:[224][4940]56
+-duration = 3e-05sec.
+BDD:4204(1706)[4941]18
+BDDrev:4204(1706)[4941]66
+-duration = 3e-06sec.
+BDD:[224][4941]56
+BDDrev:[224][4941]62
+-duration = 1.7e-05sec.
+BDD:1278(1433)[4941]5
+BDDrev:1278(1433)[4941]5
+-duration = 1.2e-05sec.
+BDD:1034(1429)[224]6
+BDDrev:1034(1429)[224]56
+-duration = 1.3e-05sec.
+BDD:1225(1819)[224]40
+BDDrev:1225(1819)[224]58
+-duration = 2.5e-05sec.
+BDD:1263(2111)[224]66
+BDDrev:1263(2111)[224]66
+-duration = 2.7e-05sec.
+BDD:[522]{{772(2299)}}4
+BDDrev:[522]{{772(2299)}}4
+-duration = 8e-06sec.
+BDD:[523]{{772(2299)}}79
+BDDrev:[523]{{772(2299)}}79
+-duration = 0.000154sec.
+BDD:[524]{{772(2299)}}4
+BDDrev:[524]{{772(2299)}}4
+-duration = 2.2e-05sec.
+BDD:[525]{{772(2299)}}66
+BDDrev:[525]{{772(2299)}}66
+-duration = 2.2e-05sec.
+BDD:4027(2235)[523]77
+BDDrev:4027(2235)[523]79
+-duration = 6.1e-05sec.
+BDD:[168][523]3
+BDDrev:[168][523]3
+-duration = 1.3e-05sec.
+BDD:[534]{{732(2300)}}79
+BDDrev:[534]{{732(2300)}}79
+-duration = 0.000234sec.
+BDD:[535]{{732(2300)}}4
+BDDrev:[535]{{732(2300)}}4
+-duration = 2.5e-05sec.
+BDD:[536]{{732(2300)}}66
+BDDrev:[536]{{732(2300)}}66
+-duration = 8.6e-05sec.
+BDD:[537]{{732(2300)}}4
+BDDrev:[537]{{732(2300)}}4
+-duration = 5.3e-05sec.
+BDD:4027(2235)[534]77
+BDDrev:4027(2235)[534]79
+-duration = 8.1e-05sec.
+BDD:[167][534]3
+BDDrev:[167][534]3
+-duration = 1.2e-05sec.
+BDD:4027(2235){{865(2277)}}77
+BDDrev:4027(2235){{865(2277)}}77
+-duration = 1e-06sec.
+BDD:[502]{{651(2314)}}80
+BDDrev:[502]{{651(2314)}}80
+-duration = 0.000122sec.
+BDD:[503]{{651(2314)}}67
+BDDrev:[503]{{651(2314)}}67
+-duration = 7.9e-05sec.
+BDD:[504]{{651(2314)}}5
+BDDrev:[504]{{651(2314)}}5
+-duration = 4.3e-05sec.
+BDD:[505]{{651(2314)}}5
+BDDrev:[505]{{651(2314)}}5
+-duration = 4.2e-05sec.
+BDD:4027(2235)[502]77
+BDDrev:4027(2235)[502]80
+-duration = 5.8e-05sec.
+BDD:[172][502]4
+BDDrev:[172][502]4
+-duration = 1.4e-05sec.
+BDD:[486]{{685(2316)}}80
+BDDrev:[486]{{685(2316)}}80
+-duration = 0.000132sec.
+BDD:[487]{{685(2316)}}67
+BDDrev:[487]{{685(2316)}}67
+-duration = 7.5e-05sec.
+BDD:[488]{{685(2316)}}5
+BDDrev:[488]{{685(2316)}}5
+-duration = 4.1e-05sec.
+BDD:[489]{{685(2316)}}5
+BDDrev:[489]{{685(2316)}}5
+-duration = 4.1e-05sec.
+BDD:4027(2235)[486]77
+BDDrev:4027(2235)[486]80
+-duration = 5.7e-05sec.
+BDD:[169][486]4
+BDDrev:[169][486]4
+-duration = 1.2e-05sec.
+BDD:1263(2111)4027(2235)66
+BDDrev:1263(2111)4027(2235)77
+-duration = 0.000108sec.
+BDD:[129]4027(2235)3
+BDDrev:[129]4027(2235)3
+-duration = 1.8e-05sec.
+BDD:[5077]4027(2235)12
+BDDrev:[5077]4027(2235)12
+-duration = 1.9e-05sec.
+BDD:[4938]1263(2111)68
+BDDrev:[4938]1263(2111)68
+-duration = 1.3e-05sec.
+BDD:[4939]1263(2111)68
+BDDrev:[4939]1263(2111)68
+-duration = 1.2e-05sec.
+BDD:1448(1698)[4939]12
+BDDrev:1448(1698)[4939]16
+-duration = 1e-05sec.
+BDD:[218][4939]52
+BDDrev:[218][4939]62
+-duration = 1.1e-05sec.
+BDD:1034(1429)[4939]6
+BDDrev:1034(1429)[4939]6
+-duration = 2.4e-05sec.
+BDD:1034(1429)[4938]6
+BDDrev:1034(1429)[4938]68
+-duration = 3e-06sec.
+BDD:1448(1698)[4938]12
+BDDrev:1448(1698)[4938]12
+-duration = 8e-06sec.
+BDD:[218][4938]52
+BDDrev:[218][4938]52
+-duration = 2.8e-05sec.
+BDD:1225(1819)[218]40
+BDDrev:1225(1819)[218]52
+-duration = 7e-06sec.
+BDD:[148][218]12
+BDDrev:[148][218]12
+-duration = 7e-06sec.
+BDD:[5334]4368(2156)20
+BDDrev:[5334]4368(2156)20
+-duration = 2.6e-05sec.
+BDD:[5335]4368(2156)20
+BDDrev:[5335]4368(2156)20
+-duration = 0.00406sec.
+BDD:4204(1706)[5334]18
+BDDrev:4204(1706)[5334]28
+-duration = 0.000104sec.
+BDD:4358(2006)[5334]12
+BDDrev:4358(2006)[5334]12
+-duration = 0.00976sec.
+BDD:[206][5334]18
+BDDrev:[206][5334]18
+-duration = 0.005728sec.
+BDD:4204(1706)[5335]18
+BDDrev:4204(1706)[5335]20
+-duration = 0.000105sec.
+BDD:[206][5335]18
+BDDrev:[206][5335]12
+-duration = 0.00951sec.
+BDD:4358(2006)[5335]12
+BDDrev:4358(2006)[5335]12
+-duration = 0.004745sec.
+BDD:[148]4358(2006)12
+BDDrev:[148]4358(2006)12
+-duration = 8.9e-05sec.
+BDD:[326]4358(2006)10
+BDDrev:[326]4358(2006)10
+-duration = 0.009275sec.
+BDD:[327]4358(2006)14
+BDDrev:[327]4358(2006)14
+-duration = 0.006705sec.
+BDD:1225(1819)[669]40
+BDDrev:1225(1819)[669]52
+-duration = 0.00011sec.
+BDD:[148][669]12
+BDDrev:[148][669]12
+-duration = 4.5e-05sec.
+BDD:1278(1433){{588(1696),632(1692)}}5
+BDDrev:1278(1433){{588(1696),632(1692)}}60
+-duration = 2.2e-05sec.
+BDD:[206]{{588(1696),632(1692)}}18
+BDDrev:[206]{{588(1696),632(1692)}}54
+-duration = 3.5e-05sec.
+BDD:[222]{{588(1696),632(1692)}}36
+BDDrev:[222]{{588(1696),632(1692)}}36
+-duration = 3.8e-05sec.
+BDD:[4812]{{591(1894),621(1893)}}72
+BDDrev:[4812]{{591(1894),621(1893)}}72
+-duration = 4.4e-05sec.
+BDD:[4813]{{591(1894),621(1893)}}5
+BDDrev:[4813]{{591(1894),621(1893)}}5
+-duration = 2.5e-05sec.
+BDD:1185(1721)[4812]36
+BDDrev:1185(1721)[4812]72
+-duration = 8.9e-05sec.
+BDD:[206][4812]18
+BDDrev:[206][4812]24
+-duration = 5.3e-05sec.
+BDD:4204(1706)[4812]18
+BDDrev:4204(1706)[4812]24
+-duration = 3.6e-05sec.
+BDD:1278(1433)[4812]5
+BDDrev:1278(1433)[4812]5
+-duration = 2.6e-05sec.
+BDD:1034(1429)[206]6
+BDDrev:1034(1429)[206]18
+-duration = 1.1e-05sec.
+BDD:[148][206]12
+BDDrev:[148][206]12
+-duration = 0.002791sec.
+BDD:1307(1427)[148]6
+BDDrev:1307(1427)[148]12
+-duration = 0.0001sec.
+BDD:1422(1439)[148]6
+BDDrev:1422(1439)[148]6
+-duration = 7.4e-05sec.
+BDD:422(139)[668]2
+BDDrev:422(139)[668]10
+-duration = 1.7e-05sec.
+BDD:1307(1427)[668]6
+BDDrev:1307(1427)[668]12
+-duration = 5e-05sec.
+BDD:1422(1439)[668]6
+BDDrev:1422(1439)[668]6
+-duration = 3.7e-05sec.
+BDD:[899]1422(1439)6
+BDDrev:[899]1422(1439)6
+-duration = 7e-06sec.
+BDD:[900]1422(1439)6
+BDDrev:[900]1422(1439)6
+-duration = 6.3e-05sec.
+BDD:422(139)[900]2
+BDDrev:422(139)[900]6
+-duration = 1.1e-05sec.
+BDD:2788(945)[900]4
+BDDrev:2788(945)[900]4
+-duration = 7e-05sec.
+BDD:422(139)[899]2
+BDDrev:422(139)[899]6
+-duration = 8e-06sec.
+BDD:2788(945)[899]4
+BDDrev:2788(945)[899]4
+-duration = 6.4e-05sec.
+BDD:1448(1698)[326]12
+BDDrev:1448(1698)[326]10
+-duration = 1.7e-05sec.
+BDD:[230][326]6
+BDDrev:[230][326]6
+-duration = 0.003585sec.
+BDD:[335]4426(2155)16
+BDDrev:[335]4426(2155)16
+-duration = 8.8e-05sec.
+BDD:[336]4426(2155)16
+BDDrev:[336]4426(2155)16
+-duration = 0.006511sec.
+BDD:[155][336]18
+BDDrev:[155][336]16
+-duration = 0.000105sec.
+BDD:[220][336]6
+BDDrev:[220][336]6
+-duration = 0.00381sec.
+BDD:[155][335]18
+BDDrev:[155][335]16
+-duration = 7.4e-05sec.
+BDD:[220][335]6
+BDDrev:[220][335]6
+-duration = 0.009742sec.
+BDD:[337][155]16
+BDDrev:[337][155]16
+-duration = 8.9e-05sec.
+BDD:[338][155]16
+BDDrev:[338][155]16
+-duration = 0.012495sec.
+BDD:1448(1698)[338]12
+BDDrev:1448(1698)[338]16
+-duration = 8.2e-05sec.
+BDD:4204(1706)[338]18
+BDDrev:4204(1706)[338]18
+-duration = 0.004036sec.
+BDD:1448(1698)[327]12
+BDDrev:1448(1698)[327]14
+-duration = 8.3e-05sec.
+BDD:[230][327]6
+BDDrev:[230][327]6
+-duration = 0.006924sec.
+BDD:1448(1698)[337]12
+BDDrev:1448(1698)[337]16
+-duration = 0.000117sec.
+BDD:4204(1706)[337]18
+BDDrev:4204(1706)[337]18
+-duration = 0.003988sec.
+BDD:[813]4204(1706)16
+BDDrev:[813]4204(1706)16
+-duration = 0.000126sec.
+BDD:[814]4204(1706)6
+BDDrev:[814]4204(1706)6
+-duration = 0.000168sec.
+BDD:1034(1429)[813]6
+BDDrev:1034(1429)[813]16
+-duration = 2.3e-05sec.
+BDD:1448(1698)[813]12
+BDDrev:1448(1698)[813]12
+-duration = 0.000138sec.
+BDD:468(143)1448(1698)2
+BDDrev:468(143)1448(1698)12
+-duration = 4.6e-05sec.
+BDD:2794(947)1448(1698)4
+BDDrev:2794(947)1448(1698)10
+-duration = 0.000165sec.
+BDD:[4816]1448(1698)10
+BDDrev:[4816]1448(1698)10
+-duration = 0.000424sec.
+BDD:1307(1427)[4816]6
+BDDrev:1307(1427)[4816]10
+-duration = 1.7e-05sec.
+BDD:[220][4816]6
+BDDrev:[220][4816]6
+-duration = 8.4e-05sec.
+BDD:422(139)[220]2
+BDDrev:422(139)[220]6
+-duration = 2.8e-05sec.
+BDD:2788(945)[220]4
+BDDrev:2788(945)[220]4
+-duration = 7.1e-05sec.
+BDD:2784(944)[684]4
+BDDrev:2784(944)[684]6
+-duration = 9e-06sec.
+BDD:2788(945)[684]4
+BDDrev:2788(945)[684]4
+-duration = 0.000176sec.
+BDD:422(139)[230]2
+BDDrev:422(139)[230]6
+-duration = 7e-06sec.
+BDD:2788(945)[230]4
+BDDrev:2788(945)[230]4
+-duration = 0.004313sec.
+BDD:[901]2788(945)3
+BDDrev:[901]2788(945)3
+-duration = 0.000416sec.
+BDD:[902]2788(945)3
+BDDrev:[902]2788(945)3
+-duration = 0.000342sec.
+BDD:233(94)[902]2
+BDDrev:233(94)[902]3
+-duration = 0.000263sec.
+BDD:335(123)[902]2
+BDDrev:335(123)[902]2
+-duration = 0.000111sec.
+BDD:[226]{{673(1276)}}4
+BDDrev:[226]{{673(1276)}}9
+-duration = 0.000191sec.
+BDD:[986]{{673(1276)}}4
+BDDrev:[986]{{673(1276)}}4
+-duration = 9e-06sec.
+BDD:[987]{{673(1276)}}4
+BDDrev:[987]{{673(1276)}}4
+-duration = 6e-06sec.
+BDD:26(9)[986]2
+BDDrev:26(9)[986]4
+-duration = 3e-06sec.
+BDD:[227][986]3
+BDDrev:[227][986]3
+-duration = 3e-06sec.
+BDD:[640]{{747(2187)}}62
+BDDrev:[640]{{747(2187)}}62
+-duration = 0.000126sec.
+BDD:[641]{{747(2187)}}4
+BDDrev:[641]{{747(2187)}}4
+-duration = 6.2e-05sec.
+BDD:[642]{{747(2187)}}41
+BDDrev:[642]{{747(2187)}}41
+-duration = 5.9e-05sec.
+BDD:[643]{{747(2187)}}4
+BDDrev:[643]{{747(2187)}}4
+-duration = 3.5e-05sec.
+BDD:4082(2071)[642]39
+BDDrev:4082(2071)[642]41
+-duration = 4.1e-05sec.
+BDD:[160][642]3
+BDDrev:[160][642]3
+-duration = 8e-06sec.
+BDD:[608]{{642(2222)}}63
+BDDrev:[608]{{642(2222)}}63
+-duration = 9.6e-05sec.
+BDD:[609]{{642(2222)}}42
+BDDrev:[609]{{642(2222)}}42
+-duration = 6.5e-05sec.
+BDD:[610]{{642(2222)}}5
+BDDrev:[610]{{642(2222)}}5
+-duration = 3.5e-05sec.
+BDD:[611]{{642(2222)}}5
+BDDrev:[611]{{642(2222)}}5
+-duration = 3.5e-05sec.
+BDD:4082(2071)[609]39
+BDDrev:4082(2071)[609]42
+-duration = 5.2e-05sec.
+BDD:[170][609]4
+BDDrev:[170][609]4
+-duration = 8e-06sec.
+BDD:[592]{{676(2229)}}63
+BDDrev:[592]{{676(2229)}}63
+-duration = 9.9e-05sec.
+BDD:[593]{{676(2229)}}42
+BDDrev:[593]{{676(2229)}}42
+-duration = 6.4e-05sec.
+BDD:[594]{{676(2229)}}5
+BDDrev:[594]{{676(2229)}}5
+-duration = 3.5e-05sec.
+BDD:[595]{{676(2229)}}5
+BDDrev:[595]{{676(2229)}}5
+-duration = 3.4e-05sec.
+BDD:4082(2071)[593]39
+BDDrev:4082(2071)[593]42
+-duration = 7.1e-05sec.
+BDD:[163][593]4
+BDDrev:[163][593]4
+-duration = 8e-06sec.
+BDD:4082(2071){{832(2133)}}39
+BDDrev:4082(2071){{832(2133)}}39
+-duration = 2e-06sec.
+BDD:[624]{{787(2186)}}4
+BDDrev:[624]{{787(2186)}}4
+-duration = 7e-06sec.
+BDD:[625]{{787(2186)}}62
+BDDrev:[625]{{787(2186)}}62
+-duration = 6.1e-05sec.
+BDD:[626]{{787(2186)}}4
+BDDrev:[626]{{787(2186)}}4
+-duration = 1.8e-05sec.
+BDD:[627]{{787(2186)}}41
+BDDrev:[627]{{787(2186)}}41
+-duration = 1.8e-05sec.
+BDD:4082(2071)[627]39
+BDDrev:4082(2071)[627]41
+-duration = 2.9e-05sec.
+BDD:[157][627]3
+BDDrev:[157][627]3
+-duration = 6e-06sec.
+BDD:1916(1940)4082(2071)28
+BDDrev:1916(1940)4082(2071)39
+-duration = 3.9e-05sec.
+BDD:[129]4082(2071)3
+BDDrev:[129]4082(2071)3
+-duration = 1.2e-05sec.
+BDD:[4854]4082(2071)12
+BDDrev:[4854]4082(2071)12
+-duration = 1e-05sec.
+BDD:3012(1132)[4854]8
+BDDrev:3012(1132)[4854]12
+-duration = 9e-06sec.
+BDD:[134][4854]3
+BDDrev:[134][4854]3
+-duration = 6e-06sec.
+BDD:[4855][4854]4
+BDDrev:[4855][4854]4
+-duration = 1.9e-05sec.
+BDD:52(18)[4855]2
+BDDrev:52(18)[4855]4
+-duration = 3e-06sec.
+BDD:[145][4855]3
+BDDrev:[145][4855]3
+-duration = 3e-06sec.
+BDD:[5179]{{843(2455)}}4
+BDDrev:[5179]{{843(2455)}}4
+-duration = 4e-06sec.
+BDD:[5180]{{843(2455)}}249
+BDDrev:[5180]{{843(2455)}}249
+-duration = 3e-06sec.
+BDD:120(50)[5179]2
+BDDrev:120(50)[5179]4
+-duration = 5e-06sec.
+BDD:4091(175)[5179]2
+BDDrev:4091(175)[5179]3
+-duration = 3e-06sec.
+BDD:4092(176)[5179]2
+BDDrev:4092(176)[5179]2
+-duration = 2e-06sec.
+BDD:[737]{{859(2132)}}4
+BDDrev:[737]{{859(2132)}}4
+-duration = 8e-06sec.
+BDD:[738]{{859(2132)}}35
+BDDrev:[738]{{859(2132)}}35
+-duration = 3.7e-05sec.
+BDD:[739]{{859(2132)}}4
+BDDrev:[739]{{859(2132)}}4
+-duration = 1.4e-05sec.
+BDD:[740]{{859(2132)}}15
+BDDrev:[740]{{859(2132)}}15
+-duration = 1.2e-05sec.
+BDD:3848(1864)[740]13
+BDDrev:3848(1864)[740]15
+-duration = 1.2e-05sec.
+BDD:[157][740]3
+BDDrev:[157][740]3
+-duration = 6e-06sec.
+BDD:[644]{{693(2179)}}36
+BDDrev:[644]{{693(2179)}}36
+-duration = 9e-05sec.
+BDD:[645]{{693(2179)}}16
+BDDrev:[645]{{693(2179)}}16
+-duration = 1.7e-05sec.
+BDD:[646]{{693(2179)}}5
+BDDrev:[646]{{693(2179)}}5
+-duration = 6e-06sec.
+BDD:[647]{{693(2179)}}5
+BDDrev:[647]{{693(2179)}}5
+-duration = 8e-06sec.
+BDD:3848(1864)[645]13
+BDDrev:3848(1864)[645]16
+-duration = 1.1e-05sec.
+BDD:[163][645]4
+BDDrev:[163][645]4
+-duration = 6e-06sec.
+BDD:3848(1864){{822(1933)}}13
+BDDrev:3848(1864){{822(1933)}}13
+-duration = 1e-06sec.
+BDD:[761]{{722(2131)}}35
+BDDrev:[761]{{722(2131)}}35
+-duration = 4.4e-05sec.
+BDD:[762]{{722(2131)}}4
+BDDrev:[762]{{722(2131)}}4
+-duration = 1.4e-05sec.
+BDD:[763]{{722(2131)}}15
+BDDrev:[763]{{722(2131)}}15
+-duration = 2e-05sec.
+BDD:[764]{{722(2131)}}4
+BDDrev:[764]{{722(2131)}}4
+-duration = 1.6e-05sec.
+BDD:3848(1864)[763]13
+BDDrev:3848(1864)[763]15
+-duration = 1e-05sec.
+BDD:[160][763]3
+BDDrev:[160][763]3
+-duration = 5e-06sec.
+BDD:[648]{{661(2178)}}36
+BDDrev:[648]{{661(2178)}}36
+-duration = 4.6e-05sec.
+BDD:[649]{{661(2178)}}16
+BDDrev:[649]{{661(2178)}}16
+-duration = 2.5e-05sec.
+BDD:[650]{{661(2178)}}5
+BDDrev:[650]{{661(2178)}}5
+-duration = 1.8e-05sec.
+BDD:[651]{{661(2178)}}5
+BDDrev:[651]{{661(2178)}}5
+-duration = 1.6e-05sec.
+BDD:3848(1864)[649]13
+BDDrev:3848(1864)[649]16
+-duration = 1e-05sec.
+BDD:[170][649]4
+BDDrev:[170][649]4
+-duration = 6e-06sec.
+BDD:[124]3848(1864)6
+BDDrev:[124]3848(1864)13
+-duration = 1e-05sec.
+BDD:[129]3848(1864)3
+BDDrev:[129]3848(1864)3
+-duration = 8e-06sec.
+BDD:[4830]3848(1864)8
+BDDrev:[4830]3848(1864)8
+-duration = 4e-06sec.
+BDD:3328(916)[4830]4
+BDDrev:3328(916)[4830]8
+-duration = 7e-06sec.
+BDD:[134][4830]3
+BDDrev:[134][4830]3
+-duration = 5e-06sec.
+BDD:[4831][4830]4
+BDDrev:[4831][4830]4
+-duration = 7e-06sec.
+BDD:131(59)[4831]2
+BDDrev:131(59)[4831]4
+-duration = 2e-06sec.
+BDD:[145][4831]3
+BDDrev:[145][4831]3
+-duration = 2e-06sec.
+BDD:[676][201]12
+BDDrev:[676][201]12
+-duration = 9e-06sec.
+BDD:[677][201]12
+BDDrev:[677][201]12
+-duration = 0.00015sec.
+BDD:3486(1464)[677]6
+BDDrev:3486(1464)[677]12
+-duration = 1.8e-05sec.
+BDD:[141][677]6
+BDDrev:[141][677]6
+-duration = 0.000188sec.
+BDD:3486(1464)[676]6
+BDDrev:3486(1464)[676]12
+-duration = 1.9e-05sec.
+BDD:[141][676]6
+BDDrev:[141][676]6
+-duration = 0.000147sec.
+BDD:[678][141]6
+BDDrev:[678][141]6
+-duration = 1.8e-05sec.
+BDD:[679][141]6
+BDDrev:[679][141]6
+-duration = 0.000124sec.
+BDD:2794(947)[679]4
+BDDrev:2794(947)[679]6
+-duration = 1.6e-05sec.
+BDD:2798(948)[679]4
+BDDrev:2798(948)[679]4
+-duration = 0.000124sec.
+BDD:[314][175]12
+BDDrev:[314][175]12
+-duration = 2.4e-05sec.
+BDD:[315][175]12
+BDDrev:[315][175]12
+-duration = 0.003434sec.
+BDD:1034(1429)[315]6
+BDDrev:1034(1429)[315]12
+-duration = 0.000328sec.
+BDD:1278(1433)[315]6
+BDDrev:1278(1433)[315]6
+-duration = 0.002996sec.
+BDD:1034(1429)[314]6
+BDDrev:1034(1429)[314]12
+-duration = 0.00028sec.
+BDD:1278(1433)[314]6
+BDDrev:1278(1433)[314]6
+-duration = 0.003255sec.
+BDD:2798(948)[814]4
+BDDrev:2798(948)[814]6
+-duration = 0.000232sec.
+BDD:1034(1429)[814]6
+BDDrev:1034(1429)[814]6
+-duration = 0.000109sec.
+BDD:[907]1034(1429)6
+BDDrev:[907]1034(1429)6
+-duration = 6.9e-05sec.
+BDD:[908]1034(1429)6
+BDDrev:[908]1034(1429)6
+-duration = 0.000147sec.
+BDD:457(142)[908]2
+BDDrev:457(142)[908]6
+-duration = 6.5e-05sec.
+BDD:2798(948)[908]4
+BDDrev:2798(948)[908]4
+-duration = 0.000154sec.
+BDD:2794(947)[678]4
+BDDrev:2794(947)[678]6
+-duration = 4.8e-05sec.
+BDD:2798(948)[678]4
+BDDrev:2798(948)[678]4
+-duration = 0.000194sec.
+BDD:457(142)[907]2
+BDDrev:457(142)[907]6
+-duration = 1.4e-05sec.
+BDD:2798(948)[907]4
+BDDrev:2798(948)[907]4
+-duration = 9.9e-05sec.
+BDD:[909]2798(948)3
+BDDrev:[909]2798(948)3
+-duration = 9e-05sec.
+BDD:[910]2798(948)3
+BDDrev:[910]2798(948)3
+-duration = 0.00078sec.
+BDD:217(90)[910]2
+BDDrev:217(90)[910]3
+-duration = 0.000486sec.
+BDD:335(123)[910]2
+BDDrev:335(123)[910]2
+-duration = 0.000111sec.
+BDD:2615(1155)[5079]23
+BDDrev:2615(1155)[5079]27
+-duration = 0.000447sec.
+BDD:[134][5079]3
+BDDrev:[134][5079]3
+-duration = 1.5e-05sec.
+BDD:[5080][5079]4
+BDDrev:[5080][5079]4
+-duration = 5.4e-05sec.
+BDD:53(19)[5080]2
+BDDrev:53(19)[5080]4
+-duration = 5e-06sec.
+BDD:[145][5080]3
+BDDrev:[145][5080]3
+-duration = 4e-06sec.
+BDD:[226]{{707(1277)}}4
+BDDrev:[226]{{707(1277)}}9
+-duration = 1.1e-05sec.
+BDD:[983]{{707(1277)}}4
+BDDrev:[983]{{707(1277)}}4
+-duration = 7e-06sec.
+BDD:[984]{{707(1277)}}4
+BDDrev:[984]{{707(1277)}}4
+-duration = 5e-06sec.
+BDD:79(27)[983]2
+BDDrev:79(27)[983]4
+-duration = 3e-06sec.
+BDD:[227][983]3
+BDDrev:[227][983]3
+-duration = 3e-06sec.
+BDD:[616]{{797(2191)}}4
+BDDrev:[616]{{797(2191)}}4
+-duration = 1e-05sec.
+BDD:[617]{{797(2191)}}45
+BDDrev:[617]{{797(2191)}}45
+-duration = 5.9e-05sec.
+BDD:[618]{{797(2191)}}4
+BDDrev:[618]{{797(2191)}}4
+-duration = 2.3e-05sec.
+BDD:[619]{{797(2191)}}35
+BDDrev:[619]{{797(2191)}}35
+-duration = 2.5e-05sec.
+BDD:17(4)[616]2
+BDDrev:17(4)[616]4
+-duration = 4e-06sec.
+BDD:[171][616]3
+BDDrev:[171][616]3
+-duration = 2e-06sec.
+BDD:[632]{{757(2190)}}45
+BDDrev:[632]{{757(2190)}}45
+-duration = 0.000102sec.
+BDD:[633]{{757(2190)}}4
+BDDrev:[633]{{757(2190)}}4
+-duration = 2.5e-05sec.
+BDD:[634]{{757(2190)}}35
+BDDrev:[634]{{757(2190)}}35
+-duration = 4.4e-05sec.
+BDD:[635]{{757(2190)}}4
+BDDrev:[635]{{757(2190)}}4
+-duration = 3.4e-05sec.
+BDD:17(4)[633]2
+BDDrev:17(4)[633]4
+-duration = 5e-06sec.
+BDD:[165][633]3
+BDDrev:[165][633]3
+-duration = 2e-06sec.
+BDD:[636]{{752(2189)}}53
+BDDrev:[636]{{752(2189)}}53
+-duration = 8e-05sec.
+BDD:[637]{{752(2189)}}4
+BDDrev:[637]{{752(2189)}}4
+-duration = 2.5e-05sec.
+BDD:[638]{{752(2189)}}32
+BDDrev:[638]{{752(2189)}}32
+-duration = 5.3e-05sec.
+BDD:[639]{{752(2189)}}4
+BDDrev:[639]{{752(2189)}}4
+-duration = 3.2e-05sec.
+BDD:3793(2065)[636]51
+BDDrev:3793(2065)[636]53
+-duration = 4e-05sec.
+BDD:[167][636]3
+BDDrev:[167][636]3
+-duration = 2e-05sec.
+BDD:[620]{{792(2188)}}4
+BDDrev:[620]{{792(2188)}}4
+-duration = 9e-06sec.
+BDD:[621]{{792(2188)}}53
+BDDrev:[621]{{792(2188)}}53
+-duration = 4.9e-05sec.
+BDD:[622]{{792(2188)}}4
+BDDrev:[622]{{792(2188)}}4
+-duration = 2e-05sec.
+BDD:[623]{{792(2188)}}32
+BDDrev:[623]{{792(2188)}}32
+-duration = 2.3e-05sec.
+BDD:3793(2065)[621]51
+BDDrev:3793(2065)[621]53
+-duration = 3.8e-05sec.
+BDD:[168][621]3
+BDDrev:[168][621]3
+-duration = 2e-05sec.
+BDD:3793(2065){{873(2124)}}51
+BDDrev:3793(2065){{873(2124)}}51
+-duration = 1e-06sec.
+BDD:[580]{{702(2228)}}54
+BDDrev:[580]{{702(2228)}}54
+-duration = 7.3e-05sec.
+BDD:[581]{{702(2228)}}33
+BDDrev:[581]{{702(2228)}}33
+-duration = 6.7e-05sec.
+BDD:[582]{{702(2228)}}5
+BDDrev:[582]{{702(2228)}}5
+-duration = 3.3e-05sec.
+BDD:[583]{{702(2228)}}5
+BDDrev:[583]{{702(2228)}}5
+-duration = 3.3e-05sec.
+BDD:3793(2065)[580]51
+BDDrev:3793(2065)[580]54
+-duration = 4.1e-05sec.
+BDD:[169][580]4
+BDDrev:[169][580]4
+-duration = 1.9e-05sec.
+BDD:[596]{{670(2225)}}54
+BDDrev:[596]{{670(2225)}}54
+-duration = 2.9e-05sec.
+BDD:[597]{{670(2225)}}33
+BDDrev:[597]{{670(2225)}}33
+-duration = 2.6e-05sec.
+BDD:[598]{{670(2225)}}5
+BDDrev:[598]{{670(2225)}}5
+-duration = 1.2e-05sec.
+BDD:[599]{{670(2225)}}5
+BDDrev:[599]{{670(2225)}}5
+-duration = 8e-06sec.
+BDD:3793(2065)[596]51
+BDDrev:3793(2065)[596]54
+-duration = 6e-06sec.
+BDD:[172][596]4
+BDDrev:[172][596]4
+-duration = 4e-06sec.
+BDD:1243(1961)3793(2065)27
+BDDrev:1243(1961)3793(2065)51
+-duration = 4e-06sec.
+BDD:[129]3793(2065)3
+BDDrev:[129]3793(2065)3
+-duration = 7e-06sec.
+BDD:[4887]3793(2065)27
+BDDrev:[4887]3793(2065)27
+-duration = 3e-06sec.
+BDD:2705(1186)[4887]23
+BDDrev:2705(1186)[4887]27
+-duration = 4e-06sec.
+BDD:[134][4887]3
+BDDrev:[134][4887]3
+-duration = 5e-06sec.
+BDD:[4888][4887]4
+BDDrev:[4888][4887]4
+-duration = 2e-06sec.
+BDD:128(56)[4888]2
+BDDrev:128(56)[4888]4
+-duration = 2e-06sec.
+BDD:[145][4888]3
+BDDrev:[145][4888]3
+-duration = 2e-06sec.
+BDD:3790(2025)[644]33
+BDDrev:3790(2025)[644]36
+-duration = 2.8e-05sec.
+BDD:[169][644]4
+BDDrev:[169][644]4
+-duration = 9e-06sec.
+BDD:3790(2025)[648]33
+BDDrev:3790(2025)[648]36
+-duration = 9.3e-05sec.
+BDD:[172][648]4
+BDDrev:[172][648]4
+-duration = 1.2e-05sec.
+BDD:3790(2025)[761]33
+BDDrev:3790(2025)[761]35
+-duration = 6.6e-05sec.
+BDD:[167][761]3
+BDDrev:[167][761]3
+-duration = 1.2e-05sec.
+BDD:3790(2025)[738]33
+BDDrev:3790(2025)[738]35
+-duration = 2.6e-05sec.
+BDD:[168][738]3
+BDDrev:[168][738]3
+-duration = 1.1e-05sec.
+BDD:3790(2025){{861(2070)}}33
+BDDrev:3790(2025){{861(2070)}}33
+-duration = 1e-06sec.
+BDD:[123]3790(2025)7
+BDDrev:[123]3790(2025)33
+-duration = 4e-06sec.
+BDD:[129]3790(2025)3
+BDDrev:[129]3790(2025)3
+-duration = 5e-06sec.
+BDD:[4838]3790(2025)27
+BDDrev:[4838]3790(2025)27
+-duration = 2e-06sec.
+BDD:2717(1191)[4838]23
+BDDrev:2717(1191)[4838]27
+-duration = 3e-06sec.
+BDD:[134][4838]3
+BDDrev:[134][4838]3
+-duration = 5e-06sec.
+BDD:[4839][4838]4
+BDDrev:[4839][4838]4
+-duration = 4e-06sec.
+BDD:117(47)[4839]2
+BDDrev:117(47)[4839]4
+-duration = 2e-06sec.
+BDD:[145][4839]3
+BDDrev:[145][4839]3
+-duration = 1e-06sec.
+BDD:386(135){{847(465)}}2
+BDDrev:386(135){{847(465)}}3
+-duration = 3e-06sec.
+BDD:556(153){{847(465)}}2
+BDDrev:556(153){{847(465)}}2
+-duration = 0.00029sec.
+BDD:173(76)[497]2
+BDDrev:173(76)[497]5
+-duration = 1.6e-05sec.
+BDD:[159][497]4
+BDDrev:[159][497]4
+-duration = 3e-06sec.
+BDD:173(76)[512]2
+BDDrev:173(76)[512]5
+-duration = 3e-06sec.
+BDD:[166][512]4
+BDDrev:[166][512]4
+-duration = 2e-06sec.
+BDD:3849(2024){{838(2064)}}23
+BDDrev:3849(2024){{838(2064)}}23
+-duration = 1e-06sec.
+BDD:[612]{{802(2183)}}4
+BDDrev:[612]{{802(2183)}}4
+-duration = 1e-05sec.
+BDD:[613]{{802(2183)}}39
+BDDrev:[613]{{802(2183)}}39
+-duration = 4.3e-05sec.
+BDD:[614]{{802(2183)}}4
+BDDrev:[614]{{802(2183)}}4
+-duration = 1.8e-05sec.
+BDD:[615]{{802(2183)}}25
+BDDrev:[615]{{802(2183)}}25
+-duration = 1.7e-05sec.
+BDD:3849(2024)[615]23
+BDDrev:3849(2024)[615]25
+-duration = 2e-05sec.
+BDD:[157][615]3
+BDDrev:[157][615]3
+-duration = 1e-05sec.
+BDD:[588]{{696(2226)}}40
+BDDrev:[588]{{696(2226)}}40
+-duration = 5.6e-05sec.
+BDD:[589]{{696(2226)}}26
+BDDrev:[589]{{696(2226)}}26
+-duration = 4.3e-05sec.
+BDD:[590]{{696(2226)}}5
+BDDrev:[590]{{696(2226)}}5
+-duration = 2.5e-05sec.
+BDD:[591]{{696(2226)}}5
+BDDrev:[591]{{696(2226)}}5
+-duration = 2.6e-05sec.
+BDD:3849(2024)[589]23
+BDDrev:3849(2024)[589]26
+-duration = 1.7e-05sec.
+BDD:[163][589]4
+BDDrev:[163][589]4
+-duration = 9e-06sec.
+BDD:[604]{{664(2223)}}40
+BDDrev:[604]{{664(2223)}}40
+-duration = 5.7e-05sec.
+BDD:[605]{{664(2223)}}26
+BDDrev:[605]{{664(2223)}}26
+-duration = 4e-05sec.
+BDD:[606]{{664(2223)}}5
+BDDrev:[606]{{664(2223)}}5
+-duration = 0.000107sec.
+BDD:[607]{{664(2223)}}5
+BDDrev:[607]{{664(2223)}}5
+-duration = 2.5e-05sec.
+BDD:3849(2024)[605]23
+BDDrev:3849(2024)[605]26
+-duration = 1.8e-05sec.
+BDD:[170][605]4
+BDDrev:[170][605]4
+-duration = 9e-06sec.
+BDD:[628]{{762(2184)}}39
+BDDrev:[628]{{762(2184)}}39
+-duration = 5.6e-05sec.
+BDD:[629]{{762(2184)}}4
+BDDrev:[629]{{762(2184)}}4
+-duration = 1.9e-05sec.
+BDD:[630]{{762(2184)}}25
+BDDrev:[630]{{762(2184)}}25
+-duration = 2.8e-05sec.
+BDD:[631]{{762(2184)}}4
+BDDrev:[631]{{762(2184)}}4
+-duration = 2.2e-05sec.
+BDD:3849(2024)[630]23
+BDDrev:3849(2024)[630]25
+-duration = 1.8e-05sec.
+BDD:[160][630]3
+BDDrev:[160][630]3
+-duration = 9e-06sec.
+BDD:[778]3849(2024)13
+BDDrev:[778]3849(2024)13
+-duration = 2.3e-05sec.
+BDD:[779]3849(2024)15
+BDDrev:[779]3849(2024)15
+-duration = 1.7e-05sec.
+BDD:[780]3849(2024)4
+BDDrev:[780]3849(2024)4
+-duration = 8e-06sec.
+BDD:[781]3849(2024)10
+BDDrev:[781]3849(2024)10
+-duration = 8e-06sec.
+BDD:129(57)[780]2
+BDDrev:129(57)[780]4
+-duration = 3e-06sec.
+BDD:[145][780]3
+BDDrev:[145][780]3
+-duration = 3e-06sec.
+BDD:[686]5255(1860)14
+BDDrev:[686]5255(1860)14
+-duration = 1.1e-05sec.
+BDD:[687]5255(1860)14
+BDDrev:[687]5255(1860)14
+-duration = 0.00013sec.
+BDD:2780(940)[686]4
+BDDrev:2780(940)[686]14
+-duration = 1.6e-05sec.
+BDD:[199][686]8
+BDDrev:[199][686]8
+-duration = 0.000126sec.
+BDD:2780(940)[687]4
+BDDrev:2780(940)[687]14
+-duration = 1.7e-05sec.
+BDD:[199][687]8
+BDDrev:[199][687]8
+-duration = 0.000122sec.
+BDD:[688][199]10
+BDDrev:[688][199]10
+-duration = 1.9e-05sec.
+BDD:[689][199]10
+BDDrev:[689][199]10
+-duration = 0.000165sec.
+BDD:2776(939)[688]4
+BDDrev:2776(939)[688]10
+-duration = 1.5e-05sec.
+BDD:[139][688]6
+BDDrev:[139][688]6
+-duration = 0.00013sec.
+BDD:2776(939)[689]4
+BDDrev:2776(939)[689]10
+-duration = 1.5e-05sec.
+BDD:[139][689]6
+BDDrev:[139][689]6
+-duration = 0.000164sec.
+BDD:[690][139]6
+BDDrev:[690][139]6
+-duration = 1.7e-05sec.
+BDD:[691][139]6
+BDDrev:[691][139]6
+-duration = 0.000146sec.
+BDD:2767(936)[691]4
+BDDrev:2767(936)[691]6
+-duration = 1.5e-05sec.
+BDD:2772(937)[691]4
+BDDrev:2772(937)[691]4
+-duration = 0.000134sec.
+BDD:[270]4623(2442)60
+BDDrev:[270]4623(2442)60
+-duration = 7.2e-05sec.
+BDD:[271]4623(2442)82
+BDDrev:[271]4623(2442)82
+-duration = 0.000994sec.
+BDD:[272]4623(2442)55
+BDDrev:[272]4623(2442)55
+-duration = 0.000939sec.
+BDD:[273]4623(2442)70
+BDDrev:[273]4623(2442)70
+-duration = 0.001056sec.
+BDD:1497(156)[273]2
+BDDrev:1497(156)[273]70
+-duration = 9.5e-05sec.
+BDD:1344(1449)[273]6
+BDDrev:1344(1449)[273]47
+-duration = 0.000701sec.
+BDD:4534(2419)[273]40
+BDDrev:4534(2419)[273]40
+-duration = 0.001031sec.
+BDD:1497(156)[272]2
+BDDrev:1497(156)[272]55
+-duration = 0.000104sec.
+BDD:1344(1449)[272]6
+BDDrev:1344(1449)[272]62
+-duration = 0.000673sec.
+BDD:4534(2419)[272]40
+BDDrev:4534(2419)[272]40
+-duration = 0.001385sec.
+BDD:[276]4534(2419)83
+BDDrev:[276]4534(2419)83
+-duration = 0.000139sec.
+BDD:[277]4534(2419)83
+BDDrev:[277]4534(2419)83
+-duration = 0.001771sec.
+BDD:4514(2354)[277]32
+BDDrev:4514(2354)[277]83
+-duration = 0.000293sec.
+BDD:[194][277]10
+BDDrev:[194][277]10
+-duration = 0.001103sec.
+BDD:4514(2354)[276]32
+BDDrev:4514(2354)[276]83
+-duration = 0.00015sec.
+BDD:[194][276]10
+BDDrev:[194][276]10
+-duration = 0.001149sec.
+BDD:[280]4514(2354)34
+BDDrev:[280]4514(2354)34
+-duration = 0.000155sec.
+BDD:[281]4514(2354)28
+BDDrev:[281]4514(2354)28
+-duration = 0.001475sec.
+BDD:[282]4514(2354)34
+BDDrev:[282]4514(2354)34
+-duration = 0.001922sec.
+BDD:[283]4514(2354)25
+BDDrev:[283]4514(2354)25
+-duration = 0.002176sec.
+BDD:1390(1443)[281]6
+BDDrev:1390(1443)[281]25
+-duration = 0.000104sec.
+BDD:1152(1452)[281]6
+BDDrev:1152(1452)[281]28
+-duration = 0.000772sec.
+BDD:4494(2266)[281]26
+BDDrev:4494(2266)[281]26
+-duration = 0.001426sec.
+BDD:4494(2266)[283]26
+BDDrev:4494(2266)[283]25
+-duration = 0.000103sec.
+BDD:[146][283]12
+BDDrev:[146][283]12
+-duration = 0.000747sec.
+BDD:1390(1443)[280]6
+BDDrev:1390(1443)[280]34
+-duration = 6.1e-05sec.
+BDD:1152(1452)[280]6
+BDDrev:1152(1452)[280]26
+-duration = 0.002382sec.
+BDD:4494(2266)[280]26
+BDDrev:4494(2266)[280]26
+-duration = 0.001373sec.
+BDD:1390(1443)[282]6
+BDDrev:1390(1443)[282]34
+-duration = 0.000158sec.
+BDD:1152(1452)[282]6
+BDDrev:1152(1452)[282]26
+-duration = 0.001129sec.
+BDD:4494(2266)[282]26
+BDDrev:4494(2266)[282]26
+-duration = 0.001828sec.
+BDD:[5364]4494(2266)35
+BDDrev:[5364]4494(2266)35
+-duration = 0.000177sec.
+BDD:[5365]4494(2266)35
+BDDrev:[5365]4494(2266)35
+-duration = 0.001451sec.
+BDD:1359(1029)[5364]6
+BDDrev:1359(1029)[5364]32
+-duration = 0.000162sec.
+BDD:4484(2114)[5364]18
+BDDrev:4484(2114)[5364]32
+-duration = 0.002356sec.
+BDD:[242][5364]24
+BDDrev:[242][5364]24
+-duration = 0.001493sec.
+BDD:[208][5365]26
+BDDrev:[208][5365]50
+-duration = 0.000169sec.
+BDD:[212][5365]27
+BDDrev:[212][5365]39
+-duration = 0.001369sec.
+BDD:4484(2114)[5365]18
+BDDrev:4484(2114)[5365]18
+-duration = 0.001542sec.
+BDD:[5366]4484(2114)18
+BDDrev:[5366]4484(2114)18
+-duration = 0.000127sec.
+BDD:[5367]4484(2114)18
+BDDrev:[5367]4484(2114)18
+-duration = 0.001322sec.
+BDD:1478(1731)[5367]12
+BDDrev:1478(1731)[5367]28
+-duration = 0.000113sec.
+BDD:[146][5367]12
+BDDrev:[146][5367]26
+-duration = 0.001188sec.
+BDD:4474(1964)[5367]18
+BDDrev:4474(1964)[5367]18
+-duration = 0.00151sec.
+BDD:1478(1731)[5366]12
+BDDrev:1478(1731)[5366]22
+-duration = 0.000111sec.
+BDD:4474(1964)[5366]18
+BDDrev:4474(1964)[5366]26
+-duration = 0.001222sec.
+BDD:[146][5366]12
+BDDrev:[146][5366]12
+-duration = 0.001592sec.
+BDD:[156]4474(1964)18
+BDDrev:[156]4474(1964)18
+-duration = 0.000114sec.
+BDD:[292]4474(1964)16
+BDDrev:[292]4474(1964)16
+-duration = 0.004028sec.
+BDD:[293]4474(1964)20
+BDDrev:[293]4474(1964)20
+-duration = 0.00166sec.
+BDD:4555(1734)[292]18
+BDDrev:4555(1734)[292]16
+-duration = 0.000101sec.
+BDD:[228][292]6
+BDDrev:[228][292]6
+-duration = 0.000754sec.
+BDD:4555(1734)[293]18
+BDDrev:4555(1734)[293]20
+-duration = 6e-05sec.
+BDD:[228][293]6
+BDDrev:[228][293]6
+-duration = 0.001112sec.
+BDD:374(134)[228]2
+BDDrev:374(134)[228]6
+-duration = 6.8e-05sec.
+BDD:2767(936)[228]4
+BDDrev:2767(936)[228]4
+-duration = 0.001118sec.
+BDD:3791(2067)[588]37
+BDDrev:3791(2067)[588]40
+-duration = 0.000117sec.
+BDD:[169][588]4
+BDDrev:[169][588]4
+-duration = 1.4e-05sec.
+BDD:3791(2067)[628]37
+BDDrev:3791(2067)[628]39
+-duration = 3.4e-05sec.
+BDD:[167][628]3
+BDDrev:[167][628]3
+-duration = 1.7e-05sec.
+BDD:3791(2067)[604]37
+BDDrev:3791(2067)[604]40
+-duration = 3.5e-05sec.
+BDD:[172][604]4
+BDDrev:[172][604]4
+-duration = 1.7e-05sec.
+BDD:3791(2067){{877(2126)}}37
+BDDrev:3791(2067){{877(2126)}}37
+-duration = 2e-06sec.
+BDD:3791(2067)[613]37
+BDDrev:3791(2067)[613]39
+-duration = 3.4e-05sec.
+BDD:[168][613]3
+BDDrev:[168][613]3
+-duration = 1.7e-05sec.
+BDD:1253(1960)3791(2067)14
+BDDrev:1253(1960)3791(2067)37
+-duration = 2.5e-05sec.
+BDD:[129]3791(2067)3
+BDDrev:[129]3791(2067)3
+-duration = 3.1e-05sec.
+BDD:[4893]3791(2067)27
+BDDrev:[4893]3791(2067)27
+-duration = 1.1e-05sec.
+BDD:3792(2066){{875(2125)}}43
+BDDrev:3792(2066){{875(2125)}}43
+-duration = 1e-06sec.
+BDD:3792(2066)[617]43
+BDDrev:3792(2066)[617]45
+-duration = 4.1e-05sec.
+BDD:[168][617]3
+BDDrev:[168][617]3
+-duration = 1.8e-05sec.
+BDD:[584]{{699(2227)}}46
+BDDrev:[584]{{699(2227)}}46
+-duration = 7.7e-05sec.
+BDD:[585]{{699(2227)}}36
+BDDrev:[585]{{699(2227)}}36
+-duration = 6e-05sec.
+BDD:[586]{{699(2227)}}5
+BDDrev:[586]{{699(2227)}}5
+-duration = 4.8e-05sec.
+BDD:[587]{{699(2227)}}5
+BDDrev:[587]{{699(2227)}}5
+-duration = 3.6e-05sec.
+BDD:3792(2066)[584]43
+BDDrev:3792(2066)[584]46
+-duration = 3.7e-05sec.
+BDD:[169][584]4
+BDDrev:[169][584]4
+-duration = 0.000171sec.
+BDD:3792(2066)[632]43
+BDDrev:3792(2066)[632]45
+-duration = 3.4e-05sec.
+BDD:[167][632]3
+BDDrev:[167][632]3
+-duration = 1.8e-05sec.
+BDD:[600]{{667(2224)}}46
+BDDrev:[600]{{667(2224)}}46
+-duration = 7.6e-05sec.
+BDD:[601]{{667(2224)}}36
+BDDrev:[601]{{667(2224)}}36
+-duration = 5.5e-05sec.
+BDD:[602]{{667(2224)}}5
+BDDrev:[602]{{667(2224)}}5
+-duration = 3.6e-05sec.
+BDD:[603]{{667(2224)}}5
+BDDrev:[603]{{667(2224)}}5
+-duration = 3.6e-05sec.
+BDD:3792(2066)[600]43
+BDDrev:3792(2066)[600]46
+-duration = 3.7e-05sec.
+BDD:[172][600]4
+BDDrev:[172][600]4
+-duration = 1.9e-05sec.
+BDD:[126]3792(2066)20
+BDDrev:[126]3792(2066)43
+-duration = 3.1e-05sec.
+BDD:[129]3792(2066)3
+BDDrev:[129]3792(2066)3
+-duration = 3e-05sec.
+BDD:[4889]3792(2066)27
+BDDrev:[4889]3792(2066)27
+-duration = 1.5e-05sec.
+BDD:[716][126]20
+BDDrev:[716][126]20
+-duration = 2.1e-05sec.
+BDD:[717][126]20
+BDDrev:[717][126]20
+-duration = 0.000111sec.
+BDD:1116(1446)[716]6
+BDDrev:1116(1446)[716]20
+-duration = 1.9e-05sec.
+BDD:4260(1727)[716]16
+BDDrev:4260(1727)[716]16
+-duration = 0.00015sec.
+BDD:4024(2068)[625]60
+BDDrev:4024(2068)[625]62
+-duration = 7.2e-05sec.
+BDD:[168][625]3
+BDDrev:[168][625]3
+-duration = 1.2e-05sec.
+BDD:4024(2068)[592]60
+BDDrev:4024(2068)[592]63
+-duration = 6.2e-05sec.
+BDD:[169][592]4
+BDDrev:[169][592]4
+-duration = 1.4e-05sec.
+BDD:4024(2068)[640]60
+BDDrev:4024(2068)[640]62
+-duration = 6.4e-05sec.
+BDD:[167][640]3
+BDDrev:[167][640]3
+-duration = 1.2e-05sec.
+BDD:4024(2068){{871(2127)}}60
+BDDrev:4024(2068){{871(2127)}}60
+-duration = 1e-06sec.
+BDD:4024(2068)[608]60
+BDDrev:4024(2068)[608]63
+-duration = 5.7e-05sec.
+BDD:[172][608]4
+BDDrev:[172][608]4
+-duration = 1.2e-05sec.
+BDD:1238(1953)4024(2068)34
+BDDrev:1238(1953)4024(2068)60
+-duration = 6.9e-05sec.
+BDD:[129]4024(2068)3
+BDDrev:[129]4024(2068)3
+-duration = 3.1e-05sec.
+BDD:[4874]4024(2068)27
+BDDrev:[4874]4024(2068)27
+-duration = 1.7e-05sec.
+BDD:[4876]1238(1953)36
+BDDrev:[4876]1238(1953)36
+-duration = 2.2e-05sec.
+BDD:[4877]1238(1953)36
+BDDrev:[4877]1238(1953)36
+-duration = 7.7e-05sec.
+BDD:1359(1029)[4876]6
+BDDrev:1359(1029)[4876]12
+-duration = 2.3e-05sec.
+BDD:1089(1436)[4876]6
+BDDrev:1089(1436)[4876]34
+-duration = 6.9e-05sec.
+BDD:[215][4876]28
+BDDrev:[215][4876]28
+-duration = 9e-05sec.
+BDD:1359(1029)[4877]6
+BDDrev:1359(1029)[4877]12
+-duration = 1.6e-05sec.
+BDD:[215][4877]28
+BDDrev:[215][4877]34
+-duration = 7.4e-05sec.
+BDD:1089(1436)[4877]6
+BDDrev:1089(1436)[4877]6
+-duration = 7.7e-05sec.
+BDD:1344(1449)[215]6
+BDDrev:1344(1449)[215]28
+-duration = 1.9e-05sec.
+BDD:1243(1961)[215]27
+BDDrev:1243(1961)[215]27
+-duration = 7.8e-05sec.
+BDD:[727]1243(1961)28
+BDDrev:[727]1243(1961)28
+-duration = 1.4e-05sec.
+BDD:[728]1243(1961)28
+BDDrev:[728]1243(1961)28
+-duration = 5.4e-05sec.
+BDD:1344(1449)[728]6
+BDDrev:1344(1449)[728]28
+-duration = 1.1e-05sec.
+BDD:[183][728]22
+BDDrev:[183][728]22
+-duration = 1.8e-05sec.
+BDD:1344(1449)[727]6
+BDDrev:1344(1449)[727]28
+-duration = 5e-06sec.
+BDD:[183][727]22
+BDDrev:[183][727]22
+-duration = 2.4e-05sec.
+BDD:[729][183]20
+BDDrev:[729][183]20
+-duration = 9e-06sec.
+BDD:[730][183]6
+BDDrev:[730][183]6
+-duration = 1.9e-05sec.
+BDD:1116(1446)[729]6
+BDDrev:1116(1446)[729]20
+-duration = 5e-06sec.
+BDD:4260(1727)[729]16
+BDDrev:4260(1727)[729]16
+-duration = 1.8e-05sec.
+BDD:1116(1446)[717]6
+BDDrev:1116(1446)[717]20
+-duration = 1.5e-05sec.
+BDD:4260(1727)[717]16
+BDDrev:4260(1727)[717]16
+-duration = 0.000107sec.
+BDD:1390(1443)4260(1727)6
+BDDrev:1390(1443)4260(1727)18
+-duration = 1.3e-05sec.
+BDD:1253(1960)4260(1727)14
+BDDrev:1253(1960)4260(1727)16
+-duration = 2.4e-05sec.
+BDD:1478(1731)4260(1727)12
+BDDrev:1478(1731)4260(1727)12
+-duration = 7.7e-05sec.
+BDD:[733]1253(1960)10
+BDDrev:[733]1253(1960)10
+-duration = 1.3e-05sec.
+BDD:[734]1253(1960)10
+BDDrev:[734]1253(1960)10
+-duration = 2.1e-05sec.
+BDD:[735]1253(1960)14
+BDDrev:[735]1253(1960)14
+-duration = 6.8e-05sec.
+BDD:[736]1253(1960)14
+BDDrev:[736]1253(1960)14
+-duration = 7.2e-05sec.
+BDD:4(1)[735]2
+BDDrev:4(1)[735]14
+-duration = 1.2e-05sec.
+BDD:1390(1443)[735]6
+BDDrev:1390(1443)[735]12
+-duration = 2.1e-05sec.
+BDD:1152(1452)[735]6
+BDDrev:1152(1452)[735]6
+-duration = 4.6e-05sec.
+BDD:1497(156)[270]2
+BDDrev:1497(156)[270]60
+-duration = 6.4e-05sec.
+BDD:4612(2386)[270]36
+BDDrev:4612(2386)[270]52
+-duration = 0.000743sec.
+BDD:[174][270]10
+BDDrev:[174][270]10
+-duration = 0.009035sec.
+BDD:1497(156)[271]2
+BDDrev:1497(156)[271]82
+-duration = 0.000129sec.
+BDD:4612(2386)[271]36
+BDDrev:4612(2386)[271]74
+-duration = 0.000857sec.
+BDD:[174][271]10
+BDDrev:[174][271]10
+-duration = 0.001925sec.
+BDD:[295]4612(2386)56
+BDDrev:[295]4612(2386)56
+-duration = 0.000106sec.
+BDD:[296]4612(2386)56
+BDDrev:[296]4612(2386)56
+-duration = 0.001482sec.
+BDD:4592(2323)[296]28
+BDDrev:4592(2323)[296]56
+-duration = 0.000117sec.
+BDD:[192][296]10
+BDDrev:[192][296]10
+-duration = 0.000928sec.
+BDD:4592(2323)[295]28
+BDDrev:4592(2323)[295]56
+-duration = 0.000123sec.
+BDD:[192][295]10
+BDDrev:[192][295]10
+-duration = 0.000916sec.
+BDD:[299]4592(2323)51
+BDDrev:[299]4592(2323)51
+-duration = 9.5e-05sec.
+BDD:[300]4592(2323)51
+BDDrev:[300]4592(2323)51
+-duration = 0.001187sec.
+BDD:4572(2115)[299]18
+BDDrev:4572(2115)[299]51
+-duration = 8.3e-05sec.
+BDD:[188][299]28
+BDDrev:[188][299]28
+-duration = 0.001083sec.
+BDD:4572(2115)[300]18
+BDDrev:4572(2115)[300]51
+-duration = 8.1e-05sec.
+BDD:[188][300]28
+BDDrev:[188][300]28
+-duration = 0.003661sec.
+BDD:[301][188]28
+BDDrev:[301][188]28
+-duration = 7.2e-05sec.
+BDD:[302][188]26
+BDDrev:[302][188]26
+-duration = 0.001026sec.
+BDD:1152(1452)[301]6
+BDDrev:1152(1452)[301]26
+-duration = 5.2e-05sec.
+BDD:4575(1742)[301]26
+BDDrev:4575(1742)[301]26
+-duration = 0.000945sec.
+BDD:2767(936)[734]4
+BDDrev:2767(936)[734]10
+-duration = 1.6e-05sec.
+BDD:1390(1443)[734]6
+BDDrev:1390(1443)[734]12
+-duration = 2.1e-05sec.
+BDD:1152(1452)[734]6
+BDDrev:1152(1452)[734]6
+-duration = 3.2e-05sec.
+BDD:[776][123]9
+BDDrev:[776][123]9
+-duration = 6e-06sec.
+BDD:[777][123]9
+BDDrev:[777][123]9
+-duration = 1.4e-05sec.
+BDD:4(1)[777]2
+BDDrev:4(1)[777]9
+-duration = 5e-06sec.
+BDD:1152(1452)[777]6
+BDDrev:1152(1452)[777]6
+-duration = 1.1e-05sec.
+BDD:2767(936)[733]4
+BDDrev:2767(936)[733]10
+-duration = 5e-06sec.
+BDD:1390(1443)[733]6
+BDDrev:1390(1443)[733]12
+-duration = 1.7e-05sec.
+BDD:1152(1452)[733]6
+BDDrev:1152(1452)[733]6
+-duration = 5.7e-05sec.
+BDD:4555(1734)[242]18
+BDDrev:4555(1734)[242]24
+-duration = 3e-05sec.
+BDD:[156][242]18
+BDDrev:[156][242]28
+-duration = 0.000809sec.
+BDD:1344(1449)[242]6
+BDDrev:1344(1449)[242]6
+-duration = 0.000848sec.
+BDD:4(1)1225(1819)2
+BDDrev:4(1)1225(1819)36
+-duration = 3.1e-05sec.
+BDD:[222]1225(1819)33
+BDDrev:[222]1225(1819)33
+-duration = 2e-05sec.
+BDD:1185(1721)1225(1819)32
+BDDrev:1185(1721)1225(1819)32
+-duration = 6.4e-05sec.
+BDD:[5338][125]37
+BDDrev:[5338][125]37
+-duration = 3.3e-05sec.
+BDD:[5339][125]37
+BDDrev:[5339][125]37
+-duration = 0.004401sec.
+BDD:1185(1721)[5338]32
+BDDrev:1185(1721)[5338]37
+-duration = 0.000103sec.
+BDD:[222][5338]33
+BDDrev:[222][5338]36
+-duration = 0.003456sec.
+BDD:1497(156)[5338]2
+BDDrev:1497(156)[5338]2
+-duration = 0.006155sec.
+BDD:1089(1436)[222]6
+BDDrev:1089(1436)[222]33
+-duration = 6.8e-05sec.
+BDD:[212][222]27
+BDDrev:[212][222]27
+-duration = 0.00025sec.
+BDD:1344(1449)[212]6
+BDDrev:1344(1449)[212]27
+-duration = 2.8e-05sec.
+BDD:[156][212]18
+BDDrev:[156][212]18
+-duration = 0.00028sec.
+BDD:1116(1446)[156]6
+BDDrev:1116(1446)[156]18
+-duration = 4e-05sec.
+BDD:[146][156]12
+BDDrev:[146][156]12
+-duration = 0.000322sec.
+BDD:4(1)[736]2
+BDDrev:4(1)[736]14
+-duration = 2.8e-05sec.
+BDD:[146][736]12
+BDDrev:[146][736]12
+-duration = 1.7e-05sec.
+BDD:1390(1443)[146]6
+BDDrev:1390(1443)[146]12
+-duration = 7e-06sec.
+BDD:1152(1452)[146]6
+BDDrev:1152(1452)[146]6
+-duration = 0.000379sec.
+BDD:1152(1452)[302]6
+BDDrev:1152(1452)[302]28
+-duration = 4.3e-05sec.
+BDD:4575(1742)[302]26
+BDDrev:4575(1742)[302]26
+-duration = 0.000993sec.
+BDD:4(1)[776]2
+BDDrev:4(1)[776]9
+-duration = 1.4e-05sec.
+BDD:1152(1452)[776]6
+BDDrev:1152(1452)[776]6
+-duration = 1.3e-05sec.
+BDD:[879]1152(1452)6
+BDDrev:[879]1152(1452)6
+-duration = 8e-06sec.
+BDD:[880]1152(1452)6
+BDDrev:[880]1152(1452)6
+-duration = 0.000339sec.
+BDD:374(134)[880]2
+BDDrev:374(134)[880]6
+-duration = 5e-06sec.
+BDD:2767(936)[880]4
+BDDrev:2767(936)[880]4
+-duration = 0.000349sec.
+BDD:374(134)[879]2
+BDDrev:374(134)[879]6
+-duration = 5.2e-05sec.
+BDD:2767(936)[879]4
+BDDrev:2767(936)[879]4
+-duration = 0.000341sec.
+BDD:[306]4572(2115)16
+BDDrev:[306]4572(2115)16
+-duration = 5.9e-05sec.
+BDD:[307]4572(2115)16
+BDDrev:[307]4572(2115)16
+-duration = 0.001247sec.
+BDD:[154][306]18
+BDDrev:[154][306]16
+-duration = 3e-05sec.
+BDD:[219][306]6
+BDDrev:[219][306]6
+-duration = 0.000424sec.
+BDD:[154][307]18
+BDDrev:[154][307]16
+-duration = 2.1e-05sec.
+BDD:[219][307]6
+BDDrev:[219][307]6
+-duration = 0.001075sec.
+BDD:[308][154]16
+BDDrev:[308][154]16
+-duration = 2.8e-05sec.
+BDD:[309][154]16
+BDDrev:[309][154]16
+-duration = 0.001025sec.
+BDD:1478(1731)[309]12
+BDDrev:1478(1731)[309]16
+-duration = 2.6e-05sec.
+BDD:4555(1734)[309]18
+BDDrev:4555(1734)[309]18
+-duration = 0.001058sec.
+BDD:1478(1731)[308]12
+BDDrev:1478(1731)[308]16
+-duration = 2.4e-05sec.
+BDD:4555(1734)[308]18
+BDDrev:4555(1734)[308]18
+-duration = 0.000885sec.
+BDD:1497(156)[5339]2
+BDDrev:1497(156)[5339]37
+-duration = 2.1e-05sec.
+BDD:1185(1721)[5339]32
+BDDrev:1185(1721)[5339]32
+-duration = 0.001804sec.
+BDD:[805]1185(1721)32
+BDDrev:[805]1185(1721)32
+-duration = 4.2e-05sec.
+BDD:[806]1185(1721)6
+BDDrev:[806]1185(1721)6
+-duration = 0.000448sec.
+BDD:1089(1436)[805]6
+BDDrev:1089(1436)[805]32
+-duration = 0.000101sec.
+BDD:[208][805]26
+BDDrev:[208][805]26
+-duration = 0.000449sec.
+BDD:1344(1449)[208]6
+BDDrev:1344(1449)[208]25
+-duration = 6.9e-05sec.
+BDD:4555(1734)[208]18
+BDDrev:4555(1734)[208]24
+-duration = 0.001556sec.
+BDD:1359(1029)[208]6
+BDDrev:1359(1029)[208]6
+-duration = 0.011916sec.
+BDD:[809]4555(1734)16
+BDDrev:[809]4555(1734)16
+-duration = 0.000302sec.
+BDD:[810]4555(1734)6
+BDDrev:[810]4555(1734)6
+-duration = 0.000925sec.
+BDD:1116(1446)[809]6
+BDDrev:1116(1446)[809]16
+-duration = 0.000122sec.
+BDD:1478(1731)[809]12
+BDDrev:1478(1731)[809]12
+-duration = 0.000662sec.
+BDD:1344(1449)4575(1742)6
+BDDrev:1344(1449)4575(1742)25
+-duration = 0.000196sec.
+BDD:[303]4575(1742)6
+BDDrev:[303]4575(1742)12
+-duration = 0.001014sec.
+BDD:[305]4575(1742)16
+BDDrev:[305]4575(1742)25
+-duration = 0.001009sec.
+BDD:1359(1029)4575(1742)6
+BDDrev:1359(1029)4575(1742)6
+-duration = 0.002264sec.
+BDD:1116(1446)[305]6
+BDDrev:1116(1446)[305]16
+-duration = 0.00013sec.
+BDD:1478(1731)[305]12
+BDDrev:1478(1731)[305]12
+-duration = 0.000913sec.
+BDD:411(138)1478(1731)2
+BDDrev:411(138)1478(1731)12
+-duration = 3.3e-05sec.
+BDD:2772(937)1478(1731)4
+BDDrev:2772(937)1478(1731)11
+-duration = 0.00272sec.
+BDD:[4821]1478(1731)10
+BDDrev:[4821]1478(1731)10
+-duration = 0.005309sec.
+BDD:1390(1443)[4821]6
+BDDrev:1390(1443)[4821]10
+-duration = 0.00016sec.
+BDD:[219][4821]6
+BDDrev:[219][4821]6
+-duration = 0.000353sec.
+BDD:374(134)[219]2
+BDDrev:374(134)[219]6
+-duration = 9e-05sec.
+BDD:2767(936)[219]4
+BDDrev:2767(936)[219]4
+-duration = 0.000868sec.
+BDD:2767(936)[690]4
+BDDrev:2767(936)[690]6
+-duration = 0.00018sec.
+BDD:2772(937)[690]4
+BDDrev:2772(937)[690]4
+-duration = 0.000192sec.
+BDD:[881]2767(936)3
+BDDrev:[881]2767(936)3
+-duration = 1.1e-05sec.
+BDD:[882]2767(936)3
+BDDrev:[882]2767(936)3
+-duration = 0.00275sec.
+BDD:288(109)[882]2
+BDDrev:288(109)[882]3
+-duration = 0.000446sec.
+BDD:335(123)[882]2
+BDDrev:335(123)[882]2
+-duration = 0.00012sec.
+BDD:203(86)[496]2
+BDDrev:203(86)[496]5
+-duration = 0.000357sec.
+BDD:[162][496]4
+BDDrev:[162][496]4
+-duration = 3e-06sec.
+BDD:200(85)[594]2
+BDDrev:200(85)[594]5
+-duration = 4e-06sec.
+BDD:[162][594]4
+BDDrev:[162][594]4
+-duration = 2e-06sec.
+BDD:176(77)[245]2
+BDDrev:176(77)[245]5
+-duration = 4e-06sec.
+BDD:[162][245]4
+BDDrev:[162][245]4
+-duration = 3e-06sec.
+BDD:155(70)[586]2
+BDDrev:155(70)[586]5
+-duration = 3e-06sec.
+BDD:[162][586]4
+BDDrev:[162][586]4
+-duration = 2e-06sec.
+BDD:191(82)[484]2
+BDDrev:191(82)[484]5
+-duration = 4e-06sec.
+BDD:[162][484]4
+BDDrev:[162][484]4
+-duration = 3e-06sec.
+BDD:188(81)[590]2
+BDDrev:188(81)[590]5
+-duration = 4e-06sec.
+BDD:[162][590]4
+BDDrev:[162][590]4
+-duration = 3e-06sec.
+BDD:197(84)[492]2
+BDDrev:197(84)[492]5
+-duration = 3e-06sec.
+BDD:[162][492]4
+BDDrev:[162][492]4
+-duration = 2e-06sec.
+BDD:149(68)[582]2
+BDDrev:149(68)[582]5
+-duration = 3e-06sec.
+BDD:[162][582]4
+BDDrev:[162][582]4
+-duration = 2e-06sec.
+BDD:182(79)[646]2
+BDDrev:182(79)[646]5
+-duration = 3e-06sec.
+BDD:[162][646]4
+BDDrev:[162][646]4
+-duration = 2e-06sec.
+BDD:194(83)[488]2
+BDDrev:194(83)[488]5
+-duration = 5e-06sec.
+BDD:[162][488]4
+BDDrev:[162][488]4
+-duration = 3e-06sec.
+BDD:1691(159)[162]2
+BDDrev:1691(159)[162]4
+-duration = 4e-06sec.
+BDD:[132][162]3
+BDDrev:[132][162]3
+-duration = 8e-06sec.
+BDD:146(67)[583]2
+BDDrev:146(67)[583]5
+-duration = 4e-06sec.
+BDD:[159][583]4
+BDDrev:[159][583]4
+-duration = 3e-06sec.
+BDD:161(72)[485]2
+BDDrev:161(72)[485]5
+-duration = 3e-06sec.
+BDD:[159][485]4
+BDDrev:[159][485]4
+-duration = 3e-06sec.
+BDD:185(80)[647]2
+BDDrev:185(80)[647]5
+-duration = 3e-06sec.
+BDD:[159][647]4
+BDDrev:[159][647]4
+-duration = 2e-06sec.
+BDD:167(74)[493]2
+BDDrev:167(74)[493]5
+-duration = 2e-06sec.
+BDD:[159][493]4
+BDDrev:[159][493]4
+-duration = 2e-06sec.
+BDD:164(73)[489]2
+BDDrev:164(73)[489]5
+-duration = 4e-06sec.
+BDD:[159][489]4
+BDDrev:[159][489]4
+-duration = 2e-06sec.
+BDD:170(75)[595]2
+BDDrev:170(75)[595]5
+-duration = 3e-06sec.
+BDD:[159][595]4
+BDDrev:[159][595]4
+-duration = 2e-06sec.
+BDD:152(69)[587]2
+BDDrev:152(69)[587]5
+-duration = 3e-06sec.
+BDD:[159][587]4
+BDDrev:[159][587]4
+-duration = 2e-06sec.
+BDD:179(78)[246]2
+BDDrev:179(78)[246]5
+-duration = 3e-06sec.
+BDD:[159][246]4
+BDDrev:[159][246]4
+-duration = 2e-06sec.
+BDD:158(71)[591]2
+BDDrev:158(71)[591]5
+-duration = 3e-06sec.
+BDD:[159][591]4
+BDDrev:[159][591]4
+-duration = 2e-06sec.
+BDD:1691(159)[159]2
+BDDrev:1691(159)[159]4
+-duration = 3e-06sec.
+BDD:[132][159]3
+BDDrev:[132][159]3
+-duration = 9e-06sec.
+BDD:137(63)[132]2
+BDDrev:137(63)[132]3
+-duration = 4e-06sec.
+BDD:1694(160)[132]2
+BDDrev:1694(160)[132]2
+-duration = 6e-06sec.
+BDD:4084(2180)[491]55
+BDDrev:4084(2180)[491]58
+-duration = 5.3e-05sec.
+BDD:[163][491]4
+BDDrev:[163][491]4
+-duration = 1e-05sec.
+BDD:3851(2063)[581]30
+BDDrev:3851(2063)[581]33
+-duration = 3e-05sec.
+BDD:[163][581]4
+BDDrev:[163][581]4
+-duration = 8e-06sec.
+BDD:4085(2232)[487]59
+BDDrev:4085(2232)[487]62
+-duration = 5.1e-05sec.
+BDD:[163][487]4
+BDDrev:[163][487]4
+-duration = 1.5e-05sec.
+BDD:4083(2130)[495]44
+BDDrev:4083(2130)[495]47
+-duration = 4.4e-05sec.
+BDD:[163][495]4
+BDDrev:[163][495]4
+-duration = 7e-06sec.
+BDD:3654(2468)[244]250
+BDDrev:3654(2468)[244]253
+-duration = 0.000212sec.
+BDD:[163][244]4
+BDDrev:[163][244]4
+-duration = 9.2e-05sec.
+BDD:3850(2069)[585]33
+BDDrev:3850(2069)[585]36
+-duration = 2.6e-05sec.
+BDD:[163][585]4
+BDDrev:[163][585]4
+-duration = 1.3e-05sec.
+BDD:4086(2231)[483]63
+BDDrev:4086(2231)[483]66
+-duration = 5.9e-05sec.
+BDD:[163][483]4
+BDDrev:[163][483]4
+-duration = 1.1e-05sec.
+BDD:1691(159)[163]2
+BDDrev:1691(159)[163]4
+-duration = 4e-06sec.
+BDD:[130][163]3
+BDDrev:[130][163]3
+-duration = 0.000691sec.
+BDD:1691(159)[169]2
+BDDrev:1691(159)[169]4
+-duration = 3.1e-05sec.
+BDD:[130][169]3
+BDDrev:[130][169]3
+-duration = 0.000887sec.
+BDD:137(63)[130]2
+BDDrev:137(63)[130]3
+-duration = 2e-05sec.
+BDD:1694(160)[130]2
+BDDrev:1694(160)[130]2
+-duration = 0.001sec.
+BDD:3176(362){{636(1280)}}3
+BDDrev:3176(362){{636(1280)}}6
+-duration = 2.3e-05sec.
+BDD:[995]{{636(1280)}}3
+BDDrev:[995]{{636(1280)}}3
+-duration = 4e-06sec.
+BDD:[996]{{636(1280)}}3
+BDDrev:[996]{{636(1280)}}3
+-duration = 3e-06sec.
+BDD:87(33)[996]2
+BDDrev:87(33)[996]3
+-duration = 3e-06sec.
+BDD:2358(162)[996]2
+BDDrev:2358(162)[996]2
+-duration = 3e-06sec.
+BDD:552(152){{849(219)}}2
+BDDrev:552(152){{849(219)}}2
+-duration = 1e-06sec.
+BDD:552(152){{601(220)}}2
+BDDrev:552(152){{601(220)}}3
+-duration = 3e-06sec.
+BDD:562(155){{601(220)}}2
+BDDrev:562(155){{601(220)}}2
+-duration = 0.0002sec.
+BDD:[278][194]12
+BDDrev:[278][194]12
+-duration = 1.5e-05sec.
+BDD:[279][194]12
+BDDrev:[279][194]12
+-duration = 0.00074sec.
+BDD:1089(1436)[278]6
+BDDrev:1089(1436)[278]12
+-duration = 2.5e-05sec.
+BDD:1116(1446)[278]6
+BDDrev:1116(1446)[278]6
+-duration = 0.000571sec.
+BDD:[297][192]12
+BDDrev:[297][192]12
+-duration = 2.4e-05sec.
+BDD:[298][192]12
+BDDrev:[298][192]12
+-duration = 0.000574sec.
+BDD:1089(1436)[297]6
+BDDrev:1089(1436)[297]12
+-duration = 1.9e-05sec.
+BDD:1390(1443)[297]6
+BDDrev:1390(1443)[297]6
+-duration = 0.003471sec.
+BDD:2784(944)[806]4
+BDDrev:2784(944)[806]6
+-duration = 3.8e-05sec.
+BDD:1089(1436)[806]6
+BDDrev:1089(1436)[806]6
+-duration = 0.000278sec.
+BDD:1089(1436)[279]6
+BDDrev:1089(1436)[279]12
+-duration = 3e-05sec.
+BDD:1116(1446)[279]6
+BDDrev:1116(1446)[279]6
+-duration = 0.000716sec.
+BDD:1089(1436)[298]6
+BDDrev:1089(1436)[298]12
+-duration = 2.1e-05sec.
+BDD:1390(1443)[298]6
+BDDrev:1390(1443)[298]6
+-duration = 0.000456sec.
+BDD:[895]1089(1436)6
+BDDrev:[895]1089(1436)6
+-duration = 2.1e-05sec.
+BDD:[896]1089(1436)6
+BDDrev:[896]1089(1436)6
+-duration = 0.000307sec.
+BDD:435(140)[896]2
+BDDrev:435(140)[896]6
+-duration = 3.5e-05sec.
+BDD:2784(944)[896]4
+BDDrev:2784(944)[896]4
+-duration = 0.000262sec.
+BDD:435(140)[895]2
+BDDrev:435(140)[895]6
+-duration = 2.4e-05sec.
+BDD:2784(944)[895]4
+BDDrev:2784(944)[895]4
+-duration = 0.000446sec.
+BDD:[897]2784(944)3
+BDDrev:[897]2784(944)3
+-duration = 5.5e-05sec.
+BDD:[898]2784(944)3
+BDDrev:[898]2784(944)3
+-duration = 0.001543sec.
+BDD:241(96)[898]2
+BDDrev:241(96)[898]3
+-duration = 0.000248sec.
+BDD:335(123)[898]2
+BDDrev:335(123)[898]2
+-duration = 6.6e-05sec.
+BDD:140(64){{656(621)}}2
+BDDrev:140(64){{656(621)}}4
+-duration = 0.000194sec.
+BDD:3176(362){{656(621)}}3
+BDDrev:3176(362){{656(621)}}3
+-duration = 3e-06sec.
+BDD:[226]{{639(1275)}}4
+BDDrev:[226]{{639(1275)}}9
+-duration = 9e-06sec.
+BDD:[989]{{639(1275)}}4
+BDDrev:[989]{{639(1275)}}4
+-duration = 5e-06sec.
+BDD:[990]{{639(1275)}}4
+BDDrev:[990]{{639(1275)}}4
+-duration = 4e-06sec.
+BDD:141(65)[226]2
+BDDrev:141(65)[226]4
+-duration = 2e-06sec.
+BDD:3176(362)[226]3
+BDDrev:3176(362)[226]3
+-duration = 5e-06sec.
+BDD:3176(362){{704(1281),717(1282)}}3
+BDDrev:3176(362){{704(1281),717(1282)}}6
+-duration = 7e-06sec.
+BDD:[992]{{704(1281),717(1282)}}3
+BDDrev:[992]{{704(1281),717(1282)}}3
+-duration = 3e-06sec.
+BDD:[993]{{704(1281),717(1282)}}3
+BDDrev:[993]{{704(1281),717(1282)}}3
+-duration = 3e-06sec.
+BDD:83(31){{820(1283)}}2
+BDDrev:83(31){{820(1283)}}4
+-duration = 2e-06sec.
+BDD:3176(362){{820(1283)}}3
+BDDrev:3176(362){{820(1283)}}3
+-duration = 2e-06sec.
+BDD:3176(362){{809(655)}}3
+BDDrev:3176(362){{809(655)}}3
+-duration = 1e-06sec.
+BDD:27(10)3176(362)2
+BDDrev:27(10)3176(362)3
+-duration = 4e-06sec.
+BDD:31(11)3176(362)2
+BDDrev:31(11)3176(362)2
+-duration = 2e-06sec.
+BDD:27(10){{845(845)}}2
+BDDrev:27(10){{845(845)}}3
+-duration = 2e-06sec.
+BDD:2824(163){{845(845)}}2
+BDDrev:2824(163){{845(845)}}2
+-duration = 1e-06sec.
+BDD:3654(2468)[248]250
+BDDrev:3654(2468)[248]253
+-duration = 0.00018sec.
+BDD:[170][248]4
+BDDrev:[170][248]4
+-duration = 5.2e-05sec.
+BDD:3654(2468)[257]250
+BDDrev:3654(2468)[257]252
+-duration = 0.000167sec.
+BDD:[160][257]3
+BDDrev:[160][257]3
+-duration = 4.9e-05sec.
+BDD:3654(2468)[254]250
+BDDrev:3654(2468)[254]252
+-duration = 0.000162sec.
+BDD:[157][254]3
+BDDrev:[157][254]3
+-duration = 5.5e-05sec.
+BDD:[259]3654(2468)249
+BDDrev:[259]3654(2468)249
+-duration = 0.000116sec.
+BDD:[260]3654(2468)3
+BDDrev:[260]3654(2468)3
+-duration = 7.7e-05sec.
+BDD:94(36)[260]2
+BDDrev:94(36)[260]3
+-duration = 5e-06sec.
+BDD:4092(176)[260]2
+BDDrev:4092(176)[260]2
+-duration = 4e-06sec.
+BDD:[835]{{1002(1920)}}13
+BDDrev:[835]{{1002(1920)}}13
+-duration = 1.1e-05sec.
+BDD:[836]{{1002(1920)}}13
+BDDrev:[836]{{1002(1920)}}13
+-duration = 0.000216sec.
+BDD:5239(1374)[836]5
+BDDrev:5239(1374)[836]13
+-duration = 8e-06sec.
+BDD:5236(1457)[836]6
+BDDrev:5236(1457)[836]6
+-duration = 0.000135sec.
+BDD:5239(1374)[835]5
+BDDrev:5239(1374)[835]13
+-duration = 7e-06sec.
+BDD:5236(1457)[835]6
+BDDrev:5236(1457)[835]6
+-duration = 0.000134sec.
+BDD:[837]5236(1457)11
+BDDrev:[837]5236(1457)11
+-duration = 9e-06sec.
+BDD:[838]5236(1457)11
+BDDrev:[838]5236(1457)11
+-duration = 0.000328sec.
+BDD:3424(913)[837]3
+BDDrev:3424(913)[837]11
+-duration = 9e-06sec.
+BDD:[196][837]4
+BDDrev:[196][837]4
+-duration = 0.000334sec.
+BDD:3424(913)[838]3
+BDDrev:3424(913)[838]11
+-duration = 8e-06sec.
+BDD:[196][838]4
+BDDrev:[196][838]4
+-duration = 0.000386sec.
+BDD:[843]3424(913)3
+BDDrev:[843]3424(913)3
+-duration = 7e-06sec.
+BDD:[844]3424(913)3
+BDDrev:[844]3424(913)3
+-duration = 0.000206sec.
+BDD:361(129)[844]2
+BDDrev:361(129)[844]3
+-duration = 5e-06sec.
+BDD:369(131)[844]2
+BDDrev:369(131)[844]2
+-duration = 0.000167sec.
+BDD:[692]{{998(2163)}}27
+BDDrev:[692]{{998(2163)}}27
+-duration = 1.9e-05sec.
+BDD:[693]{{998(2163)}}27
+BDDrev:[693]{{998(2163)}}27
+-duration = 0.000212sec.
+BDD:5247(1847)[692]10
+BDDrev:5247(1847)[692]27
+-duration = 1.2e-05sec.
+BDD:5244(1966)[692]13
+BDDrev:5244(1966)[692]13
+-duration = 0.000122sec.
+BDD:5247(1847)[693]10
+BDDrev:5247(1847)[693]27
+-duration = 8e-06sec.
+BDD:5244(1966)[693]13
+BDDrev:5244(1966)[693]13
+-duration = 0.000131sec.
+BDD:[694]5244(1966)14
+BDDrev:[694]5244(1966)14
+-duration = 1.1e-05sec.
+BDD:[695]5244(1966)14
+BDDrev:[695]5244(1966)14
+-duration = 0.000349sec.
+BDD:3463(1456)[694]5
+BDDrev:3463(1456)[694]14
+-duration = 9e-06sec.
+BDD:[184][694]10
+BDDrev:[184][694]10
+-duration = 0.000407sec.
+BDD:3463(1456)[695]5
+BDDrev:3463(1456)[695]14
+-duration = 8e-06sec.
+BDD:[184][695]10
+BDDrev:[184][695]10
+-duration = 0.000238sec.
+BDD:[696][184]15
+BDDrev:[696][184]15
+-duration = 1.2e-05sec.
+BDD:[697][184]15
+BDDrev:[697][184]15
+-duration = 0.000426sec.
+BDD:3454(1453)[696]6
+BDDrev:3454(1453)[696]15
+-duration = 1.2e-05sec.
+BDD:3445(1455)[696]6
+BDDrev:3445(1455)[696]6
+-duration = 0.000417sec.
+BDD:3454(1453)[697]6
+BDDrev:3454(1453)[697]15
+-duration = 1.2e-05sec.
+BDD:3445(1455)[697]6
+BDDrev:3445(1455)[697]6
+-duration = 0.000471sec.
+BDD:[700]3454(1453)6
+BDDrev:[700]3454(1453)6
+-duration = 1.1e-05sec.
+BDD:[701]3454(1453)6
+BDDrev:[701]3454(1453)6
+-duration = 0.000349sec.
+BDD:3137(914)[700]4
+BDDrev:3137(914)[700]6
+-duration = 9e-06sec.
+BDD:[178][700]4
+BDDrev:[178][700]4
+-duration = 0.000309sec.
+BDD:3137(914)[701]4
+BDDrev:3137(914)[701]6
+-duration = 8e-06sec.
+BDD:[178][701]4
+BDDrev:[178][701]4
+-duration = 0.000293sec.
+BDD:[702][178]3
+BDDrev:[702][178]3
+-duration = 8e-06sec.
+BDD:[703][178]3
+BDDrev:[703][178]3
+-duration = 0.000235sec.
+BDD:332(122)[703]2
+BDDrev:332(122)[703]3
+-duration = 7e-06sec.
+BDD:369(131)[703]2
+BDDrev:369(131)[703]2
+-duration = 0.000153sec.
+BDD:361(129)[843]2
+BDDrev:361(129)[843]3
+-duration = 5e-06sec.
+BDD:369(131)[843]2
+BDDrev:369(131)[843]2
+-duration = 0.000177sec.
+BDD:73(25)[618]2
+BDDrev:73(25)[618]4
+-duration = 7e-06sec.
+BDD:[164][618]3
+BDDrev:[164][618]3
+-duration = 3e-06sec.
+BDD:73(25)[635]2
+BDDrev:73(25)[635]4
+-duration = 5e-06sec.
+BDD:[158][635]3
+BDDrev:[158][635]3
+-duration = 2e-06sec.
+BDD:[903]1307(1427)6
+BDDrev:[903]1307(1427)6
+-duration = 5e-06sec.
+BDD:[904]1307(1427)6
+BDDrev:[904]1307(1427)6
+-duration = 7.3e-05sec.
+BDD:468(143)[903]2
+BDDrev:468(143)[903]6
+-duration = 1.3e-05sec.
+BDD:2794(947)[903]4
+BDDrev:2794(947)[903]4
+-duration = 7.7e-05sec.
+BDD:468(143)[904]2
+BDDrev:468(143)[904]6
+-duration = 1.1e-05sec.
+BDD:2794(947)[904]4
+BDDrev:2794(947)[904]4
+-duration = 8.5e-05sec.
+BDD:[905]2794(947)3
+BDDrev:[905]2794(947)3
+-duration = 3.3e-05sec.
+BDD:[906]2794(947)3
+BDDrev:[906]2794(947)3
+-duration = 0.000819sec.
+BDD:225(92)[906]2
+BDDrev:225(92)[906]3
+-duration = 0.000164sec.
+BDD:335(123)[906]2
+BDDrev:335(123)[906]2
+-duration = 0.00011sec.
+BDD:4092(176)[5180]2
+BDDrev:4092(176)[5180]249
+-duration = 0.000369sec.
+BDD:3658(2460)[5180]248
+BDDrev:3658(2460)[5180]248
+-duration = 0.00028sec.
+BDD:4092(176)[259]2
+BDDrev:4092(176)[259]249
+-duration = 9e-06sec.
+BDD:3658(2460)[259]248
+BDDrev:3658(2460)[259]248
+-duration = 0.001105sec.
+BDD:[388]3658(2460)160
+BDDrev:[388]3658(2460)160
+-duration = 0.000407sec.
+BDD:[389]3658(2460)162
+BDDrev:[389]3658(2460)162
+-duration = 0.000324sec.
+BDD:[390]3658(2460)561
+BDDrev:[390]3658(2460)561
+-duration = 0.000836sec.
+BDD:[391]3658(2460)431
+BDDrev:[391]3658(2460)431
+-duration = 0.000882sec.
+BDD:4091(175)[388]2
+BDDrev:4091(175)[388]160
+-duration = 8e-05sec.
+BDD:5074(2414)[388]64
+BDDrev:5074(2414)[388]159
+-duration = 0.001252sec.
+BDD:5077(2441)[388]49
+BDDrev:5077(2441)[388]49
+-duration = 0.000691sec.
+BDD:4091(175)[389]2
+BDDrev:4091(175)[389]162
+-duration = 7.8e-05sec.
+BDD:5074(2414)[389]64
+BDDrev:5074(2414)[389]161
+-duration = 0.001235sec.
+BDD:5077(2441)[389]49
+BDDrev:5077(2441)[389]49
+-duration = 0.000706sec.
+BDD:[431]5074(2414)53
+BDDrev:[431]5074(2414)53
+-duration = 8.1e-05sec.
+BDD:[432]5074(2414)56
+BDDrev:[432]5074(2414)56
+-duration = 0.002246sec.
+BDD:[433]5074(2414)63
+BDDrev:[433]5074(2414)63
+-duration = 0.001133sec.
+BDD:[434]5074(2414)63
+BDDrev:[434]5074(2414)63
+-duration = 0.001453sec.
+BDD:5216(1460)[433]6
+BDDrev:5216(1460)[433]63
+-duration = 7.8e-05sec.
+BDD:4910(2329)[433]22
+BDDrev:4910(2329)[433]56
+-duration = 0.001446sec.
+BDD:[144][433]30
+BDDrev:[144][433]30
+-duration = 0.001227sec.
+BDD:5216(1460)[434]6
+BDDrev:5216(1460)[434]63
+-duration = 5.4e-05sec.
+BDD:4910(2329)[434]22
+BDDrev:4910(2329)[434]56
+-duration = 0.001379sec.
+BDD:[144][434]30
+BDDrev:[144][434]30
+-duration = 0.001294sec.
+BDD:[446]4910(2329)25
+BDDrev:[446]4910(2329)25
+-duration = 5.3e-05sec.
+BDD:[447]4910(2329)22
+BDDrev:[447]4910(2329)22
+-duration = 0.002266sec.
+BDD:4890(2165)[447]18
+BDDrev:4890(2165)[447]23
+-duration = 5.8e-05sec.
+BDD:[204][447]9
+BDDrev:[204][447]9
+-duration = 0.002229sec.
+BDD:4890(2165)[446]18
+BDDrev:4890(2165)[446]25
+-duration = 5.3e-05sec.
+BDD:[209][446]9
+BDDrev:[209][446]9
+-duration = 0.002007sec.
+BDD:[452]4890(2165)14
+BDDrev:[452]4890(2165)14
+-duration = 4.9e-05sec.
+BDD:[453]4890(2165)12
+BDDrev:[453]4890(2165)12
+-duration = 0.002135sec.
+BDD:[187][452]5
+BDDrev:[187][452]11
+-duration = 4.4e-05sec.
+BDD:[231][452]16
+BDDrev:[231][452]16
+-duration = 0.002395sec.
+BDD:3165(927)[431]4
+BDDrev:3165(927)[431]56
+-duration = 5.8e-05sec.
+BDD:4862(2368)[431]25
+BDDrev:4862(2368)[431]64
+-duration = 0.001773sec.
+BDD:[144][431]30
+BDDrev:[144][431]30
+-duration = 0.001245sec.
+BDD:3165(927)[432]4
+BDDrev:3165(927)[432]53
+-duration = 6e-05sec.
+BDD:4862(2368)[432]25
+BDDrev:4862(2368)[432]64
+-duration = 0.001747sec.
+BDD:[144][432]30
+BDDrev:[144][432]30
+-duration = 0.00136sec.
+BDD:[437]4862(2368)27
+BDDrev:[437]4862(2368)27
+-duration = 6.3e-05sec.
+BDD:[438]4862(2368)27
+BDDrev:[438]4862(2368)27
+-duration = 0.002978sec.
+BDD:3167(931)[438]4
+BDDrev:3167(931)[438]27
+-duration = 5.6e-05sec.
+BDD:4852(2328)[438]22
+BDDrev:4852(2328)[438]22
+-duration = 0.003662sec.
+BDD:3167(931)[437]4
+BDDrev:3167(931)[437]27
+-duration = 6.2e-05sec.
+BDD:4852(2328)[437]22
+BDDrev:4852(2328)[437]22
+-duration = 0.002898sec.
+BDD:[439]4852(2328)21
+BDDrev:[439]4852(2328)21
+-duration = 6.6e-05sec.
+BDD:[440]4852(2328)25
+BDDrev:[440]4852(2328)25
+-duration = 0.00329sec.
+BDD:4832(2166)[440]18
+BDDrev:4832(2166)[440]21
+-duration = 6.7e-05sec.
+BDD:[204][440]9
+BDDrev:[204][440]9
+-duration = 0.002514sec.
+BDD:4832(2166)[439]18
+BDDrev:4832(2166)[439]23
+-duration = 5.6e-05sec.
+BDD:[209][439]9
+BDDrev:[209][439]9
+-duration = 0.00262sec.
+BDD:[441]4832(2166)11
+BDDrev:[441]4832(2166)11
+-duration = 5e-05sec.
+BDD:[442]4832(2166)18
+BDDrev:[442]4832(2166)18
+-duration = 0.003274sec.
+BDD:4822(1995)[442]14
+BDDrev:4822(1995)[442]19
+-duration = 5.3e-05sec.
+BDD:[221][442]16
+BDDrev:[221][442]16
+-duration = 0.002687sec.
+BDD:4822(1995)[441]14
+BDDrev:4822(1995)[441]14
+-duration = 5.1e-05sec.
+BDD:[221][441]16
+BDDrev:[221][441]16
+-duration = 0.00289sec.
+BDD:[147]4822(1995)15
+BDDrev:[147]4822(1995)15
+-duration = 6.1e-05sec.
+BDD:[443]4822(1995)9
+BDDrev:[443]4822(1995)9
+-duration = 0.002843sec.
+BDD:[444]4822(1995)14
+BDDrev:[444]4822(1995)14
+-duration = 0.001563sec.
+BDD:2125(1688)[444]14
+BDDrev:2125(1688)[444]15
+-duration = 5.7e-05sec.
+BDD:[229][444]5
+BDDrev:[229][444]5
+-duration = 0.004008sec.
+BDD:135(61){{818(2273)}}2
+BDDrev:135(61){{818(2273)}}68
+-duration = 4.9e-05sec.
+BDD:4115(177){{818(2273)}}2
+BDDrev:4115(177){{818(2273)}}67
+-duration = 0.0001sec.
+BDD:[236]{{818(2273)}}66
+BDDrev:[236]{{818(2273)}}66
+-duration = 5.4e-05sec.
+BDD:[574][236]7
+BDDrev:[574][236]7
+-duration = 1.8e-05sec.
+BDD:[575][236]58
+BDDrev:[575][236]58
+-duration = 8.6e-05sec.
+BDD:[576][236]6
+BDDrev:[576][236]6
+-duration = 2.5e-05sec.
+BDD:[577][236]4
+BDDrev:[577][236]4
+-duration = 2.2e-05sec.
+BDD:3717(169)[575]2
+BDDrev:3717(169)[575]58
+-duration = 6e-06sec.
+BDD:3724(170)[575]2
+BDDrev:3724(170)[575]57
+-duration = 7.2e-05sec.
+BDD:1936(2105)[575]56
+BDDrev:1936(2105)[575]56
+-duration = 0.000181sec.
+BDD:[570]{{813(2260)}}73
+BDDrev:[570]{{813(2260)}}73
+-duration = 5.8e-05sec.
+BDD:[571]{{813(2260)}}73
+BDDrev:[571]{{813(2260)}}73
+-duration = 2.4e-05sec.
+BDD:1936(2105)[570]56
+BDDrev:1936(2105)[570]73
+-duration = 5.5e-05sec.
+BDD:[153][570]5
+BDDrev:[153][570]5
+-duration = 1.6e-05sec.
+BDD:4086(2231)[545]63
+BDDrev:4086(2231)[545]65
+-duration = 6.7e-05sec.
+BDD:[157][545]3
+BDDrev:[157][545]3
+-duration = 1.3e-05sec.
+BDD:4086(2231)[540]63
+BDDrev:4086(2231)[540]65
+-duration = 5.7e-05sec.
+BDD:[160][540]3
+BDDrev:[160][540]3
+-duration = 1.1e-05sec.
+BDD:4086(2231)[499]63
+BDDrev:4086(2231)[499]66
+-duration = 6.5e-05sec.
+BDD:[170][499]4
+BDDrev:[170][499]4
+-duration = 1.6e-05sec.
+BDD:4086(2231){{824(2274)}}63
+BDDrev:4086(2231){{824(2274)}}63
+-duration = 1e-06sec.
+BDD:1936(2105)4086(2231)56
+BDDrev:1936(2105)4086(2231)63
+-duration = 8.8e-05sec.
+BDD:[129]4086(2231)3
+BDDrev:[129]4086(2231)3
+-duration = 1.5e-05sec.
+BDD:[5067]4086(2231)8
+BDDrev:[5067]4086(2231)8
+-duration = 1.9e-05sec.
+BDD:1812(1404){{585(2236)}}6
+BDDrev:1812(1404){{585(2236)}}78
+-duration = 0.000254sec.
+BDD:1921(1939){{585(2236)}}23
+BDDrev:1921(1939){{585(2236)}}85
+-duration = 0.000245sec.
+BDD:1916(1940){{585(2236)}}28
+BDDrev:1916(1940){{585(2236)}}98
+-duration = 0.000211sec.
+BDD:1949(2040){{585(2236)}}44
+BDDrev:1949(2040){{585(2236)}}103
+-duration = 0.000181sec.
+BDD:1944(2104){{585(2236)}}52
+BDDrev:1944(2104){{585(2236)}}108
+-duration = 0.000159sec.
+BDD:1936(2105){{585(2236)}}56
+BDDrev:1936(2105){{585(2236)}}106
+-duration = 0.000114sec.
+BDD:[124]{{585(2236)}}6
+BDDrev:[124]{{585(2236)}}77
+-duration = 8.2e-05sec.
+BDD:[127]{{585(2236)}}18
+BDDrev:[127]{{585(2236)}}72
+-duration = 8.3e-05sec.
+BDD:[151]{{585(2236)}}33
+BDDrev:[151]{{585(2236)}}33
+-duration = 4.9e-05sec.
+BDD:1936(2105)[571]56
+BDDrev:1936(2105)[571]73
+-duration = 5.6e-05sec.
+BDD:[153][571]5
+BDDrev:[153][571]5
+-duration = 1.6e-05sec.
+BDD:1936(2105){{623(2152)}}56
+BDDrev:1936(2105){{623(2152)}}56
+-duration = 2e-06sec.
+BDD:[765]1936(2105)58
+BDDrev:[765]1936(2105)58
+-duration = 4.5e-05sec.
+BDD:[766]1936(2105)67
+BDDrev:[766]1936(2105)67
+-duration = 2.3e-05sec.
+BDD:3167(931)[765]4
+BDDrev:3167(931)[765]58
+-duration = 9e-06sec.
+BDD:1944(2104)[765]52
+BDDrev:1944(2104)[765]52
+-duration = 3.9e-05sec.
+BDD:4085(2232){{826(2275)}}59
+BDDrev:4085(2232){{826(2275)}}59
+-duration = 2e-06sec.
+BDD:4085(2232)[503]59
+BDDrev:4085(2232)[503]62
+-duration = 5.4e-05sec.
+BDD:[170][503]4
+BDDrev:[170][503]4
+-duration = 1.7e-05sec.
+BDD:4085(2232)[525]59
+BDDrev:4085(2232)[525]61
+-duration = 5.5e-05sec.
+BDD:[157][525]3
+BDDrev:[157][525]3
+-duration = 1.6e-05sec.
+BDD:4085(2232)[536]59
+BDDrev:4085(2232)[536]61
+-duration = 5e-05sec.
+BDD:[160][536]3
+BDDrev:[160][536]3
+-duration = 1.3e-05sec.
+BDD:1944(2104)4085(2232)52
+BDDrev:1944(2104)4085(2232)59
+-duration = 8.2e-05sec.
+BDD:[129]4085(2232)3
+BDDrev:[129]4085(2232)3
+-duration = 1.7e-05sec.
+BDD:[5069]4085(2232)8
+BDDrev:[5069]4085(2232)8
+-duration = 1.9e-05sec.
+BDD:5216(1460)[766]6
+BDDrev:5216(1460)[766]67
+-duration = 1.3e-05sec.
+BDD:1944(2104)[766]52
+BDDrev:1944(2104)[766]52
+-duration = 4e-05sec.
+BDD:[221]1944(2104)16
+BDDrev:[221]1944(2104)44
+-duration = 4.2e-05sec.
+BDD:[767]1944(2104)47
+BDDrev:[767]1944(2104)47
+-duration = 5.8e-05sec.
+BDD:[768]1944(2104)44
+BDDrev:[768]1944(2104)44
+-duration = 5.2e-05sec.
+BDD:[769]1944(2104)16
+BDDrev:[769]1944(2104)16
+-duration = 2.8e-05sec.
+BDD:[147][221]15
+BDDrev:[147][221]19
+-duration = 1.5e-05sec.
+BDD:[177][221]16
+BDDrev:[177][221]16
+-duration = 0.000828sec.
+BDD:1903(1793)[768]30
+BDDrev:1903(1793)[768]44
+-duration = 3.6e-05sec.
+BDD:[177][768]16
+BDDrev:[177][768]16
+-duration = 2.1e-05sec.
+BDD:2135(1673){{618(1925),629(1926)}}26
+BDDrev:2135(1673){{618(1925),629(1926)}}52
+-duration = 7.2e-05sec.
+BDD:[147]{{618(1925),629(1926)}}15
+BDDrev:[147]{{618(1925),629(1926)}}22
+-duration = 5.7e-05sec.
+BDD:5216(1460){{618(1925),629(1926)}}6
+BDDrev:5216(1460){{618(1925),629(1926)}}19
+-duration = 3e-05sec.
+BDD:[177]{{618(1925),629(1926)}}16
+BDDrev:[177]{{618(1925),629(1926)}}16
+-duration = 2.6e-05sec.
+BDD:3165(927)[177]4
+BDDrev:3165(927)[177]16
+-duration = 1e-05sec.
+BDD:2125(1688)[177]14
+BDDrev:2125(1688)[177]14
+-duration = 2.9e-05sec.
+BDD:3165(927)[769]4
+BDDrev:3165(927)[769]16
+-duration = 8e-06sec.
+BDD:2125(1688)[769]14
+BDDrev:2125(1688)[769]14
+-duration = 7e-06sec.
+BDD:[187][453]5
+BDDrev:[187][453]15
+-duration = 6e-06sec.
+BDD:[231][453]16
+BDDrev:[231][453]16
+-duration = 0.004021sec.
+BDD:3165(927)[231]4
+BDDrev:3165(927)[231]16
+-duration = 5.1e-05sec.
+BDD:2125(1688)[231]14
+BDDrev:2125(1688)[231]14
+-duration = 0.002415sec.
+BDD:2125(1688)[443]14
+BDDrev:2125(1688)[443]9
+-duration = 4.6e-05sec.
+BDD:[229][443]5
+BDDrev:[229][443]5
+-duration = 0.002616sec.
+BDD:479(144)2125(1688)2
+BDDrev:479(144)2125(1688)13
+-duration = 5e-05sec.
+BDD:3161(926)2125(1688)4
+BDDrev:3161(926)2125(1688)11
+-duration = 0.000449sec.
+BDD:[4829]2125(1688)10
+BDDrev:[4829]2125(1688)10
+-duration = 0.000926sec.
+BDD:1984(1423)[4829]6
+BDDrev:1984(1423)[4829]10
+-duration = 1.8e-05sec.
+BDD:[187][4829]5
+BDDrev:[187][4829]5
+-duration = 5e-06sec.
+BDD:490(145)[187]2
+BDDrev:490(145)[187]5
+-duration = 4e-06sec.
+BDD:3155(924)[187]4
+BDDrev:3155(924)[187]4
+-duration = 0.00327sec.
+BDD:490(145)[229]2
+BDDrev:490(145)[229]5
+-duration = 4.7e-05sec.
+BDD:3155(924)[229]4
+BDDrev:3155(924)[229]4
+-duration = 0.003097sec.
+BDD:4084(2180){{828(2233)}}55
+BDDrev:4084(2180){{828(2233)}}55
+-duration = 4.7e-05sec.
+BDD:4084(2180)[521]55
+BDDrev:4084(2180)[521]57
+-duration = 0.000112sec.
+BDD:[157][521]3
+BDDrev:[157][521]3
+-duration = 1.3e-05sec.
+BDD:4084(2180)[507]55
+BDDrev:4084(2180)[507]58
+-duration = 5.6e-05sec.
+BDD:[170][507]4
+BDDrev:[170][507]4
+-duration = 1e-05sec.
+BDD:4084(2180)[532]55
+BDDrev:4084(2180)[532]57
+-duration = 6.4e-05sec.
+BDD:[160][532]3
+BDDrev:[160][532]3
+-duration = 1.3e-05sec.
+BDD:1949(2040)4084(2180)44
+BDDrev:1949(2040)4084(2180)55
+-duration = 9e-05sec.
+BDD:[129]4084(2180)3
+BDDrev:[129]4084(2180)3
+-duration = 1.8e-05sec.
+BDD:[5071]4084(2180)12
+BDDrev:[5071]4084(2180)12
+-duration = 1.6e-05sec.
+BDD:[654]1949(2040)45
+BDDrev:[654]1949(2040)45
+-duration = 7.4e-05sec.
+BDD:[655]1949(2040)10
+BDDrev:[655]1949(2040)10
+-duration = 8.7e-05sec.
+BDD:[656]1949(2040)10
+BDDrev:[656]1949(2040)10
+-duration = 0.000164sec.
+BDD:[657]1949(2040)45
+BDDrev:[657]1949(2040)45
+-duration = 0.000125sec.
+BDD:3155(924)[655]4
+BDDrev:3155(924)[655]10
+-duration = 1.2e-05sec.
+BDD:1758(1420)[655]5
+BDDrev:1758(1420)[655]15
+-duration = 5.8e-05sec.
+BDD:1984(1423)[655]6
+BDDrev:1984(1423)[655]6
+-duration = 0.000316sec.
+BDD:[450][204]15
+BDDrev:[450][204]15
+-duration = 2.2e-05sec.
+BDD:[451][204]15
+BDDrev:[451][204]15
+-duration = 0.003653sec.
+BDD:1758(1420)[450]5
+BDDrev:1758(1420)[450]15
+-duration = 5.4e-05sec.
+BDD:1984(1423)[450]6
+BDDrev:1984(1423)[450]6
+-duration = 0.002941sec.
+BDD:4083(2130)[528]44
+BDDrev:4083(2130)[528]46
+-duration = 0.000103sec.
+BDD:[160][528]3
+BDDrev:[160][528]3
+-duration = 1.1e-05sec.
+BDD:4083(2130)[511]44
+BDDrev:4083(2130)[511]47
+-duration = 5.3e-05sec.
+BDD:[170][511]4
+BDDrev:[170][511]4
+-duration = 1e-05sec.
+BDD:4083(2130){{830(2182)}}44
+BDDrev:4083(2130){{830(2182)}}44
+-duration = 1e-06sec.
+BDD:4083(2130)[517]44
+BDDrev:4083(2130)[517]46
+-duration = 5.5e-05sec.
+BDD:[157][517]3
+BDDrev:[157][517]3
+-duration = 1e-05sec.
+BDD:2942(1137)4083(2130)8
+BDDrev:2942(1137)4083(2130)44
+-duration = 9e-06sec.
+BDD:[134]4083(2130)3
+BDDrev:[134]4083(2130)3
+-duration = 3.8e-05sec.
+BDD:[5073]4083(2130)37
+BDDrev:[5073]4083(2130)37
+-duration = 9e-06sec.
+BDD:112(42)[5073]2
+BDDrev:112(42)[5073]37
+-duration = 5e-06sec.
+BDD:[145][5073]3
+BDDrev:[145][5073]3
+-duration = 3.4e-05sec.
+BDD:[5074][5073]35
+BDDrev:[5074][5073]35
+-duration = 9e-06sec.
+BDD:[129][5074]3
+BDDrev:[129][5074]35
+-duration = 3e-06sec.
+BDD:[151][5074]33
+BDDrev:[151][5074]33
+-duration = 1e-06sec.
+BDD:[652][151]36
+BDDrev:[652][151]36
+-duration = 5e-06sec.
+BDD:[653][151]36
+BDDrev:[653][151]36
+-duration = 4e-06sec.
+BDD:1758(1420)[653]5
+BDDrev:1758(1420)[653]36
+-duration = 4e-06sec.
+BDD:1903(1793)[653]30
+BDDrev:1903(1793)[653]30
+-duration = 1.6e-05sec.
+BDD:3165(927){{615(1750),626(1752)}}4
+BDDrev:3165(927){{615(1750),626(1752)}}44
+-duration = 5.1e-05sec.
+BDD:3167(931){{615(1750),626(1752)}}4
+BDDrev:3167(931){{615(1750),626(1752)}}42
+-duration = 0.001051sec.
+BDD:[147]{{615(1750),626(1752)}}15
+BDDrev:[147]{{615(1750),626(1752)}}39
+-duration = 4.3e-05sec.
+BDD:[223]{{615(1750),626(1752)}}24
+BDDrev:[223]{{615(1750),626(1752)}}24
+-duration = 3.4e-05sec.
+BDD:3165(927)[767]4
+BDDrev:3165(927)[767]47
+-duration = 2.9e-05sec.
+BDD:1903(1793)[767]30
+BDDrev:1903(1793)[767]45
+-duration = 0.000193sec.
+BDD:[147][767]15
+BDDrev:[147][767]15
+-duration = 1.8e-05sec.
+BDD:1758(1420)[209]5
+BDDrev:1758(1420)[209]5
+-duration = 1.3e-05sec.
+BDD:1984(1423)[209]6
+BDDrev:1984(1423)[209]6
+-duration = 0.003071sec.
+BDD:[147][209]15
+BDDrev:[147][209]15
+-duration = 0.002599sec.
+BDD:1903(1793)[657]30
+BDDrev:1903(1793)[657]45
+-duration = 8.7e-05sec.
+BDD:[147][657]15
+BDDrev:[147][657]15
+-duration = 4.5e-05sec.
+BDD:1758(1420)[147]5
+BDDrev:1758(1420)[147]15
+-duration = 9e-06sec.
+BDD:1984(1423)[147]6
+BDDrev:1984(1423)[147]6
+-duration = 0.004268sec.
+BDD:490(145)[656]2
+BDDrev:490(145)[656]10
+-duration = 5.4e-05sec.
+BDD:1758(1420)[656]5
+BDDrev:1758(1420)[656]15
+-duration = 4.4e-05sec.
+BDD:1984(1423)[656]6
+BDDrev:1984(1423)[656]6
+-duration = 9.3e-05sec.
+BDD:1758(1420)[654]5
+BDDrev:1758(1420)[654]45
+-duration = 2e-05sec.
+BDD:1984(1423)[654]6
+BDDrev:1984(1423)[654]36
+-duration = 6.2e-05sec.
+BDD:1903(1793)[654]30
+BDDrev:1903(1793)[654]30
+-duration = 0.0001sec.
+BDD:1758(1420)[451]5
+BDDrev:1758(1420)[451]15
+-duration = 8e-06sec.
+BDD:1984(1423)[451]6
+BDDrev:1984(1423)[451]6
+-duration = 0.004208sec.
+BDD:1758(1420)[652]5
+BDDrev:1758(1420)[652]36
+-duration = 5.1e-05sec.
+BDD:1903(1793)[652]30
+BDDrev:1903(1793)[652]30
+-duration = 4e-06sec.
+BDD:[871]1758(1420)5
+BDDrev:[871]1758(1420)5
+-duration = 9e-06sec.
+BDD:[872]1758(1420)5
+BDDrev:[872]1758(1420)5
+-duration = 0.011125sec.
+BDD:490(145)[872]2
+BDDrev:490(145)[872]5
+-duration = 0.000146sec.
+BDD:3155(924)[872]4
+BDDrev:3155(924)[872]4
+-duration = 0.007965sec.
+BDD:[706]5247(1847)15
+BDDrev:[706]5247(1847)15
+-duration = 0.00012sec.
+BDD:[707]5247(1847)15
+BDDrev:[707]5247(1847)15
+-duration = 0.000427sec.
+BDD:5216(1460)[707]6
+BDDrev:5216(1460)[707]15
+-duration = 1.4e-05sec.
+BDD:[181][707]6
+BDDrev:[181][707]6
+-duration = 0.000405sec.
+BDD:5216(1460)[706]6
+BDDrev:5216(1460)[706]15
+-duration = 1.4e-05sec.
+BDD:[181][706]6
+BDDrev:[181][706]6
+-duration = 0.000378sec.
+BDD:[708][181]6
+BDDrev:[708][181]6
+-duration = 1.1e-05sec.
+BDD:[709][181]6
+BDDrev:[709][181]6
+-duration = 0.000384sec.
+BDD:3155(924)[709]4
+BDDrev:3155(924)[709]6
+-duration = 1.1e-05sec.
+BDD:3161(926)[709]4
+BDDrev:3161(926)[709]4
+-duration = 0.000371sec.
+BDD:490(145)[871]2
+BDDrev:490(145)[871]5
+-duration = 8e-06sec.
+BDD:3155(924)[871]4
+BDDrev:3155(924)[871]4
+-duration = 0.010357sec.
+BDD:3155(924)[708]4
+BDDrev:3155(924)[708]6
+-duration = 8.8e-05sec.
+BDD:3161(926)[708]4
+BDDrev:3161(926)[708]4
+-duration = 0.00049sec.
+BDD:[873]3155(924)3
+BDDrev:[873]3155(924)3
+-duration = 2e-05sec.
+BDD:[874]3155(924)3
+BDDrev:[874]3155(924)3
+-duration = 0.033434sec.
+BDD:323(119)[874]2
+BDDrev:323(119)[874]3
+-duration = 0.000861sec.
+BDD:332(122)[874]2
+BDDrev:332(122)[874]2
+-duration = 0.040953sec.
+BDD:191(82)[501]2
+BDDrev:191(82)[501]5
+-duration = 0.000795sec.
+BDD:[161][501]4
+BDDrev:[161][501]4
+-duration = 3e-06sec.
+BDD:49(17)[535]2
+BDDrev:49(17)[535]4
+-duration = 5e-06sec.
+BDD:[165][535]3
+BDDrev:[165][535]3
+-duration = 2e-06sec.
+BDD:49(17)[522]2
+BDDrev:49(17)[522]4
+-duration = 4e-06sec.
+BDD:[171][522]3
+BDDrev:[171][522]3
+-duration = 3e-06sec.
+BDD:358(128){{612(263)}}2
+BDDrev:358(128){{612(263)}}2
+-duration = 1e-06sec.
+BDD:[392]5077(2441)64
+BDDrev:[392]5077(2441)64
+-duration = 9e-05sec.
+BDD:[393]5077(2441)52
+BDDrev:[393]5077(2441)52
+-duration = 0.001867sec.
+BDD:[394]5077(2441)30
+BDDrev:[394]5077(2441)30
+-duration = 0.001676sec.
+BDD:[395]5077(2441)35
+BDDrev:[395]5077(2441)35
+-duration = 0.001081sec.
+BDD:2174(161)[394]2
+BDDrev:2174(161)[394]30
+-duration = 4.5e-05sec.
+BDD:1778(1307)[394]4
+BDDrev:1778(1307)[394]31
+-duration = 0.002066sec.
+BDD:4988(2391)[394]33
+BDDrev:4988(2391)[394]33
+-duration = 0.001262sec.
+BDD:2174(161)[395]2
+BDDrev:2174(161)[395]35
+-duration = 3.8e-05sec.
+BDD:1778(1307)[395]4
+BDDrev:1778(1307)[395]26
+-duration = 0.001155sec.
+BDD:4988(2391)[395]33
+BDDrev:4988(2391)[395]33
+-duration = 0.001365sec.
+BDD:[398]4988(2391)58
+BDDrev:[398]4988(2391)58
+-duration = 7.9e-05sec.
+BDD:[399]4988(2391)58
+BDDrev:[399]4988(2391)58
+-duration = 0.003018sec.
+BDD:4968(2326)[399]27
+BDDrev:4968(2326)[399]58
+-duration = 8e-05sec.
+BDD:[193][399]10
+BDDrev:[193][399]10
+-duration = 0.001754sec.
+BDD:4968(2326)[398]27
+BDDrev:4968(2326)[398]58
+-duration = 6.1e-05sec.
+BDD:[193][398]10
+BDDrev:[193][398]10
+-duration = 0.001767sec.
+BDD:[402]4968(2326)36
+BDDrev:[402]4968(2326)36
+-duration = 6.1e-05sec.
+BDD:[403]4968(2326)38
+BDDrev:[403]4968(2326)38
+-duration = 0.002866sec.
+BDD:4948(2149)[403]20
+BDDrev:4948(2149)[403]36
+-duration = 9.1e-05sec.
+BDD:[190][403]8
+BDDrev:[190][403]8
+-duration = 0.002671sec.
+BDD:4948(2149)[402]20
+BDDrev:4948(2149)[402]38
+-duration = 7e-05sec.
+BDD:[190][402]8
+BDDrev:[190][402]8
+-duration = 0.002358sec.
+BDD:[5253]4948(2149)17
+BDDrev:[5253]4948(2149)17
+-duration = 4.9e-05sec.
+BDD:[5254]4948(2149)20
+BDDrev:[5254]4948(2149)20
+-duration = 0.002232sec.
+BDD:[207][5254]20
+BDDrev:[207][5254]21
+-duration = 6e-05sec.
+BDD:[211][5254]16
+BDDrev:[211][5254]22
+-duration = 0.002377sec.
+BDD:4938(1989)[5254]12
+BDDrev:4938(1989)[5254]12
+-duration = 0.001859sec.
+BDD:1789(865)[5253]4
+BDDrev:1789(865)[5253]15
+-duration = 4e-05sec.
+BDD:4938(1989)[5253]12
+BDDrev:4938(1989)[5253]20
+-duration = 0.00121sec.
+BDD:[241][5253]16
+BDDrev:[241][5253]16
+-duration = 0.001401sec.
+BDD:[5255]4938(1989)14
+BDDrev:[5255]4938(1989)14
+-duration = 3.7e-05sec.
+BDD:[5256]4938(1989)18
+BDDrev:[5256]4938(1989)18
+-duration = 0.001907sec.
+BDD:2155(1657)[5256]10
+BDDrev:2155(1657)[5256]18
+-duration = 3.5e-05sec.
+BDD:[240][5256]18
+BDDrev:[240][5256]18
+-duration = 0.001362sec.
+BDD:[413][240]12
+BDDrev:[413][240]12
+-duration = 4e-05sec.
+BDD:[414][240]14
+BDDrev:[414][240]14
+-duration = 0.001535sec.
+BDD:[415][240]14
+BDDrev:[415][240]14
+-duration = 0.001314sec.
+BDD:3137(914)[414]4
+BDDrev:3137(914)[414]14
+-duration = 2.8e-05sec.
+BDD:[152][414]12
+BDDrev:[152][414]12
+-duration = 0.00052sec.
+BDD:2155(1657)[5255]10
+BDDrev:2155(1657)[5255]18
+-duration = 2.6e-05sec.
+BDD:5009(1664)[5255]16
+BDDrev:5009(1664)[5255]12
+-duration = 0.001001sec.
+BDD:[152][5255]12
+BDDrev:[152][5255]12
+-duration = 0.001505sec.
+BDD:5009(1664)[241]16
+BDDrev:5009(1664)[241]16
+-duration = 4.9e-05sec.
+BDD:[152][241]12
+BDDrev:[152][241]16
+-duration = 0.000742sec.
+BDD:1778(1307)[241]4
+BDDrev:1778(1307)[241]4
+-duration = 0.000462sec.
+BDD:[435][144]25
+BDDrev:[435][144]25
+-duration = 3.5e-05sec.
+BDD:[436][144]29
+BDDrev:[436][144]29
+-duration = 0.004058sec.
+BDD:2174(161)[435]2
+BDDrev:2174(161)[435]25
+-duration = 8.9e-05sec.
+BDD:2135(1673)[435]26
+BDDrev:2135(1673)[435]26
+-duration = 0.001591sec.
+BDD:[223][435]24
+BDDrev:[223][435]24
+-duration = 0.003878sec.
+BDD:54(20)1903(1793)2
+BDDrev:54(20)1903(1793)30
+-duration = 8.2e-05sec.
+BDD:[223]1903(1793)24
+BDDrev:[223]1903(1793)24
+-duration = 0.000201sec.
+BDD:2135(1673)1903(1793)26
+BDDrev:2135(1673)1903(1793)26
+-duration = 0.000221sec.
+BDD:3137(914)[223]4
+BDDrev:3137(914)[223]24
+-duration = 2.6e-05sec.
+BDD:1767(1417)[223]5
+BDDrev:1767(1417)[223]22
+-duration = 0.001655sec.
+BDD:[211][223]16
+BDDrev:[211][223]16
+-duration = 0.006129sec.
+BDD:1778(1307)[211]4
+BDDrev:1778(1307)[211]16
+-duration = 4.1e-05sec.
+BDD:[152][211]12
+BDDrev:[152][211]12
+-duration = 0.002133sec.
+BDD:1812(1404)[152]6
+BDDrev:1812(1404)[152]12
+-duration = 8.3e-05sec.
+BDD:2042(1408)[152]6
+BDDrev:2042(1408)[152]6
+-duration = 0.002044sec.
+BDD:3850(2069)[601]33
+BDDrev:3850(2069)[601]36
+-duration = 5.9e-05sec.
+BDD:[170][601]4
+BDDrev:[170][601]4
+-duration = 3.4e-05sec.
+BDD:3850(2069)[634]33
+BDDrev:3850(2069)[634]35
+-duration = 2.8e-05sec.
+BDD:[160][634]3
+BDDrev:[160][634]3
+-duration = 1.9e-05sec.
+BDD:3850(2069){{836(2128)}}33
+BDDrev:3850(2069){{836(2128)}}33
+-duration = 2e-06sec.
+BDD:3850(2069)[619]33
+BDDrev:3850(2069)[619]35
+-duration = 2.8e-05sec.
+BDD:[157][619]3
+BDDrev:[157][619]3
+-duration = 1.4e-05sec.
+BDD:[127]3850(2069)18
+BDDrev:[127]3850(2069)33
+-duration = 3.3e-05sec.
+BDD:[129]3850(2069)3
+BDDrev:[129]3850(2069)3
+-duration = 2.2e-05sec.
+BDD:[4864]3850(2069)17
+BDDrev:[4864]3850(2069)17
+-duration = 1.3e-05sec.
+BDD:[744][127]18
+BDDrev:[744][127]18
+-duration = 2.2e-05sec.
+BDD:[745][127]18
+BDDrev:[745][127]18
+-duration = 5.1e-05sec.
+BDD:2042(1408)[745]6
+BDDrev:2042(1408)[745]18
+-duration = 1.5e-05sec.
+BDD:4748(1658)[745]14
+BDDrev:4748(1658)[745]14
+-duration = 8.5e-05sec.
+BDD:2042(1408)[744]6
+BDDrev:2042(1408)[744]18
+-duration = 9e-06sec.
+BDD:4748(1658)[744]14
+BDDrev:4748(1658)[744]14
+-duration = 4.1e-05sec.
+BDD:[4856]1916(1940)30
+BDDrev:[4856]1916(1940)30
+-duration = 2.4e-05sec.
+BDD:[4857]1916(1940)30
+BDDrev:[4857]1916(1940)30
+-duration = 6.8e-05sec.
+BDD:1789(865)[4857]4
+BDDrev:1789(865)[4857]10
+-duration = 1.4e-05sec.
+BDD:[214][4857]24
+BDDrev:[214][4857]30
+-duration = 7.8e-05sec.
+BDD:1767(1417)[4857]5
+BDDrev:1767(1417)[4857]5
+-duration = 7.3e-05sec.
+BDD:1789(865)[4856]4
+BDDrev:1789(865)[4856]10
+-duration = 1.3e-05sec.
+BDD:1767(1417)[4856]5
+BDDrev:1767(1417)[4856]30
+-duration = 5.5e-05sec.
+BDD:[214][4856]24
+BDDrev:[214][4856]24
+-duration = 6.2e-05sec.
+BDD:1778(1307)[214]4
+BDDrev:1778(1307)[214]24
+-duration = 7e-06sec.
+BDD:1921(1939)[214]23
+BDDrev:1921(1939)[214]23
+-duration = 6.3e-05sec.
+BDD:3851(2063)[623]30
+BDDrev:3851(2063)[623]32
+-duration = 3.8e-05sec.
+BDD:[157][623]3
+BDDrev:[157][623]3
+-duration = 8e-06sec.
+BDD:3851(2063){{834(2123)}}30
+BDDrev:3851(2063){{834(2123)}}30
+-duration = 2e-06sec.
+BDD:3851(2063)[597]30
+BDDrev:3851(2063)[597]33
+-duration = 7e-06sec.
+BDD:[170][597]4
+BDDrev:[170][597]4
+-duration = 5e-06sec.
+BDD:3851(2063)[638]30
+BDDrev:3851(2063)[638]32
+-duration = 3.5e-05sec.
+BDD:[160][638]3
+BDDrev:[160][638]3
+-duration = 9e-06sec.
+BDD:1921(1939)3851(2063)23
+BDDrev:1921(1939)3851(2063)30
+-duration = 7e-06sec.
+BDD:[129]3851(2063)3
+BDDrev:[129]3851(2063)3
+-duration = 6e-06sec.
+BDD:[4862]3851(2063)8
+BDDrev:[4862]3851(2063)8
+-duration = 3e-06sec.
+BDD:[755]1921(1939)24
+BDDrev:[755]1921(1939)24
+-duration = 4e-06sec.
+BDD:[756]1921(1939)24
+BDDrev:[756]1921(1939)24
+-duration = 2.7e-05sec.
+BDD:1778(1307)[756]4
+BDDrev:1778(1307)[756]24
+-duration = 3e-06sec.
+BDD:[182][756]20
+BDDrev:[182][756]20
+-duration = 2.4e-05sec.
+BDD:1778(1307)[755]4
+BDDrev:1778(1307)[755]24
+-duration = 3e-06sec.
+BDD:[182][755]20
+BDDrev:[182][755]20
+-duration = 3.3e-05sec.
+BDD:[757][182]18
+BDDrev:[757][182]18
+-duration = 5e-06sec.
+BDD:[758][182]6
+BDDrev:[758][182]6
+-duration = 2.6e-05sec.
+BDD:2042(1408)[757]6
+BDDrev:2042(1408)[757]18
+-duration = 4e-06sec.
+BDD:4748(1658)[757]14
+BDDrev:4748(1658)[757]14
+-duration = 2.8e-05sec.
+BDD:54(20)4748(1658)2
+BDDrev:54(20)4748(1658)14
+-duration = 6e-06sec.
+BDD:1812(1404)4748(1658)6
+BDDrev:1812(1404)4748(1658)9
+-duration = 6.9e-05sec.
+BDD:2155(1657)4748(1658)10
+BDDrev:2155(1657)4748(1658)10
+-duration = 5.4e-05sec.
+BDD:1812(1404)[778]6
+BDDrev:1812(1404)[778]13
+-duration = 1.7e-05sec.
+BDD:[129][778]3
+BDDrev:[129][778]8
+-duration = 7e-06sec.
+BDD:[216][778]6
+BDDrev:[216][778]6
+-duration = 3.3e-05sec.
+BDD:2174(161)[393]2
+BDDrev:2174(161)[393]52
+-duration = 5.9e-05sec.
+BDD:5066(2383)[393]34
+BDDrev:5066(2383)[393]44
+-duration = 0.001436sec.
+BDD:[173][393]9
+BDDrev:[173][393]9
+-duration = 0.001017sec.
+BDD:2174(161)[392]2
+BDDrev:2174(161)[392]64
+-duration = 7e-05sec.
+BDD:5066(2383)[392]34
+BDDrev:5066(2383)[392]56
+-duration = 0.001627sec.
+BDD:[173][392]9
+BDDrev:[173][392]9
+-duration = 0.001182sec.
+BDD:[416]5066(2383)55
+BDDrev:[416]5066(2383)55
+-duration = 8e-05sec.
+BDD:[417]5066(2383)55
+BDDrev:[417]5066(2383)55
+-duration = 0.00278sec.
+BDD:5046(2325)[417]28
+BDDrev:5046(2325)[417]55
+-duration = 9.7e-05sec.
+BDD:[191][417]10
+BDDrev:[191][417]10
+-duration = 0.004379sec.
+BDD:5046(2325)[416]28
+BDDrev:5046(2325)[416]55
+-duration = 8.4e-05sec.
+BDD:[191][416]10
+BDDrev:[191][416]10
+-duration = 0.002377sec.
+BDD:[418][191]12
+BDDrev:[418][191]12
+-duration = 4.5e-05sec.
+BDD:[419][191]12
+BDDrev:[419][191]12
+-duration = 0.00182sec.
+BDD:1812(1404)[419]6
+BDDrev:1812(1404)[419]12
+-duration = 3.2e-05sec.
+BDD:1767(1417)[419]5
+BDDrev:1767(1417)[419]5
+-duration = 0.006248sec.
+BDD:[404][190]9
+BDDrev:[404][190]9
+-duration = 2.6e-05sec.
+BDD:[405][190]9
+BDDrev:[405][190]9
+-duration = 0.001723sec.
+BDD:3137(914)[405]4
+BDDrev:3137(914)[405]9
+-duration = 2.9e-05sec.
+BDD:1812(1404)[405]6
+BDDrev:1812(1404)[405]6
+-duration = 0.001802sec.
+BDD:1812(1404)[413]6
+BDDrev:1812(1404)[413]20
+-duration = 3.8e-05sec.
+BDD:2042(1408)[413]6
+BDDrev:2042(1408)[413]8
+-duration = 0.000636sec.
+BDD:5026(2102)[413]18
+BDDrev:5026(2102)[413]18
+-duration = 0.001116sec.
+BDD:1812(1404)[418]6
+BDDrev:1812(1404)[418]12
+-duration = 2.6e-05sec.
+BDD:1767(1417)[418]5
+BDDrev:1767(1417)[418]5
+-duration = 0.001129sec.
+BDD:1812(1404)[779]6
+BDDrev:1812(1404)[779]15
+-duration = 3.3e-05sec.
+BDD:[129][779]3
+BDDrev:[129][779]8
+-duration = 1.1e-05sec.
+BDD:[216][779]6
+BDDrev:[216][779]6
+-duration = 2.4e-05sec.
+BDD:[420]5046(2325)31
+BDDrev:[420]5046(2325)31
+-duration = 3e-05sec.
+BDD:[421]5046(2325)30
+BDDrev:[421]5046(2325)30
+-duration = 0.002528sec.
+BDD:5026(2102)[420]18
+BDDrev:5026(2102)[420]30
+-duration = 6.2e-05sec.
+BDD:[189][420]24
+BDDrev:[189][420]24
+-duration = 0.002113sec.
+BDD:5026(2102)[421]18
+BDDrev:5026(2102)[421]31
+-duration = 5.1e-05sec.
+BDD:[189][421]24
+BDDrev:[189][421]24
+-duration = 0.001991sec.
+BDD:[427]5026(2102)15
+BDDrev:[427]5026(2102)15
+-duration = 3.9e-05sec.
+BDD:[428]5026(2102)15
+BDDrev:[428]5026(2102)15
+-duration = 0.001933sec.
+BDD:3137(914)[428]4
+BDDrev:3137(914)[428]15
+-duration = 3e-05sec.
+BDD:[185][428]16
+BDDrev:[185][428]16
+-duration = 0.000961sec.
+BDD:3137(914)[427]4
+BDDrev:3137(914)[427]15
+-duration = 1.7e-05sec.
+BDD:[185][427]16
+BDDrev:[185][427]16
+-duration = 0.001676sec.
+BDD:[429][185]14
+BDDrev:[429][185]14
+-duration = 3.2e-05sec.
+BDD:[430][185]14
+BDDrev:[430][185]14
+-duration = 0.001732sec.
+BDD:2155(1657)[430]10
+BDDrev:2155(1657)[430]14
+-duration = 3.1e-05sec.
+BDD:5009(1664)[430]16
+BDDrev:5009(1664)[430]16
+-duration = 0.001185sec.
+BDD:2174(161)[436]2
+BDDrev:2174(161)[436]29
+-duration = 2.5e-05sec.
+BDD:2135(1673)[436]26
+BDDrev:2135(1673)[436]26
+-duration = 0.002648sec.
+BDD:[792]2135(1673)26
+BDDrev:[792]2135(1673)26
+-duration = 0.000102sec.
+BDD:[793]2135(1673)5
+BDDrev:[793]2135(1673)5
+-duration = 0.010346sec.
+BDD:1767(1417)[792]5
+BDDrev:1767(1417)[792]26
+-duration = 0.000211sec.
+BDD:[207][792]20
+BDDrev:[207][792]20
+-duration = 0.007299sec.
+BDD:1778(1307)[207]4
+BDDrev:1778(1307)[207]12
+-duration = 0.000178sec.
+BDD:5009(1664)[207]16
+BDDrev:5009(1664)[207]19
+-duration = 0.007839sec.
+BDD:1789(865)[207]4
+BDDrev:1789(865)[207]4
+-duration = 0.013662sec.
+BDD:2155(1657)[429]10
+BDDrev:2155(1657)[429]14
+-duration = 0.00032sec.
+BDD:5009(1664)[429]16
+BDDrev:5009(1664)[429]16
+-duration = 0.001184sec.
+BDD:1812(1404)[415]6
+BDDrev:1812(1404)[415]19
+-duration = 2.2e-05sec.
+BDD:5009(1664)[415]16
+BDDrev:5009(1664)[415]16
+-duration = 0.000791sec.
+BDD:[796]5009(1664)14
+BDDrev:[796]5009(1664)14
+-duration = 3.4e-05sec.
+BDD:[797]5009(1664)6
+BDDrev:[797]5009(1664)6
+-duration = 0.003588sec.
+BDD:2042(1408)[796]6
+BDDrev:2042(1408)[796]14
+-duration = 0.000132sec.
+BDD:2155(1657)[796]10
+BDDrev:2155(1657)[796]10
+-duration = 0.002685sec.
+BDD:[422][189]21
+BDDrev:[422][189]21
+-duration = 0.000197sec.
+BDD:[423][189]20
+BDDrev:[423][189]20
+-duration = 0.001227sec.
+BDD:3137(914)[422]4
+BDDrev:3137(914)[422]21
+-duration = 4.1e-05sec.
+BDD:5029(1668)[422]20
+BDDrev:5029(1668)[422]20
+-duration = 0.014821sec.
+BDD:3137(914)[423]4
+BDDrev:3137(914)[423]20
+-duration = 2.7e-05sec.
+BDD:5029(1668)[423]20
+BDDrev:5029(1668)[423]20
+-duration = 0.000956sec.
+BDD:1778(1307)5029(1668)4
+BDDrev:1778(1307)5029(1668)12
+-duration = 3.5e-05sec.
+BDD:[424]5029(1668)6
+BDDrev:[424]5029(1668)9
+-duration = 0.008158sec.
+BDD:[426]5029(1668)14
+BDDrev:[426]5029(1668)17
+-duration = 0.000872sec.
+BDD:1789(865)5029(1668)4
+BDDrev:1789(865)5029(1668)4
+-duration = 0.001033sec.
+BDD:2042(1408)[426]6
+BDDrev:2042(1408)[426]14
+-duration = 4.4e-05sec.
+BDD:2155(1657)[426]10
+BDDrev:2155(1657)[426]10
+-duration = 0.001086sec.
+BDD:534(149)2155(1657)2
+BDDrev:534(149)2155(1657)10
+-duration = 7e-05sec.
+BDD:3139(917)2155(1657)4
+BDDrev:3139(917)2155(1657)9
+-duration = 0.001058sec.
+BDD:[4828]2155(1657)9
+BDDrev:[4828]2155(1657)9
+-duration = 0.014531sec.
+BDD:3137(914)[4828]4
+BDDrev:3137(914)[4828]9
+-duration = 7.8e-05sec.
+BDD:1812(1404)[4828]6
+BDDrev:1812(1404)[4828]6
+-duration = 0.000806sec.
+BDD:3137(914)[404]4
+BDDrev:3137(914)[404]9
+-duration = 6.3e-05sec.
+BDD:1812(1404)[404]6
+BDDrev:1812(1404)[404]6
+-duration = 0.001138sec.
+BDD:[855]1812(1404)6
+BDDrev:[855]1812(1404)6
+-duration = 4.7e-05sec.
+BDD:[856]1812(1404)6
+BDDrev:[856]1812(1404)6
+-duration = 0.00059sec.
+BDD:534(149)[856]2
+BDDrev:534(149)[856]6
+-duration = 5.9e-05sec.
+BDD:3139(917)[856]4
+BDDrev:3139(917)[856]4
+-duration = 0.000605sec.
+BDD:[698]3445(1455)6
+BDDrev:[698]3445(1455)6
+-duration = 0.00011sec.
+BDD:[699]3445(1455)6
+BDDrev:[699]3445(1455)6
+-duration = 0.000505sec.
+BDD:3139(917)[699]4
+BDDrev:3139(917)[699]6
+-duration = 1.4e-05sec.
+BDD:3143(919)[699]4
+BDDrev:3143(919)[699]4
+-duration = 0.000289sec.
+BDD:534(149)[855]2
+BDDrev:534(149)[855]6
+-duration = 7e-06sec.
+BDD:3139(917)[855]4
+BDDrev:3139(917)[855]4
+-duration = 0.000599sec.
+BDD:3139(917)[698]4
+BDDrev:3139(917)[698]6
+-duration = 7.4e-05sec.
+BDD:3143(919)[698]4
+BDDrev:3143(919)[698]4
+-duration = 0.000581sec.
+BDD:[857]3139(917)3
+BDDrev:[857]3139(917)3
+-duration = 3.6e-05sec.
+BDD:[858]3139(917)3
+BDDrev:[858]3139(917)3
+-duration = 0.008594sec.
+BDD:332(122)[857]2
+BDDrev:332(122)[857]3
+-duration = 0.000301sec.
+BDD:358(128)[857]2
+BDDrev:358(128)[857]2
+-duration = 0.002632sec.
+BDD:152(69)[602]2
+BDDrev:152(69)[602]5
+-duration = 0.000163sec.
+BDD:[166][602]4
+BDDrev:[166][602]4
+-duration = 3e-06sec.
+BDD:3350(1331)[5075]23
+BDDrev:3350(1331)[5075]27
+-duration = 5e-06sec.
+BDD:[134][5075]3
+BDDrev:[134][5075]3
+-duration = 5e-06sec.
+BDD:[5076][5075]4
+BDDrev:[5076][5075]4
+-duration = 3e-06sec.
+BDD:115(45)[5076]2
+BDDrev:115(45)[5076]4
+-duration = 3e-06sec.
+BDD:[145][5076]3
+BDDrev:[145][5076]3
+-duration = 3e-06sec.
+BDD:188(81)[607]2
+BDDrev:188(81)[607]5
+-duration = 6e-06sec.
+BDD:[161][607]4
+BDDrev:[161][607]4
+-duration = 5e-06sec.
+BDD:182(79)[651]2
+BDDrev:182(79)[651]5
+-duration = 4e-06sec.
+BDD:[161][651]4
+BDDrev:[161][651]4
+-duration = 2.3e-05sec.
+BDD:130(58)[4862]2
+BDDrev:130(58)[4862]8
+-duration = 4e-06sec.
+BDD:[145][4862]3
+BDDrev:[145][4862]3
+-duration = 5e-06sec.
+BDD:[4863][4862]6
+BDDrev:[4863][4862]6
+-duration = 3e-06sec.
+BDD:[785][124]6
+BDDrev:[785][124]6
+-duration = 6e-06sec.
+BDD:[786][124]6
+BDDrev:[786][124]6
+-duration = 7.6e-05sec.
+BDD:54(20)[786]2
+BDDrev:54(20)[786]6
+-duration = 6e-06sec.
+BDD:3137(914)[786]4
+BDDrev:3137(914)[786]4
+-duration = 4.9e-05sec.
+BDD:54(20)[785]2
+BDDrev:54(20)[785]6
+-duration = 3e-06sec.
+BDD:3137(914)[785]4
+BDDrev:3137(914)[785]4
+-duration = 4.9e-05sec.
+BDD:54(20)[216]2
+BDDrev:54(20)[216]6
+-duration = 4e-06sec.
+BDD:3137(914)[216]4
+BDDrev:3137(914)[216]4
+-duration = 2.3e-05sec.
+BDD:[865]3137(914)3
+BDDrev:[865]3137(914)3
+-duration = 6e-06sec.
+BDD:[866]3137(914)3
+BDDrev:[866]3137(914)3
+-duration = 0.00334sec.
+BDD:332(122)[865]2
+BDDrev:332(122)[865]3
+-duration = 0.000194sec.
+BDD:366(130)[865]2
+BDDrev:366(130)[865]2
+-duration = 0.001503sec.
+BDD:366(130){{600(259)}}2
+BDDrev:366(130){{600(259)}}2
+-duration = 4.9e-05sec.
+BDD:[680]3486(1464)6
+BDDrev:[680]3486(1464)6
+-duration = 7e-06sec.
+BDD:[681]3486(1464)6
+BDDrev:[681]3486(1464)6
+-duration = 0.000225sec.
+BDD:2802(950)[680]4
+BDDrev:2802(950)[680]6
+-duration = 7e-06sec.
+BDD:[179][680]4
+BDDrev:[179][680]4
+-duration = 0.000139sec.
+BDD:2802(950)[4813]4
+BDDrev:2802(950)[4813]6
+-duration = 9e-06sec.
+BDD:1278(1433)[4813]6
+BDDrev:1278(1433)[4813]6
+-duration = 4e-06sec.
+BDD:[911]1278(1433)6
+BDDrev:[911]1278(1433)6
+-duration = 1.2e-05sec.
+BDD:[912]1278(1433)6
+BDDrev:[912]1278(1433)6
+-duration = 2e-06sec.
+BDD:446(141)[911]2
+BDDrev:446(141)[911]6
+-duration = 2e-06sec.
+BDD:2802(950)[911]4
+BDDrev:2802(950)[911]4
+-duration = 1e-06sec.
+BDD:2802(950)[681]4
+BDDrev:2802(950)[681]6
+-duration = 5e-06sec.
+BDD:[179][681]4
+BDDrev:[179][681]4
+-duration = 0.000148sec.
+BDD:446(141)[912]2
+BDDrev:446(141)[912]6
+-duration = 3e-06sec.
+BDD:2802(950)[912]4
+BDDrev:2802(950)[912]4
+-duration = 2e-06sec.
+BDD:[913]2802(950)3
+BDDrev:[913]2802(950)3
+-duration = 2e-06sec.
+BDD:[914]2802(950)3
+BDDrev:[914]2802(950)3
+-duration = 1e-06sec.
+BDD:209(88)[914]2
+BDDrev:209(88)[914]3
+-duration = 2e-06sec.
+BDD:335(123)[914]2
+BDDrev:335(123)[914]2
+-duration = 2e-06sec.
+BDD:91(35)[529]2
+BDDrev:91(35)[529]4
+-duration = 4e-06sec.
+BDD:[158][529]3
+BDDrev:[158][529]3
+-duration = 3e-06sec.
+BDD:91(35)[516]2
+BDDrev:91(35)[516]4
+-duration = 4e-06sec.
+BDD:[164][516]3
+BDDrev:[164][516]3
+-duration = 2e-06sec.
+BDD:1(0){{634(665)}}2
+BDDrev:1(0){{634(665)}}3
+-duration = 1.4e-05sec.
+BDD:373(133){{634(665)}}2
+BDDrev:373(133){{634(665)}}2
+-duration = 1e-06sec.
+BDD:67(23)[631]2
+BDDrev:67(23)[631]4
+-duration = 4e-06sec.
+BDD:[158][631]3
+BDDrev:[158][631]3
+-duration = 3e-06sec.
+BDD:46(16)[537]2
+BDDrev:46(16)[537]4
+-duration = 3e-06sec.
+BDD:[158][537]3
+BDDrev:[158][537]3
+-duration = 2e-06sec.
+BDD:76(26)[639]2
+BDDrev:76(26)[639]4
+-duration = 3e-06sec.
+BDD:[158][639]3
+BDDrev:[158][639]3
+-duration = 2.8e-05sec.
+BDD:14(3)[258]2
+BDDrev:14(3)[258]4
+-duration = 3e-06sec.
+BDD:[158][258]3
+BDDrev:[158][258]3
+-duration = 2e-06sec.
+BDD:11(2)[764]2
+BDDrev:11(2)[764]4
+-duration = 3e-06sec.
+BDD:[158][764]3
+BDDrev:[158][764]3
+-duration = 2e-06sec.
+BDD:109(41)[541]2
+BDDrev:109(41)[541]4
+-duration = 3e-06sec.
+BDD:[158][541]3
+BDDrev:[158][541]3
+-duration = 2e-06sec.
+BDD:43(15)[643]2
+BDDrev:43(15)[643]4
+-duration = 2e-06sec.
+BDD:[158][643]3
+BDDrev:[158][643]3
+-duration = 3e-06sec.
+BDD:100(38)[533]2
+BDDrev:100(38)[533]4
+-duration = 3e-06sec.
+BDD:[158][533]3
+BDDrev:[158][533]3
+-duration = 2e-06sec.
+BDD:4087(171)[158]2
+BDDrev:4087(171)[158]3
+-duration = 4e-06sec.
+BDD:4088(172)[158]2
+BDDrev:4088(172)[158]2
+-duration = 0.000361sec.
+BDD:4087(171)[167]2
+BDDrev:4087(171)[167]3
+-duration = 1.8e-05sec.
+BDD:4088(172)[167]2
+BDDrev:4088(172)[167]2
+-duration = 0.000341sec.
+BDD:106(40)[539]2
+BDDrev:106(40)[539]4
+-duration = 1.1e-05sec.
+BDD:[165][539]3
+BDDrev:[165][539]3
+-duration = 2e-06sec.
+BDD:64(22)[256]2
+BDDrev:64(22)[256]4
+-duration = 4e-06sec.
+BDD:[165][256]3
+BDDrev:[165][256]3
+-duration = 2e-06sec.
+BDD:61(21)[762]2
+BDDrev:61(21)[762]4
+-duration = 4e-06sec.
+BDD:[165][762]3
+BDDrev:[165][762]3
+-duration = 3e-06sec.
+BDD:20(5)[637]2
+BDDrev:20(5)[637]4
+-duration = 3e-06sec.
+BDD:[165][637]3
+BDDrev:[165][637]3
+-duration = 2e-06sec.
+BDD:40(14)[527]2
+BDDrev:40(14)[527]4
+-duration = 2e-06sec.
+BDD:[165][527]3
+BDDrev:[165][527]3
+-duration = 1e-06sec.
+BDD:70(24)[629]2
+BDDrev:70(24)[629]4
+-duration = 5e-06sec.
+BDD:[165][629]3
+BDDrev:[165][629]3
+-duration = 2e-06sec.
+BDD:37(13)[641]2
+BDDrev:37(13)[641]4
+-duration = 4e-06sec.
+BDD:[165][641]3
+BDDrev:[165][641]3
+-duration = 2e-06sec.
+BDD:103(39)[531]2
+BDDrev:103(39)[531]4
+-duration = 3e-06sec.
+BDD:[165][531]3
+BDDrev:[165][531]3
+-duration = 2e-06sec.
+BDD:4087(171)[165]2
+BDDrev:4087(171)[165]3
+-duration = 4e-06sec.
+BDD:4088(172)[165]2
+BDDrev:4088(172)[165]2
+-duration = 0.000311sec.
+BDD:4087(171)[160]2
+BDDrev:4087(171)[160]3
+-duration = 1.1e-05sec.
+BDD:4088(172)[160]2
+BDDrev:4088(172)[160]2
+-duration = 0.000371sec.
+BDD:14(3)[253]2
+BDDrev:14(3)[253]4
+-duration = 1.2e-05sec.
+BDD:[164][253]3
+BDDrev:[164][253]3
+-duration = 3e-06sec.
+BDD:4091(175)[391]2
+BDDrev:4091(175)[391]431
+-duration = 0.000169sec.
+BDD:5417(1877)[391]45
+BDDrev:5417(1877)[391]560
+-duration = 0.003007sec.
+BDD:5414(2018)[391]97
+BDDrev:5414(2018)[391]97
+-duration = 0.002213sec.
+BDD:4091(175)[390]2
+BDDrev:4091(175)[390]561
+-duration = 0.000197sec.
+BDD:5417(1877)[390]45
+BDDrev:5417(1877)[390]430
+-duration = 0.003743sec.
+BDD:5414(2018)[390]97
+BDDrev:5414(2018)[390]97
+-duration = 0.002353sec.
+BDD:[454]5414(2018)221
+BDDrev:[454]5414(2018)221
+-duration = 0.000163sec.
+BDD:[455]5414(2018)244
+BDDrev:[455]5414(2018)244
+-duration = 0.003315sec.
+BDD:3892(1490)[455]16
+BDDrev:3892(1490)[455]221
+-duration = 0.000148sec.
+BDD:[186][455]65
+BDDrev:[186][455]65
+-duration = 0.002278sec.
+BDD:3892(1490)[454]16
+BDDrev:3892(1490)[454]244
+-duration = 0.000131sec.
+BDD:[186][454]65
+BDDrev:[186][454]65
+-duration = 0.002435sec.
+BDD:[456][186]82
+BDDrev:[456][186]82
+-duration = 0.000125sec.
+BDD:[457][186]81
+BDDrev:[457][186]81
+-duration = 0.002037sec.
+BDD:3328(916)[457]4
+BDDrev:3328(916)[457]81
+-duration = 4.3e-05sec.
+BDD:3883(1473)[457]51
+BDDrev:3883(1473)[457]51
+-duration = 0.000762sec.
+BDD:3328(916)[456]4
+BDDrev:3328(916)[456]82
+-duration = 3.2e-05sec.
+BDD:3883(1473)[456]51
+BDDrev:3883(1473)[456]51
+-duration = 0.000868sec.
+BDD:[458]3883(1473)47
+BDDrev:[458]3883(1473)47
+-duration = 4.7e-05sec.
+BDD:[459]3883(1473)47
+BDDrev:[459]3883(1473)47
+-duration = 0.000675sec.
+BDD:5299(1122)[459]8
+BDDrev:5299(1122)[459]48
+-duration = 2.3e-05sec.
+BDD:5296(1127)[459]23
+BDDrev:5296(1127)[459]23
+-duration = 0.000487sec.
+BDD:5299(1122)[458]8
+BDDrev:5299(1122)[458]48
+-duration = 1.9e-05sec.
+BDD:5296(1127)[458]23
+BDDrev:5296(1127)[458]23
+-duration = 0.000507sec.
+BDD:[460]5296(1127)4
+BDDrev:[460]5296(1127)4
+-duration = 1.5e-05sec.
+BDD:[461]5296(1127)4
+BDDrev:[461]5296(1127)4
+-duration = 0.000292sec.
+BDD:[462]5296(1127)4
+BDDrev:[462]5296(1127)4
+-duration = 0.000283sec.
+BDD:[463]5296(1127)4
+BDDrev:[463]5296(1127)4
+-duration = 0.000415sec.
+BDD:248(99)[463]2
+BDDrev:248(99)[463]4
+-duration = 1.9e-05sec.
+BDD:341(125)[463]2
+BDDrev:341(125)[463]3
+-duration = 0.000168sec.
+BDD:523(148)[463]2
+BDDrev:523(148)[463]2
+-duration = 0.000218sec.
+BDD:4091(175)[269]2
+BDDrev:4091(175)[269]242
+-duration = 0.00012sec.
+BDD:5409(1998)[269]59
+BDDrev:5409(1998)[269]241
+-duration = 0.001372sec.
+BDD:5406(2013)[269]71
+BDDrev:5406(2013)[269]71
+-duration = 0.00088sec.
+BDD:4091(175)[268]2
+BDDrev:4091(175)[268]242
+-duration = 8.1e-05sec.
+BDD:5409(1998)[268]59
+BDDrev:5409(1998)[268]241
+-duration = 0.00133sec.
+BDD:5406(2013)[268]71
+BDDrev:5406(2013)[268]71
+-duration = 0.000903sec.
+BDD:[339]5406(2013)193
+BDDrev:[339]5406(2013)193
+-duration = 0.000169sec.
+BDD:[340]5406(2013)193
+BDDrev:[340]5406(2013)193
+-duration = 0.00194sec.
+BDD:3871(1548)[340]35
+BDDrev:3871(1548)[340]193
+-duration = 9.6e-05sec.
+BDD:[203][340]47
+BDDrev:[203][340]47
+-duration = 0.001285sec.
+BDD:3871(1548)[339]35
+BDDrev:3871(1548)[339]193
+-duration = 9.6e-05sec.
+BDD:[203][339]47
+BDDrev:[203][339]47
+-duration = 0.001261sec.
+BDD:[357]3871(1548)49
+BDDrev:[357]3871(1548)49
+-duration = 5.9e-05sec.
+BDD:[358]3871(1548)49
+BDDrev:[358]3871(1548)49
+-duration = 0.001457sec.
+BDD:5268(1166)[358]23
+BDDrev:5268(1166)[358]49
+-duration = 4.8e-05sec.
+BDD:5271(1187)[358]23
+BDDrev:5271(1187)[358]23
+-duration = 0.001139sec.
+BDD:5268(1166)[357]23
+BDDrev:5268(1166)[357]49
+-duration = 3.4e-05sec.
+BDD:5271(1187)[357]23
+BDDrev:5271(1187)[357]23
+-duration = 0.001147sec.
+BDD:[363]5268(1166)4
+BDDrev:[363]5268(1166)4
+-duration = 2.5e-05sec.
+BDD:[364]5268(1166)4
+BDDrev:[364]5268(1166)4
+-duration = 0.000455sec.
+BDD:[365]5268(1166)4
+BDDrev:[365]5268(1166)4
+-duration = 0.000328sec.
+BDD:[366]5268(1166)4
+BDDrev:[366]5268(1166)4
+-duration = 0.000346sec.
+BDD:234(95)[366]2
+BDDrev:234(95)[366]4
+-duration = 1.4e-05sec.
+BDD:248(99)[366]2
+BDDrev:248(99)[366]3
+-duration = 0.000137sec.
+BDD:435(140)[366]2
+BDDrev:435(140)[366]2
+-duration = 0.000183sec.
+BDD:[367]5409(1998)73
+BDDrev:[367]5409(1998)73
+-duration = 5.8e-05sec.
+BDD:[368]5409(1998)73
+BDDrev:[368]5409(1998)73
+-duration = 0.00305sec.
+BDD:3350(1331)[368]23
+BDDrev:3350(1331)[368]73
+-duration = 8e-05sec.
+BDD:[202][368]47
+BDDrev:[202][368]47
+-duration = 0.002964sec.
+BDD:3350(1331)[367]23
+BDDrev:3350(1331)[367]73
+-duration = 6.7e-05sec.
+BDD:[202][367]47
+BDDrev:[202][367]47
+-duration = 0.002999sec.
+BDD:[369][202]59
+BDDrev:[369][202]59
+-duration = 9.6e-05sec.
+BDD:[370][202]59
+BDDrev:[370][202]59
+-duration = 0.00298sec.
+BDD:5279(1170)[370]23
+BDDrev:5279(1170)[370]59
+-duration = 7.4e-05sec.
+BDD:[142][370]35
+BDDrev:[142][370]35
+-duration = 0.002727sec.
+BDD:5279(1170)[369]23
+BDDrev:5279(1170)[369]59
+-duration = 6.7e-05sec.
+BDD:[142][369]35
+BDDrev:[142][369]35
+-duration = 0.002996sec.
+BDD:[371][142]49
+BDDrev:[371][142]49
+-duration = 8.9e-05sec.
+BDD:[372][142]49
+BDDrev:[372][142]49
+-duration = 0.002973sec.
+BDD:5276(1154)[372]23
+BDDrev:5276(1154)[372]49
+-duration = 8.1e-05sec.
+BDD:5289(1158)[372]23
+BDDrev:5289(1158)[372]23
+-duration = 0.002823sec.
+BDD:5276(1154)[371]23
+BDDrev:5276(1154)[371]49
+-duration = 7.5e-05sec.
+BDD:5289(1158)[371]23
+BDDrev:5289(1158)[371]23
+-duration = 0.002796sec.
+BDD:[377]5276(1154)4
+BDDrev:[377]5276(1154)4
+-duration = 6.2e-05sec.
+BDD:[378]5276(1154)4
+BDDrev:[378]5276(1154)4
+-duration = 0.001957sec.
+BDD:[379]5276(1154)4
+BDDrev:[379]5276(1154)4
+-duration = 0.000806sec.
+BDD:[380]5276(1154)4
+BDDrev:[380]5276(1154)4
+-duration = 0.001071sec.
+BDD:218(91)[380]2
+BDDrev:218(91)[380]4
+-duration = 5.5e-05sec.
+BDD:248(99)[380]2
+BDDrev:248(99)[380]3
+-duration = 0.00136sec.
+BDD:468(143)[380]2
+BDDrev:468(143)[380]2
+-duration = 0.001788sec.
+BDD:3328(916){{598(1623)}}4
+BDDrev:3328(916){{598(1623)}}415
+-duration = 0.000676sec.
+BDD:2908(930){{598(1623)}}4
+BDDrev:2908(930){{598(1623)}}582
+-duration = 0.00056sec.
+BDD:2933(933){{598(1623)}}4
+BDDrev:2933(933){{598(1623)}}593
+-duration = 0.000737sec.
+BDD:3021(1123){{598(1623)}}8
+BDDrev:3021(1123){{598(1623)}}509
+-duration = 0.001024sec.
+BDD:3018(1126){{598(1623)}}13
+BDDrev:3018(1126){{598(1623)}}193
+-duration = 0.001012sec.
+BDD:3012(1132){{598(1623)}}8
+BDDrev:3012(1132){{598(1623)}}155
+-duration = 0.001026sec.
+BDD:2942(1137){{598(1623)}}8
+BDDrev:2942(1137){{598(1623)}}66
+-duration = 0.000933sec.
+BDD:5312(1145){{598(1623)}}8
+BDDrev:5312(1145){{598(1623)}}18
+-duration = 0.000757sec.
+BDD:[149]{{598(1623)}}4
+BDDrev:[149]{{598(1623)}}4
+-duration = 0.000346sec.
+BDD:[476]5417(1877)91
+BDDrev:[476]5417(1877)91
+-duration = 9.1e-05sec.
+BDD:[477]5417(1877)91
+BDDrev:[477]5417(1877)91
+-duration = 0.018935sec.
+BDD:5312(1145)[477]8
+BDDrev:5312(1145)[477]89
+-duration = 0.000536sec.
+BDD:[200][477]25
+BDDrev:[200][477]25
+-duration = 0.019745sec.
+BDD:5312(1145)[476]8
+BDDrev:5312(1145)[476]89
+-duration = 0.00052sec.
+BDD:[200][476]25
+BDDrev:[200][476]25
+-duration = 0.021086sec.
+BDD:5312(1145)[5071]8
+BDDrev:5312(1145)[5071]12
+-duration = 0.000544sec.
+BDD:[134][5071]3
+BDDrev:[134][5071]3
+-duration = 7e-06sec.
+BDD:[5072][5071]4
+BDDrev:[5072][5071]4
+-duration = 4.9e-05sec.
+BDD:[954]5312(1145)4
+BDDrev:[954]5312(1145)4
+-duration = 1.5e-05sec.
+BDD:[955]5312(1145)4
+BDDrev:[955]5312(1145)4
+-duration = 0.044403sec.
+BDD:[956]5312(1145)4
+BDDrev:[956]5312(1145)4
+-duration = 0.040623sec.
+BDD:[957]5312(1145)4
+BDDrev:[957]5312(1145)4
+-duration = 0.035327sec.
+BDD:248(99)[957]2
+BDDrev:248(99)[957]4
+-duration = 0.001791sec.
+BDD:308(116)[957]2
+BDDrev:308(116)[957]3
+-duration = 0.026309sec.
+BDD:479(144)[957]2
+BDDrev:479(144)[957]2
+-duration = 0.027039sec.
+BDD:[468]3892(1490)17
+BDDrev:[468]3892(1490)17
+-duration = 0.000759sec.
+BDD:[469]3892(1490)17
+BDDrev:[469]3892(1490)17
+-duration = 0.001642sec.
+BDD:5304(1133)[468]8
+BDDrev:5304(1133)[468]17
+-duration = 3e-05sec.
+BDD:[180][468]4
+BDDrev:[180][468]4
+-duration = 0.001414sec.
+BDD:5304(1133)[469]8
+BDDrev:5304(1133)[469]17
+-duration = 2.7e-05sec.
+BDD:[180][469]4
+BDDrev:[180][469]4
+-duration = 0.001486sec.
+BDD:[470][180]3
+BDDrev:[470][180]3
+-duration = 2.1e-05sec.
+BDD:[471][180]3
+BDDrev:[471][180]3
+-duration = 0.000564sec.
+BDD:248(99)[471]2
+BDDrev:248(99)[471]3
+-duration = 1e-05sec.
+BDD:514(147)[471]2
+BDDrev:514(147)[471]2
+-duration = 0.000372sec.
+BDD:2615(1155){{610(1519)}}23
+BDDrev:2615(1155){{610(1519)}}234
+-duration = 0.000426sec.
+BDD:2611(1159){{610(1519)}}23
+BDDrev:2611(1159){{610(1519)}}208
+-duration = 0.000249sec.
+BDD:2623(1167){{610(1519)}}23
+BDDrev:2623(1167){{610(1519)}}182
+-duration = 0.000146sec.
+BDD:2619(1171){{610(1519)}}8
+BDDrev:2619(1171){{610(1519)}}156
+-duration = 0.000109sec.
+BDD:2713(1178){{610(1519)}}23
+BDDrev:2713(1178){{610(1519)}}132
+-duration = 0.000109sec.
+BDD:2709(1183){{610(1519)}}23
+BDDrev:2709(1183){{610(1519)}}106
+-duration = 0.000146sec.
+BDD:2705(1186){{610(1519)}}23
+BDDrev:2705(1186){{610(1519)}}78
+-duration = 0.000134sec.
+BDD:2717(1191){{610(1519)}}23
+BDDrev:2717(1191){{610(1519)}}52
+-duration = 0.000121sec.
+BDD:3350(1331){{610(1519)}}23
+BDDrev:3350(1331){{610(1519)}}23
+-duration = 5.6e-05sec.
+BDD:446(141)3350(1331)2
+BDDrev:446(141)3350(1331)12
+-duration = 4.1e-05sec.
+BDD:[915]3350(1331)3
+BDDrev:[915]3350(1331)11
+-duration = 2.4e-05sec.
+BDD:[916]3350(1331)3
+BDDrev:[916]3350(1331)11
+-duration = 4.4e-05sec.
+BDD:[918]3350(1331)4
+BDDrev:[918]3350(1331)4
+-duration = 3.4e-05sec.
+BDD:[919]3350(1331)4
+BDDrev:[919]3350(1331)4
+-duration = 3.8e-05sec.
+BDD:206(87)[919]2
+BDDrev:206(87)[919]4
+-duration = 5e-06sec.
+BDD:248(99)[919]2
+BDDrev:248(99)[919]3
+-duration = 1.4e-05sec.
+BDD:446(141)[919]2
+BDDrev:446(141)[919]2
+-duration = 3.5e-05sec.
+BDD:[978]3328(916)3
+BDDrev:[978]3328(916)3
+-duration = 1.3e-05sec.
+BDD:[979]3328(916)3
+BDDrev:[979]3328(916)3
+-duration = 0.013882sec.
+BDD:248(99)[979]2
+BDDrev:248(99)[979]3
+-duration = 0.000309sec.
+BDD:361(129)[979]2
+BDDrev:361(129)[979]2
+-duration = 0.011381sec.
+BDD:[341][203]59
+BDDrev:[341][203]59
+-duration = 0.00029sec.
+BDD:[342][203]59
+BDDrev:[342][203]59
+-duration = 0.00159sec.
+BDD:3852(1190)[342]23
+BDDrev:3852(1190)[342]59
+-duration = 5.3e-05sec.
+BDD:[143][342]35
+BDDrev:[143][342]35
+-duration = 0.000946sec.
+BDD:3852(1190)[341]23
+BDDrev:3852(1190)[341]59
+-duration = 3.6e-05sec.
+BDD:[143][341]35
+BDDrev:[143][341]35
+-duration = 0.000901sec.
+BDD:[343][143]49
+BDDrev:[343][143]49
+-duration = 5.7e-05sec.
+BDD:[344][143]49
+BDDrev:[344][143]49
+-duration = 0.001642sec.
+BDD:5263(1179)[344]23
+BDDrev:5263(1179)[344]49
+-duration = 5.5e-05sec.
+BDD:5260(1182)[344]23
+BDDrev:5260(1182)[344]23
+-duration = 0.00156sec.
+BDD:5263(1179)[343]23
+BDDrev:5263(1179)[343]49
+-duration = 5e-05sec.
+BDD:5260(1182)[343]23
+BDDrev:5260(1182)[343]23
+-duration = 0.00141sec.
+BDD:[349]5263(1179)4
+BDDrev:[349]5263(1179)4
+-duration = 2.9e-05sec.
+BDD:[350]5263(1179)4
+BDDrev:[350]5263(1179)4
+-duration = 0.001059sec.
+BDD:[351]5263(1179)4
+BDDrev:[351]5263(1179)4
+-duration = 0.000807sec.
+BDD:[352]5263(1179)4
+BDDrev:[352]5263(1179)4
+-duration = 0.000782sec.
+BDD:248(99)[352]2
+BDDrev:248(99)[352]4
+-duration = 1.8e-05sec.
+BDD:273(106)[352]2
+BDDrev:273(106)[352]3
+-duration = 0.000181sec.
+BDD:411(138)[352]2
+BDDrev:411(138)[352]2
+-duration = 0.000307sec.
+BDD:[478][200]37
+BDDrev:[478][200]37
+-duration = 5.4e-05sec.
+BDD:[479][200]41
+BDDrev:[479][200]41
+-duration = 0.042558sec.
+BDD:2942(1137)[479]8
+BDDrev:2942(1137)[479]41
+-duration = 0.000473sec.
+BDD:[140][479]10
+BDDrev:[140][479]10
+-duration = 0.012667sec.
+BDD:2942(1137)[478]8
+BDDrev:2942(1137)[478]37
+-duration = 0.000402sec.
+BDD:[140][478]10
+BDDrev:[140][478]10
+-duration = 0.005719sec.
+BDD:[958]2942(1137)4
+BDDrev:[958]2942(1137)4
+-duration = 0.000198sec.
+BDD:[959]2942(1137)4
+BDDrev:[959]2942(1137)4
+-duration = 0.028111sec.
+BDD:[960]2942(1137)4
+BDDrev:[960]2942(1137)4
+-duration = 0.034597sec.
+BDD:[961]2942(1137)4
+BDDrev:[961]2942(1137)4
+-duration = 0.037331sec.
+BDD:248(99)[961]2
+BDDrev:248(99)[961]4
+-duration = 0.001789sec.
+BDD:316(118)[961]2
+BDDrev:316(118)[961]3
+-duration = 0.015537sec.
+BDD:490(145)[961]2
+BDDrev:490(145)[961]2
+-duration = 0.011157sec.
+BDD:[373]5289(1158)4
+BDDrev:[373]5289(1158)4
+-duration = 0.000477sec.
+BDD:[374]5289(1158)4
+BDDrev:[374]5289(1158)4
+-duration = 0.002136sec.
+BDD:[375]5289(1158)4
+BDDrev:[375]5289(1158)4
+-duration = 0.000965sec.
+BDD:[376]5289(1158)4
+BDDrev:[376]5289(1158)4
+-duration = 0.001216sec.
+BDD:210(89)[376]2
+BDDrev:210(89)[376]4
+-duration = 5.5e-05sec.
+BDD:248(99)[376]2
+BDDrev:248(99)[376]3
+-duration = 0.001144sec.
+BDD:457(142)[376]2
+BDDrev:457(142)[376]2
+-duration = 0.001696sec.
+BDD:2908(930)[5069]4
+BDDrev:2908(930)[5069]8
+-duration = 7.2e-05sec.
+BDD:[134][5069]3
+BDDrev:[134][5069]3
+-duration = 6e-06sec.
+BDD:[5070][5069]4
+BDDrev:[5070][5069]4
+-duration = 4.2e-05sec.
+BDD:[480][140]10
+BDDrev:[480][140]10
+-duration = 1e-05sec.
+BDD:[481][140]10
+BDDrev:[481][140]10
+-duration = 0.004196sec.
+BDD:2908(930)[480]4
+BDDrev:2908(930)[480]10
+-duration = 0.000141sec.
+BDD:2933(933)[480]4
+BDDrev:2933(933)[480]4
+-duration = 0.0041sec.
+BDD:2908(930)[481]4
+BDDrev:2908(930)[481]10
+-duration = 0.00013sec.
+BDD:2933(933)[481]4
+BDDrev:2933(933)[481]4
+-duration = 0.00459sec.
+BDD:[976]2908(930)3
+BDDrev:[976]2908(930)3
+-duration = 0.000134sec.
+BDD:[977]2908(930)3
+BDDrev:[977]2908(930)3
+-duration = 0.033015sec.
+BDD:248(99)[977]2
+BDDrev:248(99)[977]3
+-duration = 0.000904sec.
+BDD:302(114)[977]2
+BDDrev:302(114)[977]2
+-duration = 0.019144sec.
+BDD:[464]5299(1122)4
+BDDrev:[464]5299(1122)4
+-duration = 0.000519sec.
+BDD:[465]5299(1122)4
+BDDrev:[465]5299(1122)4
+-duration = 0.000501sec.
+BDD:[466]5299(1122)4
+BDDrev:[466]5299(1122)4
+-duration = 0.000339sec.
+BDD:[467]5299(1122)4
+BDDrev:[467]5299(1122)4
+-duration = 0.00035sec.
+BDD:248(99)[467]2
+BDDrev:248(99)[467]4
+-duration = 1.4e-05sec.
+BDD:351(127)[467]2
+BDDrev:351(127)[467]3
+-duration = 0.000297sec.
+BDD:534(149)[467]2
+BDDrev:534(149)[467]2
+-duration = 0.000335sec.
+BDD:[381]5279(1170)4
+BDDrev:[381]5279(1170)4
+-duration = 1.6e-05sec.
+BDD:[382]5279(1170)4
+BDDrev:[382]5279(1170)4
+-duration = 0.001802sec.
+BDD:[383]5279(1170)4
+BDDrev:[383]5279(1170)4
+-duration = 0.000687sec.
+BDD:[384]5279(1170)4
+BDDrev:[384]5279(1170)4
+-duration = 0.00086sec.
+BDD:226(93)[384]2
+BDDrev:226(93)[384]4
+-duration = 5.5e-05sec.
+BDD:248(99)[384]2
+BDDrev:248(99)[384]3
+-duration = 0.00121sec.
+BDD:422(139)[384]2
+BDDrev:422(139)[384]2
+-duration = 0.00153sec.
+BDD:[472]5304(1133)4
+BDDrev:[472]5304(1133)4
+-duration = 5.8e-05sec.
+BDD:[473]5304(1133)4
+BDDrev:[473]5304(1133)4
+-duration = 0.000726sec.
+BDD:[474]5304(1133)4
+BDDrev:[474]5304(1133)4
+-duration = 0.000443sec.
+BDD:[475]5304(1133)4
+BDDrev:[475]5304(1133)4
+-duration = 0.000471sec.
+BDD:248(99)[475]2
+BDDrev:248(99)[475]4
+-duration = 1.8e-05sec.
+BDD:324(120)[475]2
+BDDrev:324(120)[475]3
+-duration = 0.000259sec.
+BDD:503(146)[475]2
+BDDrev:503(146)[475]2
+-duration = 0.000444sec.
+BDD:[345]5260(1182)4
+BDDrev:[345]5260(1182)4
+-duration = 1.9e-05sec.
+BDD:[346]5260(1182)4
+BDDrev:[346]5260(1182)4
+-duration = 0.000883sec.
+BDD:[347]5260(1182)4
+BDDrev:[347]5260(1182)4
+-duration = 0.000652sec.
+BDD:[348]5260(1182)4
+BDDrev:[348]5260(1182)4
+-duration = 0.000662sec.
+BDD:248(99)[348]2
+BDDrev:248(99)[348]4
+-duration = 1.8e-05sec.
+BDD:265(104)[348]2
+BDDrev:265(104)[348]3
+-duration = 0.000154sec.
+BDD:400(137)[348]2
+BDDrev:400(137)[348]2
+-duration = 0.000303sec.
+BDD:[359]5271(1187)4
+BDDrev:[359]5271(1187)4
+-duration = 1.4e-05sec.
+BDD:[360]5271(1187)4
+BDDrev:[360]5271(1187)4
+-duration = 0.000929sec.
+BDD:[361]5271(1187)4
+BDDrev:[361]5271(1187)4
+-duration = 0.00066sec.
+BDD:[362]5271(1187)4
+BDDrev:[362]5271(1187)4
+-duration = 0.0007sec.
+BDD:248(99)[362]2
+BDDrev:248(99)[362]4
+-duration = 1.9e-05sec.
+BDD:257(102)[362]2
+BDDrev:257(102)[362]3
+-duration = 0.000127sec.
+BDD:389(136)[362]2
+BDDrev:389(136)[362]2
+-duration = 0.000258sec.
+BDD:[353]3852(1190)4
+BDDrev:[353]3852(1190)4
+-duration = 1.4e-05sec.
+BDD:[354]3852(1190)4
+BDDrev:[354]3852(1190)4
+-duration = 0.00055sec.
+BDD:[355]3852(1190)4
+BDDrev:[355]3852(1190)4
+-duration = 0.000438sec.
+BDD:[356]3852(1190)4
+BDDrev:[356]3852(1190)4
+-duration = 0.000391sec.
+BDD:248(99)[356]2
+BDDrev:248(99)[356]4
+-duration = 1.5e-05sec.
+BDD:281(108)[356]2
+BDDrev:281(108)[356]3
+-duration = 0.000161sec.
+BDD:374(134)[356]2
+BDDrev:374(134)[356]2
+-duration = 0.000204sec.
+BDD:2713(1178)[4893]23
+BDDrev:2713(1178)[4893]27
+-duration = 9.3e-05sec.
+BDD:[134][4893]3
+BDDrev:[134][4893]3
+-duration = 1e-05sec.
+BDD:[4894][4893]4
+BDDrev:[4894][4893]4
+-duration = 1e-05sec.
+BDD:[134][4863]3
+BDDrev:[134][4863]6
+-duration = 5e-06sec.
+BDD:[149][4863]4
+BDDrev:[149][4863]4
+-duration = 9e-06sec.
+BDD:2933(933)[5067]4
+BDDrev:2933(933)[5067]8
+-duration = 6e-06sec.
+BDD:[134][5067]3
+BDDrev:[134][5067]3
+-duration = 4e-06sec.
+BDD:[5068][5067]4
+BDDrev:[5068][5067]4
+-duration = 3.5e-05sec.
+BDD:3021(1123)[781]8
+BDDrev:3021(1123)[781]10
+-duration = 8e-06sec.
+BDD:[134][781]3
+BDDrev:[134][781]3
+-duration = 5e-06sec.
+BDD:2709(1183)[4889]23
+BDDrev:2709(1183)[4889]27
+-duration = 5.5e-05sec.
+BDD:[134][4889]3
+BDDrev:[134][4889]3
+-duration = 1.2e-05sec.
+BDD:[4890][4889]4
+BDDrev:[4890][4889]4
+-duration = 2e-05sec.
+BDD:3018(1126)[4864]8
+BDDrev:3018(1126)[4864]12
+-duration = 6e-06sec.
+BDD:[134][4864]3
+BDDrev:[134][4864]3
+-duration = 3e-06sec.
+BDD:[4865][4864]4
+BDDrev:[4865][4864]4
+-duration = 2.3e-05sec.
+BDD:2611(1159)[5077]23
+BDDrev:2611(1159)[5077]27
+-duration = 3.1e-05sec.
+BDD:[134][5077]3
+BDDrev:[134][5077]3
+-duration = 7e-06sec.
+BDD:[5078][5077]4
+BDDrev:[5078][5077]4
+-duration = 5e-05sec.
+BDD:2623(1167)[4874]23
+BDDrev:2623(1167)[4874]27
+-duration = 3.7e-05sec.
+BDD:[134][4874]3
+BDDrev:[134][4874]3
+-duration = 1e-05sec.
+BDD:[4875][4874]4
+BDDrev:[4875][4874]4
+-duration = 3.6e-05sec.
+BDD:4091(175)[134]2
+BDDrev:4091(175)[134]3
+-duration = 8e-06sec.
+BDD:4092(176)[134]2
+BDDrev:4092(176)[134]2
+-duration = 6.4e-05sec.
+BDD:121(51)[5070]2
+BDDrev:121(51)[5070]4
+-duration = 1e-05sec.
+BDD:[145][5070]3
+BDDrev:[145][5070]3
+-duration = 2e-06sec.
+BDD:127(55)[4890]2
+BDDrev:127(55)[4890]4
+-duration = 3e-06sec.
+BDD:[145][4890]3
+BDDrev:[145][4890]3
+-duration = 2e-06sec.
+BDD:119(49)[4865]2
+BDDrev:119(49)[4865]4
+-duration = 3e-06sec.
+BDD:[145][4865]3
+BDDrev:[145][4865]3
+-duration = 1e-06sec.
+BDD:114(44)[5078]2
+BDDrev:114(44)[5078]4
+-duration = 2e-06sec.
+BDD:[145][5078]3
+BDDrev:[145][5078]3
+-duration = 2e-06sec.
+BDD:122(52)[4875]2
+BDDrev:122(52)[4875]4
+-duration = 3e-06sec.
+BDD:[145][4875]3
+BDDrev:[145][4875]3
+-duration = 2e-06sec.
+BDD:123(53)[5068]2
+BDDrev:123(53)[5068]4
+-duration = 2e-06sec.
+BDD:[145][5068]3
+BDDrev:[145][5068]3
+-duration = 1e-06sec.
+BDD:126(54)[4894]2
+BDDrev:126(54)[4894]4
+-duration = 2e-06sec.
+BDD:[145][4894]3
+BDDrev:[145][4894]3
+-duration = 2e-06sec.
+BDD:116(46)[5072]2
+BDDrev:116(46)[5072]4
+-duration = 3e-06sec.
+BDD:[145][5072]3
+BDDrev:[145][5072]3
+-duration = 2e-06sec.
+BDD:4091(175)[145]2
+BDDrev:4091(175)[145]3
+-duration = 3e-06sec.
+BDD:4092(176)[145]2
+BDDrev:4092(176)[145]2
+-duration = 3e-06sec.
+BDD:4091(175)[129]2
+BDDrev:4091(175)[129]3
+-duration = 6e-06sec.
+BDD:4092(176)[129]2
+BDDrev:4092(176)[129]2
+-duration = 0.000184sec.
+BDD:118(48)[5266]2
+BDDrev:118(48)[5266]4
+-duration = 2.6e-05sec.
+BDD:4091(175)[5266]2
+BDDrev:4091(175)[5266]3
+-duration = 2e-06sec.
+BDD:4092(176)[5266]2
+BDDrev:4092(176)[5266]2
+-duration = 1e-06sec.
+BDD:106(40)[542]2
+BDDrev:106(40)[542]4
+-duration = 1.1e-05sec.
+BDD:[171][542]3
+BDDrev:[171][542]3
+-duration = 2e-06sec.
+BDD:4089(173)[168]2
+BDDrev:4089(173)[168]3
+-duration = 5e-06sec.
+BDD:4090(174)[168]2
+BDDrev:4090(174)[168]2
+-duration = 0.000969sec.
+BDD:46(16)[524]2
+BDDrev:46(16)[524]4
+-duration = 8.1e-05sec.
+BDD:[164][524]3
+BDDrev:[164][524]3
+-duration = 3e-06sec.
+BDD:43(15)[626]2
+BDDrev:43(15)[626]4
+-duration = 4e-06sec.
+BDD:[164][626]3
+BDDrev:[164][626]3
+-duration = 2e-06sec.
+BDD:11(2)[739]2
+BDDrev:11(2)[739]4
+-duration = 3e-06sec.
+BDD:[164][739]3
+BDDrev:[164][739]3
+-duration = 2e-06sec.
+BDD:109(41)[544]2
+BDDrev:109(41)[544]4
+-duration = 3e-06sec.
+BDD:[164][544]3
+BDDrev:[164][544]3
+-duration = 1e-06sec.
+BDD:100(38)[520]2
+BDDrev:100(38)[520]4
+-duration = 4e-06sec.
+BDD:[164][520]3
+BDDrev:[164][520]3
+-duration = 2e-06sec.
+BDD:76(26)[622]2
+BDDrev:76(26)[622]4
+-duration = 3e-06sec.
+BDD:[164][622]3
+BDDrev:[164][622]3
+-duration = 2e-06sec.
+BDD:67(23)[614]2
+BDDrev:67(23)[614]4
+-duration = 3e-06sec.
+BDD:[164][614]3
+BDDrev:[164][614]3
+-duration = 3e-06sec.
+BDD:4089(173)[164]2
+BDDrev:4089(173)[164]3
+-duration = 5e-06sec.
+BDD:4090(174)[164]2
+BDDrev:4090(174)[164]2
+-duration = 2e-06sec.
+BDD:20(5)[620]2
+BDDrev:20(5)[620]4
+-duration = 4e-06sec.
+BDD:[171][620]3
+BDDrev:[171][620]3
+-duration = 2e-06sec.
+BDD:64(22)[251]2
+BDDrev:64(22)[251]4
+-duration = 3e-06sec.
+BDD:[171][251]3
+BDDrev:[171][251]3
+-duration = 2e-06sec.
+BDD:70(24)[612]2
+BDDrev:70(24)[612]4
+-duration = 4e-06sec.
+BDD:[171][612]3
+BDDrev:[171][612]3
+-duration = 2e-06sec.
+BDD:61(21)[737]2
+BDDrev:61(21)[737]4
+-duration = 2e-06sec.
+BDD:[171][737]3
+BDDrev:[171][737]3
+-duration = 1e-06sec.
+BDD:103(39)[518]2
+BDDrev:103(39)[518]4
+-duration = 3e-06sec.
+BDD:[171][518]3
+BDDrev:[171][518]3
+-duration = 2e-06sec.
+BDD:37(13)[624]2
+BDDrev:37(13)[624]4
+-duration = 3e-06sec.
+BDD:[171][624]3
+BDDrev:[171][624]3
+-duration = 3e-06sec.
+BDD:40(14)[514]2
+BDDrev:40(14)[514]4
+-duration = 3e-06sec.
+BDD:[171][514]3
+BDDrev:[171][514]3
+-duration = 1e-06sec.
+BDD:4089(173)[171]2
+BDDrev:4089(173)[171]3
+-duration = 4e-06sec.
+BDD:4090(174)[171]2
+BDDrev:4090(174)[171]2
+-duration = 8e-06sec.
+BDD:4089(173)[157]2
+BDDrev:4089(173)[157]3
+-duration = 5e-06sec.
+BDD:4090(174)[157]2
+BDDrev:4090(174)[157]2
+-duration = 0.000955sec.
+BDD:146(67)[598]2
+BDDrev:146(67)[598]5
+-duration = 0.000104sec.
+BDD:[166][598]4
+BDDrev:[166][598]4
+-duration = 4e-06sec.
+BDD:[867]1984(1423)6
+BDDrev:[867]1984(1423)6
+-duration = 8e-06sec.
+BDD:[868]1984(1423)6
+BDDrev:[868]1984(1423)6
+-duration = 0.003311sec.
+BDD:479(144)[867]2
+BDDrev:479(144)[867]6
+-duration = 0.000231sec.
+BDD:3161(926)[867]4
+BDDrev:3161(926)[867]4
+-duration = 0.002475sec.
+BDD:479(144)[868]2
+BDDrev:479(144)[868]6
+-duration = 0.000179sec.
+BDD:3161(926)[868]4
+BDDrev:3161(926)[868]4
+-duration = 0.002944sec.
+BDD:[869]3161(926)3
+BDDrev:[869]3161(926)3
+-duration = 0.000265sec.
+BDD:[870]3161(926)3
+BDDrev:[870]3161(926)3
+-duration = 0.001592sec.
+BDD:315(117)[870]2
+BDDrev:315(117)[870]3
+-duration = 0.000113sec.
+BDD:332(122)[870]2
+BDDrev:332(122)[870]2
+-duration = 0.0048sec.
+BDD:3717(169)[574]2
+BDDrev:3717(169)[574]7
+-duration = 0.000353sec.
+BDD:3724(170)[574]2
+BDDrev:3724(170)[574]6
+-duration = 3e-06sec.
+BDD:[153][574]5
+BDDrev:[153][574]5
+-duration = 9e-06sec.
+BDD:[578][153]5
+BDDrev:[578][153]5
+-duration = 4e-06sec.
+BDD:[579][153]5
+BDDrev:[579][153]5
+-duration = 3e-06sec.
+BDD:132(60)[578]2
+BDDrev:132(60)[578]5
+-duration = 3e-06sec.
+BDD:3167(931)[578]4
+BDDrev:3167(931)[578]4
+-duration = 3e-06sec.
+BDD:[800]5216(1460)6
+BDDrev:[800]5216(1460)6
+-duration = 7e-06sec.
+BDD:[801]5216(1460)6
+BDDrev:[801]5216(1460)6
+-duration = 0.008457sec.
+BDD:3165(927)[801]4
+BDDrev:3165(927)[801]6
+-duration = 0.001026sec.
+BDD:3167(931)[801]4
+BDDrev:3167(931)[801]4
+-duration = 0.007886sec.
+BDD:132(60)[579]2
+BDDrev:132(60)[579]5
+-duration = 0.000746sec.
+BDD:3167(931)[579]4
+BDDrev:3167(931)[579]4
+-duration = 4e-06sec.
+BDD:3165(927)[800]4
+BDDrev:3165(927)[800]6
+-duration = 4e-06sec.
+BDD:3167(931)[800]4
+BDDrev:3167(931)[800]4
+-duration = 0.007767sec.
+BDD:[875]3167(931)3
+BDDrev:[875]3167(931)3
+-duration = 0.000957sec.
+BDD:[876]3167(931)3
+BDDrev:[876]3167(931)3
+-duration = 3e-06sec.
+BDD:293(112)[875]2
+BDDrev:293(112)[875]3
+-duration = 3e-06sec.
+BDD:332(122)[875]2
+BDDrev:332(122)[875]2
+-duration = 3e-06sec.
+BDD:[400][193]11
+BDDrev:[400][193]11
+-duration = 1.2e-05sec.
+BDD:[401][193]11
+BDDrev:[401][193]11
+-duration = 0.001058sec.
+BDD:2042(1408)[401]5
+BDDrev:2042(1408)[401]11
+-duration = 8.3e-05sec.
+BDD:1767(1417)[401]6
+BDDrev:1767(1417)[401]6
+-duration = 0.000765sec.
+BDD:2042(1408)[400]5
+BDDrev:2042(1408)[400]11
+-duration = 6.3e-05sec.
+BDD:1767(1417)[400]6
+BDDrev:1767(1417)[400]6
+-duration = 0.000749sec.
+BDD:3151(923)[793]4
+BDDrev:3151(923)[793]6
+-duration = 9.1e-05sec.
+BDD:1767(1417)[793]6
+BDDrev:1767(1417)[793]6
+-duration = 0.006517sec.
+BDD:[861]1767(1417)6
+BDDrev:[861]1767(1417)6
+-duration = 0.000879sec.
+BDD:[862]1767(1417)6
+BDDrev:[862]1767(1417)6
+-duration = 0.003477sec.
+BDD:503(146)[862]2
+BDDrev:503(146)[862]6
+-duration = 7.4e-05sec.
+BDD:3151(923)[862]4
+BDDrev:3151(923)[862]4
+-duration = 0.002944sec.
+BDD:[704]3463(1456)4
+BDDrev:[704]3463(1456)4
+-duration = 6.2e-05sec.
+BDD:[705]3463(1456)5
+BDDrev:[705]3463(1456)5
+-duration = 0.000207sec.
+BDD:3151(923)[705]4
+BDDrev:3151(923)[705]5
+-duration = 8e-06sec.
+BDD:[176][705]3
+BDDrev:[176][705]3
+-duration = 0.000322sec.
+BDD:503(146)[861]2
+BDDrev:503(146)[861]6
+-duration = 8e-06sec.
+BDD:3151(923)[861]4
+BDDrev:3151(923)[861]4
+-duration = 0.003769sec.
+BDD:3151(923)[704]4
+BDDrev:3151(923)[704]4
+-duration = 7e-05sec.
+BDD:[176][704]3
+BDDrev:[176][704]3
+-duration = 0.000167sec.
+BDD:[863]3151(923)3
+BDDrev:[863]3151(923)3
+-duration = 1.5e-05sec.
+BDD:[864]3151(923)3
+BDDrev:[864]3151(923)3
+-duration = 0.013335sec.
+BDD:331(121)[864]2
+BDDrev:331(121)[864]3
+-duration = 0.000973sec.
+BDD:332(122)[864]2
+BDDrev:332(122)[864]2
+-duration = 0.016687sec.
+BDD:308(116)[869]2
+BDDrev:308(116)[869]3
+-duration = 0.000437sec.
+BDD:332(122)[869]2
+BDDrev:332(122)[869]2
+-duration = 0.001307sec.
+BDD:332(122)[702]2
+BDDrev:332(122)[702]3
+-duration = 2.3e-05sec.
+BDD:372(132)[702]2
+BDDrev:372(132)[702]2
+-duration = 0.000148sec.
+BDD:3143(919)[797]4
+BDDrev:3143(919)[797]5
+-duration = 8e-06sec.
+BDD:2042(1408)[797]5
+BDDrev:2042(1408)[797]5
+-duration = 0.001574sec.
+BDD:[396][173]9
+BDDrev:[396][173]9
+-duration = 6.1e-05sec.
+BDD:[397][173]9
+BDDrev:[397][173]9
+-duration = 0.000541sec.
+BDD:1778(1307)[396]4
+BDDrev:1778(1307)[396]9
+-duration = 1.6e-05sec.
+BDD:2042(1408)[396]5
+BDDrev:2042(1408)[396]5
+-duration = 0.000423sec.
+BDD:3143(919)[758]4
+BDDrev:3143(919)[758]5
+-duration = 1.1e-05sec.
+BDD:2042(1408)[758]5
+BDDrev:2042(1408)[758]5
+-duration = 2.8e-05sec.
+BDD:523(148)[424]2
+BDDrev:523(148)[424]5
+-duration = 4e-06sec.
+BDD:2042(1408)[424]5
+BDDrev:2042(1408)[424]5
+-duration = 0.000331sec.
+BDD:1778(1307)[397]4
+BDDrev:1778(1307)[397]9
+-duration = 1.2e-05sec.
+BDD:2042(1408)[397]5
+BDDrev:2042(1408)[397]5
+-duration = 0.000404sec.
+BDD:[851]2042(1408)5
+BDDrev:[851]2042(1408)5
+-duration = 2.3e-05sec.
+BDD:[852]2042(1408)5
+BDDrev:[852]2042(1408)5
+-duration = 0.001021sec.
+BDD:523(148)[851]2
+BDDrev:523(148)[851]5
+-duration = 2.3e-05sec.
+BDD:3143(919)[851]4
+BDDrev:3143(919)[851]4
+-duration = 0.001035sec.
+BDD:523(148)[852]2
+BDDrev:523(148)[852]5
+-duration = 6.1e-05sec.
+BDD:3143(919)[852]4
+BDDrev:3143(919)[852]4
+-duration = 0.001088sec.
+BDD:[853]3143(919)3
+BDDrev:[853]3143(919)3
+-duration = 9.7e-05sec.
+BDD:[854]3143(919)3
+BDDrev:[854]3143(919)3
+-duration = 0.184233sec.
+BDD:332(122)[853]2
+BDDrev:332(122)[853]3
+-duration = 0.000262sec.
+BDD:348(126)[853]2
+BDDrev:348(126)[853]2
+-duration = 0.002809sec.
+BDD:332(122)[858]2
+BDDrev:332(122)[858]3
+-duration = 0.000254sec.
+BDD:351(127)[858]2
+BDDrev:351(127)[858]2
+-duration = 0.003189sec.
+BDD:[877]3165(927)3
+BDDrev:[877]3165(927)3
+-duration = 0.00018sec.
+BDD:[878]3165(927)3
+BDDrev:[878]3165(927)3
+-duration = 3e-06sec.
+BDD:302(114)[877]2
+BDDrev:302(114)[877]3
+-duration = 4e-06sec.
+BDD:332(122)[877]2
+BDDrev:332(122)[877]2
+-duration = 2e-06sec.
+BDD:332(122)[866]2
+BDDrev:332(122)[866]3
+-duration = 3e-06sec.
+BDD:361(129)[866]2
+BDDrev:361(129)[866]2
+-duration = 0.001906sec.
+BDD:324(120)[863]2
+BDDrev:324(120)[863]3
+-duration = 0.000101sec.
+BDD:332(122)[863]2
+BDDrev:332(122)[863]2
+-duration = 0.003381sec.
+BDD:299(113)[876]2
+BDDrev:299(113)[876]3
+-duration = 6.7e-05sec.
+BDD:332(122)[876]2
+BDDrev:332(122)[876]2
+-duration = 3e-06sec.
+BDD:332(122)[854]2
+BDDrev:332(122)[854]3
+-duration = 4e-06sec.
+BDD:341(125)[854]2
+BDDrev:341(125)[854]2
+-duration = 0.003357sec.
+BDD:316(118)[873]2
+BDDrev:316(118)[873]3
+-duration = 0.000149sec.
+BDD:332(122)[873]2
+BDDrev:332(122)[873]2
+-duration = 0.005219sec.
+BDD:514(147)1778(1307)2
+BDDrev:514(147)1778(1307)2
+-duration = 0.000194sec.
+BDD:[176]1778(1307)3
+BDDrev:[176]1778(1307)3
+-duration = 0.000745sec.
+BDD:1789(865)1778(1307)4
+BDDrev:1789(865)1778(1307)4
+-duration = 0.001536sec.
+BDD:514(147)1789(865)2
+BDDrev:514(147)1789(865)4
+-duration = 8.8e-05sec.
+BDD:[176]1789(865)3
+BDDrev:[176]1789(865)3
+-duration = 0.000899sec.
+BDD:332(122)[176]2
+BDDrev:332(122)[176]3
+-duration = 0.000125sec.
+BDD:338(124)[176]2
+BDDrev:338(124)[176]2
+-duration = 0.002813sec.
+BDD:307(115)[878]2
+BDDrev:307(115)[878]3
+-duration = 0.000212sec.
+BDD:332(122)[878]2
+BDDrev:332(122)[878]2
+-duration = 3e-06sec.
+BDD:251(100)[466]2
+BDDrev:251(100)[466]4
+-duration = 8e-06sec.
+BDD:351(127)[466]2
+BDDrev:351(127)[466]3
+-duration = 0.000222sec.
+BDD:534(149)[466]2
+BDDrev:534(149)[466]2
+-duration = 0.000229sec.
+BDD:[970]3021(1123)4
+BDDrev:[970]3021(1123)4
+-duration = 1.2e-05sec.
+BDD:[971]3021(1123)4
+BDDrev:[971]3021(1123)4
+-duration = 0.000467sec.
+BDD:[972]3021(1123)4
+BDDrev:[972]3021(1123)4
+-duration = 0.000477sec.
+BDD:[973]3021(1123)4
+BDDrev:[973]3021(1123)4
+-duration = 0.000663sec.
+BDD:351(127)[973]2
+BDDrev:351(127)[973]4
+-duration = 2.3e-05sec.
+BDD:534(149)[973]2
+BDDrev:534(149)[973]3
+-duration = 0.000258sec.
+BDD:3546(165)[973]2
+BDDrev:3546(165)[973]2
+-duration = 0.000294sec.
+BDD:351(127)[971]2
+BDDrev:351(127)[971]4
+-duration = 1e-05sec.
+BDD:534(149)[971]2
+BDDrev:534(149)[971]3
+-duration = 0.000341sec.
+BDD:3550(167)[971]2
+BDDrev:3550(167)[971]2
+-duration = 0.000345sec.
+BDD:242(97)[465]2
+BDDrev:242(97)[465]4
+-duration = 1.2e-05sec.
+BDD:351(127)[465]2
+BDDrev:351(127)[465]3
+-duration = 0.000202sec.
+BDD:534(149)[465]2
+BDDrev:534(149)[465]2
+-duration = 0.000246sec.
+BDD:351(127)[972]2
+BDDrev:351(127)[972]4
+-duration = 1e-05sec.
+BDD:534(149)[972]2
+BDDrev:534(149)[972]3
+-duration = 0.000368sec.
+BDD:3548(166)[972]2
+BDDrev:3548(166)[972]2
+-duration = 0.00033sec.
+BDD:254(101)[464]2
+BDDrev:254(101)[464]4
+-duration = 1.4e-05sec.
+BDD:351(127)[464]2
+BDDrev:351(127)[464]3
+-duration = 0.000204sec.
+BDD:534(149)[464]2
+BDDrev:534(149)[464]2
+-duration = 0.000247sec.
+BDD:351(127)[970]2
+BDDrev:351(127)[970]4
+-duration = 9e-06sec.
+BDD:534(149)[970]2
+BDDrev:534(149)[970]3
+-duration = 0.000279sec.
+BDD:3552(168)[970]2
+BDDrev:3552(168)[970]2
+-duration = 0.000266sec.
+BDD:[839][196]5
+BDDrev:[839][196]5
+-duration = 4e-05sec.
+BDD:[840][196]5
+BDDrev:[840][196]5
+-duration = 0.000349sec.
+BDD:351(127)[840]2
+BDDrev:351(127)[840]5
+-duration = 2.5e-05sec.
+BDD:[136][840]3
+BDDrev:[136][840]3
+-duration = 0.000268sec.
+BDD:351(127)[839]2
+BDDrev:351(127)[839]5
+-duration = 2.4e-05sec.
+BDD:[136][839]3
+BDDrev:[136][839]3
+-duration = 0.000291sec.
+BDD:242(97)[461]2
+BDDrev:242(97)[461]4
+-duration = 2.7e-05sec.
+BDD:341(125)[461]2
+BDDrev:341(125)[461]3
+-duration = 0.000159sec.
+BDD:523(148)[461]2
+BDDrev:523(148)[461]2
+-duration = 0.000192sec.
+BDD:234(95)[364]2
+BDDrev:234(95)[364]4
+-duration = 1.7e-05sec.
+BDD:242(97)[364]2
+BDDrev:242(97)[364]3
+-duration = 0.000183sec.
+BDD:435(140)[364]2
+BDDrev:435(140)[364]2
+-duration = 0.000256sec.
+BDD:242(97)[959]2
+BDDrev:242(97)[959]4
+-duration = 7.4e-05sec.
+BDD:316(118)[959]2
+BDDrev:316(118)[959]3
+-duration = 0.005711sec.
+BDD:490(145)[959]2
+BDDrev:490(145)[959]2
+-duration = 0.010524sec.
+BDD:206(87)[916]2
+BDDrev:206(87)[916]3
+-duration = 0.00177sec.
+BDD:242(97)[916]2
+BDDrev:242(97)[916]2
+-duration = 1.8e-05sec.
+BDD:242(97)[350]2
+BDDrev:242(97)[350]4
+-duration = 2.9e-05sec.
+BDD:273(106)[350]2
+BDDrev:273(106)[350]3
+-duration = 0.000193sec.
+BDD:411(138)[350]2
+BDDrev:411(138)[350]2
+-duration = 0.000338sec.
+BDD:210(89)[374]2
+BDDrev:210(89)[374]4
+-duration = 3.6e-05sec.
+BDD:242(97)[374]2
+BDDrev:242(97)[374]3
+-duration = 0.001474sec.
+BDD:457(142)[374]2
+BDDrev:457(142)[374]2
+-duration = 0.0021sec.
+BDD:242(97)[955]2
+BDDrev:242(97)[955]4
+-duration = 0.000452sec.
+BDD:308(116)[955]2
+BDDrev:308(116)[955]3
+-duration = 0.008138sec.
+BDD:479(144)[955]2
+BDDrev:479(144)[955]2
+-duration = 0.010128sec.
+BDD:226(93)[382]2
+BDDrev:226(93)[382]4
+-duration = 0.001132sec.
+BDD:242(97)[382]2
+BDDrev:242(97)[382]3
+-duration = 0.001703sec.
+BDD:422(139)[382]2
+BDDrev:422(139)[382]2
+-duration = 0.002403sec.
+BDD:242(97)[473]2
+BDDrev:242(97)[473]4
+-duration = 0.000611sec.
+BDD:324(120)[473]2
+BDDrev:324(120)[473]3
+-duration = 0.000303sec.
+BDD:503(146)[473]2
+BDDrev:503(146)[473]2
+-duration = 0.000445sec.
+BDD:242(97)[346]2
+BDDrev:242(97)[346]4
+-duration = 3.1e-05sec.
+BDD:265(104)[346]2
+BDDrev:265(104)[346]3
+-duration = 0.000199sec.
+BDD:400(137)[346]2
+BDDrev:400(137)[346]2
+-duration = 0.00037sec.
+BDD:242(97)[360]2
+BDDrev:242(97)[360]4
+-duration = 4e-05sec.
+BDD:257(102)[360]2
+BDDrev:257(102)[360]3
+-duration = 0.00019sec.
+BDD:389(136)[360]2
+BDDrev:389(136)[360]2
+-duration = 0.000418sec.
+BDD:242(97)[354]2
+BDDrev:242(97)[354]4
+-duration = 0.000114sec.
+BDD:281(108)[354]2
+BDDrev:281(108)[354]3
+-duration = 0.000299sec.
+BDD:374(134)[354]2
+BDDrev:374(134)[354]2
+-duration = 0.000481sec.
+BDD:242(97)[470]2
+BDDrev:242(97)[470]3
+-duration = 3.3e-05sec.
+BDD:514(147)[470]2
+BDDrev:514(147)[470]2
+-duration = 0.00024sec.
+BDD:218(91)[378]2
+BDDrev:218(91)[378]4
+-duration = 2.3e-05sec.
+BDD:242(97)[378]2
+BDDrev:242(97)[378]3
+-duration = 0.002166sec.
+BDD:468(143)[378]2
+BDDrev:468(143)[378]2
+-duration = 0.002304sec.
+BDD:3717(169)[576]2
+BDDrev:3717(169)[576]6
+-duration = 0.000729sec.
+BDD:3724(170)[576]2
+BDDrev:3724(170)[576]5
+-duration = 9e-06sec.
+BDD:2933(933)[576]4
+BDDrev:2933(933)[576]4
+-duration = 9.1e-05sec.
+BDD:[974]2933(933)3
+BDDrev:[974]2933(933)3
+-duration = 2.9e-05sec.
+BDD:[975]2933(933)3
+BDDrev:[975]2933(933)3
+-duration = 0.014688sec.
+BDD:242(97)[975]2
+BDDrev:242(97)[975]3
+-duration = 0.006175sec.
+BDD:293(112)[975]2
+BDDrev:293(112)[975]2
+-duration = 0.008078sec.
+BDD:226(93)[383]2
+BDDrev:226(93)[383]4
+-duration = 0.003614sec.
+BDD:251(100)[383]2
+BDDrev:251(100)[383]3
+-duration = 0.001624sec.
+BDD:422(139)[383]2
+BDDrev:422(139)[383]2
+-duration = 0.001866sec.
+BDD:[936]2619(1171)4
+BDDrev:[936]2619(1171)4
+-duration = 0.000178sec.
+BDD:[937]2619(1171)4
+BDDrev:[937]2619(1171)4
+-duration = 0.000158sec.
+BDD:[938]2619(1171)4
+BDDrev:[938]2619(1171)4
+-duration = 0.000151sec.
+BDD:[939]2619(1171)4
+BDDrev:[939]2619(1171)4
+-duration = 0.000169sec.
+BDD:226(93)[938]2
+BDDrev:226(93)[938]4
+-duration = 1.5e-05sec.
+BDD:422(139)[938]2
+BDDrev:422(139)[938]3
+-duration = 6.4e-05sec.
+BDD:3548(166)[938]2
+BDDrev:3548(166)[938]2
+-duration = 9.2e-05sec.
+BDD:226(93)[936]2
+BDDrev:226(93)[936]4
+-duration = 1e-05sec.
+BDD:422(139)[936]2
+BDDrev:422(139)[936]3
+-duration = 7.8e-05sec.
+BDD:3552(168)[936]2
+BDDrev:3552(168)[936]2
+-duration = 0.000111sec.
+BDD:226(93)[939]2
+BDDrev:226(93)[939]4
+-duration = 1e-05sec.
+BDD:422(139)[939]2
+BDDrev:422(139)[939]3
+-duration = 5.5e-05sec.
+BDD:3546(165)[939]2
+BDDrev:3546(165)[939]2
+-duration = 8.8e-05sec.
+BDD:226(93)[381]2
+BDDrev:226(93)[381]4
+-duration = 1e-05sec.
+BDD:254(101)[381]2
+BDDrev:254(101)[381]3
+-duration = 0.001459sec.
+BDD:422(139)[381]2
+BDDrev:422(139)[381]2
+-duration = 0.001765sec.
+BDD:226(93)[937]2
+BDDrev:226(93)[937]4
+-duration = 0.000171sec.
+BDD:422(139)[937]2
+BDDrev:422(139)[937]3
+-duration = 5.4e-05sec.
+BDD:3550(167)[937]2
+BDDrev:3550(167)[937]2
+-duration = 0.000112sec.
+BDD:179(78)[249]2
+BDDrev:179(78)[249]5
+-duration = 2.1e-05sec.
+BDD:[166][249]4
+BDDrev:[166][249]4
+-duration = 3e-06sec.
+BDD:210(89)[375]2
+BDDrev:210(89)[375]4
+-duration = 6e-06sec.
+BDD:251(100)[375]2
+BDDrev:251(100)[375]3
+-duration = 0.001559sec.
+BDD:457(142)[375]2
+BDDrev:457(142)[375]2
+-duration = 0.002175sec.
+BDD:[817]{{1004(1977)}}21
+BDDrev:[817]{{1004(1977)}}21
+-duration = 0.000216sec.
+BDD:[818]{{1004(1977)}}21
+BDDrev:[818]{{1004(1977)}}21
+-duration = 0.000128sec.
+BDD:5425(1470)[818]5
+BDDrev:5425(1470)[818]21
+-duration = 3.9e-05sec.
+BDD:5422(1638)[818]7
+BDDrev:5422(1638)[818]7
+-duration = 0.0001sec.
+BDD:5425(1470)[817]5
+BDDrev:5425(1470)[817]21
+-duration = 1.2e-05sec.
+BDD:5422(1638)[817]7
+BDDrev:5422(1638)[817]7
+-duration = 9.9e-05sec.
+BDD:[829]5425(1470)6
+BDDrev:[829]5425(1470)6
+-duration = 1.3e-05sec.
+BDD:[830]5425(1470)6
+BDDrev:[830]5425(1470)6
+-duration = 0.000138sec.
+BDD:226(93)[830]2
+BDDrev:226(93)[830]6
+-duration = 1.1e-05sec.
+BDD:[197][830]4
+BDDrev:[197][830]4
+-duration = 0.000132sec.
+BDD:226(93)[829]2
+BDDrev:226(93)[829]6
+-duration = 1e-05sec.
+BDD:[197][829]4
+BDDrev:[197][829]4
+-duration = 0.00013sec.
+BDD:[831][197]5
+BDDrev:[831][197]5
+-duration = 1.3e-05sec.
+BDD:[832][197]5
+BDDrev:[832][197]5
+-duration = 0.000125sec.
+BDD:218(91)[832]2
+BDDrev:218(91)[832]5
+-duration = 1.1e-05sec.
+BDD:[137][832]3
+BDDrev:[137][832]3
+-duration = 0.000148sec.
+BDD:218(91)[831]2
+BDDrev:218(91)[831]5
+-duration = 1e-05sec.
+BDD:[137][831]3
+BDDrev:[137][831]3
+-duration = 0.000112sec.
+BDD:[833][137]3
+BDDrev:[833][137]3
+-duration = 1e-05sec.
+BDD:[834][137]3
+BDDrev:[834][137]3
+-duration = 0.000105sec.
+BDD:206(87)[834]2
+BDDrev:206(87)[834]3
+-duration = 1e-05sec.
+BDD:210(89)[834]2
+BDDrev:210(89)[834]2
+-duration = 9.6e-05sec.
+BDD:[944]2611(1159)4
+BDDrev:[944]2611(1159)4
+-duration = 1.6e-05sec.
+BDD:[945]2611(1159)4
+BDDrev:[945]2611(1159)4
+-duration = 0.000159sec.
+BDD:[946]2611(1159)4
+BDDrev:[946]2611(1159)4
+-duration = 0.0002sec.
+BDD:[947]2611(1159)4
+BDDrev:[947]2611(1159)4
+-duration = 0.000209sec.
+BDD:210(89)[946]2
+BDDrev:210(89)[946]4
+-duration = 4.6e-05sec.
+BDD:457(142)[946]2
+BDDrev:457(142)[946]3
+-duration = 8.5e-05sec.
+BDD:3548(166)[946]2
+BDDrev:3548(166)[946]2
+-duration = 0.000117sec.
+BDD:210(89)[944]2
+BDDrev:210(89)[944]4
+-duration = 1.1e-05sec.
+BDD:457(142)[944]2
+BDDrev:457(142)[944]3
+-duration = 8.9e-05sec.
+BDD:3552(168)[944]2
+BDDrev:3552(168)[944]2
+-duration = 0.000116sec.
+BDD:206(87)[833]2
+BDDrev:206(87)[833]3
+-duration = 8e-06sec.
+BDD:210(89)[833]2
+BDDrev:210(89)[833]2
+-duration = 0.000105sec.
+BDD:210(89)[947]2
+BDDrev:210(89)[947]4
+-duration = 1.2e-05sec.
+BDD:457(142)[947]2
+BDDrev:457(142)[947]3
+-duration = 8.6e-05sec.
+BDD:3546(165)[947]2
+BDDrev:3546(165)[947]2
+-duration = 0.000117sec.
+BDD:210(89)[909]2
+BDDrev:210(89)[909]3
+-duration = 1e-05sec.
+BDD:335(123)[909]2
+BDDrev:335(123)[909]2
+-duration = 4.5e-05sec.
+BDD:210(89)[373]2
+BDDrev:210(89)[373]4
+-duration = 3.5e-05sec.
+BDD:254(101)[373]2
+BDDrev:254(101)[373]3
+-duration = 0.001642sec.
+BDD:457(142)[373]2
+BDDrev:457(142)[373]2
+-duration = 0.002179sec.
+BDD:210(89)[945]2
+BDDrev:210(89)[945]4
+-duration = 0.000197sec.
+BDD:457(142)[945]2
+BDDrev:457(142)[945]3
+-duration = 8.5e-05sec.
+BDD:3550(167)[945]2
+BDDrev:3550(167)[945]2
+-duration = 0.000118sec.
+BDD:[845]5239(1374)5
+BDDrev:[845]5239(1374)5
+-duration = 3.1e-05sec.
+BDD:[846]5239(1374)5
+BDDrev:[846]5239(1374)5
+-duration = 0.000145sec.
+BDD:316(118)[845]2
+BDDrev:316(118)[845]5
+-duration = 1.1e-05sec.
+BDD:[195][845]4
+BDDrev:[195][845]4
+-duration = 0.000175sec.
+BDD:251(100)[960]2
+BDDrev:251(100)[960]4
+-duration = 1.5e-05sec.
+BDD:316(118)[960]2
+BDDrev:316(118)[960]3
+-duration = 0.004108sec.
+BDD:490(145)[960]2
+BDDrev:490(145)[960]2
+-duration = 0.007545sec.
+BDD:254(101)[958]2
+BDDrev:254(101)[958]4
+-duration = 0.001284sec.
+BDD:316(118)[958]2
+BDDrev:316(118)[958]3
+-duration = 0.004868sec.
+BDD:490(145)[958]2
+BDDrev:490(145)[958]2
+-duration = 0.009422sec.
+BDD:316(118)[846]2
+BDDrev:316(118)[846]5
+-duration = 0.001448sec.
+BDD:[195][846]4
+BDDrev:[195][846]4
+-duration = 0.000142sec.
+BDD:141(65){{810(356)}}2
+BDDrev:141(65){{810(356)}}3
+-duration = 5.7e-05sec.
+BDD:145(66){{810(356)}}2
+BDDrev:145(66){{810(356)}}2
+-duration = 3e-06sec.
+BDD:141(65){{923(619)}}2
+BDDrev:141(65){{923(619)}}2
+-duration = 1e-06sec.
+BDD:23(6)[984]2
+BDDrev:23(6)[984]4
+-duration = 4e-06sec.
+BDD:[225][984]3
+BDDrev:[225][984]3
+-duration = 3e-06sec.
+BDD:25(8)[990]2
+BDDrev:25(8)[990]4
+-duration = 2e-06sec.
+BDD:[225][990]3
+BDDrev:[225][990]3
+-duration = 3e-06sec.
+BDD:81(29)[987]2
+BDDrev:81(29)[987]4
+-duration = 3e-06sec.
+BDD:[225][987]3
+BDDrev:[225][987]3
+-duration = 3e-06sec.
+BDD:141(65)[225]2
+BDDrev:141(65)[225]3
+-duration = 3e-06sec.
+BDD:2358(162)[225]2
+BDDrev:2358(162)[225]2
+-duration = 4e-06sec.
+BDD:141(65){{144(354)}}2
+BDDrev:141(65){{144(354)}}2
+-duration = 0sec.
+BDD:24(7)[989]2
+BDDrev:24(7)[989]4
+-duration = 3e-06sec.
+BDD:[227][989]3
+BDDrev:[227][989]3
+-duration = 3e-06sec.
+BDD:82(30)[980]2
+BDDrev:82(30)[980]4
+-duration = 3e-06sec.
+BDD:[227][980]3
+BDDrev:[227][980]3
+-duration = 3e-06sec.
+BDD:141(65)[227]2
+BDDrev:141(65)[227]3
+-duration = 3e-06sec.
+BDD:2358(162)[227]2
+BDDrev:2358(162)[227]2
+-duration = 4e-06sec.
+BDD:[940]2623(1167)4
+BDDrev:[940]2623(1167)4
+-duration = 1e-05sec.
+BDD:[941]2623(1167)4
+BDDrev:[941]2623(1167)4
+-duration = 0.000151sec.
+BDD:[942]2623(1167)4
+BDDrev:[942]2623(1167)4
+-duration = 0.000185sec.
+BDD:[943]2623(1167)4
+BDDrev:[943]2623(1167)4
+-duration = 0.000203sec.
+BDD:234(95)[943]2
+BDDrev:234(95)[943]4
+-duration = 1.5e-05sec.
+BDD:435(140)[943]2
+BDDrev:435(140)[943]3
+-duration = 6.9e-05sec.
+BDD:3546(165)[943]2
+BDDrev:3546(165)[943]2
+-duration = 0.000111sec.
+BDD:234(95)[941]2
+BDDrev:234(95)[941]4
+-duration = 1.1e-05sec.
+BDD:435(140)[941]2
+BDDrev:435(140)[941]3
+-duration = 6.7e-05sec.
+BDD:3550(167)[941]2
+BDDrev:3550(167)[941]2
+-duration = 0.000102sec.
+BDD:[819]5422(1638)13
+BDDrev:[819]5422(1638)13
+-duration = 1.6e-05sec.
+BDD:[820]5422(1638)13
+BDDrev:[820]5422(1638)13
+-duration = 0.000119sec.
+BDD:3906(938)[820]3
+BDDrev:3906(938)[820]13
+-duration = 1.3e-05sec.
+BDD:[198][820]5
+BDDrev:[198][820]5
+-duration = 0.000126sec.
+BDD:3906(938)[819]3
+BDDrev:3906(938)[819]13
+-duration = 1.2e-05sec.
+BDD:[198][819]5
+BDDrev:[198][819]5
+-duration = 0.000242sec.
+BDD:[821][198]9
+BDDrev:[821][198]9
+-duration = 1.8e-05sec.
+BDD:[822][198]9
+BDDrev:[822][198]9
+-duration = 0.000146sec.
+BDD:3897(935)[821]3
+BDDrev:3897(935)[821]9
+-duration = 1.2e-05sec.
+BDD:[138][821]3
+BDDrev:[138][821]3
+-duration = 0.00015sec.
+BDD:3897(935)[822]3
+BDDrev:3897(935)[822]9
+-duration = 1.2e-05sec.
+BDD:[138][822]3
+BDDrev:[138][822]3
+-duration = 0.000127sec.
+BDD:[823][138]3
+BDDrev:[823][138]3
+-duration = 1.1e-05sec.
+BDD:[824][138]3
+BDDrev:[824][138]3
+-duration = 9.8e-05sec.
+BDD:234(95)[823]2
+BDDrev:234(95)[823]3
+-duration = 9e-06sec.
+BDD:257(102)[823]2
+BDDrev:257(102)[823]2
+-duration = 8.7e-05sec.
+BDD:234(95)[363]2
+BDDrev:234(95)[363]4
+-duration = 1e-05sec.
+BDD:254(101)[363]2
+BDDrev:254(101)[363]3
+-duration = 0.000172sec.
+BDD:435(140)[363]2
+BDDrev:435(140)[363]2
+-duration = 0.000409sec.
+BDD:234(95)[942]2
+BDDrev:234(95)[942]4
+-duration = 3.6e-05sec.
+BDD:435(140)[942]2
+BDDrev:435(140)[942]3
+-duration = 0.000128sec.
+BDD:3548(166)[942]2
+BDDrev:3548(166)[942]2
+-duration = 0.000175sec.
+BDD:234(95)[365]2
+BDDrev:234(95)[365]4
+-duration = 1.1e-05sec.
+BDD:251(100)[365]2
+BDDrev:251(100)[365]3
+-duration = 0.000177sec.
+BDD:435(140)[365]2
+BDDrev:435(140)[365]2
+-duration = 0.000268sec.
+BDD:234(95)[940]2
+BDDrev:234(95)[940]4
+-duration = 2.5e-05sec.
+BDD:435(140)[940]2
+BDDrev:435(140)[940]3
+-duration = 0.000104sec.
+BDD:3552(168)[940]2
+BDDrev:3552(168)[940]2
+-duration = 0.000104sec.
+BDD:234(95)[824]2
+BDDrev:234(95)[824]3
+-duration = 8e-06sec.
+BDD:257(102)[824]2
+BDDrev:257(102)[824]2
+-duration = 0.0001sec.
+BDD:234(95)[897]2
+BDDrev:234(95)[897]3
+-duration = 9e-06sec.
+BDD:335(123)[897]2
+BDDrev:335(123)[897]2
+-duration = 4.2e-05sec.
+BDD:203(86)[513]2
+BDDrev:203(86)[513]5
+-duration = 0.000113sec.
+BDD:[161][513]4
+BDDrev:[161][513]4
+-duration = 4e-06sec.
+BDD:[948]2615(1155)4
+BDDrev:[948]2615(1155)4
+-duration = 1.2e-05sec.
+BDD:[949]2615(1155)4
+BDDrev:[949]2615(1155)4
+-duration = 0.000215sec.
+BDD:[950]2615(1155)4
+BDDrev:[950]2615(1155)4
+-duration = 0.000274sec.
+BDD:[951]2615(1155)4
+BDDrev:[951]2615(1155)4
+-duration = 0.000252sec.
+BDD:218(91)[948]2
+BDDrev:218(91)[948]4
+-duration = 1.9e-05sec.
+BDD:468(143)[948]2
+BDDrev:468(143)[948]3
+-duration = 0.000108sec.
+BDD:3552(168)[948]2
+BDDrev:3552(168)[948]2
+-duration = 0.000144sec.
+BDD:218(91)[377]2
+BDDrev:218(91)[377]4
+-duration = 1.5e-05sec.
+BDD:254(101)[377]2
+BDDrev:254(101)[377]3
+-duration = 0.001795sec.
+BDD:468(143)[377]2
+BDDrev:468(143)[377]2
+-duration = 0.002119sec.
+BDD:218(91)[379]2
+BDDrev:218(91)[379]4
+-duration = 0.000172sec.
+BDD:251(100)[379]2
+BDDrev:251(100)[379]3
+-duration = 0.001791sec.
+BDD:468(143)[379]2
+BDDrev:468(143)[379]2
+-duration = 0.002391sec.
+BDD:218(91)[949]2
+BDDrev:218(91)[949]4
+-duration = 0.00017sec.
+BDD:468(143)[949]2
+BDDrev:468(143)[949]3
+-duration = 9e-05sec.
+BDD:3550(167)[949]2
+BDDrev:3550(167)[949]2
+-duration = 0.000124sec.
+BDD:218(91)[950]2
+BDDrev:218(91)[950]4
+-duration = 1.2e-05sec.
+BDD:468(143)[950]2
+BDDrev:468(143)[950]3
+-duration = 9.8e-05sec.
+BDD:3548(166)[950]2
+BDDrev:3548(166)[950]2
+-duration = 0.000132sec.
+BDD:218(91)[951]2
+BDDrev:218(91)[951]4
+-duration = 1.2e-05sec.
+BDD:468(143)[951]2
+BDDrev:468(143)[951]3
+-duration = 9.3e-05sec.
+BDD:3546(165)[951]2
+BDDrev:3546(165)[951]2
+-duration = 0.000154sec.
+BDD:254(101)[472]2
+BDDrev:254(101)[472]4
+-duration = 2.6e-05sec.
+BDD:324(120)[472]2
+BDDrev:324(120)[472]3
+-duration = 0.000169sec.
+BDD:503(146)[472]2
+BDDrev:503(146)[472]2
+-duration = 0.000244sec.
+BDD:[962]3012(1132)4
+BDDrev:[962]3012(1132)4
+-duration = 1.5e-05sec.
+BDD:[963]3012(1132)4
+BDDrev:[963]3012(1132)4
+-duration = 0.000792sec.
+BDD:[964]3012(1132)4
+BDDrev:[964]3012(1132)4
+-duration = 0.001331sec.
+BDD:[965]3012(1132)4
+BDDrev:[965]3012(1132)4
+-duration = 0.001547sec.
+BDD:324(120)[962]2
+BDDrev:324(120)[962]4
+-duration = 3.7e-05sec.
+BDD:503(146)[962]2
+BDDrev:503(146)[962]3
+-duration = 0.000125sec.
+BDD:3552(168)[962]2
+BDDrev:3552(168)[962]2
+-duration = 0.000176sec.
+BDD:251(100)[474]2
+BDDrev:251(100)[474]4
+-duration = 9e-06sec.
+BDD:324(120)[474]2
+BDDrev:324(120)[474]3
+-duration = 0.000155sec.
+BDD:503(146)[474]2
+BDDrev:503(146)[474]2
+-duration = 0.000243sec.
+BDD:324(120)[965]2
+BDDrev:324(120)[965]4
+-duration = 1.1e-05sec.
+BDD:503(146)[965]2
+BDDrev:503(146)[965]3
+-duration = 8.6e-05sec.
+BDD:3546(165)[965]2
+BDDrev:3546(165)[965]2
+-duration = 0.000171sec.
+BDD:[841][136]3
+BDDrev:[841][136]3
+-duration = 7e-06sec.
+BDD:[842][136]3
+BDDrev:[842][136]3
+-duration = 8.1e-05sec.
+BDD:324(120)[842]2
+BDDrev:324(120)[842]3
+-duration = 4e-06sec.
+BDD:341(125)[842]2
+BDDrev:341(125)[842]2
+-duration = 8.2e-05sec.
+BDD:324(120)[963]2
+BDDrev:324(120)[963]4
+-duration = 6e-06sec.
+BDD:503(146)[963]2
+BDDrev:503(146)[963]3
+-duration = 0.000174sec.
+BDD:3550(167)[963]2
+BDDrev:3550(167)[963]2
+-duration = 0.000344sec.
+BDD:324(120)[841]2
+BDDrev:324(120)[841]3
+-duration = 9e-06sec.
+BDD:341(125)[841]2
+BDDrev:341(125)[841]2
+-duration = 7.8e-05sec.
+BDD:324(120)[964]2
+BDDrev:324(120)[964]4
+-duration = 7e-06sec.
+BDD:503(146)[964]2
+BDDrev:503(146)[964]3
+-duration = 0.00016sec.
+BDD:3548(166)[964]2
+BDDrev:3548(166)[964]2
+-duration = 0.000309sec.
+BDD:254(101)[954]2
+BDDrev:254(101)[954]4
+-duration = 2.8e-05sec.
+BDD:308(116)[954]2
+BDDrev:308(116)[954]3
+-duration = 0.005879sec.
+BDD:479(144)[954]2
+BDDrev:479(144)[954]2
+-duration = 0.004888sec.
+BDD:251(100)[956]2
+BDDrev:251(100)[956]4
+-duration = 0.000286sec.
+BDD:308(116)[956]2
+BDDrev:308(116)[956]3
+-duration = 0.005407sec.
+BDD:479(144)[956]2
+BDDrev:479(144)[956]2
+-duration = 0.009226sec.
+BDD:123(53)[577]2
+BDDrev:123(53)[577]4
+-duration = 0.000262sec.
+BDD:3717(169)[577]2
+BDDrev:3717(169)[577]3
+-duration = 5e-06sec.
+BDD:3724(170)[577]2
+BDDrev:3724(170)[577]2
+-duration = 5e-06sec.
+BDD:164(73)[504]2
+BDDrev:164(73)[504]5
+-duration = 1.5e-05sec.
+BDD:[166][504]4
+BDDrev:[166][504]4
+-duration = 3e-06sec.
+BDD:185(80)[650]2
+BDDrev:185(80)[650]5
+-duration = 4e-06sec.
+BDD:[166][650]4
+BDDrev:[166][650]4
+-duration = 3e-06sec.
+BDD:158(71)[606]2
+BDDrev:158(71)[606]5
+-duration = 2e-06sec.
+BDD:[166][606]4
+BDDrev:[166][606]4
+-duration = 2e-06sec.
+BDD:170(75)[610]2
+BDDrev:170(75)[610]5
+-duration = 2e-06sec.
+BDD:[166][610]4
+BDDrev:[166][610]4
+-duration = 2e-06sec.
+BDD:161(72)[500]2
+BDDrev:161(72)[500]5
+-duration = 3e-06sec.
+BDD:[166][500]4
+BDDrev:[166][500]4
+-duration = 3e-06sec.
+BDD:167(74)[508]2
+BDDrev:167(74)[508]5
+-duration = 3e-06sec.
+BDD:[166][508]4
+BDDrev:[166][508]4
+-duration = 2e-06sec.
+BDD:1690(158)[166]2
+BDDrev:1690(158)[166]4
+-duration = 4e-06sec.
+BDD:[131][166]3
+BDDrev:[131][166]3
+-duration = 8e-06sec.
+BDD:197(84)[509]2
+BDDrev:197(84)[509]5
+-duration = 4e-06sec.
+BDD:[161][509]4
+BDDrev:[161][509]4
+-duration = 3e-06sec.
+BDD:149(68)[599]2
+BDDrev:149(68)[599]5
+-duration = 3e-06sec.
+BDD:[161][599]4
+BDDrev:[161][599]4
+-duration = 2e-06sec.
+BDD:194(83)[505]2
+BDDrev:194(83)[505]5
+-duration = 3e-06sec.
+BDD:[161][505]4
+BDDrev:[161][505]4
+-duration = 2e-06sec.
+BDD:176(77)[250]2
+BDDrev:176(77)[250]5
+-duration = 3e-06sec.
+BDD:[161][250]4
+BDDrev:[161][250]4
+-duration = 2e-06sec.
+BDD:200(85)[611]2
+BDDrev:200(85)[611]5
+-duration = 2e-06sec.
+BDD:[161][611]4
+BDDrev:[161][611]4
+-duration = 2e-06sec.
+BDD:155(70)[603]2
+BDDrev:155(70)[603]5
+-duration = 4e-06sec.
+BDD:[161][603]4
+BDDrev:[161][603]4
+-duration = 3e-06sec.
+BDD:1690(158)[161]2
+BDDrev:1690(158)[161]4
+-duration = 3e-06sec.
+BDD:[133][161]3
+BDDrev:[133][161]3
+-duration = 9e-06sec.
+BDD:1690(158)[172]2
+BDDrev:1690(158)[172]4
+-duration = 4e-06sec.
+BDD:[131][172]3
+BDDrev:[131][172]3
+-duration = 9e-06sec.
+BDD:1690(158)[170]2
+BDDrev:1690(158)[170]4
+-duration = 5e-06sec.
+BDD:[133][170]3
+BDDrev:[133][170]3
+-duration = 1e-05sec.
+BDD:559(154){{851(218)}}2
+BDDrev:559(154){{851(218)}}2
+-duration = 2e-06sec.
+BDD:88(34)[992]2
+BDDrev:88(34)[992]3
+-duration = 2e-06sec.
+BDD:2358(162)[992]2
+BDDrev:2358(162)[992]2
+-duration = 2e-06sec.
+BDD:86(32)[995]2
+BDDrev:86(32)[995]3
+-duration = 3e-06sec.
+BDD:2358(162)[995]2
+BDDrev:2358(162)[995]2
+-duration = 3e-06sec.
+BDD:34(12)[993]2
+BDDrev:34(12)[993]3
+-duration = 2e-06sec.
+BDD:2358(162)[993]2
+BDDrev:2358(162)[993]2
+-duration = 2e-06sec.
+BDD:2776(939)[730]4
+BDDrev:2776(939)[730]6
+-duration = 3e-06sec.
+BDD:1116(1446)[730]6
+BDDrev:1116(1446)[730]6
+-duration = 2e-05sec.
+BDD:2776(939)[810]4
+BDDrev:2776(939)[810]6
+-duration = 5e-06sec.
+BDD:1116(1446)[810]6
+BDDrev:1116(1446)[810]6
+-duration = 0.000514sec.
+BDD:[274][174]18
+BDDrev:[274][174]18
+-duration = 0.000137sec.
+BDD:[275][174]18
+BDDrev:[275][174]18
+-duration = 0.000165sec.
+BDD:1116(1446)[275]6
+BDDrev:1116(1446)[275]18
+-duration = 1.9e-05sec.
+BDD:1344(1449)[275]6
+BDDrev:1344(1449)[275]6
+-duration = 0.000136sec.
+BDD:400(137)[303]2
+BDDrev:400(137)[303]6
+-duration = 1.5e-05sec.
+BDD:1116(1446)[303]6
+BDDrev:1116(1446)[303]6
+-duration = 0.000423sec.
+BDD:1116(1446)[274]6
+BDDrev:1116(1446)[274]18
+-duration = 1.3e-05sec.
+BDD:1344(1449)[274]6
+BDDrev:1344(1449)[274]6
+-duration = 0.000155sec.
+BDD:[887]1116(1446)6
+BDDrev:[887]1116(1446)6
+-duration = 4.9e-05sec.
+BDD:[888]1116(1446)6
+BDDrev:[888]1116(1446)6
+-duration = 0.001289sec.
+BDD:400(137)[888]2
+BDDrev:400(137)[888]6
+-duration = 0.000312sec.
+BDD:2776(939)[888]4
+BDDrev:2776(939)[888]4
+-duration = 0.001946sec.
+BDD:400(137)[887]2
+BDDrev:400(137)[887]6
+-duration = 0.000196sec.
+BDD:2776(939)[887]4
+BDDrev:2776(939)[887]4
+-duration = 0.00131sec.
+BDD:[889]2776(939)3
+BDDrev:[889]2776(939)3
+-duration = 0.000187sec.
+BDD:[890]2776(939)3
+BDDrev:[890]2776(939)3
+-duration = 0.002074sec.
+BDD:272(105)[890]2
+BDDrev:272(105)[890]3
+-duration = 0.000643sec.
+BDD:335(123)[890]2
+BDDrev:335(123)[890]2
+-duration = 6.8e-05sec.
+BDD:[932]2713(1178)4
+BDDrev:[932]2713(1178)4
+-duration = 0.000615sec.
+BDD:[933]2713(1178)4
+BDDrev:[933]2713(1178)4
+-duration = 0.000151sec.
+BDD:[934]2713(1178)4
+BDDrev:[934]2713(1178)4
+-duration = 0.000163sec.
+BDD:[935]2713(1178)4
+BDDrev:[935]2713(1178)4
+-duration = 0.00017sec.
+BDD:273(106)[932]2
+BDDrev:273(106)[932]4
+-duration = 1.1e-05sec.
+BDD:411(138)[932]2
+BDDrev:411(138)[932]3
+-duration = 7.4e-05sec.
+BDD:3552(168)[932]2
+BDDrev:3552(168)[932]2
+-duration = 0.000106sec.
+BDD:273(106)[935]2
+BDDrev:273(106)[935]4
+-duration = 9e-06sec.
+BDD:411(138)[935]2
+BDDrev:411(138)[935]3
+-duration = 7.5e-05sec.
+BDD:3546(165)[935]2
+BDDrev:3546(165)[935]2
+-duration = 0.000104sec.
+BDD:[827]3906(938)3
+BDDrev:[827]3906(938)3
+-duration = 5e-06sec.
+BDD:[828]3906(938)3
+BDDrev:[828]3906(938)3
+-duration = 7.7e-05sec.
+BDD:265(104)[828]2
+BDDrev:265(104)[828]3
+-duration = 4e-06sec.
+BDD:273(106)[828]2
+BDDrev:273(106)[828]2
+-duration = 7.3e-05sec.
+BDD:273(106)[933]2
+BDDrev:273(106)[933]4
+-duration = 8e-06sec.
+BDD:411(138)[933]2
+BDDrev:411(138)[933]3
+-duration = 6.9e-05sec.
+BDD:3550(167)[933]2
+BDDrev:3550(167)[933]2
+-duration = 9.4e-05sec.
+BDD:[883]1390(1443)6
+BDDrev:[883]1390(1443)6
+-duration = 1.1e-05sec.
+BDD:[884]1390(1443)6
+BDDrev:[884]1390(1443)6
+-duration = 0.000653sec.
+BDD:411(138)[883]2
+BDDrev:411(138)[883]6
+-duration = 0.000189sec.
+BDD:2772(937)[883]4
+BDDrev:2772(937)[883]4
+-duration = 0.000718sec.
+BDD:411(138)[884]2
+BDDrev:411(138)[884]6
+-duration = 0.000214sec.
+BDD:2772(937)[884]4
+BDDrev:2772(937)[884]4
+-duration = 0.000653sec.
+BDD:[885]2772(937)3
+BDDrev:[885]2772(937)3
+-duration = 0.000143sec.
+BDD:[886]2772(937)3
+BDDrev:[886]2772(937)3
+-duration = 0.00147sec.
+BDD:273(106)[885]2
+BDDrev:273(106)[885]3
+-duration = 0.000238sec.
+BDD:335(123)[885]2
+BDDrev:335(123)[885]2
+-duration = 5.1e-05sec.
+BDD:254(101)[349]2
+BDDrev:254(101)[349]4
+-duration = 4e-05sec.
+BDD:273(106)[349]2
+BDDrev:273(106)[349]3
+-duration = 0.000247sec.
+BDD:411(138)[349]2
+BDDrev:411(138)[349]2
+-duration = 0.000489sec.
+BDD:265(104)[827]2
+BDDrev:265(104)[827]3
+-duration = 1e-05sec.
+BDD:273(106)[827]2
+BDDrev:273(106)[827]2
+-duration = 0.000101sec.
+BDD:273(106)[934]2
+BDDrev:273(106)[934]4
+-duration = 8e-06sec.
+BDD:411(138)[934]2
+BDDrev:411(138)[934]3
+-duration = 9.1e-05sec.
+BDD:3548(166)[934]2
+BDDrev:3548(166)[934]2
+-duration = 0.000121sec.
+BDD:251(100)[351]2
+BDDrev:251(100)[351]4
+-duration = 7e-06sec.
+BDD:273(106)[351]2
+BDDrev:273(106)[351]3
+-duration = 0.000241sec.
+BDD:411(138)[351]2
+BDDrev:411(138)[351]2
+-duration = 0.000401sec.
+BDD:[924]2705(1186)4
+BDDrev:[924]2705(1186)4
+-duration = 2.2e-05sec.
+BDD:[925]2705(1186)4
+BDDrev:[925]2705(1186)4
+-duration = 2.2e-05sec.
+BDD:[926]2705(1186)4
+BDDrev:[926]2705(1186)4
+-duration = 7e-05sec.
+BDD:[927]2705(1186)4
+BDDrev:[927]2705(1186)4
+-duration = 7.1e-05sec.
+BDD:257(102)[924]2
+BDDrev:257(102)[924]4
+-duration = 6e-06sec.
+BDD:389(136)[924]2
+BDDrev:389(136)[924]3
+-duration = 1.5e-05sec.
+BDD:3552(168)[924]2
+BDDrev:3552(168)[924]2
+-duration = 4.9e-05sec.
+BDD:[952][149]3
+BDDrev:[952][149]3
+-duration = 5e-06sec.
+BDD:[953][149]3
+BDDrev:[953][149]3
+-duration = 1.8e-05sec.
+BDD:514(147)[952]2
+BDDrev:514(147)[952]3
+-duration = 2e-06sec.
+BDD:3552(168)[952]2
+BDDrev:3552(168)[952]2
+-duration = 1.6e-05sec.
+BDD:[920]2717(1191)4
+BDDrev:[920]2717(1191)4
+-duration = 2.8e-05sec.
+BDD:[921]2717(1191)4
+BDDrev:[921]2717(1191)4
+-duration = 2.4e-05sec.
+BDD:[922]2717(1191)4
+BDDrev:[922]2717(1191)4
+-duration = 5e-05sec.
+BDD:[923]2717(1191)4
+BDDrev:[923]2717(1191)4
+-duration = 4.8e-05sec.
+BDD:281(108)[920]2
+BDDrev:281(108)[920]4
+-duration = 4e-06sec.
+BDD:374(134)[920]2
+BDDrev:374(134)[920]3
+-duration = 1.2e-05sec.
+BDD:3552(168)[920]2
+BDDrev:3552(168)[920]2
+-duration = 3e-05sec.
+BDD:[966]3018(1126)4
+BDDrev:[966]3018(1126)4
+-duration = 8e-06sec.
+BDD:[967]3018(1126)4
+BDDrev:[967]3018(1126)4
+-duration = 0.000953sec.
+BDD:[968]3018(1126)4
+BDDrev:[968]3018(1126)4
+-duration = 0.001549sec.
+BDD:[969]3018(1126)4
+BDDrev:[969]3018(1126)4
+-duration = 0.001761sec.
+BDD:341(125)[966]2
+BDDrev:341(125)[966]4
+-duration = 3.2e-05sec.
+BDD:523(148)[966]2
+BDDrev:523(148)[966]3
+-duration = 0.000361sec.
+BDD:3552(168)[966]2
+BDDrev:3552(168)[966]2
+-duration = 0.000539sec.
+BDD:[928]2709(1183)4
+BDDrev:[928]2709(1183)4
+-duration = 1.4e-05sec.
+BDD:[929]2709(1183)4
+BDDrev:[929]2709(1183)4
+-duration = 0.00019sec.
+BDD:[930]2709(1183)4
+BDDrev:[930]2709(1183)4
+-duration = 0.000175sec.
+BDD:[931]2709(1183)4
+BDDrev:[931]2709(1183)4
+-duration = 0.000233sec.
+BDD:265(104)[928]2
+BDDrev:265(104)[928]4
+-duration = 6e-06sec.
+BDD:400(137)[928]2
+BDDrev:400(137)[928]3
+-duration = 7.1e-05sec.
+BDD:3552(168)[928]2
+BDDrev:3552(168)[928]2
+-duration = 0.000105sec.
+BDD:206(87)[918]2
+BDDrev:206(87)[918]4
+-duration = 9e-06sec.
+BDD:251(100)[918]2
+BDDrev:251(100)[918]3
+-duration = 1.3e-05sec.
+BDD:446(141)[918]2
+BDDrev:446(141)[918]2
+-duration = 2.7e-05sec.
+BDD:137(63)[133]2
+BDDrev:137(63)[133]3
+-duration = 5e-06sec.
+BDD:1689(157)[133]2
+BDDrev:1689(157)[133]2
+-duration = 9e-06sec.
+BDD:137(63)[131]2
+BDDrev:137(63)[131]3
+-duration = 3e-06sec.
+BDD:1689(157)[131]2
+BDDrev:1689(157)[131]2
+-duration = 9e-06sec.
+BDD:281(108)[881]2
+BDDrev:281(108)[881]3
+-duration = 3e-06sec.
+BDD:335(123)[881]2
+BDDrev:335(123)[881]2
+-duration = 5.2e-05sec.
+BDD:[825]3897(935)3
+BDDrev:[825]3897(935)3
+-duration = 2.4e-05sec.
+BDD:[826]3897(935)3
+BDDrev:[826]3897(935)3
+-duration = 0.00014sec.
+BDD:281(108)[826]2
+BDDrev:281(108)[826]3
+-duration = 5e-06sec.
+BDD:289(110)[826]2
+BDDrev:289(110)[826]2
+-duration = 9.9e-05sec.
+BDD:254(101)[353]2
+BDDrev:254(101)[353]4
+-duration = 6e-06sec.
+BDD:281(108)[353]2
+BDDrev:281(108)[353]3
+-duration = 0.000228sec.
+BDD:374(134)[353]2
+BDDrev:374(134)[353]2
+-duration = 0.000334sec.
+BDD:281(108)[922]2
+BDDrev:281(108)[922]4
+-duration = 9e-06sec.
+BDD:374(134)[922]2
+BDDrev:374(134)[922]3
+-duration = 1.2e-05sec.
+BDD:3548(166)[922]2
+BDDrev:3548(166)[922]2
+-duration = 3.1e-05sec.
+BDD:251(100)[355]2
+BDDrev:251(100)[355]4
+-duration = 5e-06sec.
+BDD:281(108)[355]2
+BDDrev:281(108)[355]3
+-duration = 0.00022sec.
+BDD:374(134)[355]2
+BDDrev:374(134)[355]2
+-duration = 0.000333sec.
+BDD:281(108)[825]2
+BDDrev:281(108)[825]3
+-duration = 8e-06sec.
+BDD:289(110)[825]2
+BDDrev:289(110)[825]2
+-duration = 0.000106sec.
+BDD:281(108)[923]2
+BDDrev:281(108)[923]4
+-duration = 4e-06sec.
+BDD:374(134)[923]2
+BDDrev:374(134)[923]3
+-duration = 1.1e-05sec.
+BDD:3546(165)[923]2
+BDDrev:3546(165)[923]2
+-duration = 3.4e-05sec.
+BDD:281(108)[921]2
+BDDrev:281(108)[921]4
+-duration = 3e-06sec.
+BDD:374(134)[921]2
+BDDrev:374(134)[921]3
+-duration = 1.1e-05sec.
+BDD:3550(167)[921]2
+BDDrev:3550(167)[921]2
+-duration = 2.2e-05sec.
+BDD:3173(164){{973(202)}}2
+BDDrev:3173(164){{973(202)}}2
+-duration = 4e-06sec.
+BDD:136(62){{815(627)}}2
+BDDrev:136(62){{815(627)}}3
+-duration = 4e-06sec.
+BDD:3173(164){{815(627)}}2
+BDDrev:3173(164){{815(627)}}2
+-duration = 2e-06sec.
+BDD:341(125)[967]2
+BDDrev:341(125)[967]4
+-duration = 5e-06sec.
+BDD:523(148)[967]2
+BDDrev:523(148)[967]3
+-duration = 0.000592sec.
+BDD:3550(167)[967]2
+BDDrev:3550(167)[967]2
+-duration = 0.000852sec.
+BDD:341(125)[968]2
+BDDrev:341(125)[968]4
+-duration = 2.4e-05sec.
+BDD:523(148)[968]2
+BDDrev:523(148)[968]3
+-duration = 9.2e-05sec.
+BDD:3548(166)[968]2
+BDDrev:3548(166)[968]2
+-duration = 0.000469sec.
+BDD:254(101)[460]2
+BDDrev:254(101)[460]4
+-duration = 2.4e-05sec.
+BDD:341(125)[460]2
+BDDrev:341(125)[460]3
+-duration = 0.000166sec.
+BDD:523(148)[460]2
+BDDrev:523(148)[460]2
+-duration = 0.000196sec.
+BDD:251(100)[462]2
+BDDrev:251(100)[462]4
+-duration = 1e-05sec.
+BDD:341(125)[462]2
+BDDrev:341(125)[462]3
+-duration = 0.000187sec.
+BDD:523(148)[462]2
+BDDrev:523(148)[462]2
+-duration = 0.000207sec.
+BDD:341(125)[969]2
+BDDrev:341(125)[969]4
+-duration = 9e-06sec.
+BDD:523(148)[969]2
+BDDrev:523(148)[969]3
+-duration = 4.9e-05sec.
+BDD:3546(165)[969]2
+BDDrev:3546(165)[969]2
+-duration = 0.000278sec.
+BDD:97(37)[262]2
+BDDrev:97(37)[262]3
+-duration = 4.2e-05sec.
+BDD:4092(176)[262]2
+BDDrev:4092(176)[262]2
+-duration = 7e-06sec.
+BDD:251(100)[361]2
+BDDrev:251(100)[361]4
+-duration = 6e-06sec.
+BDD:257(102)[361]2
+BDDrev:257(102)[361]3
+-duration = 0.000215sec.
+BDD:389(136)[361]2
+BDDrev:389(136)[361]2
+-duration = 0.000412sec.
+BDD:257(102)[927]2
+BDDrev:257(102)[927]4
+-duration = 9e-06sec.
+BDD:389(136)[927]2
+BDDrev:389(136)[927]3
+-duration = 1.5e-05sec.
+BDD:3546(165)[927]2
+BDDrev:3546(165)[927]2
+-duration = 3.8e-05sec.
+BDD:389(136)1359(1029)2
+BDDrev:389(136)1359(1029)6
+-duration = 8e-06sec.
+BDD:2780(940)1359(1029)4
+BDDrev:2780(940)1359(1029)4
+-duration = 0.000845sec.
+BDD:[891]1344(1449)6
+BDDrev:[891]1344(1449)6
+-duration = 0.000127sec.
+BDD:[892]1344(1449)6
+BDDrev:[892]1344(1449)6
+-duration = 0.000927sec.
+BDD:389(136)[891]2
+BDDrev:389(136)[891]6
+-duration = 0.000144sec.
+BDD:2780(940)[891]4
+BDDrev:2780(940)[891]4
+-duration = 0.000849sec.
+BDD:257(102)[925]2
+BDDrev:257(102)[925]4
+-duration = 0.000123sec.
+BDD:389(136)[925]2
+BDDrev:389(136)[925]3
+-duration = 1.3e-05sec.
+BDD:3550(167)[925]2
+BDDrev:3550(167)[925]2
+-duration = 3.9e-05sec.
+BDD:254(101)[359]2
+BDDrev:254(101)[359]4
+-duration = 5e-06sec.
+BDD:257(102)[359]2
+BDDrev:257(102)[359]3
+-duration = 0.000213sec.
+BDD:389(136)[359]2
+BDDrev:389(136)[359]2
+-duration = 0.000421sec.
+BDD:257(102)[926]2
+BDDrev:257(102)[926]4
+-duration = 9e-06sec.
+BDD:389(136)[926]2
+BDDrev:389(136)[926]3
+-duration = 1.5e-05sec.
+BDD:3548(166)[926]2
+BDDrev:3548(166)[926]2
+-duration = 3.4e-05sec.
+BDD:389(136)[892]2
+BDDrev:389(136)[892]6
+-duration = 4e-06sec.
+BDD:2780(940)[892]4
+BDDrev:2780(940)[892]4
+-duration = 0.001006sec.
+BDD:1(0){{993(850)}}2
+BDDrev:1(0){{993(850)}}2
+-duration = 0.000414sec.
+BDD:1(0){{921(664)}}2
+BDDrev:1(0){{921(664)}}2
+-duration = 1e-06sec.
+BDD:1(0){{978(851)}}2
+BDDrev:1(0){{978(851)}}2
+-duration = 1e-06sec.
+BDD:1(0){{939(853)}}2
+BDDrev:1(0){{939(853)}}2
+-duration = 1e-06sec.
+BDD:1(0){{949(852)}}2
+BDDrev:1(0){{949(852)}}2
+-duration = 1e-06sec.
+BDD:549(151){{602(222)}}2
+BDDrev:549(151){{602(222)}}2
+-duration = 1e-06sec.
+BDD:549(151){{606(407)}}2
+BDDrev:549(151){{606(407)}}2
+-duration = 1e-06sec.
+BDD:549(151){{892(408)}}2
+BDDrev:549(151){{892(408)}}2
+-duration = 1e-06sec.
+BDD:299(113){{887(528)}}2
+BDDrev:299(113){{887(528)}}2
+-duration = 1e-06sec.
+BDD:299(113){{889(734)}}2
+BDDrev:299(113){{889(734)}}2
+-duration = 1e-06sec.
+BDD:299(113){{593(733)}}2
+BDDrev:299(113){{593(733)}}2
+-duration = 1e-06sec.
+BDD:251(100)[978]2
+BDDrev:251(100)[978]3
+-duration = 4e-06sec.
+BDD:361(129)[978]2
+BDDrev:361(129)[978]2
+-duration = 0.004724sec.
+BDD:251(100)[347]2
+BDDrev:251(100)[347]4
+-duration = 0.000887sec.
+BDD:265(104)[347]2
+BDDrev:265(104)[347]3
+-duration = 0.000174sec.
+BDD:400(137)[347]2
+BDDrev:400(137)[347]2
+-duration = 0.000395sec.
+BDD:251(100)[976]2
+BDDrev:251(100)[976]3
+-duration = 3.9e-05sec.
+BDD:302(114)[976]2
+BDDrev:302(114)[976]2
+-duration = 0.000894sec.
+BDD:254(101)[345]2
+BDDrev:254(101)[345]4
+-duration = 0.000899sec.
+BDD:265(104)[345]2
+BDDrev:265(104)[345]3
+-duration = 0.000222sec.
+BDD:400(137)[345]2
+BDDrev:400(137)[345]2
+-duration = 0.00037sec.
+BDD:254(101)[974]2
+BDDrev:254(101)[974]3
+-duration = 7.2e-05sec.
+BDD:293(112)[974]2
+BDDrev:293(112)[974]2
+-duration = 0.025952sec.
+BDD:206(87)[915]2
+BDDrev:206(87)[915]3
+-duration = 0.003684sec.
+BDD:254(101)[915]2
+BDDrev:254(101)[915]2
+-duration = 1.3e-05sec.
+BDD:265(104)[929]2
+BDDrev:265(104)[929]4
+-duration = 1.3e-05sec.
+BDD:400(137)[929]2
+BDDrev:400(137)[929]3
+-duration = 7.7e-05sec.
+BDD:3550(167)[929]2
+BDDrev:3550(167)[929]2
+-duration = 0.000152sec.
+BDD:514(147)[953]2
+BDDrev:514(147)[953]3
+-duration = 8e-06sec.
+BDD:3546(165)[953]2
+BDDrev:3546(165)[953]2
+-duration = 0.000241sec.
+BDD:206(87)[913]2
+BDDrev:206(87)[913]3
+-duration = 0.000149sec.
+BDD:335(123)[913]2
+BDDrev:335(123)[913]2
+-duration = 1e-06sec.
+BDD:545(150){{603(225)}}2
+BDDrev:545(150){{603(225)}}2
+-duration = 4e-06sec.
+BDD:545(150){{604(223)}}2
+BDDrev:545(150){{604(223)}}2
+-duration = 1e-06sec.
+BDD:545(150){{594(224)}}2
+BDDrev:545(150){{594(224)}}2
+-duration = 2e-06sec.
+BDD:338(124){{611(275)}}2
+BDDrev:338(124){{611(275)}}2
+-duration = 1e-06sec.
+BDD:137(63){{926(624)}}2
+BDDrev:137(63){{926(624)}}2
+-duration = 2e-06sec.
+BDD:218(91)[905]2
+BDDrev:218(91)[905]3
+-duration = 4e-06sec.
+BDD:335(123)[905]2
+BDDrev:335(123)[905]2
+-duration = 3.3e-05sec.
+BDD:265(104)[930]2
+BDDrev:265(104)[930]4
+-duration = 6.9e-05sec.
+BDD:400(137)[930]2
+BDDrev:400(137)[930]3
+-duration = 5.5e-05sec.
+BDD:3548(166)[930]2
+BDDrev:3548(166)[930]2
+-duration = 0.000114sec.
+BDD:280(107)[886]2
+BDDrev:280(107)[886]3
+-duration = 3.9e-05sec.
+BDD:335(123)[886]2
+BDDrev:335(123)[886]2
+-duration = 6.7e-05sec.
+BDD:[847][195]4
+BDDrev:[847][195]4
+-duration = 0.001181sec.
+BDD:[848][195]4
+BDDrev:[848][195]4
+-duration = 0.000105sec.
+BDD:308(116)[847]2
+BDDrev:308(116)[847]4
+-duration = 9e-06sec.
+BDD:[135][847]3
+BDDrev:[135][847]3
+-duration = 9.6e-05sec.
+BDD:308(116)[848]2
+BDDrev:308(116)[848]4
+-duration = 7e-06sec.
+BDD:[135][848]3
+BDDrev:[135][848]3
+-duration = 9.4e-05sec.
+BDD:562(155){{850(217)}}2
+BDDrev:562(155){{850(217)}}2
+-duration = 1.7e-05sec.
+BDD:265(104)[931]2
+BDDrev:265(104)[931]4
+-duration = 6e-06sec.
+BDD:400(137)[931]2
+BDDrev:400(137)[931]3
+-duration = 6.5e-05sec.
+BDD:3546(165)[931]2
+BDDrev:3546(165)[931]2
+-duration = 9.8e-05sec.
+BDD:[849][135]3
+BDDrev:[849][135]3
+-duration = 2e-05sec.
+BDD:[850][135]3
+BDDrev:[850][135]3
+-duration = 0.000111sec.
+BDD:293(112)[850]2
+BDDrev:293(112)[850]3
+-duration = 9e-06sec.
+BDD:302(114)[850]2
+BDDrev:302(114)[850]2
+-duration = 0.0001sec.
+BDD:293(112)[849]2
+BDDrev:293(112)[849]3
+-duration = 8e-06sec.
+BDD:302(114)[849]2
+BDDrev:302(114)[849]2
+-duration = 9.3e-05sec.
+BDD:293(112){{298(299)}}2
+BDDrev:293(112){{298(299)}}2
+-duration = 7e-06sec.
+BDD:226(93)[901]2
+BDDrev:226(93)[901]3
+-duration = 5e-06sec.
+BDD:335(123)[901]2
+BDDrev:335(123)[901]2
+-duration = 4.2e-05sec.
+BDD:[682][179]3
+BDDrev:[682][179]3
+-duration = 7.4e-05sec.
+BDD:[683][179]3
+BDDrev:[683][179]3
+-duration = 6.3e-05sec.
+BDD:292(111)[683]2
+BDDrev:292(111)[683]3
+-duration = 7e-06sec.
+BDD:335(123)[683]2
+BDDrev:335(123)[683]2
+-duration = 7.1e-05sec.
+BDD:[893]2780(940)3
+BDDrev:[893]2780(940)3
+-duration = 1.5e-05sec.
+BDD:[894]2780(940)3
+BDDrev:[894]2780(940)3
+-duration = 0.002357sec.
+BDD:264(103)[894]2
+BDDrev:264(103)[894]3
+-duration = 0.001147sec.
+BDD:335(123)[894]2
+BDDrev:335(123)[894]2
+-duration = 0.000102sec.
+BDD:257(102)[893]2
+BDDrev:257(102)[893]3
+-duration = 0.001333sec.
+BDD:335(123)[893]2
+BDDrev:335(123)[893]2
+-duration = 4.4e-05sec.
+BDD:265(104)[889]2
+BDDrev:265(104)[889]3
+-duration = 0.000263sec.
+BDD:335(123)[889]2
+BDDrev:335(123)[889]2
+-duration = 5.9e-05sec.
+BDD:289(110)[682]2
+BDDrev:289(110)[682]3
+-duration = 0.000274sec.
+BDD:335(123)[682]2
+BDDrev:335(123)[682]2
+-duration = 2.5e-05sec.
+BDD:245(98){{848(330)}}2
+BDDrev:245(98){{848(330)}}2
+-duration = 1.1e-05sec.
+BDD:348(126){{599(269)}}2
+BDDrev:348(126){{599(269)}}2
+-duration = 3e-06sec.
+duration = 4912.92sec.
+duration = 9.28768sec.
+
+Transcirc
+delete_node_ex8
+cost:4627
+
+[879]
+minus1152(1452)1
+
+
+
+[880]
+minus1152(1452)1
+
+
+
+[891]
+minus1344(1449)1
+
+
+
+[892]
+minus1344(1449)1
+
+
+
+[131]
+minus[166]1
+minus[172]1
+
+
+
+[757]
+minus[182]1
+
+
+
+[4816]
+minus1448(1698)2
+
+
+
+[806]
+minus1185(1721)1
+
+
+
+[871]
+minus1758(1420)1
+
+
+
+[872]
+minus1758(1420)1
+
+
+
+[793]
+minus2135(1673)1
+
+
+
+[130]
+minus[163]1
+minus[169]1
+
+
+
+[669]
+minus1268(2050)1
+
+
+
+[717]
+minus[126]1
+
+
+
+[4813]
+minus{{591(1894),621(1893)}}1
+
+
+wire15
+two_wire17
+delete_node23
+cost:4603

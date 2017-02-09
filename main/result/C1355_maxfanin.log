@@ -1,0 +1,16 @@
+
+outfunc
+duration = 2.92134sec.
+
+cost:2102
+CSPF
+duration = 3.13442sec.
+duration = 1.6875sec.
+
+Transcirc
+delete_node_ex0
+cost:2102
+wire0
+two_wire0
+delete_node0
+cost:2102

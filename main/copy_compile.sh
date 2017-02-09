@@ -33,7 +33,8 @@ cd ./main/
 #./ger-program benchmark/frg2_maxfanin.log #> frg.log
 #./ger-program benchmark/x3_maxfanin.log
 #./ger-program benchmark/pair_maxfanin.log
-./ger-program benchmark/long/C5315_maxfanin.log > c5315.log
+#./ger-program benchmark/long/not_used/t481_maxfanin.log > t481.log
 #./ger-program benchmark/i10_maxfanin.log > i10.log
-#./ger-program benchmark/systemcdes_maxfanin.log
+#./ger-program benchmark/long/not_used/systemcdes_maxfanin.log > systemcdes.log
+./ger-program benchmark/long/C5315_maxfanin.log > bdd.log
 )
